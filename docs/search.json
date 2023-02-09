@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "LearningDiary",
+    "title": "Remotely Sensing Cities and Environments",
     "section": "",
-    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Welcome, to my Learning Diary. In addition to this being an academic requirement entailing summarising, application and reflecting on weekly learning of new concepts, processes, analysis and practice. I look forward to practice-oriented learning of the module, leading to building a robust technical proposal/implementation. I am curious to know which segment I would enjoy the most."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,103 @@
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#more-test",
+    "href": "index.html#more-test",
+    "title": "Learning Diary",
+    "section": "more test",
+    "text": "more test\ncitation test: (Ravanelli et al. 2018)\n\nsome more test\nequation test:\n\\[\nE=mc^2\\\n\\]\n\nand some more\n\n\n\ntest image_url\n\n\n\nand some more\n\n\n\ntest image_browse\n\n\n\ntest https://www.thesaurus.com/browse/test\ntest"
+  },
+  {
+    "objectID": "week1.html",
+    "href": "week1.html",
+    "title": "week1",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "week1.html#including-plots",
+    "href": "week1.html#including-plots",
+    "title": "week1",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "1_week.html",
+    "href": "1_week.html",
+    "title": "An Introduction to Remote Sensing",
+    "section": "",
+    "text": "id: ppc\nbibliography: references.bib"
+  },
+  {
+    "objectID": "1_week.html#including-plots",
+    "href": "1_week.html#including-plots",
+    "title": "1_week",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "2_week.html",
+    "href": "2_week.html",
+    "title": "2_week",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "2_week.html#including-plots",
+    "href": "2_week.html#including-plots",
+    "title": "2_week",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "3_week.html",
+    "href": "3_week.html",
+    "title": "3_week",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "3_week.html#including-plots",
+    "href": "3_week.html#including-plots",
+    "title": "3_week",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "4_week.html",
+    "href": "4_week.html",
+    "title": "4_week",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "4_week.html#including-plots",
+    "href": "4_week.html#including-plots",
+    "title": "4_week",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "5_week.html",
+    "href": "5_week.html",
+    "title": "5_week",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+  },
+  {
+    "objectID": "5_week.html#including-plots",
+    "href": "5_week.html#including-plots",
+    "title": "5_week",
+    "section": "Including Plots",
+    "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "1_week.html#more-test",
+    "href": "1_week.html#more-test",
+    "title": "An Introduction to Remote Sensing",
+    "section": "more test",
+    "text": "more test\ncitation test: [@ravanelli2018]\n\nsome more test\nequation test:\n\\[\nE=mc^2\\\n\\]\n\nand some more\n\n\n\ntest image_url\n\n\n\nand some more\n\n\n\ntest image_browse\n\n\n\ntest https://www.thesaurus.com/browse/test\ntest\n#id: ppc\n#bibliography: references.bib"
   }
 ]

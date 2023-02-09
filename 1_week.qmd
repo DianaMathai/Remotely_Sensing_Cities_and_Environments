@@ -1,0 +1,42 @@
+---
+title: "An Introduction to Remote Sensing"
+output: html_document
+---
+
+id: ppc
+
+bibliography: references.bib
+
+# Test
+
+::: callout-caution
+Learning Diary is under-progress
+:::
+
+## more test
+
+citation test: [@ravanelli2018]
+
+### some more test
+
+equation test:
+
+$$
+E=mc^2\
+$$
+
+#### and some more
+
+![test image_url](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/A-Train_w-Time2013_Web.jpg/465px-A-Train_w-Time2013_Web.jpg){alt="test image_url"}
+
+##### and some more
+
+![test image_browse](images/about.png){alt="test image_browse" width="314"}
+
+1.  test <https://www.thesaurus.com/browse/test>
+
+2.  test
+
+3.  #id: ppc
+
+    #bibliography: references.bib

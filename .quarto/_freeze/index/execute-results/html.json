@@ -1,7 +1,7 @@
 {
-  "hash": "7b53b4c7f0a1cfeaee69646eb6dc47d7",
+  "hash": "f6cedbc3912629d033e8cf3e30a74de8",
   "result": {
-    "markdown": "---\ntitle: \"LearningDiary\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Remotely Sensing Cities and Environments\"\n\nformat: \n  html: \n    self-contained: true #creating a single file which has everything in it\n    table-of-contents: true\n    theme: Cerulean\nknitr: \n  opts_chunk: \n    warning: false\n    messages: false\nimage: about.png\nabout: \n  template: jolla\n  image-shape: round\n  image-width: 15em\n  links:\n   - text: Email\n     icon: envelope\n     href: mailto:diana.mathai.22@ucl.ac.uk \n---\n\n\nWelcome, to my Learning Diary. In addition to this being an academic requirement entailing summarising, application and reflecting on weekly learning of new concepts, processes, analysis and practice. I look forward to practice-oriented learning of the module, leading to building a robust technical proposal/implementation. I am curious to know which segment I would enjoy the most.\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

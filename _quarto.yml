@@ -3,18 +3,46 @@ project:
   output-dir: docs
 
 website:
-  title: "LearningDiary"
-  navbar:
-    left:
+  title: "CASA0023"
+  navbar: 
+    collapse: true
+    search: true
+    background: primary
+    
+    
+  sidebar:
+    title: "Learning Diary"
+    style: floating
+    background: light
+    
+    contents:
+      
       - href: index.qmd
-        text: Home
-      - about.qmd
-
+        text: "Learning Content"
+      #- about.qmd
+      - href: 1_week.qmd
+        text: "Week 1"
+      - href: 2_week.qmd
+        text: "Week 2"
+      - href: 3_week.qmd
+        text: "Week 3"
+      - href: 4_week.qmd
+        text: "Week 4"
+      - href: 5_week.qmd
+        text: "Week 5"
+      
+      
 format:
   html:
-    theme: cosmo
+    theme: Cerulean
+    mainfont: Verdana
+    fontsize: 0.8em
+    fontcolor: "#968CA1"
+    linkcolor: "#CC9EFD"
+    monofont: courier new
     css: styles.css
     toc: true
 
 editor: visual
+
 
