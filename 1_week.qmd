@@ -4,13 +4,13 @@ output: html_document
 bibliography: references.bib
 ---
 
-This chapter is an attempt to understand Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.
+This chapter is an attempt to comprehend Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.
 
 *How does this work?*
 
 *What are these bands?*
 
-*Is this word a satellite or a sensor? How many are they?*
+*Is this word a satellite or a sensor?*
 
 # Terms
 
@@ -24,11 +24,13 @@ Below indicated are the images that schematically depict few terms.
 
 ![Zenith, Nadir, Meridian, Astronomical Horizontal and True Horizon. *SOURCE: [trekview](https://www.trekview.org/blog/2020/what-is-a-nadir/)*](images/solardirection.png){fig-align="center"}
 
-![Schematic depicting the solar zenith angle, solar altitude angle and solar azimuth angle. SOURCE: [thesolarlabs](https://thesolarlabs.com/ros/solar-angles/) and @zhang2021 ](images/solaragle.png){fig-align="center"}
+![Schematic depicting the solar zenith angle, solar altitude angle and solar azimuth angle. SOURCE: [thesolarlabs](https://thesolarlabs.com/ros/solar-angles/) and @zhang2021](images/solaragle.png){fig-align="center"}
 
 # Remote Sensing Process
 
+::: column-body
 "Remote sensing combines science and technology to acquire information about an object, area, or phenomenon by measuring reflected and emitted radiation using a device that's without direct physical contact (typically from satellite or aircraft)"
+:::
 
 ![*Remote Sensing process, SOURCE:* [Fundamentals of Remote Sensing](https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/earthsciences/pdf/resource/tutor/fundam/pdf/fundamentals_e.pdf)](images/RSprocess.png){fig-align="center" width="683"}
 
@@ -93,6 +95,7 @@ Below indicated are the images that schematically depict few terms.
 |             |                                        | -   Assist in solving a particular problem                         |
 +-------------+----------------------------------------+--------------------------------------------------------------------+
 
+::: column-body
 ## Electromagnetic Waves (EMW)
 
 -   Composition of oscillating electric and magnetic fields. (Maxwell's equation)
@@ -103,28 +106,33 @@ Below indicated are the images that schematically depict few terms.
 -   light🌞 = visible part = colors (corresponding to different wavelength of light) eg: rainbow🌈
 -   Sound 🔊= invisible waves
     -   travels through molecules present in air (molecules bumping into each other)
+:::
 
 ![Diagram of the Electromagnetic Spectrum. SOURCE: [NASA Science](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing)](images/paste-9E051292.png){width="761"}
 
+::: column-body
 -   ***Longer** wavelength* = lower 🔽 energy = lower 🔽 frequency
 
 -   ***Shorter** wavelength* = higher 🔼 energy = higher 🔼 frequency
+:::
 
 ![Visible light in Electromagnetic Spectrum. SOURCE: [QGEO](https://theqgeo.com/principles-of-remote-sensing/#12_Interaction_with_the_target_III)](images/paste-6B9CE6AC.png){fig-align="center"}
 
--   **Wonder How BIG are these waves ??**
-
-    Image below indicates EMW Radio waves upto Gamma waves.
-
+::: column-body
+-   **Wonder How BIG are these waves ??** Image below indicates EMW Radio waves upto Gamma waves.
     -   Radio waves= very long (size of a building to the size of a coin)
     -   gamma-rays= very smaller (atomic nuclei)
+:::
 
 ![](images/spectrum_radio_waves_graphic_web_0.png)
 
+::: column-body
 ## I see COLOUR? 👀
+:::
 
 ![reflection of EMW. SOURCE: [DAI](https://dai-global-digital.com/lush-green-remote-sensing.html)](images/paste-5FF9BEFF.png){fig-align="center" width="348"}
 
+::: column-body
 REFLECTED (Vegetation) = infrared light + infrared light= **GREEN COLOR**
 
 -   Geospatial data acquisition (Majority)= sensing (visible and infrared range)
@@ -136,12 +144,15 @@ REFLECTED (Vegetation) = infrared light + infrared light= **GREEN COLOR**
 -   Green=0.54 μm (solar radiation maximum intensity)
 -   Red and beyond=IR (Infra-red)
     -   IR familiar application: night vision security cameras
+:::
 
+::: column-body
 ### Infrared
 
 -   Near-infrared (**NIR**)
 -   Mid-IR (**SWIR**- short-wave infrared)
 -   Thermal Infrared (**TIR**)
+:::
 
 ![](images/infrared.png){fig-align="center" width="377"}
 
@@ -168,21 +179,21 @@ REFLECTED (Vegetation) = infrared light + infrared light= **GREEN COLOR**
 
 ![Application of different spectral ranges. SOURCE: [SEOS](https://seos-project.eu/remotesensing/remotesensing-c01-s01-p01.html)](images/paste-8434A254.png){fig-align="center" width="716"}
 
+::: column-body
 ### Spectral Reflectance Properties
 
 So how do we see these characteristics of earth surface features or materials??
 
-Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures.
-
--   Signatures can be visualised in spectral reflectance curves
--   curves= function of wavelengths
--   Eg: image below for water, soil and vegetation
+Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures. - Signatures can be visualised in spectral reflectance curves - curves= function of wavelengths - Eg: image below for water, soil and vegetation
+:::
 
 ![Spectral signatures of soil, vegetation and water, and spectral bands of LANDSAT 7. SOURCE: [SEOS](https://seos-project.eu/remotesensing/remotesensing-c01-p06.html)](images/Reflexionskurven.jpg){fig-align="center" width="416"}
 
+::: column-body
 ### EMW Interaction
 
 In above sections we have looked into what is EMW and few applications. this segment we shall look into how it interacts when it travels.
+:::
 
 ![Energy inter-actions in the atmosphere and at the surface. SOURCE: @tempfli2009](images/paste-F7F78CD4.png){alt="Energy inter-actions in the atmosphereand at the surface" fig-align="center" width="383"}
 
@@ -192,42 +203,34 @@ In above sections we have looked into what is EMW and few applications. this seg
 
 ![](images/atmosphere.png){fig-align="center" width="672"}
 
+::: column-body
 ##### **Absorption** and **Transmission**
 
 So let us look into the first two **absorption** and **transmission**
+:::
 
 ![A schematic representation of the atmospheric transmission (0 to 22 µm wavelength range). *SOURCE: @tempfli2009a*](images/atmospherictrnasmissionpng.png)
 
+::: column-body
 -   Many wavelengths are not useful of RS of ES *(none of the corresponding energy can penetrate the atmosphere)*
-
 -   Spectrum portion outside the main absorption range= useful range
-
 -   Useful Range= **Atmospheric Transmission Windows**
-
     -   *ONE window* from 0.4 to 2 μm visible, NIR, SWIR remote sensors operating in this range are often referred to as optical ones
     -   *THREE windows* in the TIR range two narrow windows around 3 and 5 μm Third relatively broader approximately 8 to 14 μm
-
 -   Longer wavelength= strong absorption
-
     -   Range 22 μm to 1 mm
     -   Very low energy transmission
-
 -   Microwave range= transparent
-
     -   Range= beyond 1 mm
-
 -   Measure: solar radiation outside the atmosphere= resembles [black-body](http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp1/cp1-7.htm) radiation at 6000K
-
 -   Measure: Earth surface:
-
     -   Solar radiation at earth surface\> spectral distribution of energy= very ragged
-
 -   Graph above:
-
     -   dip= atmospheric absorption by different gases
-
     -   energy\>\> earth surface= intensity reduction ? gas of increasing density.
+:::
 
+::: column-body
 ##### Scattering
 
 -   Occurrence: passing from one medium (air,water etc) to another
@@ -235,14 +238,17 @@ So let us look into the first two **absorption** and **transmission**
 -   Intensity of scattered light= size of particles + wavelength
 -   High scattering = short wavelength+high frequency (wavier= higher changes of collision with particles)
 -   Low scattering = longer wavelength+ low frequency (less wavier/ straighter in comparision= lower changes of collision with particles)
+:::
 
 ![](images/scattering.png)
 
+::: column-body
 *Factors:*
 
 -   Wavelength of the radiation
 -   Amount of particles and gases
 -   Distance the radiant energy travels through the atmosphere
+:::
 
 ![Rayleigh Scattering. *SOURCE: @tempfli2009*](images/Rayleigh%20scattering1.jpg){fig-align="center"}
 
@@ -294,9 +300,11 @@ So let us look into the first two **absorption** and **transmission**
 
 ![](images/EARTH%20SURFACE.png){fig-align="center"}
 
+::: column-body
 -   The proportion of reflected - absorbed - transmitted energy will vary with wavelength and material type.
 -   Reflection depends: The surface roughness relative to the wavelength of the incident radiation.
 -   Angle of incidence is the surface roughness
+:::
 
 +-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
 | Specular Reflection                                                                                         | Diffuse Reflection                                                                                    |
@@ -349,27 +357,26 @@ So let us look into the first two **absorption** and **transmission**
 |                            | -   Healthy vegetation= reflection of the blue and red components of incident light is comparatively low, because these portions are absorbed by the plant |                                       | -   pronounced reflectance peak for green light (chlorophyll) |
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+---------------------------------------------------------------+
 
-**BRDF The Bidirectional Reflectance Distribution Function:** It gives the reflectance of a target as a function of illumination geometry and viewing geometry.
+::: column-body
+**BRDF The Bidirectional Reflectance Distribution Function:** It gives the reflectance of a target as a function of illumination geometry and viewing geometry. It **depends** on:
 
-Depends on:
-
--   wavelength
-
--   determined by the structural and optical properties of the surface,
-
+-   Wavelength
+-   Determined by the structural and optical properties of the surface,
     -   shadow-casting, multiple scattering, mutual shadowing, transmission, reflection, absorption, and emission by surface elements, facet orientation distribution, and facet density.
+:::
 
 ![Bidirectional Reflectance Distribution Function Cause. *SOURCE: [umb](https://www.umb.edu/spectralmass/terra_aqua_modis/modis)*](images/paste-C64832D0.png){fig-align="center" width="387"}
 
 more: [umb](https://www.umb.edu/spectralmass/terra_aqua_modis/modis)
 
+::: column-body
 ## Sensors
 
 Remote sensor
 
--   device that detects EM energy
-
--   quantifies + records EM energy IN analogue or digital way
+-   Device that detects EM energy
+-   Quantifies + records EM energy IN analogue or digital way
+:::
 
 ![](images/sensor.png)
 
@@ -449,13 +456,15 @@ more on senors: [earthdata](https://www.earthdata.nasa.gov/s3fs-public/imported/
 
 ![](images/radarflow.png)
 
+::: column-body
 Spatial resolution of radar data\~ ratio of the sensor wavelength to the length of the sensor's antenna
 
 -   Meaning: for a given wavelength
 -   Longer antenna = higher spatial resolution
+:::
 
+::: column-body
 ### SAR
-
 -   Synthetic aperture radar (SAR)
 -   sensor produces its own energy
 -   active data collection
@@ -463,46 +472,37 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 -   wavelength: micorwaves
 -   A series of shorter antenna is combined to simulate a larger antenna
     -   Result: higher resolution
+:::
 
 ![Geometry of observations used to form the synthetic aperture for target P at along-track position x = 0. Credit: NASA SAR Handbook](images/SARticle_first-fig_redone-06.jpg){width="365"}
 
 *SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)*
 
+::: column-body
 -   Radar sensors utilize longer wavelengths at the centimetre to meter scale
-
     -   Helps: ability to see through clouds
-
--   produces: fine-resolution images from a resolution-limited radar system
-
+-   Produces: fine-resolution images from a resolution-limited radar system
     -   radar movement: straight line
     -   carrier: airplane or NISAR
     -   NISAR
         -   provide multiple polarization modes across its two radar bands
-
         -   24 cm wavelength L-SAR
-
         -   10 cm wavelength S-SAR.
-
 -   How?
-
     -   transmits microwave signals\>earth surface\>receives back the signals (backscattered)\> sensor makes an image from returned echoes- bat flying in cave
-
 -   Result imaginary built?
-
     -   Wavelength strength and time delay of the returned signal
     -   depends primarily on the
         -   roughness and electrical conducting properties of the observed surface
-
         -   its distance from the orbiting radar 
-
 -   SAR has different wavelengths = bands
-
     -   **Bands:** X,C,L,P
     -   Important feature to consider
     -   Wavelength determines
         -   How far a signal can penetrate into the medium
         -   How the signal interacts with the surface
         -   To understand look at X an L bands below
+:::
 
 ![The electromagnetic spectrum with microwave bands inset. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/SARticle_microwave_fig-05.jpg){fig-align="center"}
 
@@ -510,14 +510,15 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 
 ![Sensitivity of SAR measurements to forest structure and penetration into the canopy at different wavelengths used for airborne or spaceborne remote sensing observations of the land surface. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/SARtree_figure2.jpg)
 
--   polarization: orientation of the plane in which the transmitted electromagnetic wave oscillates
-
+::: column-body
+-   Polarization: orientation of the plane in which the transmitted electromagnetic wave oscillates
     -   SAR=typically transmit linearly polarized
-    -   signal polarization can be precisely controlled on both transmit and receive
-    -   horizontal polarization = H
-    -   vertical polarization = V
+    -   Signal polarization can be precisely controlled on both transmit and receive
+    -   Horizontal polarization = H
+    -   Vertical polarization = V
     -   Signals
     -   polarizations carries information about the structure of the imaged surface
+:::
 
 ![SAR Polarizations. *SOURCE: [ASF](https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.)*](images/polarization.png){fig-align="center" width="379"}
 
@@ -543,36 +544,24 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 
 ![SAR Scatter Process. *SOURCE: [sorabatake](https://sorabatake.jp/en/15097/)*](images/9d831d187199270f191b3999ca596311.jpg){fig-align="center" width="511"}
 
+::: column-body
 -   Interferometry (InSAR) -- analysis method
-
 -   Uses: uses the phase information recorded
-
 -   Measures: distance from the sensor to the target
-
 -   Measurement= very accurate
-
 -   to measure changes in land surface topography??
-
     -   Observations= Atleast 2 of the same target
     -   Sensor data= Distance + additional geometric information
-
 -   Application:
-
     -   identify areas of deformation from events like volcanic eruptions and earthquakes
-
 -   SAR data limitations:
-
     -   Tedious preprocessing steps *(applying the orbit file, radiometric calibration, de-bursting, multilooking, speckle filtering, and terrain correction)* [earthdata](https://www.earthdata.nasa.gov/s3fs-public/imported/pre-processing_onepager_ROUGH.pdf)
-
 -   Sensors: [earthdata](https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf)
-
 -   SAR distortion: [alaska.edu](https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.)
-
 -   SAR Hand book: [ntrs](https://ntrs.nasa.gov/api/citations/20190002563/downloads/20190002563.pdf)
-
 -   Interferometry: [nisar](https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/)
-
 -   SweepSAR: [nisar](https://nisar.jpl.nasa.gov/mission/get-to-know-sar/sweepsar/)
+:::
 
 ### Passive Sensors
 
@@ -585,8 +574,6 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 ![Image data format. SOURCE: [kangwon](http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/6-4-1.gif)](images/image%20data%20format.png){alt="data format" fig-align="center" width="399"}
 
 other sources: [gisgeography.](https://gisgeography.com/gis-formats/), [e-education.psu](https://www.e-education.psu.edu/geog480/node/458), [sar.kangwon](http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/cp6-4.htm)
-
-#### 
 
 #### 4 Resolutions
 

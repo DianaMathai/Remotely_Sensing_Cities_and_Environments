@@ -154,25 +154,21 @@ div.csl-indent {
   <li><a href="#remote-sensing-process" id="toc-remote-sensing-process" class="nav-link" data-scroll-target="#remote-sensing-process">Remote Sensing Process</a>
   <ul class="collapse">
   <li><a href="#electromagnetic-waves-emw" id="toc-electromagnetic-waves-emw" class="nav-link" data-scroll-target="#electromagnetic-waves-emw">Electromagnetic Waves (EMW)</a></li>
-  <li><a href="#i-see-colour" id="toc-i-see-colour" class="nav-link" data-scroll-target="#i-see-colour">I see COLOUR? 👀</a>
-  <ul class="collapse">
+  <li><a href="#i-see-colour" id="toc-i-see-colour" class="nav-link" data-scroll-target="#i-see-colour">I see COLOUR? 👀</a></li>
   <li><a href="#infrared" id="toc-infrared" class="nav-link" data-scroll-target="#infrared">Infrared</a></li>
   <li><a href="#spectral-reflectance-properties" id="toc-spectral-reflectance-properties" class="nav-link" data-scroll-target="#spectral-reflectance-properties">Spectral Reflectance Properties</a></li>
   <li><a href="#emw-interaction" id="toc-emw-interaction" class="nav-link" data-scroll-target="#emw-interaction">EMW Interaction</a></li>
-  </ul></li>
-  <li><a href="#sensors" id="toc-sensors" class="nav-link" data-scroll-target="#sensors">Sensors</a>
-  <ul class="collapse">
+  <li><a href="#sensors" id="toc-sensors" class="nav-link" data-scroll-target="#sensors">Sensors</a></li>
   <li><a href="#active-sensors" id="toc-active-sensors" class="nav-link" data-scroll-target="#active-sensors">Active Sensors</a></li>
   <li><a href="#sar" id="toc-sar" class="nav-link" data-scroll-target="#sar">SAR</a></li>
   <li><a href="#passive-sensors" id="toc-passive-sensors" class="nav-link" data-scroll-target="#passive-sensors">Passive Sensors</a></li>
   <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format">Data Format</a></li>
   </ul></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -190,10 +186,10 @@ div.csl-indent {
 
 </header>
 
-<p>This chapter is an attempt to understand Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.</p>
+<p>This chapter is an attempt to comprehend Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.</p>
 <p><em>How does this work?</em></p>
 <p><em>What are these bands?</em></p>
-<p><em>Is this word a satellite or a sensor? How many are they?</em></p>
+<p><em>Is this word a satellite or a sensor?</em></p>
 <section id="terms" class="level1">
 <h1>Terms</h1>
 <p>Below indicated are the images that schematically depict few terms.</p>
@@ -228,9 +224,11 @@ div.csl-indent {
 </figure>
 </div>
 </section>
-<section id="remote-sensing-process" class="level1">
+<section id="remote-sensing-process" class="level1 page-columns page-full">
 <h1>Remote Sensing Process</h1>
+<div class="column-body">
 <p>“Remote sensing combines science and technology to acquire information about an object, area, or phenomenon by measuring reflected and emitted radiation using a device that’s without direct physical contact (typically from satellite or aircraft)”</p>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/RSprocess.png" class="img-fluid figure-img" width="683"></p>
@@ -335,7 +333,7 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<section id="electromagnetic-waves-emw" class="level2">
+<section id="electromagnetic-waves-emw" class="level2 column-body">
 <h2 class="anchored" data-anchor-id="electromagnetic-waves-emw">Electromagnetic Waves (EMW)</h2>
 <ul>
 <li>Composition of oscillating electric and magnetic fields. (Maxwell’s equation)</li>
@@ -351,40 +349,45 @@ div.csl-indent {
 <li>travels through molecules present in air (molecules bumping into each other)</li>
 </ul></li>
 </ul>
+</section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/paste-9E051292.png" class="img-fluid figure-img" width="761"></p>
 <p></p><figcaption class="figure-caption">Diagram of the Electromagnetic Spectrum. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing">NASA Science</a></figcaption><p></p>
 </figure>
 </div>
+<div class="column-body">
 <ul>
 <li><p><em><strong>Longer</strong> wavelength</em> = lower 🔽 energy = lower 🔽 frequency</p></li>
 <li><p><em><strong>Shorter</strong> wavelength</em> = higher 🔼 energy = higher 🔼 frequency</p></li>
 </ul>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/paste-6B9CE6AC.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Visible light in Electromagnetic Spectrum. SOURCE: <a href="https://theqgeo.com/principles-of-remote-sensing/#12_Interaction_with_the_target_III">QGEO</a></figcaption><p></p>
 </figure>
 </div>
+<div class="column-body">
 <ul>
-<li><p><strong>Wonder How BIG are these waves ??</strong></p>
-<p>Image below indicates EMW Radio waves upto Gamma waves.</p>
+<li><strong>Wonder How BIG are these waves ??</strong> Image below indicates EMW Radio waves upto Gamma waves.
 <ul>
 <li>Radio waves= very long (size of a building to the size of a coin)</li>
 <li>gamma-rays= very smaller (atomic nuclei)</li>
 </ul></li>
 </ul>
+</div>
 <p><img src="images/spectrum_radio_waves_graphic_web_0.png" class="img-fluid"></p>
-</section>
-<section id="i-see-colour" class="level2">
+<section id="i-see-colour" class="level2 column-body">
 <h2 class="anchored" data-anchor-id="i-see-colour">I see COLOUR? 👀</h2>
+</section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/paste-5FF9BEFF.png" class="img-fluid figure-img" width="348"></p>
 <p></p><figcaption class="figure-caption">reflection of EMW. SOURCE: <a href="https://dai-global-digital.com/lush-green-remote-sensing.html">DAI</a></figcaption><p></p>
 </figure>
 </div>
+<div class="column-body">
 <p>REFLECTED (Vegetation) = infrared light + infrared light= <strong>GREEN COLOR</strong></p>
 <ul>
 <li>Geospatial data acquisition (Majority)= sensing (visible and infrared range)</li>
@@ -403,13 +406,15 @@ div.csl-indent {
 <li>IR familiar application: night vision security cameras</li>
 </ul></li>
 </ul>
-<section id="infrared" class="level3">
+</div>
+<section id="infrared" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="infrared">Infrared</h3>
 <ul>
 <li>Near-infrared (<strong>NIR</strong>)</li>
 <li>Mid-IR (<strong>SWIR</strong>- short-wave infrared)</li>
 <li>Thermal Infrared (<strong>TIR</strong>)</li>
 </ul>
+</section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/infrared.png" class="img-fluid figure-img" width="377"></p>
@@ -483,26 +488,21 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Application of different spectral ranges. SOURCE: <a href="https://seos-project.eu/remotesensing/remotesensing-c01-s01-p01.html">SEOS</a></figcaption><p></p>
 </figure>
 </div>
-</section>
-<section id="spectral-reflectance-properties" class="level3">
+<section id="spectral-reflectance-properties" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="spectral-reflectance-properties">Spectral Reflectance Properties</h3>
 <p>So how do we see these characteristics of earth surface features or materials??</p>
-<p>Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures.</p>
-<ul>
-<li>Signatures can be visualised in spectral reflectance curves</li>
-<li>curves= function of wavelengths</li>
-<li>Eg: image below for water, soil and vegetation</li>
-</ul>
+<p>Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures. - Signatures can be visualised in spectral reflectance curves - curves= function of wavelengths - Eg: image below for water, soil and vegetation</p>
+</section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Reflexionskurven.jpg" class="img-fluid figure-img" width="416"></p>
 <p></p><figcaption class="figure-caption">Spectral signatures of soil, vegetation and water, and spectral bands of LANDSAT 7. SOURCE: <a href="https://seos-project.eu/remotesensing/remotesensing-c01-p06.html">SEOS</a></figcaption><p></p>
 </figure>
 </div>
-</section>
-<section id="emw-interaction" class="level3">
+<section id="emw-interaction" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="emw-interaction">EMW Interaction</h3>
 <p>In above sections we have looked into what is EMW and few applications. this segment we shall look into how it interacts when it travels.</p>
+</section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/paste-F7F78CD4.png" class="img-fluid figure-img" alt="Energy inter-actions in the atmosphereand at the surface" width="383"></p>
@@ -514,52 +514,54 @@ div.csl-indent {
 <p><img src="images/EMWinteraction.png" class="img-fluid figure-img" width="418"></p>
 </figure>
 </div>
-<section id="atmosphere" class="level4">
+<section id="atmosphere" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="atmosphere">Atmosphere</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/atmosphere.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
-<section id="absorption-and-transmission" class="level5">
+<section id="absorption-and-transmission" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="absorption-and-transmission"><strong>Absorption</strong> and <strong>Transmission</strong></h5>
 <p>So let us look into the first two <strong>absorption</strong> and <strong>transmission</strong></p>
+</section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/atmospherictrnasmissionpng.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">A schematic representation of the atmospheric transmission (0 to 22 µm wavelength range). <em>SOURCE: <span class="citation" data-cites="tempfli2009a">Tempfli et al. (<a href="#ref-tempfli2009a" role="doc-biblioref">2009b</a>)</span></em></figcaption><p></p>
 </figure>
 </div>
+<div class="column-body">
 <ul>
-<li><p>Many wavelengths are not useful of RS of ES <em>(none of the corresponding energy can penetrate the atmosphere)</em></p></li>
-<li><p>Spectrum portion outside the main absorption range= useful range</p></li>
-<li><p>Useful Range= <strong>Atmospheric Transmission Windows</strong></p>
+<li>Many wavelengths are not useful of RS of ES <em>(none of the corresponding energy can penetrate the atmosphere)</em></li>
+<li>Spectrum portion outside the main absorption range= useful range</li>
+<li>Useful Range= <strong>Atmospheric Transmission Windows</strong>
 <ul>
 <li><em>ONE window</em> from 0.4 to 2 μm visible, NIR, SWIR remote sensors operating in this range are often referred to as optical ones</li>
 <li><em>THREE windows</em> in the TIR range two narrow windows around 3 and 5 μm Third relatively broader approximately 8 to 14 μm</li>
 </ul></li>
-<li><p>Longer wavelength= strong absorption</p>
+<li>Longer wavelength= strong absorption
 <ul>
 <li>Range 22 μm to 1 mm</li>
 <li>Very low energy transmission</li>
 </ul></li>
-<li><p>Microwave range= transparent</p>
+<li>Microwave range= transparent
 <ul>
 <li>Range= beyond 1 mm</li>
 </ul></li>
-<li><p>Measure: solar radiation outside the atmosphere= resembles <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp1/cp1-7.htm">black-body</a> radiation at 6000K</p></li>
-<li><p>Measure: Earth surface:</p>
+<li>Measure: solar radiation outside the atmosphere= resembles <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp1/cp1-7.htm">black-body</a> radiation at 6000K</li>
+<li>Measure: Earth surface:
 <ul>
 <li>Solar radiation at earth surface&gt; spectral distribution of energy= very ragged</li>
 </ul></li>
-<li><p>Graph above:</p>
+<li>Graph above:
 <ul>
-<li><p>dip= atmospheric absorption by different gases</p></li>
-<li><p>energy&gt;&gt; earth surface= intensity reduction ? gas of increasing density.</p></li>
+<li>dip= atmospheric absorption by different gases</li>
+<li>energy&gt;&gt; earth surface= intensity reduction ? gas of increasing density.</li>
 </ul></li>
 </ul>
-</section>
-<section id="scattering" class="level5">
+</div>
+<section id="scattering" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="scattering">Scattering</h5>
 <ul>
 <li>Occurrence: passing from one medium (air,water etc) to another</li>
@@ -568,13 +570,16 @@ div.csl-indent {
 <li>High scattering = short wavelength+high frequency (wavier= higher changes of collision with particles)</li>
 <li>Low scattering = longer wavelength+ low frequency (less wavier/ straighter in comparision= lower changes of collision with particles)</li>
 </ul>
+</section>
 <p><img src="images/scattering.png" class="img-fluid"></p>
+<div class="column-body">
 <p><em>Factors:</em></p>
 <ul>
 <li>Wavelength of the radiation</li>
 <li>Amount of particles and gases</li>
 <li>Distance the radiant energy travels through the atmosphere</li>
 </ul>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Rayleigh%20scattering1.jpg" class="img-fluid figure-img"></p>
@@ -697,19 +702,20 @@ div.csl-indent {
 </tbody>
 </table>
 </section>
-</section>
-<section id="earths-surface" class="level4">
+<section id="earths-surface" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="earths-surface">Earth’s Surface</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/EARTH%20SURFACE.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
+<div class="column-body">
 <ul>
 <li>The proportion of reflected - absorbed - transmitted energy will vary with wavelength and material type.</li>
 <li>Reflection depends: The surface roughness relative to the wavelength of the incident radiation.</li>
 <li>Angle of incidence is the surface roughness</li>
 </ul>
+</div>
 <table class="table">
 <colgroup>
 <col style="width: 51%">
@@ -848,15 +854,16 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p><strong>BRDF The Bidirectional Reflectance Distribution Function:</strong> It gives the reflectance of a target as a function of illumination geometry and viewing geometry.</p>
-<p>Depends on:</p>
+<div class="column-body">
+<p><strong>BRDF The Bidirectional Reflectance Distribution Function:</strong> It gives the reflectance of a target as a function of illumination geometry and viewing geometry. It <strong>depends</strong> on:</p>
 <ul>
-<li><p>wavelength</p></li>
-<li><p>determined by the structural and optical properties of the surface,</p>
+<li>Wavelength</li>
+<li>Determined by the structural and optical properties of the surface,
 <ul>
 <li>shadow-casting, multiple scattering, mutual shadowing, transmission, reflection, absorption, and emission by surface elements, facet orientation distribution, and facet density.</li>
 </ul></li>
 </ul>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/paste-C64832D0.png" class="img-fluid figure-img" width="387"></p>
@@ -865,15 +872,14 @@ div.csl-indent {
 </div>
 <p>more: <a href="https://www.umb.edu/spectralmass/terra_aqua_modis/modis">umb</a></p>
 </section>
-</section>
-</section>
-<section id="sensors" class="level2">
+<section id="sensors" class="level2 column-body">
 <h2 class="anchored" data-anchor-id="sensors">Sensors</h2>
 <p>Remote sensor</p>
 <ul>
-<li><p>device that detects EM energy</p></li>
-<li><p>quantifies + records EM energy IN analogue or digital way</p></li>
+<li>Device that detects EM energy</li>
+<li>Quantifies + records EM energy IN analogue or digital way</li>
 </ul>
+</section>
 <p><img src="images/sensor.png" class="img-fluid"></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -999,16 +1005,18 @@ div.csl-indent {
 </table>
 <p><em>SOURCE: <a href="https://www.brainkart.com/article/Passive-and-Active-Sensors_4474/">brainkart</a>, <a href="https://ltb.itc.utwente.nl/671/concept/124289">ltb</a>, <a href="https://eos.com/blog/types-of-remote-sensing/">eos</a></em></p>
 <p>more on senors: <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf">earthdata</a></p>
-<section id="active-sensors" class="level3">
+<section id="active-sensors" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="active-sensors">Active Sensors</h3>
 <p><img src="images/radarflow.png" class="img-fluid"></p>
+<div class="column-body">
 <p>Spatial resolution of radar data~ ratio of the sensor wavelength to the length of the sensor’s antenna</p>
 <ul>
 <li>Meaning: for a given wavelength</li>
 <li>Longer antenna = higher spatial resolution</li>
 </ul>
+</div>
 </section>
-<section id="sar" class="level3">
+<section id="sar" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="sar">SAR</h3>
 <ul>
 <li>Synthetic aperture radar (SAR)</li>
@@ -1021,6 +1029,7 @@ div.csl-indent {
 <li>Result: higher resolution</li>
 </ul></li>
 </ul>
+</section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/SARticle_first-fig_redone-06.jpg" class="img-fluid figure-img" width="365"></p>
@@ -1028,36 +1037,37 @@ div.csl-indent {
 </figure>
 </div>
 <p><em>SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">earthdata</a></em></p>
+<div class="column-body">
 <ul>
-<li><p>Radar sensors utilize longer wavelengths at the centimetre to meter scale</p>
+<li>Radar sensors utilize longer wavelengths at the centimetre to meter scale
 <ul>
 <li>Helps: ability to see through clouds</li>
 </ul></li>
-<li><p>produces: fine-resolution images from a resolution-limited radar system</p>
+<li>Produces: fine-resolution images from a resolution-limited radar system
 <ul>
 <li>radar movement: straight line</li>
 <li>carrier: airplane or NISAR</li>
 <li>NISAR
 <ul>
-<li><p>provide multiple polarization modes across its two radar bands</p></li>
-<li><p>24 cm wavelength L-SAR</p></li>
-<li><p>10 cm wavelength S-SAR.</p></li>
+<li>provide multiple polarization modes across its two radar bands</li>
+<li>24 cm wavelength L-SAR</li>
+<li>10 cm wavelength S-SAR.</li>
 </ul></li>
 </ul></li>
-<li><p>How?</p>
+<li>How?
 <ul>
 <li>transmits microwave signals&gt;earth surface&gt;receives back the signals (backscattered)&gt; sensor makes an image from returned echoes- bat flying in cave</li>
 </ul></li>
-<li><p>Result imaginary built?</p>
+<li>Result imaginary built?
 <ul>
 <li>Wavelength strength and time delay of the returned signal</li>
 <li>depends primarily on the
 <ul>
-<li><p>roughness and electrical conducting properties of the observed surface</p></li>
-<li><p>its distance from the orbiting radar&nbsp;</p></li>
+<li>roughness and electrical conducting properties of the observed surface</li>
+<li>its distance from the orbiting radar&nbsp;</li>
 </ul></li>
 </ul></li>
-<li><p>SAR has different wavelengths = bands</p>
+<li>SAR has different wavelengths = bands
 <ul>
 <li><strong>Bands:</strong> X,C,L,P</li>
 <li>Important feature to consider</li>
@@ -1069,6 +1079,7 @@ div.csl-indent {
 </ul></li>
 </ul></li>
 </ul>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/SARticle_microwave_fig-05.jpg" class="img-fluid figure-img"></p>
@@ -1087,17 +1098,19 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Sensitivity of SAR measurements to forest structure and penetration into the canopy at different wavelengths used for airborne or spaceborne remote sensing observations of the land surface. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">earthdata</a></figcaption><p></p>
 </figure>
 </div>
+<div class="column-body">
 <ul>
-<li><p>polarization: orientation of the plane in which the transmitted electromagnetic wave oscillates</p>
+<li>Polarization: orientation of the plane in which the transmitted electromagnetic wave oscillates
 <ul>
 <li>SAR=typically transmit linearly polarized</li>
-<li>signal polarization can be precisely controlled on both transmit and receive</li>
-<li>horizontal polarization = H</li>
-<li>vertical polarization = V</li>
+<li>Signal polarization can be precisely controlled on both transmit and receive</li>
+<li>Horizontal polarization = H</li>
+<li>Vertical polarization = V</li>
 <li>Signals</li>
 <li>polarizations carries information about the structure of the imaged surface</li>
 </ul></li>
 </ul>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/polarization.png" class="img-fluid figure-img" width="379"></p>
@@ -1171,31 +1184,32 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">SAR Scatter Process. <em>SOURCE: <a href="https://sorabatake.jp/en/15097/">sorabatake</a></em></figcaption><p></p>
 </figure>
 </div>
+<div class="column-body">
 <ul>
-<li><p>Interferometry (InSAR) – analysis method</p></li>
-<li><p>Uses: uses the phase information recorded</p></li>
-<li><p>Measures: distance from the sensor to the target</p></li>
-<li><p>Measurement= very accurate</p></li>
-<li><p>to measure changes in land surface topography??</p>
+<li>Interferometry (InSAR) – analysis method</li>
+<li>Uses: uses the phase information recorded</li>
+<li>Measures: distance from the sensor to the target</li>
+<li>Measurement= very accurate</li>
+<li>to measure changes in land surface topography??
 <ul>
 <li>Observations= Atleast 2 of the same target</li>
 <li>Sensor data= Distance + additional geometric information</li>
 </ul></li>
-<li><p>Application:</p>
+<li>Application:
 <ul>
 <li>identify areas of deformation from events like volcanic eruptions and earthquakes</li>
 </ul></li>
-<li><p>SAR data limitations:</p>
+<li>SAR data limitations:
 <ul>
 <li>Tedious preprocessing steps <em>(applying the orbit file, radiometric calibration, de-bursting, multilooking, speckle filtering, and terrain correction)</em> <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/pre-processing_onepager_ROUGH.pdf">earthdata</a></li>
 </ul></li>
-<li><p>Sensors: <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf">earthdata</a></p></li>
-<li><p>SAR distortion: <a href="https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.">alaska.edu</a></p></li>
-<li><p>SAR Hand book: <a href="https://ntrs.nasa.gov/api/citations/20190002563/downloads/20190002563.pdf">ntrs</a></p></li>
-<li><p>Interferometry: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/">nisar</a></p></li>
-<li><p>SweepSAR: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/sweepsar/">nisar</a></p></li>
+<li>Sensors: <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf">earthdata</a></li>
+<li>SAR distortion: <a href="https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.">alaska.edu</a></li>
+<li>SAR Hand book: <a href="https://ntrs.nasa.gov/api/citations/20190002563/downloads/20190002563.pdf">ntrs</a></li>
+<li>Interferometry: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/">nisar</a></li>
+<li>SweepSAR: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/sweepsar/">nisar</a></li>
 </ul>
-</section>
+</div>
 <section id="passive-sensors" class="level3">
 <h3 class="anchored" data-anchor-id="passive-sensors">Passive Sensors</h3>
 <div class="quarto-figure quarto-figure-center">
@@ -1218,9 +1232,6 @@ div.csl-indent {
 </figure>
 </div>
 <p>other sources: <a href="https://gisgeography.com/gis-formats/">gisgeography.</a>, <a href="https://www.e-education.psu.edu/geog480/node/458">e-education.psu</a>, <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/cp6-4.htm">sar.kangwon</a></p>
-<section id="section" class="level4">
-<h4 class="anchored" data-anchor-id="section"></h4>
-</section>
 <section id="resolutions" class="level4">
 <h4 class="anchored" data-anchor-id="resolutions">4 Resolutions</h4>
 <div class="quarto-figure quarto-figure-center">
@@ -1297,7 +1308,6 @@ div.csl-indent {
 
 
 
-</section>
 </section>
 </section>
 </section>
