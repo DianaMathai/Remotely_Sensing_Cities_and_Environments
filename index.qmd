@@ -5,7 +5,7 @@ format:
   html: 
     self-contained: true #creating a single file which has everything in it
     table-of-contents: true
-    theme: Cerulean
+    theme: Litera
 knitr: 
   opts_chunk: 
     warning: false
@@ -19,7 +19,12 @@ about:
    - text: Email
      icon: envelope
      href: mailto:diana.mathai.22@ucl.ac.uk 
----`
 ---
 
-Welcome, to my Learning Diary. In addition to this being an academic requirement entailing summarising, application and reflecting on weekly learning of new concepts, processes, analysis and practice. I look forward to practice-oriented learning of the module, leading to building a robust technical proposal/implementation. I am curious to know which segment I would enjoy the most.
+Welcome, to my Learning Diary! It comprises of summary, application and reflection on weekly learning of new concepts, processes, analysis and practice. I look forward to practice-oriented learning of the module, leading to building a robust technical proposal/implementation. I am curious to know which segment I would enjoy the most.
+
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
+
+::: callout-note
+The learning diary is part of an academic requirement for module [CASA0023](https://github.com/andrewmaclachlan/CASA0023-bookdown) designed by [Dr. Andrew MacLachlan.](https://github.com/andrewmaclachlan) The content of this diary follows the outlined approach as designed in the provided [lecture material](https://andrewmaclachlan.github.io/CASA0023/00-course_info.html) and [workshop material](https://andrewmaclachlan.github.io/CASA0023/).
+:::

@@ -2,3 +2,49 @@
 title: "Remote sensing data"
 output: html_document
 ---
+
+## Landsat 9
+
+Different sensors
+
+Push Broom vs Whisk Broom
+
+Scan Lines
+
+Recall Regression
+
+### Geometric Correction
+
+Geometric solution
+
+Geometric correction solution modelling
+
+-   Jensen page 244 describes
+-   RMSE
+
+### Atmospheric Correction 
+
+-   Atmospheric scattering (as we saw in week 1)
+-   Topographic attenuation (up next)
+-   Unnecessary
+-   Necessary
+
+Atmospheric correction types
+
+-   Dark object subtraction
+-   Psuedo-invariant Features
+-   Absolute(definitive)
+-   4th
+-   Empirical Line Correction (3)
+
+### Topographic Correction
+
+Orthorectification Correction (6)
+
+Radiometric Calibration
+
+Landsat ARD- Surface reflectance
+
+Joining data sets
+
+Image Enhancement

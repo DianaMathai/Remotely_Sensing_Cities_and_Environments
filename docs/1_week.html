@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -59,7 +78,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -132,11 +150,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#test" id="toc-test" class="nav-link active" data-scroll-target="#test">Test</a>
+  <li><a href="#terms" id="toc-terms" class="nav-link active" data-scroll-target="#terms">Terms</a></li>
+  <li><a href="#remote-sensing-process" id="toc-remote-sensing-process" class="nav-link" data-scroll-target="#remote-sensing-process">Remote Sensing Process</a>
   <ul class="collapse">
-  <li><a href="#more-test" id="toc-more-test" class="nav-link" data-scroll-target="#more-test">more test</a>
+  <li><a href="#electromagnetic-waves-emw" id="toc-electromagnetic-waves-emw" class="nav-link" data-scroll-target="#electromagnetic-waves-emw">Electromagnetic Waves (EMW)</a></li>
+  <li><a href="#i-see-colour" id="toc-i-see-colour" class="nav-link" data-scroll-target="#i-see-colour">I see COLOUR? 👀</a>
   <ul class="collapse">
-  <li><a href="#some-more-test" id="toc-some-more-test" class="nav-link" data-scroll-target="#some-more-test">some more test</a></li>
+  <li><a href="#infrared" id="toc-infrared" class="nav-link" data-scroll-target="#infrared">Infrared</a></li>
+  <li><a href="#spectral-reflectance-properties" id="toc-spectral-reflectance-properties" class="nav-link" data-scroll-target="#spectral-reflectance-properties">Spectral Reflectance Properties</a></li>
+  <li><a href="#emw-interaction" id="toc-emw-interaction" class="nav-link" data-scroll-target="#emw-interaction">EMW Interaction</a></li>
+  </ul></li>
+  <li><a href="#sensors" id="toc-sensors" class="nav-link" data-scroll-target="#sensors">Sensors</a>
+  <ul class="collapse">
+  <li><a href="#active-sensors" id="toc-active-sensors" class="nav-link" data-scroll-target="#active-sensors">Active Sensors</a></li>
+  <li><a href="#sar" id="toc-sar" class="nav-link" data-scroll-target="#sar">SAR</a></li>
+  <li><a href="#passive-sensors" id="toc-passive-sensors" class="nav-link" data-scroll-target="#passive-sensors">Passive Sensors</a></li>
+  <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format">Data Format</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -161,63 +190,1142 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>id: ppc</p>
-<p>bibliography: references.bib</p>
-<section id="test" class="level1">
-<h1>Test</h1>
-<div class="callout-caution callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Danger
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Learning Diary is under-progress</p>
-</div>
-</div>
-<section id="more-test" class="level2">
-<h2 class="anchored" data-anchor-id="more-test">more test</h2>
-<p>citation test: <span class="citation" data-cites="ravanelli2018">[@ravanelli2018]</span></p>
-<section id="some-more-test" class="level3">
-<h3 class="anchored" data-anchor-id="some-more-test">some more test</h3>
-<p>equation test:</p>
-<p><span class="math display">\[
-E=mc^2\
-\]</span></p>
-<section id="and-some-more" class="level4">
-<h4 class="anchored" data-anchor-id="and-some-more">and some more</h4>
+<p>This chapter is an attempt to understand Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.</p>
+<p><em>How does this work?</em></p>
+<p><em>What are these bands?</em></p>
+<p><em>Is this word a satellite or a sensor? How many are they?</em></p>
+<section id="terms" class="level1">
+<h1>Terms</h1>
+<p>Below indicated are the images that schematically depict few terms.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/A-Train_w-Time2013_Web.jpg/465px-A-Train_w-Time2013_Web.jpg" class="img-fluid figure-img" alt="test image_url"></p>
-<p></p><figcaption class="figure-caption">test image_url</figcaption><p></p>
+<p><img src="images/reflection.png" class="img-fluid figure-img" width="424"></p>
+<p></p><figcaption class="figure-caption">Wave interactions, <em>SOURCE: <span class="citation" data-cites="obaid2020b">Obaid and Al-Rahim (<a href="#ref-obaid2020b" role="doc-biblioref">2020</a>)</span></em></figcaption><p></p>
 </figure>
 </div>
-<section id="and-some-more-1" class="level5">
-<h5 class="anchored" data-anchor-id="and-some-more-1">and some more</h5>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/about.png" class="img-fluid figure-img" alt="test image_browse" width="314"></p>
-<p></p><figcaption class="figure-caption">test image_browse</figcaption><p></p>
+<p><img src="images/wavelength.png" class="img-fluid figure-img" width="467"></p>
+<p></p><figcaption class="figure-caption">Wavelength and Energy, <em>SOURCE: <a href="https://science.nasa.gov/ems/02_anatomy">NASA Science</a></em></figcaption><p></p>
 </figure>
 </div>
-<ol type="1">
-<li><p>test <a href="https://www.thesaurus.com/browse/test" class="uri">https://www.thesaurus.com/browse/test</a></p></li>
-<li><p>test</p></li>
-<li><p>#id: ppc</p>
-<p>#bibliography: references.bib</p></li>
-</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/EM_wave.png" class="img-fluid figure-img" width="434"></p>
+<p></p><figcaption class="figure-caption">Propagation of the electric and magnetic fields associated with an electromagnetic wave. <em>SOURCE: <a href="http://www.emagtech.com/wiki/index.php/Basic_Electromagnetic_Theory">emagtech</a></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/solardirection.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Zenith, Nadir, Meridian, Astronomical Horizontal and True Horizon. <em>SOURCE: <a href="https://www.trekview.org/blog/2020/what-is-a-nadir/">trekview</a></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/solaragle.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Schematic depicting the solar zenith angle, solar altitude angle and solar azimuth angle. SOURCE: <a href="https://thesolarlabs.com/ros/solar-angles/">thesolarlabs</a> and <span class="citation" data-cites="zhang2021">Zhang et al. (<a href="#ref-zhang2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="remote-sensing-process" class="level1">
+<h1>Remote Sensing Process</h1>
+<p>“Remote sensing combines science and technology to acquire information about an object, area, or phenomenon by measuring reflected and emitted radiation using a device that’s without direct physical contact (typically from satellite or aircraft)”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/RSprocess.png" class="img-fluid figure-img" width="683"></p>
+<p></p><figcaption class="figure-caption"><em>Remote Sensing process, SOURCE:</em> <a href="https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/earthsciences/pdf/resource/tutor/fundam/pdf/fundamentals_e.pdf">Fundamentals of Remote Sensing</a></figcaption><p></p>
+</figure>
+</div>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 32%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Code</th>
+<th style="text-align: left;">Interaction</th>
+<th style="text-align: left;">Process</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: left;">Energy Source or illumination</td>
+<td style="text-align: left;"><p>Energy form:</p>
+<ul>
+<li>Electromagnetic radiation (EMR)</li>
+</ul>
+<p>Energy source which</p>
+<ul>
+<li><strong>illuminates</strong> the target of interest</li>
+<li>provides <strong>electromagnetic energy</strong> to the target of interest.</li>
+<li>sensed energy is being emitted by the target</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: left;">Radiation and the Atmosphere</td>
+<td style="text-align: left;"><p>Energy and Atmosphere</p>
+<p>Interaction: 2</p>
+<p>Energy Travelling pattern:</p>
+<ul>
+<li>Source&gt; <strong>atmosphere <em>(contact and interact)</em></strong> &gt; target</li>
+<li>Target&gt; <strong>atmosphere <em>(contact and interact)</em></strong> &gt;sensor</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: left;">Interaction with the Target</td>
+<td style="text-align: left;"><p><strong>Energy and Target</strong> Interaction dependencies:</p>
+<ul>
+<li>Target properties</li>
+<li>Radiation properties</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: left;">Recording of energy by the Sensor</td>
+<td style="text-align: left;"><p><strong>Target energy output:</strong></p>
+<ul>
+<li>scattering</li>
+<li>emission</li>
+</ul>
+<p><strong>Sensor location:</strong> Remote (not in contact with the target)</p>
+<p><strong>Sensor role:</strong></p>
+<ul>
+<li>Collection of EMR/ energy</li>
+<li>Record of EMR/ energy</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">E</td>
+<td style="text-align: left;">Transmission, Reception and processing</td>
+<td style="text-align: left;"><p><strong>Sensor role:</strong></p>
+<ul>
+<li>Transmission of energy recorded (electronic form)</li>
+</ul>
+<p><strong>Receiving and processing station role:</strong></p>
+<ul>
+<li>Receiving the transmitted energy record</li>
+<li>Data processing</li>
+<li>Output: target image (hardcopy and/or digital)</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: left;">Interpretation and Analysis</td>
+<td style="text-align: left;"><p><strong>Processed target Image:</strong></p>
+<ul>
+<li>Interpretation</li>
+<li>Analysis</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">G</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;"><p>Interpretation application</p>
+<ul>
+<li>To better understand the target</li>
+<li>Reveal some new information</li>
+<li>Assist in solving a particular problem</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<section id="electromagnetic-waves-emw" class="level2">
+<h2 class="anchored" data-anchor-id="electromagnetic-waves-emw">Electromagnetic Waves (EMW)</h2>
+<ul>
+<li>Composition of oscillating electric and magnetic fields. (Maxwell’s equation)</li>
+<li>EM radiation transmission: can transmit in vacuum
+<ul>
+<li>frequency, time period and wavelength= dependent on the producing source</li>
+<li>velocity= dependent on medium in which it is travelling</li>
+<li>high frequency of propagation= increase in accuracy</li>
+</ul></li>
+<li>light🌞 = visible part = colors (corresponding to different wavelength of light) eg: rainbow🌈</li>
+<li>Sound 🔊= invisible waves
+<ul>
+<li>travels through molecules present in air (molecules bumping into each other)</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-9E051292.png" class="img-fluid figure-img" width="761"></p>
+<p></p><figcaption class="figure-caption">Diagram of the Electromagnetic Spectrum. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing">NASA Science</a></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p><em><strong>Longer</strong> wavelength</em> = lower 🔽 energy = lower 🔽 frequency</p></li>
+<li><p><em><strong>Shorter</strong> wavelength</em> = higher 🔼 energy = higher 🔼 frequency</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-6B9CE6AC.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Visible light in Electromagnetic Spectrum. SOURCE: <a href="https://theqgeo.com/principles-of-remote-sensing/#12_Interaction_with_the_target_III">QGEO</a></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p><strong>Wonder How BIG are these waves ??</strong></p>
+<p>Image below indicates EMW Radio waves upto Gamma waves.</p>
+<ul>
+<li>Radio waves= very long (size of a building to the size of a coin)</li>
+<li>gamma-rays= very smaller (atomic nuclei)</li>
+</ul></li>
+</ul>
+<p><img src="images/spectrum_radio_waves_graphic_web_0.png" class="img-fluid"></p>
+</section>
+<section id="i-see-colour" class="level2">
+<h2 class="anchored" data-anchor-id="i-see-colour">I see COLOUR? 👀</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-5FF9BEFF.png" class="img-fluid figure-img" width="348"></p>
+<p></p><figcaption class="figure-caption">reflection of EMW. SOURCE: <a href="https://dai-global-digital.com/lush-green-remote-sensing.html">DAI</a></figcaption><p></p>
+</figure>
+</div>
+<p>REFLECTED (Vegetation) = infrared light + infrared light= <strong>GREEN COLOR</strong></p>
+<ul>
+<li>Geospatial data acquisition (Majority)= sensing (visible and infrared range)</li>
+<li>UV portion covers= shortest wavelengths (of practical use to earth observation)
+<ul>
+<li><em>Application:</em> some properties of minerals</li>
+<li>familiar application: UV rays used to detect forged bank notes</li>
+</ul></li>
+<li>Microwaves=larger wave length
+<ul>
+<li><em>Application:</em> information on surface roughness and moisture content of soils</li>
+</ul></li>
+<li>Green=0.54 μm (solar radiation maximum intensity)</li>
+<li>Red and beyond=IR (Infra-red)
+<ul>
+<li>IR familiar application: night vision security cameras</li>
+</ul></li>
+</ul>
+<section id="infrared" class="level3">
+<h3 class="anchored" data-anchor-id="infrared">Infrared</h3>
+<ul>
+<li>Near-infrared (<strong>NIR</strong>)</li>
+<li>Mid-IR (<strong>SWIR</strong>- short-wave infrared)</li>
+<li>Thermal Infrared (<strong>TIR</strong>)</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/infrared.png" class="img-fluid figure-img" width="377"></p>
+</figure>
+</div>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">NIR</th>
+<th style="text-align: left;">SWIR</th>
+<th style="text-align: left;">TIR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><p>To under stand this better lets take an example of <a href="https://biologydictionary.net/deciduous-forest/">deciduous forest</a></p>
+<p>NIR energy:</p>
+<ul>
+<li>Deciduous trees= bright (photographic film that is sensitive to infrared)</li>
+<li>Reflect more Near-infrared (NIR) energy</li>
+<li>Healthy vegetation=high reflectance (NIR range)</li>
+<li>Damaged vegetation= low reflectance (NIR range)</li>
+<li>Does not cause the sensation of ‘heat’</li>
+</ul></td>
+<td style="text-align: left;"><p>MID-IR aka SWIR</p>
+<ul>
+<li>Application: Monitor surface features at night</li>
+<li>Does not causes the sensation of ‘heat’</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>IR (wavelength longer than 3 μm)</li>
+<li>Causes the sensation of ‘heat’</li>
+<li>Thermal emission of the Earth’s surface at (300 K)
+<ul>
+<li>Peak wavelength of 10 μm</li>
+</ul></li>
+<li>Human thermal detectors
+<ul>
+<li>Wavelength range 7 to 14 μm</li>
+</ul></li>
+<li>NOAA’s thermal scanner (National Oceanic and Atmospheric Administration- scientific and regulatory agency US)
+<ul>
+<li><p>Detects thermal IR radiation in the range 3.5 to 12.5 μm</p></li>
+<li><p><em>Application:</em> environmental problems, analyzing the mineral composition of rocks, the condition of vegetation, etc.</p></li>
+</ul></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/vegspectrum_large.jpg" class="img-fluid figure-img" width="301"></p>
+<p></p><figcaption class="figure-caption">Vegetation spectral signature. Vegetation has low reflectance in the visible region and high reflectance in the near infrared. SOURCE: <a href="https://seos-project.eu/agriculture/agriculture-c01-s01.html">SEOS</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/leaf_structure_large.jpg" class="img-fluid figure-img" width="273"></p>
+<p></p><figcaption class="figure-caption">Cellular leaf structure and its interaction with electromagnetic energy. Most visible light is absorbed, while almost half of the near infrared energy is reflected. SOURCE: <a href="https://seos-project.eu/agriculture/agriculture-c01-s01.html">SEOS</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/RedSea.A2005133.1035.lst.500m.jpg" class="img-fluid figure-img" width="348"></p>
+<p></p><figcaption class="figure-caption">Dust storm across the Red Sea: this LST image shows the dust as a cool blue streak over the hot and arid landscape between Egypt and Saudi Arabia on 13 May, 2005. SOURCE: <a href="https://visibleearth.nasa.gov/images/73338/dust-storm-across-the-red-sea-land-surface-temperature/73340l">visible earth</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-8434A254.png" class="img-fluid figure-img" width="716"></p>
+<p></p><figcaption class="figure-caption">Application of different spectral ranges. SOURCE: <a href="https://seos-project.eu/remotesensing/remotesensing-c01-s01-p01.html">SEOS</a></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="spectral-reflectance-properties" class="level3">
+<h3 class="anchored" data-anchor-id="spectral-reflectance-properties">Spectral Reflectance Properties</h3>
+<p>So how do we see these characteristics of earth surface features or materials??</p>
+<p>Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures.</p>
+<ul>
+<li>Signatures can be visualised in spectral reflectance curves</li>
+<li>curves= function of wavelengths</li>
+<li>Eg: image below for water, soil and vegetation</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Reflexionskurven.jpg" class="img-fluid figure-img" width="416"></p>
+<p></p><figcaption class="figure-caption">Spectral signatures of soil, vegetation and water, and spectral bands of LANDSAT 7. SOURCE: <a href="https://seos-project.eu/remotesensing/remotesensing-c01-p06.html">SEOS</a></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="emw-interaction" class="level3">
+<h3 class="anchored" data-anchor-id="emw-interaction">EMW Interaction</h3>
+<p>In above sections we have looked into what is EMW and few applications. this segment we shall look into how it interacts when it travels.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-F7F78CD4.png" class="img-fluid figure-img" alt="Energy inter-actions in the atmosphereand at the surface" width="383"></p>
+<p></p><figcaption class="figure-caption">Energy inter-actions in the atmosphere and at the surface. SOURCE: <span class="citation" data-cites="tempfli2009">Tempfli et al. (<a href="#ref-tempfli2009" role="doc-biblioref">2009a</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/EMWinteraction.png" class="img-fluid figure-img" width="418"></p>
+</figure>
+</div>
+<section id="atmosphere" class="level4">
+<h4 class="anchored" data-anchor-id="atmosphere">Atmosphere</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/atmosphere.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+<section id="absorption-and-transmission" class="level5">
+<h5 class="anchored" data-anchor-id="absorption-and-transmission"><strong>Absorption</strong> and <strong>Transmission</strong></h5>
+<p>So let us look into the first two <strong>absorption</strong> and <strong>transmission</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/atmospherictrnasmissionpng.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A schematic representation of the atmospheric transmission (0 to 22 µm wavelength range). <em>SOURCE: <span class="citation" data-cites="tempfli2009a">Tempfli et al. (<a href="#ref-tempfli2009a" role="doc-biblioref">2009b</a>)</span></em></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p>Many wavelengths are not useful of RS of ES <em>(none of the corresponding energy can penetrate the atmosphere)</em></p></li>
+<li><p>Spectrum portion outside the main absorption range= useful range</p></li>
+<li><p>Useful Range= <strong>Atmospheric Transmission Windows</strong></p>
+<ul>
+<li><em>ONE window</em> from 0.4 to 2 μm visible, NIR, SWIR remote sensors operating in this range are often referred to as optical ones</li>
+<li><em>THREE windows</em> in the TIR range two narrow windows around 3 and 5 μm Third relatively broader approximately 8 to 14 μm</li>
+</ul></li>
+<li><p>Longer wavelength= strong absorption</p>
+<ul>
+<li>Range 22 μm to 1 mm</li>
+<li>Very low energy transmission</li>
+</ul></li>
+<li><p>Microwave range= transparent</p>
+<ul>
+<li>Range= beyond 1 mm</li>
+</ul></li>
+<li><p>Measure: solar radiation outside the atmosphere= resembles <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp1/cp1-7.htm">black-body</a> radiation at 6000K</p></li>
+<li><p>Measure: Earth surface:</p>
+<ul>
+<li>Solar radiation at earth surface&gt; spectral distribution of energy= very ragged</li>
+</ul></li>
+<li><p>Graph above:</p>
+<ul>
+<li><p>dip= atmospheric absorption by different gases</p></li>
+<li><p>energy&gt;&gt; earth surface= intensity reduction ? gas of increasing density.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="scattering" class="level5">
+<h5 class="anchored" data-anchor-id="scattering">Scattering</h5>
+<ul>
+<li>Occurrence: passing from one medium (air,water etc) to another</li>
+<li>Light&gt;&gt;medium&gt;&gt;part light absorbed by medium&gt;&gt;</li>
+<li>Intensity of scattered light= size of particles + wavelength</li>
+<li>High scattering = short wavelength+high frequency (wavier= higher changes of collision with particles)</li>
+<li>Low scattering = longer wavelength+ low frequency (less wavier/ straighter in comparision= lower changes of collision with particles)</li>
+</ul>
+<p><img src="images/scattering.png" class="img-fluid"></p>
+<p><em>Factors:</em></p>
+<ul>
+<li>Wavelength of the radiation</li>
+<li>Amount of particles and gases</li>
+<li>Distance the radiant energy travels through the atmosphere</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Rayleigh%20scattering1.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Rayleigh Scattering. <em>SOURCE: <span class="citation" data-cites="tempfli2009">Tempfli et al. (<a href="#ref-tempfli2009" role="doc-biblioref">2009a</a>)</span></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Rayleigh%20scattering.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Rayleigh scattering causes us to see a blue sky during the day and a red sky at sunset. <em>SOURCE: <span class="citation" data-cites="tempfli2009c">Tempfli et al. (<a href="#ref-tempfli2009c" role="doc-biblioref">2009c</a>)</span></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mie_scatt_cloud_schem.jpg" class="img-fluid figure-img" width="420"></p>
+<p></p><figcaption class="figure-caption">Mie Scattering. Source: <a href="https://apollo.nvu.vsc.edu/classes/met130/notes/chapter19/mie_scatt.html">apollo</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/non-selective.jpg" class="img-fluid figure-img" width="390"></p>
+<p></p><figcaption class="figure-caption">Nonselective scattering. SOURCE:</figcaption><p></p>
+</figure>
+</div>
+<table class="table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 28%">
+<col style="width: 29%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">Rayleigh Scattering</th>
+<th style="text-align: left;">Mie Scattering</th>
+<th style="text-align: left;">Nonselective scattering</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Particle size</td>
+<td style="text-align: left;"><p><strong>Very small</strong> compared to wavelength (atmospheric particle size <strong>&lt;</strong> incoming radiation wave length)</p>
+<p>0.0001 μm to 0.001 μm</p></td>
+<td style="text-align: left;"><p><strong>Same as</strong> the wavelength of The radiation. (atmospheric particle size ~ incoming radiation wave length)</p>
+<p>0.01 μm to 1.0 μm</p></td>
+<td style="text-align: left;"><p>much <strong>larger than</strong> the radiation wavelength. (atmospheric particle size &gt; incoming radiation wave length)</p>
+<p>10 μm to 100 μm</p></td>
+</tr>
+<tr class="even">
+<td>Particles</td>
+<td style="text-align: left;">Small specks of dust or nitrogen and oxygen molecules.</td>
+<td style="text-align: left;">Dust, pollen, smoke and water vapour (larger particles)</td>
+<td style="text-align: left;">water droplets and larger dust particle</td>
+</tr>
+<tr class="odd">
+<td>Scattering result</td>
+<td style="text-align: left;">Causes shorter wavelengths of energy to be scattered much more than longer wavelengths.</td>
+<td style="text-align: left;">Affect longer wavelengths</td>
+<td style="text-align: left;">independent of the wavelength within the optical range.</td>
+</tr>
+<tr class="even">
+<td>Location (dominant scattering mechanism)</td>
+<td style="text-align: left;">Upper atmosphere</td>
+<td style="text-align: left;">Lower portions of the atmosphere (dominates when cloud conditions are overcast)</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td>Effect on RS</td>
+<td style="text-align: left;"><ul>
+<li>Disturbs RS in the visible spectral range from high altitudes</li>
+<li>Distortion of the spectral characteristics of the reflected light</li>
+<li>Shorter wavelengths are overestimated</li>
+<li>Blueness of colour photos taken from high altitudes</li>
+<li>Diminishes the “crispness” of photos&gt; reduces their interpretability.</li>
+</ul>
+<p>Negative effect on digital classification using data from multispectral sensors</p></td>
+<td style="text-align: left;"><ul>
+<li>Influences the spectral range from the near-UV up to mid-IR range</li>
+<li>Greater effect on radiation of longer wavelengths than Rayleigh scattering</li>
+</ul></td>
+<td style="text-align: left;"><p>Clouds have a limiting effect on RS</p>
+<p>Eg: cloud cast</p></td>
+</tr>
+<tr class="even">
+<td>Example</td>
+<td style="text-align: left;">Blue Sky, red sunset</td>
+<td style="text-align: left;">dominates under overcast, cloudy conditions</td>
+<td style="text-align: left;">clouds as white bodies</td>
+</tr>
+<tr class="odd">
+<td>Wavelength</td>
+<td style="text-align: left;">Blue (scattered more- shorter)</td>
+<td style="text-align: left;">white light (scattered in all directions)</td>
+<td style="text-align: left;"><ul>
+<li>Cloud Consists Of Water Droplets;</li>
+<li>Since Water Droplets Scatter Light Of Every Wavelength Equally, A Cloud Appears White</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>During the day</td>
+<td style="text-align: left;"><ul>
+<li>solar radiation travels the shortest distance</li>
+<li>output: Blue/ clear sky</li>
+</ul></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td>During sunrise and sunset</td>
+<td style="text-align: left;"><ul>
+<li><p>solar radiation travels a longer distance</p></li>
+<li><p>All the radiation of shorter wavelengths is scattered</p></li>
+<li><p>only the longer wavelengths reach the Earth’s surface output: orange or red sky</p></li>
+<li><p>No particle=no scattering= black sky</p></li>
+</ul></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="earths-surface" class="level4">
+<h4 class="anchored" data-anchor-id="earths-surface">Earth’s Surface</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/EARTH%20SURFACE.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<ul>
+<li>The proportion of reflected - absorbed - transmitted energy will vary with wavelength and material type.</li>
+<li>Reflection depends: The surface roughness relative to the wavelength of the incident radiation.</li>
+<li>Angle of incidence is the surface roughness</li>
+</ul>
+<table class="table">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><p>Specular Reflection</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/specular%20reflection.png" class="img-fluid figure-img"></p>
+</figure>
+</div></th>
+<th style="text-align: left;"><p>Diffuse Reflection</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/diffuse%20reflection.png" class="img-fluid figure-img"></p>
+</figure>
+</div></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><ul>
+<li>Mirror like reflection</li>
+<li>Surface= smooth</li>
+<li>Reflection= single direction (mostly all energy)</li>
+<li>Angle of reflection = Angle of incidence</li>
+<li>Eg: water surface, glasshouse roof</li>
+<li>Output= Hot Spot (very bright spot in an image)</li>
+<li>Specular reflections= <strong>do not contain</strong> spectral information on the “colour” of the reflecting surface</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>Surface= rough</li>
+<li>Reflection= uniformly in all direction</li>
+<li>diffuse reflections = <strong>contain</strong> spectral information on the “colour” of the reflecting surface.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-39BBC573.png" class="img-fluid figure-img" width="470"></p>
+<p></p><figcaption class="figure-caption">Spectral signatures of different Earth features within the visible light spectrum. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing">earthdata</a></figcaption><p></p>
+</figure>
+</div>
+<p><strong><em>Reflectance Characteristics</em></strong></p>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 53%">
+<col style="width: 13%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;">Vegetation</th>
+<th style="text-align: left;">Bare SOIL</th>
+<th style="text-align: left;">Water</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Depending factors</td>
+<td style="text-align: left;"><ul>
+<li>Properties of the leaves,</li>
+<li>Orientation and the structure of the leaf canopy</li>
+</ul>
+<p>Dependent factors</p>
+<ul>
+<li>leaf pigmentation,</li>
+<li>leaf thickness</li>
+<li>Composition (cell structure)</li>
+<li>amount of water in the leaf tissue</li>
+</ul>
+<p>Application:</p>
+<ul>
+<li>optical remote sensing</li>
+<li>information about the type of plant</li>
+<li>plant health condition</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>Soil colour,</li>
+<li>Moisture content,</li>
+<li>The presence of carbonates,</li>
+<li>iron oxide content</li>
+</ul></td>
+<td style="text-align: left;">lower reflectance</td>
+</tr>
+<tr class="even">
+<td>Reflects</td>
+<td style="text-align: left;"><ul>
+<li>NIR range is highest</li>
+<li>SWIR range</li>
+</ul></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><ul>
+<li>visible range</li>
+<li>NIR (little)</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>Incident energy Reflection</td>
+<td style="text-align: left;">Vegetation may reflect up to 50%</td>
+<td style="text-align: left;">soils up to 30–40%</td>
+<td style="text-align: left;">water reflects at most 10%</td>
+</tr>
+<tr class="even">
+<td>Energy Absorbed</td>
+<td style="text-align: left;"><ul>
+<li>absorption bands</li>
+<li>1.45 and 1.95 μm</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>convex shape= range 0.5 to 1.3 μm</li>
+<li>dips at 1.45 μm and 1.95 μm</li>
+</ul></td>
+<td style="text-align: left;">Beyond 1.2 μm</td>
+</tr>
+<tr class="odd">
+<td>Examples</td>
+<td style="text-align: left;"><ul>
+<li>higher reflectance of SWIR</li>
+<li>dry leaves</li>
+<li>NIR may decrease</li>
+<li>Healthy vegetation= reflection of the blue and red components of incident light is comparatively low, because these portions are absorbed by the plant</li>
+</ul></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><ul>
+<li>highest reflectance</li>
+<li>Turbid (silt loaded) water</li>
+<li>Water containing plants</li>
+<li>pronounced reflectance peak for green light (chlorophyll)</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p><strong>BRDF The Bidirectional Reflectance Distribution Function:</strong> It gives the reflectance of a target as a function of illumination geometry and viewing geometry.</p>
+<p>Depends on:</p>
+<ul>
+<li><p>wavelength</p></li>
+<li><p>determined by the structural and optical properties of the surface,</p>
+<ul>
+<li>shadow-casting, multiple scattering, mutual shadowing, transmission, reflection, absorption, and emission by surface elements, facet orientation distribution, and facet density.</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/paste-C64832D0.png" class="img-fluid figure-img" width="387"></p>
+<p></p><figcaption class="figure-caption">Bidirectional Reflectance Distribution Function Cause. <em>SOURCE: <a href="https://www.umb.edu/spectralmass/terra_aqua_modis/modis">umb</a></em></figcaption><p></p>
+</figure>
+</div>
+<p>more: <a href="https://www.umb.edu/spectralmass/terra_aqua_modis/modis">umb</a></p>
+</section>
+</section>
+</section>
+<section id="sensors" class="level2">
+<h2 class="anchored" data-anchor-id="sensors">Sensors</h2>
+<p>Remote sensor</p>
+<ul>
+<li><p>device that detects EM energy</p></li>
+<li><p>quantifies + records EM energy IN analogue or digital way</p></li>
+</ul>
+<p><img src="images/sensor.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/sensors.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Active and Passive sensors. SOURCE: <span class="citation" data-cites="tempfli2009d">Tempfli et al. (<a href="#ref-tempfli2009d" role="doc-biblioref">2009d</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Common-Remote-Sensing-Platform-and-Sensor-Combinations-and-Remote-Sensing-Data-Left_W640.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Common Remote-Sensing Platform and Sensor Combinations. SOURCE: <span class="citation" data-cites="lechner2020">Lechner, Foody, and Boyd (<a href="#ref-lechner2020" role="doc-biblioref">2020</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p><em>Image:</em> Common Remote-Sensing Platform and Sensor Combinations and Remote-Sensing Data. (Left) Platforms and most commonly utilized sensors for specific platforms. (Right) True-color digital aerial photography and false color with NIR sensing (top), LiDAR point cloud of vegetation near a river (middle), and SAR data for two polarizations from Sentinel 1 (bottom).</p>
+<p><img src="images/paste-FD0989AD.png" class="img-fluid"></p>
+<table class="table">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Active</th>
+<th style="text-align: left;">Passive</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Use their own source of energy</td>
+<td style="text-align: left;">Do not have their own source of energy</td>
+</tr>
+<tr class="even">
+<td>Independent of solar radiation</td>
+<td style="text-align: left;">Sun/ solar energy , Earth heat emission or detect naturally occurring radiation</td>
+</tr>
+<tr class="odd">
+<td><p>Mostly works in microwave regions of EMR spectrum.</p>
+<ul>
+<li>Can penetrate clouds</li>
+<li>Not affected by rain and snow</li>
+</ul></td>
+<td style="text-align: left;"><p>Record electromagnetic energy</p>
+<ul>
+<li>Reflected (e.g., blue, green, red, and infrared light)</li>
+<li>Emitted (e.g., thermal infrared radiation)- earth</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>Can choose any radiation from EM spectrum</td>
+<td style="text-align: left;">Detect reflected or emitted radiation: ultraviolet to the thermal infrared</td>
+</tr>
+<tr class="odd">
+<td>an all weather, day-night system</td>
+<td style="text-align: left;">It depends upon good weather conditions</td>
+</tr>
+<tr class="even">
+<td>It uses both transmitter and receiver units to produce imagery</td>
+<td style="text-align: left;">Relatively simple both mechanically and electrically</td>
+</tr>
+<tr class="odd">
+<td>requires high energy levels</td>
+<td style="text-align: left;">does not have high power requirement</td>
+</tr>
+<tr class="even">
+<td>Relatively independent of atmospheric scatterings</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td><p>RADAR signal</p>
+<ul>
+<li>does not detect colour information</li>
+<li>does not detect temperature information</li>
+<li>penetrates vegetation and soil</li>
+<li>It can detect roughness, slope and electrical conductivity of the objects</li>
+<li>Information about: surface layer, soil moisture content</li>
+<li>Application: oceanography, hydrology, geology, glaciology, agriculture and forestry services</li>
+</ul></td>
+<td style="text-align: left;"><p>wavebands, where natural remittance or reflected levels are low high detector sensitivities and wide radiation collection apertures are necessary to obtain a reasonable signal level.</p>
+<p>most passive sensors are relatively wide band systems</p></td>
+</tr>
+<tr class="even">
+<td><ul>
+<li>Complicated analysis,</li>
+<li>cost-intensive</li>
+</ul></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td>Types: Laser altimeter, scanning electron microscopes, LiDAR, radar, GPS, x-ray, sonar, <strong>infrared and seismic</strong> <em>(exist in both active and passive forms)</em></td>
+<td style="text-align: left;">Devices Eg: Spectrometer, Radiometer, Spectroradiometer, Hyperspectral radiometer, Imaging radiometer, Sounder, Accelerometer</td>
+</tr>
+<tr class="even">
+<td>Mounted to a satellite, an airplane, a boat, building top or a submarine UAV drone</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td><em>Application:</em> cartography to resource exploration to atmospheric and chemical measurements Application: agriculturalists and foresters, marine sciences and rescue missions, weather forecast etc.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td><p><em>Radar:</em></p>
+<ul>
+<li>radio signals</li>
+<li>feature: antenna emitting impulses</li>
+<li>active remote sensing&gt; energy flow&gt; obstacle&gt;scatters back&gt; sensor (to some degree)</li>
+<li>target distance= back scatter amount+ traveling time</li>
+<li>A radar Technique: Synthetic aperture radar (SAR)</li>
+</ul>
+<p><em>Lidar:</em></p>
+<ul>
+<li>light</li>
+<li>active remote sensing&gt;transmitting light impulse&gt;</li>
+<li>target distance= multiplying the time by the speed of light</li>
+</ul>
+<p><em>Laser Altimeter:</em></p>
+<ul>
+<li>Measures elevation</li>
+<li>Uses Lidar</li>
+</ul></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><em>SOURCE: <a href="https://www.brainkart.com/article/Passive-and-Active-Sensors_4474/">brainkart</a>, <a href="https://ltb.itc.utwente.nl/671/concept/124289">ltb</a>, <a href="https://eos.com/blog/types-of-remote-sensing/">eos</a></em></p>
+<p>more on senors: <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf">earthdata</a></p>
+<section id="active-sensors" class="level3">
+<h3 class="anchored" data-anchor-id="active-sensors">Active Sensors</h3>
+<p><img src="images/radarflow.png" class="img-fluid"></p>
+<p>Spatial resolution of radar data~ ratio of the sensor wavelength to the length of the sensor’s antenna</p>
+<ul>
+<li>Meaning: for a given wavelength</li>
+<li>Longer antenna = higher spatial resolution</li>
+</ul>
+</section>
+<section id="sar" class="level3">
+<h3 class="anchored" data-anchor-id="sar">SAR</h3>
+<ul>
+<li>Synthetic aperture radar (SAR)</li>
+<li>sensor produces its own energy</li>
+<li>active data collection</li>
+<li>can see through night, any weather condition</li>
+<li>wavelength: micorwaves</li>
+<li>A series of shorter antenna is combined to simulate a larger antenna
+<ul>
+<li>Result: higher resolution</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SARticle_first-fig_redone-06.jpg" class="img-fluid figure-img" width="365"></p>
+<p></p><figcaption class="figure-caption">Geometry of observations used to form the synthetic aperture for target P at along-track position x = 0. Credit: NASA SAR Handbook</figcaption><p></p>
+</figure>
+</div>
+<p><em>SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">earthdata</a></em></p>
+<ul>
+<li><p>Radar sensors utilize longer wavelengths at the centimetre to meter scale</p>
+<ul>
+<li>Helps: ability to see through clouds</li>
+</ul></li>
+<li><p>produces: fine-resolution images from a resolution-limited radar system</p>
+<ul>
+<li>radar movement: straight line</li>
+<li>carrier: airplane or NISAR</li>
+<li>NISAR
+<ul>
+<li><p>provide multiple polarization modes across its two radar bands</p></li>
+<li><p>24 cm wavelength L-SAR</p></li>
+<li><p>10 cm wavelength S-SAR.</p></li>
+</ul></li>
+</ul></li>
+<li><p>How?</p>
+<ul>
+<li>transmits microwave signals&gt;earth surface&gt;receives back the signals (backscattered)&gt; sensor makes an image from returned echoes- bat flying in cave</li>
+</ul></li>
+<li><p>Result imaginary built?</p>
+<ul>
+<li>Wavelength strength and time delay of the returned signal</li>
+<li>depends primarily on the
+<ul>
+<li><p>roughness and electrical conducting properties of the observed surface</p></li>
+<li><p>its distance from the orbiting radar&nbsp;</p></li>
+</ul></li>
+</ul></li>
+<li><p>SAR has different wavelengths = bands</p>
+<ul>
+<li><strong>Bands:</strong> X,C,L,P</li>
+<li>Important feature to consider</li>
+<li>Wavelength determines
+<ul>
+<li>How far a signal can penetrate into the medium</li>
+<li>How the signal interacts with the surface</li>
+<li>To understand look at X an L bands below</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SARticle_microwave_fig-05.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The electromagnetic spectrum with microwave bands inset. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">earthdata</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/bandandfreq.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">SAR: band, frequency,wavelength and typical application. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">earthdata</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SARtree_figure2.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Sensitivity of SAR measurements to forest structure and penetration into the canopy at different wavelengths used for airborne or spaceborne remote sensing observations of the land surface. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">earthdata</a></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p>polarization: orientation of the plane in which the transmitted electromagnetic wave oscillates</p>
+<ul>
+<li>SAR=typically transmit linearly polarized</li>
+<li>signal polarization can be precisely controlled on both transmit and receive</li>
+<li>horizontal polarization = H</li>
+<li>vertical polarization = V</li>
+<li>Signals</li>
+<li>polarizations carries information about the structure of the imaged surface</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/polarization.png" class="img-fluid figure-img" width="379"></p>
+<p></p><figcaption class="figure-caption">SAR Polarizations. <em>SOURCE: <a href="https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.">ASF</a></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SAR%20SIGNALS.png" class="img-fluid figure-img" width="371"></p>
+<p></p><figcaption class="figure-caption">SAR signals are transmitted and received. <em>SOURCE: <a href="https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.">ASF</a></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SARpolarization.png" class="img-fluid figure-img" width="404"></p>
+<p></p><figcaption class="figure-caption">SAR-Polarization. <em>SOURCE: <a href="https://sorabatake.jp/en/15097/">sorabatake</a></em></figcaption><p></p>
+</figure>
+</div>
+<table class="table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 45%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scattering</th>
+<th style="text-align: left;">Surface</th>
+<th style="text-align: left;">Emitted+ Recieved</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rough Surface scattering</td>
+<td style="text-align: left;">bare soil or water</td>
+<td style="text-align: left;">VV Scattering</td>
+</tr>
+<tr class="even">
+<td>Volume Scattering</td>
+<td style="text-align: left;">leaves and branches in a forest canopy</td>
+<td style="text-align: left;">VH or HV (cross-polarization)</td>
+</tr>
+<tr class="odd">
+<td>Double bounce Scattering</td>
+<td style="text-align: left;">buildings, tree trunks, or inundated vegetation</td>
+<td style="text-align: left;">HH polarized</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/SARPolarization.jpg" class="img-fluid figure-img" alt="Scattering Strength"></p>
+<p></p><figcaption class="figure-caption">Strong scattering in HH indicates a predominance of double-bounce scattering (e.g., stemmy vegetation, manmade structures), while strong VV relates to rough surface scattering (e.g., bare ground, water), and spatial variations in dual polarization indicate the distribution of volume scatterers (e.g., vegetation and high-penetration soil types such as sand or other dry porous soils). Credit: NASA SAR Handbook. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">earthdata</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/2839ab849d9b2c81bd86f4778e9767e3-1.jpg" class="img-fluid figure-img" width="461"></p>
+<p></p><figcaption class="figure-caption">Polarimetry Decomposition. <em>SOURCE: <a href="https://sorabatake.jp/en/15097/">sorabatake</a></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/polarization_imagery.jpeg" class="img-fluid figure-img" width="491"></p>
+<p></p><figcaption class="figure-caption">An example of polarimetry imagery from the airborne UAVSAR instrument obtained over Rosamond, California. Horizontal and vertical polarized signals were transmitted and the resulting backscatter signals received, resulting in three channels of imagery. When these separate images are colorized and overlaid, details and differences in surface features can been readily discerned. <em>SOURCE: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/polarimetry/">nisar</a></em></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/9d831d187199270f191b3999ca596311.jpg" class="img-fluid figure-img" width="511"></p>
+<p></p><figcaption class="figure-caption">SAR Scatter Process. <em>SOURCE: <a href="https://sorabatake.jp/en/15097/">sorabatake</a></em></figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p>Interferometry (InSAR) – analysis method</p></li>
+<li><p>Uses: uses the phase information recorded</p></li>
+<li><p>Measures: distance from the sensor to the target</p></li>
+<li><p>Measurement= very accurate</p></li>
+<li><p>to measure changes in land surface topography??</p>
+<ul>
+<li>Observations= Atleast 2 of the same target</li>
+<li>Sensor data= Distance + additional geometric information</li>
+</ul></li>
+<li><p>Application:</p>
+<ul>
+<li>identify areas of deformation from events like volcanic eruptions and earthquakes</li>
+</ul></li>
+<li><p>SAR data limitations:</p>
+<ul>
+<li>Tedious preprocessing steps <em>(applying the orbit file, radiometric calibration, de-bursting, multilooking, speckle filtering, and terrain correction)</em> <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/pre-processing_onepager_ROUGH.pdf">earthdata</a></li>
+</ul></li>
+<li><p>Sensors: <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf">earthdata</a></p></li>
+<li><p>SAR distortion: <a href="https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.">alaska.edu</a></p></li>
+<li><p>SAR Hand book: <a href="https://ntrs.nasa.gov/api/citations/20190002563/downloads/20190002563.pdf">ntrs</a></p></li>
+<li><p>Interferometry: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/">nisar</a></p></li>
+<li><p>SweepSAR: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/sweepsar/">nisar</a></p></li>
+</ul>
+</section>
+<section id="passive-sensors" class="level3">
+<h3 class="anchored" data-anchor-id="passive-sensors">Passive Sensors</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Passive.png" class="img-fluid figure-img" alt="Passive sensors" width="697"></p>
+</figure>
+</div>
+</section>
+<section id="data-format" class="level3">
+<h3 class="anchored" data-anchor-id="data-format">Data Format</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/dataformat.png" class="img-fluid figure-img" width="531"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image%20data%20format.png" class="img-fluid figure-img" alt="data format" width="399"></p>
+<p></p><figcaption class="figure-caption">Image data format. SOURCE: <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/6-4-1.gif">kangwon</a></figcaption><p></p>
+</figure>
+</div>
+<p>other sources: <a href="https://gisgeography.com/gis-formats/">gisgeography.</a>, <a href="https://www.e-education.psu.edu/geog480/node/458">e-education.psu</a>, <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/cp6-4.htm">sar.kangwon</a></p>
+<section id="section" class="level4">
+<h4 class="anchored" data-anchor-id="section"></h4>
+</section>
+<section id="resolutions" class="level4">
+<h4 class="anchored" data-anchor-id="resolutions">4 Resolutions</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/resolution.png" class="img-fluid figure-img" width="594"></p>
+<p></p><figcaption class="figure-caption">Resolution <em>SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=There%20are%20four%20types%20of,spatial%2C%20spectral%2C%20and%20temporal.">earthdata</a></em></figcaption><p></p>
+</figure>
+</div>
+<section id="spatial-resolution" class="level5">
+<h5 class="anchored" data-anchor-id="spatial-resolution">Spatial Resolution</h5>
+<table class="table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 34%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>High Resolution Use</th>
+<th style="text-align: left;">Medium Resolution Use</th>
+<th style="text-align: left;">Low Resolution Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Extreme precision</td>
+<td style="text-align: left;">Not extreme precision</td>
+<td style="text-align: left;">Lack of precision</td>
+</tr>
+<tr class="even">
+<td><ul>
+<li>1-5 meters per pixel</li>
+<li>less than 1 meter per pixel</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>5-30 meters per pixel</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>30-250 meters per pixel</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><ul>
+<li>detection of crop diseases</li>
+<li>detection of pests in precision agriculture;</li>
+<li>identification of erosive soil processes;</li>
+<li>detection of field borders and field mapping;</li>
+<li>livestock observation and management;</li>
+<li>deforestation detection and forestry management;</li>
+<li>detection and mitigation of local anomalies;</li>
+<li>3D city modeling</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>crop health and growth monitoring;</li>
+<li>moisture and nutrient content monitoring;</li>
+<li>vegetation density monitoring;</li>
+<li>pest and disease detection;</li>
+<li>estimation of biodiversity loss in the forest lands;</li>
+<li>identification of natural anomalies on a large scale;</li>
+<li>monitoring water bodies;</li>
+<li>urban expansion analysis.</li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li>crop growth modeling;</li>
+<li>predicting yields;</li>
+<li>trend mapping;</li>
+<li>large-scale anomaly detection;</li>
+<li>monitoring infrastructure changes on a large scale</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a href="https://eos.com/blog/spatial-resolution/">eos</a></p>
 
 
+
 </section>
 </section>
 </section>
 </section>
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-lechner2020" class="csl-entry" role="doc-biblioentry">
+Lechner, Alex, Giles Foody, and Doreen Boyd. 2020. <span>“Applications in Remote Sensing to Forest Ecology and Management.”</span> <em>One Earth</em> 2 (May): 405–12. <a href="https://doi.org/10.1016/j.oneear.2020.05.001">https://doi.org/10.1016/j.oneear.2020.05.001</a>.
+</div>
+<div id="ref-obaid2020b" class="csl-entry" role="doc-biblioentry">
+Obaid, Fadhil, and Ali Al-Rahim. 2020. <span>“Imaging of 2D Seismic Data Using Time Migration of Ajeel Oilfield, Central of Iraq.”</span> PhD thesis. <a href="https://doi.org/10.13140/RG.2.2.21505.28003">https://doi.org/10.13140/RG.2.2.21505.28003</a>.
+</div>
+<div id="ref-tempfli2009" class="csl-entry" role="doc-biblioentry">
+Tempfli, Klaus, G. C. Huurneman, Wim Bakker, L. L. F. Janssen, W. F. Feringa, Ambro Gieske, K. A. Grabmaier, et al. 2009a. <span>“Principles of Remote Sensing : An Introductory Textbook.”</span> In, 56–85.
+</div>
+<div id="ref-tempfli2009a" class="csl-entry" role="doc-biblioentry">
+———, et al. 2009b. <span>“Principles of Remote Sensing : An Introductory Textbook.”</span> In, 56–85.
+</div>
+<div id="ref-tempfli2009c" class="csl-entry" role="doc-biblioentry">
+———, et al. 2009c. <span>“Principles of Remote Sensing : An Introductory Textbook.”</span> In, 56–85.
+</div>
+<div id="ref-tempfli2009d" class="csl-entry" role="doc-biblioentry">
+———, et al. 2009d. <span>“Principles of Remote Sensing : An Introductory Textbook.”</span> In, 56–85.
+</div>
+<div id="ref-zhang2021" class="csl-entry" role="doc-biblioentry">
+Zhang, Yichao, Lakitha Wijeratne, Shawhin Talebi, and David Lary. 2021. <span>“Machine Learning for Light Sensor Calibration.”</span> <em>Sensors</em> 21 (September): 6259. <a href="https://doi.org/10.3390/s21186259">https://doi.org/10.3390/s21186259</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,0 +1,52 @@
+---
+title: "An Introduction to Remote Sensing"
+output: html_document
+---
+
+id: ppc
+
+bibliography: references.bib
+
+This chapter is an attempt to understand the basics of Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.
+
+How does this work?
+
+what are these bands?
+
+Is this word a satellite or a sensor? How many are they?
+
+# Few basics
+
+[![Types of waves transmission](images/reflection.png){alt="test image_browse" fig-align="center"}](https://www.researchgate.net/publication/343167964_Imaging_of_2D_Seismic_Data_Using_Time_Migration_of_Ajeel_Oilfield_Central_of_Iraq/figures?lo=1)
+
+![Wavelength and Energy](images/wavelength.png)
+
+citation test: [@ravanelli2018]
+
+### some more test
+
+equation test:
+
+$$
+E=mc^2\
+$$
+
+#### and some more
+
+![test image_url](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/A-Train_w-Time2013_Web.jpg/465px-A-Train_w-Time2013_Web.jpg){alt="test image_url"}
+
+##### and some more
+
+![test image_browse](images/about.png){alt="test image_browse" width="314"}
+
+1.  test <https://www.thesaurus.com/browse/test>
+
+2.  test
+
+#Summary
+
+The subject is too intense and vast, with many terms and applications. Numerous resources are available to understand each concept and the terms. It is better to focus on a combination of three books/ websites to build a basic understanding (I realised it too late).
+
+3.  #id: ppc
+
+    #bibliography: references.bib

@@ -7,13 +7,14 @@ website:
   navbar: 
     collapse: true
     search: true
-    background: primary
-    
+    background: white
     
   sidebar:
     title: "Learning Diary"
     style: floating
-    background: light
+    background: white
+    margin-right: 5px
+    margin-left: 0px
     
     contents:
       
@@ -34,15 +35,20 @@ website:
       
 format:
   html:
-    theme: Cerulean
-    mainfont: Verdana
+    theme: Litera
+    mainfont: serif #better to use a family type https://developer.mozilla.org/en-US/docs/Web/CSS/font-family 
     fontsize: 0.8em
-    fontcolor: "#968CA1"
-    linkcolor: "#CC9EFD"
-    monofont: courier new
+    fontcolor: "#636363"  #https://htmlcolorcodes.com/ #https://colorbrewer2.org/#type=sequential&scheme=Greys&n=3 
+    linkcolor: "#C1C1C1"
+    monofont: serif
     css: styles.css
     toc: true
-
+    grid: 
+      body-width: 20000px
+      sidebar-width: 200px
+      margin-width: 200px
+    #code-fold: true
+    #code-tools: true
 editor: visual
 
 

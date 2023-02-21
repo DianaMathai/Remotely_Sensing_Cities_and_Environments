@@ -1,4 +1,245 @@
 ---
 title: "Policy applications"
 output: html_document
+bibliography: references.bib
 ---
+
+⭐ *Search for one metropolitan policy challenge (any city in the World) that could be solved by incorporating remotely sensed data.*
+
+## Overview
+
++---------------------------+:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Geographical Location     | *Country:* India; *State:* Telangana; *Capital:* Hyderabad                                                                                                                    |
++---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                           | ![](images/paste-2D7459FC.png){width="253"}                                                                                                                                   |
+|                           |                                                                                                                                                                               |
+|                           | *SOURCE: [britannica](https://www.britannica.com/place/Telengana)*                                                                                                            |
++---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Issue**                 | Reduce the *urban heat island effect*                                                                                                                                         |
++---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Policy**                | [Telangana Cool Roof Policy](https://telangana.gov.in/PDFDocuments/Telangana-State-Heatwave-Action-Plan-2021.pdf)(Draft) part of Telangana State Heatwave Action Plan -- 2021 |
++---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Implementation period** | 10 years                                                                                                                                                                      |
++---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Target year**           | 2031                                                                                                                                                                          |
++---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RS data**               | Impact evaluation of heatwave response activities                                                                                                                             |
++---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+## Before we begin.....
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Roof Cooling Material proposed**                                                                                                                                       |
++:=========================================================================================================================================================================+
+| ![](images/paste-83B0A32D.png){width="339"}                                                                                                                              |
+|                                                                                                                                                                          |
+| ![](images/paste-51E96DF5.png){width="336"}                                                                                                                              |
+|                                                                                                                                                                          |
+| *SOURCE:* [Telangana Cool Roof Policy](https://telangana.gov.in/PDFDocuments/Telangana-State-Heatwave-Action-Plan-2021.pdf)                                              |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ![](images/paste-CC2D552C.png){width="359"}                                                                                                                              |
+|                                                                                                                                                                          |
+| *SOURCE: [lowcarbonlivingcrc](http://www.lowcarbonlivingcrc.com.au/sites/all/files/publications_file_attachments/rp2024_guide_to_urban_cooling_strategies_2017_web.pdf)* |
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+*why implement it??*
+
+-   A low cost solution in low rise low income houses @kolokotroni2018
+-   Disadvantages & Advantages: @ashtari2021, @macintyre2019, [unequalscenes](https://unequalscenes.com/), [preventionweb](https://www.preventionweb.net/news/india-keeping-it-cool-models-city-cool-roof-programs)
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ***Heat Wave***                                                                                                                                                                                                                                                                                                  |
++:=================================================================================================================================================================================================================================================================================================================+
+| Heat wave is considered if maximum temperature of a station reaches at least 40 degree celsius or more for Plains and at least 30 degree celsius or more for Hilly regions. [IMD](https://internal.imd.gov.in/section/nhac/dynamic/FAQ_heat_wave.pdf), [NDMA](https://www.ndma.gov.in/Natural-Hazards/Heat-Wave) |
+|                                                                                                                                                                                                                                                                                                                  |
+| Heat wave guidance: [IMD](https://internal.imd.gov.in/pages/heatwave_mausam.php),2022                                                                                                                                                                                                                            |
+|                                                                                                                                                                                                                                                                                                                  |
+| Heat island India: [climate.nasa](https://climate.nasa.gov/news/3176/nasas-ecostress-detects-heat-islands-in-extreme-indian-heat-wave/)                                                                                                                                                                          |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
++------------------------------------------------------------------------------------------------------------------------------+
+| ***Heat Island***                                                                                                            |
++:=============================================================================================================================+
+| ![](images/paste-F78AAD5E.png)                                                                                               |
+|                                                                                                                              |
+| Heat island: *SOURCE: [publichealthnotes](https://www.publichealthnotes.com/urban-heat-island-effects-mitigation-measures/)* |
++------------------------------------------------------------------------------------------------------------------------------+
+
+⭐ *Identify and evaluate a remotely sensed data set that could be used to assist with contributing to the policy goal*
+
+*Impact:* Health, Nature, economy, Infra, service provision Relation between Land Surface Temperature Data and Land Use Data
+
++-----------------------------------------------------------------------+
+| *Milestone*                                                           |
++:======================================================================+
+| ![](images/paste-C1977A89.png){width="327"}                           |
+|                                                                       |
+| ![](images/paste-9732D730.png){width="235"}                           |
++-----------------------------------------------------------------------+
+
+## Process
+
+1.  Maps:
+
+    -   Hyderabad City Area: ward map (Spatial Boundaries)
+    -   Building
+
+2.  Temperature data: Meteorological stations
+
+3.  Population: Census Data
+
+4.  Time period: align it with project mile-stones above
+
+5.  Remote sensing data:
+
+    -   USGS earth explorer website
+    -   Land use and land cover: Landsat+TIRS (Thermal Infrared Sensor)/OLI -- not much clarity on TIRS
+
+6.  Measure:
+
+    Land surface temperature (LST): infer
+
+    -   Physiological Equivalent Temperature (PET)
+
+    -   Limitations: does not fully capture the set of micrometeorological conditions that factor into human thermal comfort or heat stress.
+
+    -   Used: LST presents data at higher spatial resolutions, thereby enabling comparisons among different neighbourhoods
+
+    -   Day time and night time LST
+
+*Step:*
+
+1.  Pre-process (geometric, atmospheric and topographic corrections)
+
+2.  Masking and sub- setting
+
+3.  Classification: BuA (Emphasis on it because we need to access impact of cool roofing- but BuA has different types of Physical Infra- roads, buildings, rail etc), Vegetation, Openspace, Waterbodies, Agri)---Classification Accuracy??
+
+4.  NDVI (Normalized Difference Vegetation Index)
+
+    -   (-1 to +1) 0\<=barren land/ BuA, +1\<=vegetation/forest cover
+
+5.  NDBI (Normalized Difference Built-up Index)
+
+    -   Landsat SWIR (Short wave infrared) characteristically higher reflectance compared to the near-infrared region
+    -   (-1 to 1)- built up area detection range
+
+6.  LST calculation- (refer this paper:(Halder, Bandyopadhyay and Banik, 2021)
+
+7.  The Urban Thermal Field Variance Index (UTFVI)
+
+    -   Urban heat island (UHI) along with Urban Thermal Field Variance Index (UTFVI) phenomena)
+
+8.  Land use and Land cover
+
+    -   Urbanization effects and vegetation (may be a decade? To build existing scenario/ base line, how build-up area increased etc, to understand the cause better)
+
+9.  Correlation analysis with
+
+    -   LST & NDVI
+    -   LST & NDBI
+
+*may be Inclusion of Social Aspect?*
+
+1.  Emergency department visit: patient, inpatient/ outpatient in hospitals
+
+2.  Diagnoses -heat related
+
+3.  LST and heat-related ED visits?
+
+    -   Geographically: Ward,
+    -   Tests: t-tests and boxplot
+
+4.  *To determine whether **these relationships hold after adjusting for social vulnerability controls** and spatial dependency?*
+
+    -   Ordinary least squares (OLS) models
+    -   spatial models on LST
+    -   heat-related ED visits
+    -   outcome variable: Distribution
+    -   outcome variable: transformation (Sq root transformation)
+    -   examined spatial autocorrelation in the residuals.
+
+5.  Result:
+
+    -   Moran's I was non-significant\> outcome spatial autocorrelation was absent\> OLS was done
+
+    -   Moran's I was significant\> spatial autoregressive model (SAR) as OLS would yield biased
+
+        -   SAR, spatial dependence is addressed either as a spatially lagged dependent variable (spatial lag model) or in the error structure (spatial error model)
+
+6.  to determine the appropriate model.
+
+    -   Lagrange Multiplier (LM) test
+
+7.  Checking for heteroscedasticity
+
+8.  Breusch-Pagan tests\> upon revealing significant heteroscedasticity, corrections were applied
+
+Refer: @litardo2020a
+
+⭐ *Demonstrate how this links to global agendas / goals*
+
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| State Level | Telangana State Heatwave Action Plan -- 2021                                                                                                                                  | *Issues Identified:* Severe heat wave affected the State of Telangana in May 2015      | 1.  Telangana State Development Planning Society (TSDPS)                                                 |
+|             |                                                                                                                                                                               |                                                                                        | 2.  Revenue Disaster Management Department                                                               |
+|             |                                                                                                                                                                               |                                                                                        | 3.  UNICEF (working together since 2017)                                                                 |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+|             | District Disaster Management Plans (DDMP)                                                                                                                                     | *Issues Identified:* heatwaves, various vulnerabilities (sector wise in each district) | 1.  Revenue Disaster Management Department                                                               |
+|             |                                                                                                                                                                               |                                                                                        | 2.  UNICEF                                                                                               |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+|             | UNICEF Guidance for Risk Informed Programming                                                                                                                                 | Prepared Child Risk and Impact Analysis (CRIA)                                         | UNICEF                                                                                                   |
+|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|             |                                                                                                                                                                               | -   Identify various risks                                                             |                                                                                                          |
+|             |                                                                                                                                                                               | -   Impact of natural hazards                                                          |                                                                                                          |
+|             |                                                                                                                                                                               | -   Impact group: children and women, various social sectors                           |                                                                                                          |
+|             |                                                                                                                                                                               | -   Output: to provide critical services                                               |                                                                                                          |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| National    | [National Guidelines](https://nidm.gov.in/PDF/pubs/NDMA/27.pdf) for Preparation of action Plan- Prevention and management of heat wave- 2019                                  | Issue: Heat wave                                                                       | Central Government (National Disaster Management Authority Ministry of Home Affairs Government of India) |
+|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|             |                                                                                                                                                                               | -   Early Warning and Communication                                                    |                                                                                                          |
+|             |                                                                                                                                                                               | -   Dealing with heat related illness, mitigation and preparedness                     |                                                                                                          |
+|             |                                                                                                                                                                               | -   Roles and responsibilities and implementation plan.                                |                                                                                                          |
+|             |                                                                                                                                                                               | -   Emphasis on evidence based policy                                                  |                                                                                                          |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Global      | Beating the Heat: A Sustainable Cooling [Handbook](https://www.unep.org/news-and-stories/press-release/un-issues-new-guidance-address-warming-cities) for Cities- 2021        | UN Environment programme (UNEP)                                                        | UNEP                                                                                                     |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+|             | SDG 11 & 13 (out of 17 SDGS)                                                                                                                                                  |                                                                                        | UN                                                                                                       |
+|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|             | [SDG 11](https://datatopics.worldbank.org/sdgatlas/goal-11-sustainable-cities-and-communities/): Make Cities And Human Settlements Inclusive, Safe, Resilient And Sustainable |                                                                                        |                                                                                                          |
+|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|             | [SDG 13](https://datatopics.worldbank.org/sdgatlas/goal-13-climate-action/): Take urgent action to combat climate change and its impacts                                      |                                                                                        |                                                                                                          |
++-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+
+⭐ *Explain how it advances current local, national or global approaches*
+
+-   Emphasis on monitoring and impact evaluation- it would be **evidence based**, hence required measure can be taken.
+
+    -   RS would help facilitate it
+    -   Challenges:
+        -   the roof top would be a very small scale to execute or monitor
+        -   though this approach is cost effective, its not a sustainable long term solution. (may be try searching for alternative solutions)
+    -   Solution:
+        -   Read: [umep](https://umep-docs.readthedocs.io/projects/tutorial/en/latest/Tutorials/IntroductionToSolweig.html;)
+            plug it in as an alternate solution
+
+        -   Compare before and after
+
+        -   Choose a longer timeframe so that the impact is visible, then relate it to spatial aspects and impact -- (refer prat 3, to understand the execution better)
+
+            -   Demography and Economy
+            -   Vegetation and Economy
+            -   Health and vegetation
+
++----------------------------------------+----------------------------------------+----------------------------------------+----------------------------------------+
+| Literature review                      |                                        |                                        |                                        |
++:=======================================+========================================+========================================+========================================+
+| ![](images/Picture15.png){width="494"} | ![](images/Picture17.png){width="189"} | ![](images/Picture18.png){width="242"} | ![](images/Picture19.png){width="284"} |
+|                                        |                                        |                                        |                                        |
+| @wellmann2020                          | @litardo2020                           | @casali2022                            | @martinez2023                          |
++----------------------------------------+----------------------------------------+----------------------------------------+----------------------------------------+
+
+Other:
+
+-   @ravanelli2018a
+-   @litardo2020
+-   @achievin2022

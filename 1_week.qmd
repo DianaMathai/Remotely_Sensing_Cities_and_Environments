@@ -1,42 +1,615 @@
 ---
 title: "An Introduction to Remote Sensing"
 output: html_document
+bibliography: references.bib
 ---
 
-id: ppc
+This chapter is an attempt to understand Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.
 
-bibliography: references.bib
+*How does this work?*
 
-# Test
+*What are these bands?*
 
-::: callout-caution
-Learning Diary is under-progress
-:::
+*Is this word a satellite or a sensor? How many are they?*
 
-## more test
+# Terms
 
-citation test: [@ravanelli2018]
+Below indicated are the images that schematically depict few terms.
 
-### some more test
+![Wave interactions, *SOURCE: @obaid2020b*](images/reflection.png){fig-align="center" width="424"}
 
-equation test:
+![Wavelength and Energy, *SOURCE: [NASA Science](https://science.nasa.gov/ems/02_anatomy)*](images/wavelength.png){fig-align="center" width="467"}
 
-$$
-E=mc^2\
-$$
+![Propagation of the electric and magnetic fields associated with an electromagnetic wave. *SOURCE: [emagtech](http://www.emagtech.com/wiki/index.php/Basic_Electromagnetic_Theory)*](images/EM_wave.png){fig-align="center" width="434"}
 
-#### and some more
+![Zenith, Nadir, Meridian, Astronomical Horizontal and True Horizon. *SOURCE: [trekview](https://www.trekview.org/blog/2020/what-is-a-nadir/)*](images/solardirection.png){fig-align="center"}
 
-![test image_url](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/A-Train_w-Time2013_Web.jpg/465px-A-Train_w-Time2013_Web.jpg){alt="test image_url"}
+![Schematic depicting the solar zenith angle, solar altitude angle and solar azimuth angle. SOURCE: [thesolarlabs](https://thesolarlabs.com/ros/solar-angles/) and @zhang2021 ](images/solaragle.png){fig-align="center"}
 
-##### and some more
+# Remote Sensing Process
 
-![test image_browse](images/about.png){alt="test image_browse" width="314"}
+"Remote sensing combines science and technology to acquire information about an object, area, or phenomenon by measuring reflected and emitted radiation using a device that's without direct physical contact (typically from satellite or aircraft)"
 
-1.  test <https://www.thesaurus.com/browse/test>
+![*Remote Sensing process, SOURCE:* [Fundamentals of Remote Sensing](https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/earthsciences/pdf/resource/tutor/fundam/pdf/fundamentals_e.pdf)](images/RSprocess.png){fig-align="center" width="683"}
 
-2.  test
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| Code        | Interaction                            | Process                                                            |
++:===========:+:=======================================+:===================================================================+
+| A           | Energy Source or illumination          | Energy form:                                                       |
+|             |                                        |                                                                    |
+|             |                                        | -   Electromagnetic radiation (EMR)                                |
+|             |                                        |                                                                    |
+|             |                                        | Energy source which                                                |
+|             |                                        |                                                                    |
+|             |                                        | -   **illuminates** the target of interest                         |
+|             |                                        | -   provides **electromagnetic energy** to the target of interest. |
+|             |                                        | -   sensed energy is being emitted by the target                   |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| B           | Radiation and the Atmosphere           | Energy and Atmosphere                                              |
+|             |                                        |                                                                    |
+|             |                                        | Interaction: 2                                                     |
+|             |                                        |                                                                    |
+|             |                                        | Energy Travelling pattern:                                         |
+|             |                                        |                                                                    |
+|             |                                        | -   Source\> **atmosphere *(contact and interact)*** \> target     |
+|             |                                        | -   Target\> **atmosphere *(contact and interact)*** \>sensor      |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| C           | Interaction with the Target            | **Energy and Target** Interaction dependencies:                    |
+|             |                                        |                                                                    |
+|             |                                        | -   Target properties                                              |
+|             |                                        | -   Radiation properties                                           |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| D           | Recording of energy by the Sensor      | **Target energy output:**                                          |
+|             |                                        |                                                                    |
+|             |                                        | -   scattering                                                     |
+|             |                                        | -   emission                                                       |
+|             |                                        |                                                                    |
+|             |                                        | **Sensor location:** Remote (not in contact with the target)       |
+|             |                                        |                                                                    |
+|             |                                        | **Sensor role:**                                                   |
+|             |                                        |                                                                    |
+|             |                                        | -   Collection of EMR/ energy                                      |
+|             |                                        | -   Record of EMR/ energy                                          |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| E           | Transmission, Reception and processing | **Sensor role:**                                                   |
+|             |                                        |                                                                    |
+|             |                                        | -   Transmission of energy recorded (electronic form)              |
+|             |                                        |                                                                    |
+|             |                                        | **Receiving and processing station role:**                         |
+|             |                                        |                                                                    |
+|             |                                        | -   Receiving the transmitted energy record                        |
+|             |                                        | -   Data processing                                                |
+|             |                                        | -   Output: target image (hardcopy and/or digital)                 |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| F           | Interpretation and Analysis            | **Processed target Image:**                                        |
+|             |                                        |                                                                    |
+|             |                                        | -   Interpretation                                                 |
+|             |                                        | -   Analysis                                                       |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| G           | Application                            | Interpretation application                                         |
+|             |                                        |                                                                    |
+|             |                                        | -   To better understand the target                                |
+|             |                                        | -   Reveal some new information                                    |
+|             |                                        | -   Assist in solving a particular problem                         |
++-------------+----------------------------------------+--------------------------------------------------------------------+
 
-3.  #id: ppc
+## Electromagnetic Waves (EMW)
 
-    #bibliography: references.bib
+-   Composition of oscillating electric and magnetic fields. (Maxwell's equation)
+-   EM radiation transmission: can transmit in vacuum
+    -   frequency, time period and wavelength= dependent on the producing source
+    -   velocity= dependent on medium in which it is travelling
+    -   high frequency of propagation= increase in accuracy
+-   light🌞 = visible part = colors (corresponding to different wavelength of light) eg: rainbow🌈
+-   Sound 🔊= invisible waves
+    -   travels through molecules present in air (molecules bumping into each other)
+
+![Diagram of the Electromagnetic Spectrum. SOURCE: [NASA Science](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing)](images/paste-9E051292.png){width="761"}
+
+-   ***Longer** wavelength* = lower 🔽 energy = lower 🔽 frequency
+
+-   ***Shorter** wavelength* = higher 🔼 energy = higher 🔼 frequency
+
+![Visible light in Electromagnetic Spectrum. SOURCE: [QGEO](https://theqgeo.com/principles-of-remote-sensing/#12_Interaction_with_the_target_III)](images/paste-6B9CE6AC.png){fig-align="center"}
+
+-   **Wonder How BIG are these waves ??**
+
+    Image below indicates EMW Radio waves upto Gamma waves.
+
+    -   Radio waves= very long (size of a building to the size of a coin)
+    -   gamma-rays= very smaller (atomic nuclei)
+
+![](images/spectrum_radio_waves_graphic_web_0.png)
+
+## I see COLOUR? 👀
+
+![reflection of EMW. SOURCE: [DAI](https://dai-global-digital.com/lush-green-remote-sensing.html)](images/paste-5FF9BEFF.png){fig-align="center" width="348"}
+
+REFLECTED (Vegetation) = infrared light + infrared light= **GREEN COLOR**
+
+-   Geospatial data acquisition (Majority)= sensing (visible and infrared range)
+-   UV portion covers= shortest wavelengths (of practical use to earth observation)
+    -   *Application:* some properties of minerals
+    -   familiar application: UV rays used to detect forged bank notes
+-   Microwaves=larger wave length
+    -   *Application:* information on surface roughness and moisture content of soils
+-   Green=0.54 μm (solar radiation maximum intensity)
+-   Red and beyond=IR (Infra-red)
+    -   IR familiar application: night vision security cameras
+
+### Infrared
+
+-   Near-infrared (**NIR**)
+-   Mid-IR (**SWIR**- short-wave infrared)
+-   Thermal Infrared (**TIR**)
+
+![](images/infrared.png){fig-align="center" width="377"}
+
++------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+| NIR                                                                                                                    | SWIR                                               | TIR                                                                                                                          |
++:=======================================================================================================================+:===================================================+:=============================================================================================================================+
+| To under stand this better lets take an example of [deciduous forest](https://biologydictionary.net/deciduous-forest/) | MID-IR aka SWIR                                    | -   IR (wavelength longer than 3 μm)                                                                                         |
+|                                                                                                                        |                                                    | -   Causes the sensation of 'heat'                                                                                           |
+| NIR energy:                                                                                                            | -   Application: Monitor surface features at night | -   Thermal emission of the Earth's surface at (300 K)                                                                       |
+|                                                                                                                        | -   Does not causes the sensation of 'heat'        |     -   Peak wavelength of 10 μm                                                                                             |
+| -   Deciduous trees= bright (photographic film that is sensitive to infrared)                                          |                                                    | -   Human thermal detectors                                                                                                  |
+| -   Reflect more Near-infrared (NIR) energy                                                                            |                                                    |     -   Wavelength range 7 to 14 μm                                                                                          |
+| -   Healthy vegetation=high reflectance (NIR range)                                                                    |                                                    | -   NOAA's thermal scanner (National Oceanic and Atmospheric Administration- scientific and regulatory agency US)            |
+| -   Damaged vegetation= low reflectance (NIR range)                                                                    |                                                    |     -   Detects thermal IR radiation in the range 3.5 to 12.5 μm                                                             |
+| -   Does not cause the sensation of 'heat'                                                                             |                                                    |                                                                                                                              |
+|                                                                                                                        |                                                    |     -   *Application:* environmental problems, analyzing the mineral composition of rocks, the condition of vegetation, etc. |
++------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+
+![Vegetation spectral signature. Vegetation has low reflectance in the visible region and high reflectance in the near infrared. SOURCE: [SEOS](https://seos-project.eu/agriculture/agriculture-c01-s01.html)](images/vegspectrum_large.jpg){fig-align="center" width="301"}
+
+![Cellular leaf structure and its interaction with electromagnetic energy. Most visible light is absorbed, while almost half of the near infrared energy is reflected. SOURCE: [SEOS](https://seos-project.eu/agriculture/agriculture-c01-s01.html)](images/leaf_structure_large.jpg){fig-align="center" width="273"}
+
+![Dust storm across the Red Sea: this LST image shows the dust as a cool blue streak over the hot and arid landscape between Egypt and Saudi Arabia on 13 May, 2005. SOURCE: [visible earth](https://visibleearth.nasa.gov/images/73338/dust-storm-across-the-red-sea-land-surface-temperature/73340l)](images/RedSea.A2005133.1035.lst.500m.jpg){fig-align="center" width="348"}
+
+![Application of different spectral ranges. SOURCE: [SEOS](https://seos-project.eu/remotesensing/remotesensing-c01-s01-p01.html)](images/paste-8434A254.png){fig-align="center" width="716"}
+
+### Spectral Reflectance Properties
+
+So how do we see these characteristics of earth surface features or materials??
+
+Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures.
+
+-   Signatures can be visualised in spectral reflectance curves
+-   curves= function of wavelengths
+-   Eg: image below for water, soil and vegetation
+
+![Spectral signatures of soil, vegetation and water, and spectral bands of LANDSAT 7. SOURCE: [SEOS](https://seos-project.eu/remotesensing/remotesensing-c01-p06.html)](images/Reflexionskurven.jpg){fig-align="center" width="416"}
+
+### EMW Interaction
+
+In above sections we have looked into what is EMW and few applications. this segment we shall look into how it interacts when it travels.
+
+![Energy inter-actions in the atmosphere and at the surface. SOURCE: @tempfli2009](images/paste-F7F78CD4.png){alt="Energy inter-actions in the atmosphereand at the surface" fig-align="center" width="383"}
+
+![](images/EMWinteraction.png){fig-align="center" width="418"}
+
+#### Atmosphere
+
+![](images/atmosphere.png){fig-align="center" width="672"}
+
+##### **Absorption** and **Transmission**
+
+So let us look into the first two **absorption** and **transmission**
+
+![A schematic representation of the atmospheric transmission (0 to 22 µm wavelength range). *SOURCE: @tempfli2009a*](images/atmospherictrnasmissionpng.png)
+
+-   Many wavelengths are not useful of RS of ES *(none of the corresponding energy can penetrate the atmosphere)*
+
+-   Spectrum portion outside the main absorption range= useful range
+
+-   Useful Range= **Atmospheric Transmission Windows**
+
+    -   *ONE window* from 0.4 to 2 μm visible, NIR, SWIR remote sensors operating in this range are often referred to as optical ones
+    -   *THREE windows* in the TIR range two narrow windows around 3 and 5 μm Third relatively broader approximately 8 to 14 μm
+
+-   Longer wavelength= strong absorption
+
+    -   Range 22 μm to 1 mm
+    -   Very low energy transmission
+
+-   Microwave range= transparent
+
+    -   Range= beyond 1 mm
+
+-   Measure: solar radiation outside the atmosphere= resembles [black-body](http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp1/cp1-7.htm) radiation at 6000K
+
+-   Measure: Earth surface:
+
+    -   Solar radiation at earth surface\> spectral distribution of energy= very ragged
+
+-   Graph above:
+
+    -   dip= atmospheric absorption by different gases
+
+    -   energy\>\> earth surface= intensity reduction ? gas of increasing density.
+
+##### Scattering
+
+-   Occurrence: passing from one medium (air,water etc) to another
+-   Light\>\>medium\>\>part light absorbed by medium\>\>
+-   Intensity of scattered light= size of particles + wavelength
+-   High scattering = short wavelength+high frequency (wavier= higher changes of collision with particles)
+-   Low scattering = longer wavelength+ low frequency (less wavier/ straighter in comparision= lower changes of collision with particles)
+
+![](images/scattering.png)
+
+*Factors:*
+
+-   Wavelength of the radiation
+-   Amount of particles and gases
+-   Distance the radiant energy travels through the atmosphere
+
+![Rayleigh Scattering. *SOURCE: @tempfli2009*](images/Rayleigh%20scattering1.jpg){fig-align="center"}
+
+![Rayleigh scattering causes us to see a blue sky during the day and a red sky at sunset. *SOURCE: @tempfli2009c*](images/Rayleigh%20scattering.jpg){fig-align="center"}
+
+![Mie Scattering. Source: [apollo](https://apollo.nvu.vsc.edu/classes/met130/notes/chapter19/mie_scatt.html)](images/mie_scatt_cloud_schem.jpg){fig-align="center" width="420"}
+
+![Nonselective scattering. SOURCE:](images/non-selective.jpg){fig-align="center" width="390"}
+
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+|                                          | Rayleigh Scattering                                                                                     | Mie Scattering                                                                                             | Nonselective scattering                                                                                      |
++==========================================+:========================================================================================================+:===========================================================================================================+:=============================================================================================================+
+| Particle size                            | **Very small** compared to wavelength (atmospheric particle size **\<** incoming radiation wave length) | **Same as** the wavelength of The radiation. (atmospheric particle size \~ incoming radiation wave length) | much **larger than** the radiation wavelength. (atmospheric particle size \> incoming radiation wave length) |
+|                                          |                                                                                                         |                                                                                                            |                                                                                                              |
+|                                          | 0.0001 μm to 0.001 μm                                                                                   | 0.01 μm to 1.0 μm                                                                                          | 10 μm to 100 μm                                                                                              |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Particles                                | Small specks of dust or nitrogen and oxygen molecules.                                                  | Dust, pollen, smoke and water vapour (larger particles)                                                    | water droplets and larger dust particle                                                                      |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Scattering result                        | Causes shorter wavelengths of energy to be scattered much more than longer wavelengths.                 | Affect longer wavelengths                                                                                  | independent of the wavelength within the optical range.                                                      |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Location (dominant scattering mechanism) | Upper atmosphere                                                                                        | Lower portions of the atmosphere (dominates when cloud conditions are overcast)                            |                                                                                                              |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Effect on RS                             | -   Disturbs RS in the visible spectral range from high altitudes                                       | -   Influences the spectral range from the near-UV up to mid-IR range                                      | Clouds have a limiting effect on RS                                                                          |
+|                                          | -   Distortion of the spectral characteristics of the reflected light                                   | -   Greater effect on radiation of longer wavelengths than Rayleigh scattering                             |                                                                                                              |
+|                                          | -   Shorter wavelengths are overestimated                                                               |                                                                                                            | Eg: cloud cast                                                                                               |
+|                                          | -   Blueness of colour photos taken from high altitudes                                                 |                                                                                                            |                                                                                                              |
+|                                          | -   Diminishes the "crispness" of photos\> reduces their interpretability.                              |                                                                                                            |                                                                                                              |
+|                                          |                                                                                                         |                                                                                                            |                                                                                                              |
+|                                          | Negative effect on digital classification using data from multispectral sensors                         |                                                                                                            |                                                                                                              |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Example                                  | Blue Sky, red sunset                                                                                    | dominates under overcast, cloudy conditions                                                                | clouds as white bodies                                                                                       |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| Wavelength                               | Blue (scattered more- shorter)                                                                          | white light (scattered in all directions)                                                                  | -   Cloud Consists Of Water Droplets;                                                                        |
+|                                          |                                                                                                         |                                                                                                            | -   Since Water Droplets Scatter Light Of Every Wavelength Equally, A Cloud Appears White                    |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| During the day                           | -   solar radiation travels the shortest distance                                                       |                                                                                                            |                                                                                                              |
+|                                          | -   output: Blue/ clear sky                                                                             |                                                                                                            |                                                                                                              |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+| During sunrise and sunset                | -   solar radiation travels a longer distance                                                           |                                                                                                            |                                                                                                              |
+|                                          |                                                                                                         |                                                                                                            |                                                                                                              |
+|                                          | -   All the radiation of shorter wavelengths is scattered                                               |                                                                                                            |                                                                                                              |
+|                                          |                                                                                                         |                                                                                                            |                                                                                                              |
+|                                          | -   only the longer wavelengths reach the Earth's surface output: orange or red sky                     |                                                                                                            |                                                                                                              |
+|                                          |                                                                                                         |                                                                                                            |                                                                                                              |
+|                                          | -   No particle=no scattering= black sky                                                                |                                                                                                            |                                                                                                              |
++------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+
+
+#### Earth's Surface
+
+![](images/EARTH%20SURFACE.png){fig-align="center"}
+
+-   The proportion of reflected - absorbed - transmitted energy will vary with wavelength and material type.
+-   Reflection depends: The surface roughness relative to the wavelength of the incident radiation.
+-   Angle of incidence is the surface roughness
+
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+| Specular Reflection                                                                                         | Diffuse Reflection                                                                                    |
+|                                                                                                             |                                                                                                       |
+| ![](images/specular%20reflection.png){fig-align="center"}                                                   | ![](images/diffuse%20reflection.png){fig-align="center"}                                              |
++:============================================================================================================+:======================================================================================================+
+| -   Mirror like reflection                                                                                  | -   Surface= rough                                                                                    |
+| -   Surface= smooth                                                                                         | -   Reflection= uniformly in all direction                                                            |
+| -   Reflection= single direction (mostly all energy)                                                        | -   diffuse reflections = **contain** spectral information on the "colour" of the reflecting surface. |
+| -   Angle of reflection = Angle of incidence                                                                |                                                                                                       |
+| -   Eg: water surface, glasshouse roof                                                                      |                                                                                                       |
+| -   Output= Hot Spot (very bright spot in an image)                                                         |                                                                                                       |
+| -   Specular reflections= **do not contain** spectral information on the "colour" of the reflecting surface |                                                                                                       |
++-------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+
+![Spectral signatures of different Earth features within the visible light spectrum. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing)](images/paste-39BBC573.png){fig-align="center" width="470"}
+
+***Reflectance Characteristics***
+
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+---------------------------------------------------------------+
+|                            | Vegetation                                                                                                                                                 | Bare SOIL                             | Water                                                         |
++============================+:===========================================================================================================================================================+:======================================+:==============================================================+
+| Depending factors          | -   Properties of the leaves,                                                                                                                              | -   Soil colour,                      | lower reflectance                                             |
+|                            | -   Orientation and the structure of the leaf canopy                                                                                                       | -   Moisture content,                 |                                                               |
+|                            |                                                                                                                                                            | -   The presence of carbonates,       |                                                               |
+|                            | Dependent factors                                                                                                                                          | -   iron oxide content                |                                                               |
+|                            |                                                                                                                                                            |                                       |                                                               |
+|                            | -   leaf pigmentation,                                                                                                                                     |                                       |                                                               |
+|                            | -   leaf thickness                                                                                                                                         |                                       |                                                               |
+|                            | -   Composition (cell structure)                                                                                                                           |                                       |                                                               |
+|                            | -   amount of water in the leaf tissue                                                                                                                     |                                       |                                                               |
+|                            |                                                                                                                                                            |                                       |                                                               |
+|                            | Application:                                                                                                                                               |                                       |                                                               |
+|                            |                                                                                                                                                            |                                       |                                                               |
+|                            | -   optical remote sensing                                                                                                                                 |                                       |                                                               |
+|                            | -   information about the type of plant                                                                                                                    |                                       |                                                               |
+|                            | -   plant health condition                                                                                                                                 |                                       |                                                               |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+---------------------------------------------------------------+
+| Reflects                   | -   NIR range is highest                                                                                                                                   |                                       | -   visible range                                             |
+|                            | -   SWIR range                                                                                                                                             |                                       | -   NIR (little)                                              |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+---------------------------------------------------------------+
+| Incident energy Reflection | Vegetation may reflect up to 50%                                                                                                                           | soils up to 30--40%                   | water reflects at most 10%                                    |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+---------------------------------------------------------------+
+| Energy Absorbed            | -   absorption bands                                                                                                                                       | -   convex shape= range 0.5 to 1.3 μm | Beyond 1.2 μm                                                 |
+|                            | -   1.45 and 1.95 μm                                                                                                                                       | -   dips at 1.45 μm and 1.95 μm       |                                                               |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+---------------------------------------------------------------+
+| Examples                   | -   higher reflectance of SWIR                                                                                                                             |                                       | -   highest reflectance                                       |
+|                            | -   dry leaves                                                                                                                                             |                                       | -   Turbid (silt loaded) water                                |
+|                            | -   NIR may decrease                                                                                                                                       |                                       | -   Water containing plants                                   |
+|                            | -   Healthy vegetation= reflection of the blue and red components of incident light is comparatively low, because these portions are absorbed by the plant |                                       | -   pronounced reflectance peak for green light (chlorophyll) |
++----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------+---------------------------------------------------------------+
+
+**BRDF The Bidirectional Reflectance Distribution Function:** It gives the reflectance of a target as a function of illumination geometry and viewing geometry.
+
+Depends on:
+
+-   wavelength
+
+-   determined by the structural and optical properties of the surface,
+
+    -   shadow-casting, multiple scattering, mutual shadowing, transmission, reflection, absorption, and emission by surface elements, facet orientation distribution, and facet density.
+
+![Bidirectional Reflectance Distribution Function Cause. *SOURCE: [umb](https://www.umb.edu/spectralmass/terra_aqua_modis/modis)*](images/paste-C64832D0.png){fig-align="center" width="387"}
+
+more: [umb](https://www.umb.edu/spectralmass/terra_aqua_modis/modis)
+
+## Sensors
+
+Remote sensor
+
+-   device that detects EM energy
+
+-   quantifies + records EM energy IN analogue or digital way
+
+![](images/sensor.png)
+
+![Active and Passive sensors. SOURCE: @tempfli2009d](images/sensors.jpg)
+
+![Common Remote-Sensing Platform and Sensor Combinations. SOURCE: @lechner2020](images/Common-Remote-Sensing-Platform-and-Sensor-Combinations-and-Remote-Sensing-Data-Left_W640.jpg)
+
+*Image:* Common Remote-Sensing Platform and Sensor Combinations and Remote-Sensing Data. (Left) Platforms and most commonly utilized sensors for specific platforms. (Right) True-color digital aerial photography and false color with NIR sensing (top), LiDAR point cloud of vegetation near a river (middle), and SAR data for two polarizations from Sentinel 1 (bottom).
+
+![](images/paste-FD0989AD.png)
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Active                                                                                                                                                                                              | Passive                                                                                                                                                                                |
++=====================================================================================================================================================================================================+:=======================================================================================================================================================================================+
+| Use their own source of energy                                                                                                                                                                      | Do not have their own source of energy                                                                                                                                                 |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Independent of solar radiation                                                                                                                                                                      | Sun/ solar energy , Earth heat emission or detect naturally occurring radiation                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Mostly works in microwave regions of EMR spectrum.                                                                                                                                                  | Record electromagnetic energy                                                                                                                                                          |
+|                                                                                                                                                                                                     |                                                                                                                                                                                        |
+| -   Can penetrate clouds                                                                                                                                                                            | -   Reflected (e.g., blue, green, red, and infrared light)                                                                                                                             |
+| -   Not affected by rain and snow                                                                                                                                                                   | -   Emitted (e.g., thermal infrared radiation)- earth                                                                                                                                  |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Can choose any radiation from EM spectrum                                                                                                                                                           | Detect reflected or emitted radiation: ultraviolet to the thermal infrared                                                                                                             |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| an all weather, day-night system                                                                                                                                                                    | It depends upon good weather conditions                                                                                                                                                |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| It uses both transmitter and receiver units to produce imagery                                                                                                                                      | Relatively simple both mechanically and electrically                                                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| requires high energy levels                                                                                                                                                                         | does not have high power requirement                                                                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Relatively independent of atmospheric scatterings                                                                                                                                                   |                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| RADAR signal                                                                                                                                                                                        | wavebands, where natural remittance or reflected levels are low high detector sensitivities and wide radiation collection apertures are necessary to obtain a reasonable signal level. |
+|                                                                                                                                                                                                     |                                                                                                                                                                                        |
+| -   does not detect colour information                                                                                                                                                              | most passive sensors are relatively wide band systems                                                                                                                                  |
+| -   does not detect temperature information                                                                                                                                                         |                                                                                                                                                                                        |
+| -   penetrates vegetation and soil                                                                                                                                                                  |                                                                                                                                                                                        |
+| -   It can detect roughness, slope and electrical conductivity of the objects                                                                                                                       |                                                                                                                                                                                        |
+| -   Information about: surface layer, soil moisture content                                                                                                                                         |                                                                                                                                                                                        |
+| -   Application: oceanography, hydrology, geology, glaciology, agriculture and forestry services                                                                                                    |                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| -   Complicated analysis,                                                                                                                                                                           |                                                                                                                                                                                        |
+| -   cost-intensive                                                                                                                                                                                  |                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Types: Laser altimeter, scanning electron microscopes, LiDAR, radar, GPS, x-ray, sonar, **infrared and seismic** *(exist in both active and passive forms)*                                         | Devices Eg: Spectrometer, Radiometer, Spectroradiometer, Hyperspectral radiometer, Imaging radiometer, Sounder, Accelerometer                                                          |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Mounted to a satellite, an airplane, a boat, building top or a submarine UAV drone                                                                                                                  |                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| *Application:* cartography to resource exploration to atmospheric and chemical measurements Application: agriculturalists and foresters, marine sciences and rescue missions, weather forecast etc. |                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| *Radar:*                                                                                                                                                                                            |                                                                                                                                                                                        |
+|                                                                                                                                                                                                     |                                                                                                                                                                                        |
+| -   radio signals                                                                                                                                                                                   |                                                                                                                                                                                        |
+| -   feature: antenna emitting impulses                                                                                                                                                              |                                                                                                                                                                                        |
+| -   active remote sensing\> energy flow\> obstacle\>scatters back\> sensor (to some degree)                                                                                                         |                                                                                                                                                                                        |
+| -   target distance= back scatter amount+ traveling time                                                                                                                                            |                                                                                                                                                                                        |
+| -   A radar Technique: Synthetic aperture radar (SAR)                                                                                                                                               |                                                                                                                                                                                        |
+|                                                                                                                                                                                                     |                                                                                                                                                                                        |
+| *Lidar:*                                                                                                                                                                                            |                                                                                                                                                                                        |
+|                                                                                                                                                                                                     |                                                                                                                                                                                        |
+| -   light                                                                                                                                                                                           |                                                                                                                                                                                        |
+| -   active remote sensing\>transmitting light impulse\>                                                                                                                                             |                                                                                                                                                                                        |
+| -   target distance= multiplying the time by the speed of light                                                                                                                                     |                                                                                                                                                                                        |
+|                                                                                                                                                                                                     |                                                                                                                                                                                        |
+| *Laser Altimeter:*                                                                                                                                                                                  |                                                                                                                                                                                        |
+|                                                                                                                                                                                                     |                                                                                                                                                                                        |
+| -   Measures elevation                                                                                                                                                                              |                                                                                                                                                                                        |
+| -   Uses Lidar                                                                                                                                                                                      |                                                                                                                                                                                        |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+*SOURCE: [brainkart](https://www.brainkart.com/article/Passive-and-Active-Sensors_4474/), [ltb](https://ltb.itc.utwente.nl/671/concept/124289), [eos](https://eos.com/blog/types-of-remote-sensing/)*
+
+more on senors: [earthdata](https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf)
+
+### Active Sensors
+
+![](images/radarflow.png)
+
+Spatial resolution of radar data\~ ratio of the sensor wavelength to the length of the sensor's antenna
+
+-   Meaning: for a given wavelength
+-   Longer antenna = higher spatial resolution
+
+### SAR
+
+-   Synthetic aperture radar (SAR)
+-   sensor produces its own energy
+-   active data collection
+-   can see through night, any weather condition
+-   wavelength: micorwaves
+-   A series of shorter antenna is combined to simulate a larger antenna
+    -   Result: higher resolution
+
+![Geometry of observations used to form the synthetic aperture for target P at along-track position x = 0. Credit: NASA SAR Handbook](images/SARticle_first-fig_redone-06.jpg){width="365"}
+
+*SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)*
+
+-   Radar sensors utilize longer wavelengths at the centimetre to meter scale
+
+    -   Helps: ability to see through clouds
+
+-   produces: fine-resolution images from a resolution-limited radar system
+
+    -   radar movement: straight line
+    -   carrier: airplane or NISAR
+    -   NISAR
+        -   provide multiple polarization modes across its two radar bands
+
+        -   24 cm wavelength L-SAR
+
+        -   10 cm wavelength S-SAR.
+
+-   How?
+
+    -   transmits microwave signals\>earth surface\>receives back the signals (backscattered)\> sensor makes an image from returned echoes- bat flying in cave
+
+-   Result imaginary built?
+
+    -   Wavelength strength and time delay of the returned signal
+    -   depends primarily on the
+        -   roughness and electrical conducting properties of the observed surface
+
+        -   its distance from the orbiting radar 
+
+-   SAR has different wavelengths = bands
+
+    -   **Bands:** X,C,L,P
+    -   Important feature to consider
+    -   Wavelength determines
+        -   How far a signal can penetrate into the medium
+        -   How the signal interacts with the surface
+        -   To understand look at X an L bands below
+
+![The electromagnetic spectrum with microwave bands inset. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/SARticle_microwave_fig-05.jpg){fig-align="center"}
+
+![SAR: band, frequency,wavelength and typical application. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/bandandfreq.png)
+
+![Sensitivity of SAR measurements to forest structure and penetration into the canopy at different wavelengths used for airborne or spaceborne remote sensing observations of the land surface. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/SARtree_figure2.jpg)
+
+-   polarization: orientation of the plane in which the transmitted electromagnetic wave oscillates
+
+    -   SAR=typically transmit linearly polarized
+    -   signal polarization can be precisely controlled on both transmit and receive
+    -   horizontal polarization = H
+    -   vertical polarization = V
+    -   Signals
+    -   polarizations carries information about the structure of the imaged surface
+
+![SAR Polarizations. *SOURCE: [ASF](https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.)*](images/polarization.png){fig-align="center" width="379"}
+
+![SAR signals are transmitted and received. *SOURCE: [ASF](https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.)*](images/SAR%20SIGNALS.png){fig-align="center" width="371"}
+
+![SAR-Polarization. *SOURCE: [sorabatake](https://sorabatake.jp/en/15097/)*](images/SARpolarization.png){fig-align="center" width="404"}
+
++--------------------------+-------------------------------------------------+-------------------------------+
+| Scattering               | Surface                                         | Emitted+ Recieved             |
++==========================+:================================================+:==============================+
+| Rough Surface scattering | bare soil or water                              | VV Scattering                 |
++--------------------------+-------------------------------------------------+-------------------------------+
+| Volume Scattering        | leaves and branches in a forest canopy          | VH or HV (cross-polarization) |
++--------------------------+-------------------------------------------------+-------------------------------+
+| Double bounce Scattering | buildings, tree trunks, or inundated vegetation | HH polarized                  |
++--------------------------+-------------------------------------------------+-------------------------------+
+
+![Strong scattering in HH indicates a predominance of double-bounce scattering (e.g., stemmy vegetation, manmade structures), while strong VV relates to rough surface scattering (e.g., bare ground, water), and spatial variations in dual polarization indicate the distribution of volume scatterers (e.g., vegetation and high-penetration soil types such as sand or other dry porous soils). Credit: NASA SAR Handbook. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/SARPolarization.jpg){alt="Scattering Strength" fig-align="center"}
+
+![Polarimetry Decomposition. *SOURCE: [sorabatake](https://sorabatake.jp/en/15097/)*](images/2839ab849d9b2c81bd86f4778e9767e3-1.jpg){fig-align="center" width="461"}
+
+![An example of polarimetry imagery from the airborne UAVSAR instrument obtained over Rosamond, California. Horizontal and vertical polarized signals were transmitted and the resulting backscatter signals received, resulting in three channels of imagery. When these separate images are colorized and overlaid, details and differences in surface features can been readily discerned. *SOURCE: [nisar](https://nisar.jpl.nasa.gov/mission/get-to-know-sar/polarimetry/)*](images/polarization_imagery.jpeg){fig-align="center" width="491"}
+
+![SAR Scatter Process. *SOURCE: [sorabatake](https://sorabatake.jp/en/15097/)*](images/9d831d187199270f191b3999ca596311.jpg){fig-align="center" width="511"}
+
+-   Interferometry (InSAR) -- analysis method
+
+-   Uses: uses the phase information recorded
+
+-   Measures: distance from the sensor to the target
+
+-   Measurement= very accurate
+
+-   to measure changes in land surface topography??
+
+    -   Observations= Atleast 2 of the same target
+    -   Sensor data= Distance + additional geometric information
+
+-   Application:
+
+    -   identify areas of deformation from events like volcanic eruptions and earthquakes
+
+-   SAR data limitations:
+
+    -   Tedious preprocessing steps *(applying the orbit file, radiometric calibration, de-bursting, multilooking, speckle filtering, and terrain correction)* [earthdata](https://www.earthdata.nasa.gov/s3fs-public/imported/pre-processing_onepager_ROUGH.pdf)
+
+-   Sensors: [earthdata](https://www.earthdata.nasa.gov/s3fs-public/imported/Satellite_Property_Tables.pdf)
+
+-   SAR distortion: [alaska.edu](https://hyp3-docs.asf.alaska.edu/guides/introduction_to_sar/#:~:text=There%20are%20four%20different%20polarization,as%20illustrated%20in%20Figure%202.)
+
+-   SAR Hand book: [ntrs](https://ntrs.nasa.gov/api/citations/20190002563/downloads/20190002563.pdf)
+
+-   Interferometry: [nisar](https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/)
+
+-   SweepSAR: [nisar](https://nisar.jpl.nasa.gov/mission/get-to-know-sar/sweepsar/)
+
+### Passive Sensors
+
+![](images/Passive.png){alt="Passive sensors" fig-align="center" width="697"}
+
+### Data Format
+
+![](images/dataformat.png){fig-align="center" width="531"}
+
+![Image data format. SOURCE: [kangwon](http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/6-4-1.gif)](images/image%20data%20format.png){alt="data format" fig-align="center" width="399"}
+
+other sources: [gisgeography.](https://gisgeography.com/gis-formats/), [e-education.psu](https://www.e-education.psu.edu/geog480/node/458), [sar.kangwon](http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/cp6-4.htm)
+
+#### 
+
+#### 4 Resolutions
+
+![Resolution *SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=There%20are%20four%20types%20of,spatial%2C%20spectral%2C%20and%20temporal.)*](images/resolution.png){fig-align="center" width="594"}
+
+##### Spatial Resolution
+
++------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
+| High Resolution Use                                  | Medium Resolution Use                                     | Low Resolution Use                                     |
++======================================================+:==========================================================+:=======================================================+
+| Extreme precision                                    | Not extreme precision                                     | Lack of precision                                      |
++------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
+| -   1-5 meters per pixel                             | -   5-30 meters per pixel                                 | -   30-250 meters per pixel                            |
+| -   less than 1 meter per pixel                      |                                                           |                                                        |
++------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
+| -   detection of crop diseases                       | -   crop health and growth monitoring;                    | -   crop growth modeling;                              |
+| -   detection of pests in precision agriculture;     | -   moisture and nutrient content monitoring;             | -   predicting yields;                                 |
+| -   identification of erosive soil processes;        | -   vegetation density monitoring;                        | -   trend mapping;                                     |
+| -   detection of field borders and field mapping;    | -   pest and disease detection;                           | -   large-scale anomaly detection;                     |
+| -   livestock observation and management;            | -   estimation of biodiversity loss in the forest lands;  | -   monitoring infrastructure changes on a large scale |
+| -   deforestation detection and forestry management; | -   identification of natural anomalies on a large scale; |                                                        |
+| -   detection and mitigation of local anomalies;     | -   monitoring water bodies;                              |                                                        |
+| -   3D city modeling                                 | -   urban expansion analysis.                             |                                                        |
++------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
+
+Source: [eos](https://eos.com/blog/spatial-resolution/)
