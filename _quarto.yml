@@ -40,7 +40,7 @@ format:
     fontsize: 0.8em
     fontcolor: "#636363"  #https://htmlcolorcodes.com/ #https://colorbrewer2.org/#type=sequential&scheme=Greys&n=3 
     linkcolor: "#C1C1C1"
-    monofont: serif
+    monofont: segoe
     css: styles.css
     toc: true
     grid: 

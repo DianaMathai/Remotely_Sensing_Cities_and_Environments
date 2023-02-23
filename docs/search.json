@@ -39,7 +39,7 @@
     "href": "1_week.html",
     "title": "An Introduction to Remote Sensing",
     "section": "",
-    "text": "This chapter is an attempt to comprehend Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.\nHow does this work?\nWhat are these bands?\nIs this word a satellite or a sensor?"
+    "text": "This chapter is an attempt to comprehend Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material. As a visual learner, I have opted for a visual representation of many concepts or processes, as it works for me (kindly feel welcome to search for the theory).\nSo lets understand few basic…\nHow does this work?\nWhat are these bands?\nIs this word a satellite or a sensor?"
   },
   {
     "objectID": "1_week.html#including-plots",
@@ -53,7 +53,7 @@
     "href": "2_week.html",
     "title": "Portfolio tools: Xaringan and Quarto",
     "section": "",
-    "text": "Create a small 5 slide presentation and host it on GitHub - place the link in your Quarto portfolio\n\nSelect a sensor of your choice (any)\nCreate a short (maximum 9 slide, not including reference slide) presentation on the sensor in xaringan\n\nThe presentation will be marked in the same manner set out in mark scheme for the learning diary. Specifically:\n\nThe summary criterion will refer to the summary of the sensor you have selected.\nThe application criterion will refer to examples of studies that have used the data from the sensor and their purpose\nThe reflection criterion will refer to what you have learnt in relation to the sensor, its use and how the data might be used in future work."
+    "text": "🌝➡️ Sensor"
   },
   {
     "objectID": "2_week.html#including-plots",

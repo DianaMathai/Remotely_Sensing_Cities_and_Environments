@@ -4,7 +4,9 @@ output: html_document
 bibliography: references.bib
 ---
 
-This chapter is an attempt to comprehend Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material.
+This chapter is an attempt to comprehend Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material. As a visual learner, I have opted for a visual representation of many concepts or processes, as it works for me (kindly feel welcome to search for the theory).
+
+So lets understand few basic...
 
 *How does this work?*
 
@@ -29,7 +31,7 @@ Below indicated are the images that schematically depict few terms.
 # Remote Sensing Process
 
 ::: column-body
-"Remote sensing combines science and technology to acquire information about an object, area, or phenomenon by measuring reflected and emitted radiation using a device that's without direct physical contact (typically from satellite or aircraft)"
+"Remote sensing combines science and technology to acquire information about an object, area, or phenomenon by measuring reflected and emitted radiation using a device that's without direct physical contact (typically from satellite or aircraft)" [geospatialuk](https://www.geospatialuk.org/post/what-is-remote-sensing)
 :::
 
 ![*Remote Sensing process, SOURCE:* [Fundamentals of Remote Sensing](https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/earthsciences/pdf/resource/tutor/fundam/pdf/fundamentals_e.pdf)](images/RSprocess.png){fig-align="center" width="683"}
@@ -124,7 +126,7 @@ Below indicated are the images that schematically depict few terms.
     -   gamma-rays= very smaller (atomic nuclei)
 :::
 
-![](images/spectrum_radio_waves_graphic_web_0.png)
+![Scale of the Electromagnetic Spectrum. SOURCE: [NASA Science](https://www.nasa.gov/directorates/heo/scan/communications/outreach/funfacts/txt_radiowaves.html)](images/spectrum_radio_waves_graphic_web_0.png){fig-align="center"}
 
 ::: column-body
 ## I see COLOUR? 👀
@@ -465,6 +467,7 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 
 ::: column-body
 ### SAR
+
 -   Synthetic aperture radar (SAR)
 -   sensor produces its own energy
 -   active data collection
@@ -600,3 +603,7 @@ other sources: [gisgeography.](https://gisgeography.com/gis-formats/), [e-educat
 +------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
 
 Source: [eos](https://eos.com/blog/spatial-resolution/)
+
+Example:
+
+![](images/landsat.png){fig-align="center" width="379"}
