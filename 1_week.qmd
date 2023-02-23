@@ -36,66 +36,66 @@ Below indicated are the images that schematically depict few terms.
 
 ![*Remote Sensing process, SOURCE:* [Fundamentals of Remote Sensing](https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/earthsciences/pdf/resource/tutor/fundam/pdf/fundamentals_e.pdf)](images/RSprocess.png){fig-align="center" width="683"}
 
-+-------------+----------------------------------------+--------------------------------------------------------------------+
-| Code        | Interaction                            | Process                                                            |
-+:===========:+:=======================================+:===================================================================+
-| A           | Energy Source or illumination          | Energy form:                                                       |
-|             |                                        |                                                                    |
-|             |                                        | -   Electromagnetic radiation (EMR)                                |
-|             |                                        |                                                                    |
-|             |                                        | Energy source which                                                |
-|             |                                        |                                                                    |
-|             |                                        | -   **illuminates** the target of interest                         |
-|             |                                        | -   provides **electromagnetic energy** to the target of interest. |
-|             |                                        | -   sensed energy is being emitted by the target                   |
-+-------------+----------------------------------------+--------------------------------------------------------------------+
-| B           | Radiation and the Atmosphere           | Energy and Atmosphere                                              |
-|             |                                        |                                                                    |
-|             |                                        | Interaction: 2                                                     |
-|             |                                        |                                                                    |
-|             |                                        | Energy Travelling pattern:                                         |
-|             |                                        |                                                                    |
-|             |                                        | -   Source\> **atmosphere *(contact and interact)*** \> target     |
-|             |                                        | -   Target\> **atmosphere *(contact and interact)*** \>sensor      |
-+-------------+----------------------------------------+--------------------------------------------------------------------+
-| C           | Interaction with the Target            | **Energy and Target** Interaction dependencies:                    |
-|             |                                        |                                                                    |
-|             |                                        | -   Target properties                                              |
-|             |                                        | -   Radiation properties                                           |
-+-------------+----------------------------------------+--------------------------------------------------------------------+
-| D           | Recording of energy by the Sensor      | **Target energy output:**                                          |
-|             |                                        |                                                                    |
-|             |                                        | -   scattering                                                     |
-|             |                                        | -   emission                                                       |
-|             |                                        |                                                                    |
-|             |                                        | **Sensor location:** Remote (not in contact with the target)       |
-|             |                                        |                                                                    |
-|             |                                        | **Sensor role:**                                                   |
-|             |                                        |                                                                    |
-|             |                                        | -   Collection of EMR/ energy                                      |
-|             |                                        | -   Record of EMR/ energy                                          |
-+-------------+----------------------------------------+--------------------------------------------------------------------+
-| E           | Transmission, Reception and processing | **Sensor role:**                                                   |
-|             |                                        |                                                                    |
-|             |                                        | -   Transmission of energy recorded (electronic form)              |
-|             |                                        |                                                                    |
-|             |                                        | **Receiving and processing station role:**                         |
-|             |                                        |                                                                    |
-|             |                                        | -   Receiving the transmitted energy record                        |
-|             |                                        | -   Data processing                                                |
-|             |                                        | -   Output: target image (hardcopy and/or digital)                 |
-+-------------+----------------------------------------+--------------------------------------------------------------------+
-| F           | Interpretation and Analysis            | **Processed target Image:**                                        |
-|             |                                        |                                                                    |
-|             |                                        | -   Interpretation                                                 |
-|             |                                        | -   Analysis                                                       |
-+-------------+----------------------------------------+--------------------------------------------------------------------+
-| G           | Application                            | Interpretation application                                         |
-|             |                                        |                                                                    |
-|             |                                        | -   To better understand the target                                |
-|             |                                        | -   Reveal some new information                                    |
-|             |                                        | -   Assist in solving a particular problem                         |
-+-------------+----------------------------------------+--------------------------------------------------------------------+
++------+----------------------------------------+--------------------------------------------------------------------+
+| Code | Interaction                            | Process                                                            |
++:====:+:=======================================+:===================================================================+
+| A    | Energy Source or illumination          | Energy form:                                                       |
+|      |                                        |                                                                    |
+|      |                                        | -   Electromagnetic radiation (EMR)                                |
+|      |                                        |                                                                    |
+|      |                                        | Energy source which                                                |
+|      |                                        |                                                                    |
+|      |                                        | -   **illuminates** the target of interest                         |
+|      |                                        | -   provides **electromagnetic energy** to the target of interest. |
+|      |                                        | -   sensed energy is being emitted by the target                   |
++------+----------------------------------------+--------------------------------------------------------------------+
+| B    | Radiation and the Atmosphere           | Energy and Atmosphere                                              |
+|      |                                        |                                                                    |
+|      |                                        | Interaction: 2                                                     |
+|      |                                        |                                                                    |
+|      |                                        | Energy Travelling pattern:                                         |
+|      |                                        |                                                                    |
+|      |                                        | -   Source\> **atmosphere *(contact and interact)*** \> target     |
+|      |                                        | -   Target\> **atmosphere *(contact and interact)*** \>sensor      |
++------+----------------------------------------+--------------------------------------------------------------------+
+| C    | Interaction with the Target            | **Energy and Target** Interaction dependencies:                    |
+|      |                                        |                                                                    |
+|      |                                        | -   Target properties                                              |
+|      |                                        | -   Radiation properties                                           |
++------+----------------------------------------+--------------------------------------------------------------------+
+| D    | Recording of energy by the Sensor      | **Target energy output:**                                          |
+|      |                                        |                                                                    |
+|      |                                        | -   scattering                                                     |
+|      |                                        | -   emission                                                       |
+|      |                                        |                                                                    |
+|      |                                        | **Sensor location:** Remote (not in contact with the target)       |
+|      |                                        |                                                                    |
+|      |                                        | **Sensor role:**                                                   |
+|      |                                        |                                                                    |
+|      |                                        | -   Collection of EMR/ energy                                      |
+|      |                                        | -   Record of EMR/ energy                                          |
++------+----------------------------------------+--------------------------------------------------------------------+
+| E    | Transmission, Reception and processing | **Sensor role:**                                                   |
+|      |                                        |                                                                    |
+|      |                                        | -   Transmission of energy recorded (electronic form)              |
+|      |                                        |                                                                    |
+|      |                                        | **Receiving and processing station role:**                         |
+|      |                                        |                                                                    |
+|      |                                        | -   Receiving the transmitted energy record                        |
+|      |                                        | -   Data processing                                                |
+|      |                                        | -   Output: target image (hardcopy and/or digital)                 |
++------+----------------------------------------+--------------------------------------------------------------------+
+| F    | Interpretation and Analysis            | **Processed target Image:**                                        |
+|      |                                        |                                                                    |
+|      |                                        | -   Interpretation                                                 |
+|      |                                        | -   Analysis                                                       |
++------+----------------------------------------+--------------------------------------------------------------------+
+| G    | Application                            | Interpretation application                                         |
+|      |                                        |                                                                    |
+|      |                                        | -   To better understand the target                                |
+|      |                                        | -   Reveal some new information                                    |
+|      |                                        | -   Assist in solving a particular problem                         |
++------+----------------------------------------+--------------------------------------------------------------------+
 
 ::: column-body
 ## Electromagnetic Waves (EMW)
@@ -529,15 +529,11 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 
 ![SAR-Polarization. *SOURCE: [sorabatake](https://sorabatake.jp/en/15097/)*](images/SARpolarization.png){fig-align="center" width="404"}
 
-+--------------------------+-------------------------------------------------+-------------------------------+
 | Scattering               | Surface                                         | Emitted+ Recieved             |
-+==========================+:================================================+:==============================+
+|--------------------------|:------------------------------------------------|:------------------------------|
 | Rough Surface scattering | bare soil or water                              | VV Scattering                 |
-+--------------------------+-------------------------------------------------+-------------------------------+
 | Volume Scattering        | leaves and branches in a forest canopy          | VH or HV (cross-polarization) |
-+--------------------------+-------------------------------------------------+-------------------------------+
 | Double bounce Scattering | buildings, tree trunks, or inundated vegetation | HH polarized                  |
-+--------------------------+-------------------------------------------------+-------------------------------+
 
 ![Strong scattering in HH indicates a predominance of double-bounce scattering (e.g., stemmy vegetation, manmade structures), while strong VV relates to rough surface scattering (e.g., bare ground, water), and spatial variations in dual polarization indicate the distribution of volume scatterers (e.g., vegetation and high-penetration soil types such as sand or other dry porous soils). Credit: NASA SAR Handbook. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/SARPolarization.jpg){alt="Scattering Strength" fig-align="center"}
 
