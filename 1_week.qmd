@@ -28,6 +28,8 @@ Below indicated are the images that schematically depict few terms.
 
 ![Schematic depicting the solar zenith angle, solar altitude angle and solar azimuth angle. SOURCE: [thesolarlabs](https://thesolarlabs.com/ros/solar-angles/) and @zhang2021](images/solaragle.png){fig-align="center"}
 
+![Hyperspectral Data Cubes, *SOURCE: [trekview](https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html)*](images/pixelspectra.png){fig-align="center"}
+
 # Remote Sensing Process
 
 ::: column-body
@@ -36,66 +38,66 @@ Below indicated are the images that schematically depict few terms.
 
 ![*Remote Sensing process, SOURCE:* [Fundamentals of Remote Sensing](https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/earthsciences/pdf/resource/tutor/fundam/pdf/fundamentals_e.pdf)](images/RSprocess.png){fig-align="center" width="683"}
 
-+------+----------------------------------------+--------------------------------------------------------------------+
-| Code | Interaction                            | Process                                                            |
-+:====:+:=======================================+:===================================================================+
-| A    | Energy Source or illumination          | Energy form:                                                       |
-|      |                                        |                                                                    |
-|      |                                        | -   Electromagnetic radiation (EMR)                                |
-|      |                                        |                                                                    |
-|      |                                        | Energy source which                                                |
-|      |                                        |                                                                    |
-|      |                                        | -   **illuminates** the target of interest                         |
-|      |                                        | -   provides **electromagnetic energy** to the target of interest. |
-|      |                                        | -   sensed energy is being emitted by the target                   |
-+------+----------------------------------------+--------------------------------------------------------------------+
-| B    | Radiation and the Atmosphere           | Energy and Atmosphere                                              |
-|      |                                        |                                                                    |
-|      |                                        | Interaction: 2                                                     |
-|      |                                        |                                                                    |
-|      |                                        | Energy Travelling pattern:                                         |
-|      |                                        |                                                                    |
-|      |                                        | -   Source\> **atmosphere *(contact and interact)*** \> target     |
-|      |                                        | -   Target\> **atmosphere *(contact and interact)*** \>sensor      |
-+------+----------------------------------------+--------------------------------------------------------------------+
-| C    | Interaction with the Target            | **Energy and Target** Interaction dependencies:                    |
-|      |                                        |                                                                    |
-|      |                                        | -   Target properties                                              |
-|      |                                        | -   Radiation properties                                           |
-+------+----------------------------------------+--------------------------------------------------------------------+
-| D    | Recording of energy by the Sensor      | **Target energy output:**                                          |
-|      |                                        |                                                                    |
-|      |                                        | -   scattering                                                     |
-|      |                                        | -   emission                                                       |
-|      |                                        |                                                                    |
-|      |                                        | **Sensor location:** Remote (not in contact with the target)       |
-|      |                                        |                                                                    |
-|      |                                        | **Sensor role:**                                                   |
-|      |                                        |                                                                    |
-|      |                                        | -   Collection of EMR/ energy                                      |
-|      |                                        | -   Record of EMR/ energy                                          |
-+------+----------------------------------------+--------------------------------------------------------------------+
-| E    | Transmission, Reception and processing | **Sensor role:**                                                   |
-|      |                                        |                                                                    |
-|      |                                        | -   Transmission of energy recorded (electronic form)              |
-|      |                                        |                                                                    |
-|      |                                        | **Receiving and processing station role:**                         |
-|      |                                        |                                                                    |
-|      |                                        | -   Receiving the transmitted energy record                        |
-|      |                                        | -   Data processing                                                |
-|      |                                        | -   Output: target image (hardcopy and/or digital)                 |
-+------+----------------------------------------+--------------------------------------------------------------------+
-| F    | Interpretation and Analysis            | **Processed target Image:**                                        |
-|      |                                        |                                                                    |
-|      |                                        | -   Interpretation                                                 |
-|      |                                        | -   Analysis                                                       |
-+------+----------------------------------------+--------------------------------------------------------------------+
-| G    | Application                            | Interpretation application                                         |
-|      |                                        |                                                                    |
-|      |                                        | -   To better understand the target                                |
-|      |                                        | -   Reveal some new information                                    |
-|      |                                        | -   Assist in solving a particular problem                         |
-+------+----------------------------------------+--------------------------------------------------------------------+
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| Code        | Interaction                            | Process                                                            |
++:===========:+:=======================================+:===================================================================+
+| A           | Energy Source or illumination          | Energy form:                                                       |
+|             |                                        |                                                                    |
+|             |                                        | -   Electromagnetic radiation (EMR)                                |
+|             |                                        |                                                                    |
+|             |                                        | Energy source which                                                |
+|             |                                        |                                                                    |
+|             |                                        | -   **illuminates** the target of interest                         |
+|             |                                        | -   provides **electromagnetic energy** to the target of interest. |
+|             |                                        | -   sensed energy is being emitted by the target                   |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| B           | Radiation and the Atmosphere           | Energy and Atmosphere                                              |
+|             |                                        |                                                                    |
+|             |                                        | Interaction: 2                                                     |
+|             |                                        |                                                                    |
+|             |                                        | Energy Travelling pattern:                                         |
+|             |                                        |                                                                    |
+|             |                                        | -   Source\> **atmosphere *(contact and interact)*** \> target     |
+|             |                                        | -   Target\> **atmosphere *(contact and interact)*** \>sensor      |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| C           | Interaction with the Target            | **Energy and Target** Interaction dependencies:                    |
+|             |                                        |                                                                    |
+|             |                                        | -   Target properties                                              |
+|             |                                        | -   Radiation properties                                           |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| D           | Recording of energy by the Sensor      | **Target energy output:**                                          |
+|             |                                        |                                                                    |
+|             |                                        | -   scattering                                                     |
+|             |                                        | -   emission                                                       |
+|             |                                        |                                                                    |
+|             |                                        | **Sensor location:** Remote (not in contact with the target)       |
+|             |                                        |                                                                    |
+|             |                                        | **Sensor role:**                                                   |
+|             |                                        |                                                                    |
+|             |                                        | -   Collection of EMR/ energy                                      |
+|             |                                        | -   Record of EMR/ energy                                          |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| E           | Transmission, Reception and processing | **Sensor role:**                                                   |
+|             |                                        |                                                                    |
+|             |                                        | -   Transmission of energy recorded (electronic form)              |
+|             |                                        |                                                                    |
+|             |                                        | **Receiving and processing station role:**                         |
+|             |                                        |                                                                    |
+|             |                                        | -   Receiving the transmitted energy record                        |
+|             |                                        | -   Data processing                                                |
+|             |                                        | -   Output: target image (hardcopy and/or digital)                 |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| F           | Interpretation and Analysis            | **Processed target Image:**                                        |
+|             |                                        |                                                                    |
+|             |                                        | -   Interpretation                                                 |
+|             |                                        | -   Analysis                                                       |
++-------------+----------------------------------------+--------------------------------------------------------------------+
+| G           | Application                            | Interpretation application                                         |
+|             |                                        |                                                                    |
+|             |                                        | -   To better understand the target                                |
+|             |                                        | -   Reveal some new information                                    |
+|             |                                        | -   Assist in solving a particular problem                         |
++-------------+----------------------------------------+--------------------------------------------------------------------+
 
 ::: column-body
 ## Electromagnetic Waves (EMW)
@@ -186,7 +188,13 @@ REFLECTED (Vegetation) = infrared light + infrared light= **GREEN COLOR**
 
 So how do we see these characteristics of earth surface features or materials??
 
-Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures. - Signatures can be visualised in spectral reflectance curves - curves= function of wavelengths - Eg: image below for water, soil and vegetation
+**Spectral Reflectance Properties!!** By analysing spectral reflectance patterns or spectral signatures.
+
+-   Signatures can be visualised in spectral reflectance curves
+
+-   Curves= function of wavelengths
+
+    -   Eg: image below for water, soil and vegetation
 :::
 
 ![Spectral signatures of soil, vegetation and water, and spectral bands of LANDSAT 7. SOURCE: [SEOS](https://seos-project.eu/remotesensing/remotesensing-c01-p06.html)](images/Reflexionskurven.jpg){fig-align="center" width="416"}
@@ -194,7 +202,7 @@ Spectral Reflectance Properties!! By analysing spectral reflectance patterns or 
 ::: column-body
 ### EMW Interaction
 
-In above sections we have looked into what is EMW and few applications. this segment we shall look into how it interacts when it travels.
+In above sections we have looked into what is EMW and few applications. This segment we shall look into how it interacts when it travels.
 :::
 
 ![Energy inter-actions in the atmosphere and at the surface. SOURCE: @tempfli2009](images/paste-F7F78CD4.png){alt="Energy inter-actions in the atmosphereand at the surface" fig-align="center" width="383"}
@@ -374,7 +382,7 @@ more: [umb](https://www.umb.edu/spectralmass/terra_aqua_modis/modis)
 ::: column-body
 ## Sensors
 
-Remote sensor
+**Remote sensor**
 
 -   Device that detects EM energy
 -   Quantifies + records EM energy IN analogue or digital way
@@ -529,11 +537,15 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 
 ![SAR-Polarization. *SOURCE: [sorabatake](https://sorabatake.jp/en/15097/)*](images/SARpolarization.png){fig-align="center" width="404"}
 
++--------------------------+-------------------------------------------------+-------------------------------+
 | Scattering               | Surface                                         | Emitted+ Recieved             |
-|--------------------------|:------------------------------------------------|:------------------------------|
++==========================+:================================================+:==============================+
 | Rough Surface scattering | bare soil or water                              | VV Scattering                 |
++--------------------------+-------------------------------------------------+-------------------------------+
 | Volume Scattering        | leaves and branches in a forest canopy          | VH or HV (cross-polarization) |
++--------------------------+-------------------------------------------------+-------------------------------+
 | Double bounce Scattering | buildings, tree trunks, or inundated vegetation | HH polarized                  |
++--------------------------+-------------------------------------------------+-------------------------------+
 
 ![Strong scattering in HH indicates a predominance of double-bounce scattering (e.g., stemmy vegetation, manmade structures), while strong VV relates to rough surface scattering (e.g., bare ground, water), and spatial variations in dual polarization indicate the distribution of volume scatterers (e.g., vegetation and high-penetration soil types such as sand or other dry porous soils). Credit: NASA SAR Handbook. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar)](images/SARPolarization.jpg){alt="Scattering Strength" fig-align="center"}
 
@@ -566,6 +578,116 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 
 ![](images/Passive.png){alt="Passive sensors" fig-align="center" width="697"}
 
+::: column-body
+Example: LANDSAT 8
+:::
+
+![](images/landsat.png){fig-align="center" width="379"}
+
+![Landsat 8 Bands. SOURCE: [gisrsstudy](https://gisrsstudy.com/remote-sensing-bands/)](images/image-1307352883.png){fig-align="center"}
+
+::: column-body
+So now we have an idea on how sensors work. But how do **SENSORS STORE INFORMATION**???
+
+-   Data received is translated =\> Digital Image (can be displayed on digital screen)
+-   What is this **digital image???**
+:::
+
+#### NOISE
+
+*in remote sensing*
+
+-   REMOTE SENSING\> Frequency band - any disturbance
+-   DATA QUALITY\> - Transmission Signal - Any irregular, sporadic, or random oscillation
+-   TELECOMMUNICATIONS\> communication - interfering random or repetitive events
+
+### Digital Image
+
+2 dimensional array of pixels
+
+![Pixel. SOURCE: [crisp](https://crisp.nus.edu.sg/~research/tutorial/image.htm)](images/pixel1.PNG){fig-align="center"}
+
+![Digital format of an image. SOURCE: [natural-resources](https://natural-resources.canada.ca/maps-tools-publications/satellite-imagery-air-photos/remote-sensing-tutorials/introduction/characteristics-images/14641)](images/pixel.png){fig-align="center"}
+
+![An example of a remote sensing image showing pixels and digital numbers; the arrow shows the progression in the level of detail of information which can be extracted from the images. Source: @phiri2017](images/image-1869244815.png){fig-align="center"}
+
+#### Bands
+
+::: column-body
+-   bands is a set of data file values
+-   FOR?? a specific portion of the Electromagnetic spectrum (reflected light or emitted heat).
+-   Bands; red, green, blue, near-infrared, thermal infrared (we covered it above)
+-   bands\> GIS \> bands= layers - Additional layers can be created and added to the image file."
+
+Multispectral image:
+
+-   Each band of a multispectral image \>
+-   Displayed:
+    -   **One band** at a time as a grey scale image OR
+    -   Combination of **three bands** at a time as a **color composite image**
+:::
+
+![](images/bands.jpg){fig-align="center"}
+
+#### PIXEL
+
+::: column-body
+-   The tiny Squares 🟥🟧- look at the image above (Just think of your phone's Camera image)
+-   Unit of image = pixel (Picture Elements)
+-   Represent the relative reflected light energy recorded for that part of the image
+-   Each pixel= square area on an image
+-   Square area of an image= measure of the sensor's ability
+-   Ability of what??
+    -   To see objects of different sizes
+    -   Each pixel has *intensity value* and *Location address*
+    -   Intensity value - represented as? **Digital Number**
+    -   Location address - **row and column numbers**
+    -   So how does the computer that receives it know which part of the image should be dark and light?
+        -   Binary Numbers!!
+        -   0s and 1s= on-off switch \_(cos computers like it that way!! we don't want it to be fussy- i'ts an inclusive approach)\_
+        -   How does this happen??
+            -   converting decimal system =\> Binary System
+            -   00=0
+            -   01=1
+            -   10=2
+            -   11=3
+    -   OKay so assigning is done...but now is 00 the darkest or 11??? (see the image below- ![Binary= Dark and Light pixels Source: earthobservatory](images/pixelsblacnwhite.png){alt="Binary= Dark and Light pixels" fig-align="center"}
+        -   00 = Darkest = black=⚫
+        -   11= brightest = white = 💡
+    -   The issue: as the image above it would create image with High CONTRAST.....SO?
+    -   **Sapcecraft** uses a string 8-**bit** data (there can be
+        -   **8 bit**= 8 binary numbers= 00000000
+        -   Think of it as creating a gradient or adding more white color to your black gradually until u make your black white...get it? or adding more and more milk into your coffee, untill u dont taste coffee.
+        -   Range in binary: **00000000** to **11111111**
+        -   in decimal system; **0 to 255**
+        -   so in spacecraft which is the darkest?? its the Same, just more numbers.
+            -   **00000000** = darkest ⚫
+            -   **11111111** = brightest 💡
+    -   SO? what next???
+        -   This entire set is sent back from spacecraft....
+        -   binary numbers (btw 0-255)
+-   Eg: Landsat 7 🛰️
+    -   Sensor〰️ ✴️ : Enhanced Thematic Mapper (ETM+)
+    -   Bands: 8 band whiskbroom scanning radiometer
+    -   Maximum Resolution: 15 meters
+    -   Pixel (Each):
+        -   area: area 15 m x 15 m
+        -   pixel1 + pixel2 + pixel3.....n = Area
+        -   Example: false image\> count number of green pixels= vegetation area
+            -   ⬆️Resolution = ⬆️ Pixel Resolution
+    -   Sensor= **⬆️Resolution** = detect **SMALL objects** 👁️ ![Pixel resolution](images/Pixelarea.png){width="535"}
+:::
+
+![Landsat 7 Bands, wavelength and Resolution. SOURCE: [gisrsstudy](https://gisrsstudy.com/remote-sensing-bands/)](images/landsat7.png){fig-align="center"}
+
+Summary of this section, below image is just indicative
+
+![Digital Image formation](images/pixelstory.png)
+
+::: column-body
+SO next question, *what format is it stored in??*
+:::
+
 ### Data Format
 
 ![](images/dataformat.png){fig-align="center" width="531"}
@@ -574,15 +696,49 @@ Spatial resolution of radar data\~ ratio of the sensor wavelength to the length 
 
 other sources: [gisgeography.](https://gisgeography.com/gis-formats/), [e-education.psu](https://www.e-education.psu.edu/geog480/node/458), [sar.kangwon](http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/cp6-4.htm)
 
-#### 4 Resolutions
+### Resolutions
+
+By now let us just accept that every word in remote sensing branches out and even has aerial roots like a banyan tree. So just accept it, its a long journey.
+
+![Definition of the spatial resolution of a passive sensor system. SOURCE: [geo-informatie](http://www.geo-informatie.nl/courses/gima_rs/Day%202/GIMA%20ch3%20Optical%20Remote%20Sensing.pdf)](images/image-1865369233.png){fig-align="center" width="405"}
+
+::: column-body
+-   Measure of sensor ability to distinguish between signals
+-   Information in RS= dependent on Resolution
+-   role: how data from one sensor can be used
+-   helps understand what type of data is required for a given study
+-   **4 types** of **resolution** for data set
+:::
+
+**4 RESOLUTIONS**
 
 ![Resolution *SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=There%20are%20four%20types%20of,spatial%2C%20spectral%2C%20and%20temporal.)*](images/resolution.png){fig-align="center" width="594"}
+
++----------------------------------------------------------------------+-----------------------------------------------------+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+| Spatial Resolution                                                   | Spectral Resolution                                 | Radiometric Resolution                                                         | Temporal Resolution                                                         |
++======================================================================+:====================================================+:===============================================================================+=============================================================================+
+| **Size** of the **smallest object** that can be detected in an image | Number of **bands + wavelength** width of each band | sensitivity of a remote sensor to **variations** in the **reflectance levels** | **how often** a remote sensing platform can **provide coverage** of an area |
++----------------------------------------------------------------------+-----------------------------------------------------+--------------------------------------------------------------------------------+-----------------------------------------------------------------------------+
+
+#### Spatial Resolution
+
+::: column-body
+**size of the smallest object that can be detected in an image**
+
+-   size of smallest object
+-   unit of image= pixel
+-   1 m spatial resolution= each pixel image\~reprsents an area of 1 sqm (1x1)
+:::
+
+![Resolution. SOURCE: [ecoursesonline](http://ecoursesonline.iasri.res.in/mod/page/view.php?id=124941)](images/Fig.%204.4.%20Pixel%20resolution.jpg){fig-align="center"}
+
+![Spatial Resolution. SOURCE: [crisp](https://crisp.nus.edu.sg/~research/tutorial/image.htm)](images/Screenshot%202023-02-26%20003205.png){fig-align="center"}
 
 ##### Spatial Resolution
 
 +------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
 | High Resolution Use                                  | Medium Resolution Use                                     | Low Resolution Use                                     |
-+======================================================+:==========================================================+:=======================================================+
++======================================================+===========================================================+========================================================+
 | Extreme precision                                    | Not extreme precision                                     | Lack of precision                                      |
 +------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
 | -   1-5 meters per pixel                             | -   5-30 meters per pixel                                 | -   30-250 meters per pixel                            |
@@ -598,8 +754,159 @@ other sources: [gisgeography.](https://gisgeography.com/gis-formats/), [e-educat
 | -   3D city modeling                                 | -   urban expansion analysis.                             |                                                        |
 +------------------------------------------------------+-----------------------------------------------------------+--------------------------------------------------------+
 
-Source: [eos](https://eos.com/blog/spatial-resolution/)
+: Source: [eos](https://eos.com/blog/spatial-resolution/)
 
-Example:
+#### Spectral Resolution
 
-![](images/landsat.png){fig-align="center" width="379"}
+![Specification of LISS-III and LISS-IV sensors of IRS-P6. SOURCE: [ecoursesonline](http://ecoursesonline.iasri.res.in/mod/page/view.php?id=124941)](images/image-1028248859.png){fig-align="center"}
+
+::: column-body
+**Number of bands + wavelength width of each band**
+
+-   BAND= narrow portion of the electromagnetic spectrum
+-   short wavelength width= HIGHER resolution
+-   ***Multi-spectral imagery***
+-   *measure*: several wavelength bands (example: visible green or NIR)
+-   Multi-spectral sensors: Landsat, Quickbird and Spot satellites
+-   ***Hyperspectral imagery**:*
+-   *measures*: energy in narrower and more numerous bands
+-   more sensitive to variations in energy wavelengths = greater potential
+-   Eg: used to check crop stress
+:::
+
+#### Radiometric Resolution
+
+::: column-body
+**Amount of information in each pixel!!**
+
+-   ***sensitivity** of a remote sensor to variations in the **reflectance levels***
+-   Information form? BIT= energy recorded
+-   ⬆️Higher radiometric resolution = ⬆️more sensitive = ⬆️more precise picture *(a specific portion of the electromagnetic spectrum)=*
+-   Sensitive how? - detecting small differences in reflectance values
+-   small differences how? - ⬆️ more values stored= ⬆️ detecting btw slightest differnce of energy
+-   How is the information recorded/ stored?
+    -   in the bit for an exponet of 2
+    -   eg: 8 bit = 2\^8 resolution = 256 potential digital values (refer example above)
+    -   Application: water quality: distinguish btw subtle difference in ocen color
+:::
+
+![Advances in remote sensing technology have significantly improved satellite imagery. Among the advances are improvements in radiometric resolution, or how sensitive an instrument is to small differences in electromagnetic energy. Sensors with high radiometric resolution can distinguish greater detail and variation in light. Credit: NASA Earth Observatory images by Joshua Stevens, using Landsat data from the U.S. Geological Survey. SOURCE: [earthdata](https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing)](images/radiometric_resolution.png){fig-align="center"}
+
+#### Temporal Resolution
+
+::: column-body
+**Satellite to complete an orbit and revisit the same observation area**
+
+-   ***how often** a remote sensing platform can **provide coverage of an area***
+-   Geo-stationary satellites = provide continuous sensing
+-   eg cameras mounted on Airplanes **=** provide data for applications requiring more frequent sensing
+-   Remote sensors located: fields or attached to agricultural equipment \>\> most frequent temporal resolution
+-   normal orbiting satellites = provide data each time they pass over an area
+-   Issues: cloud cover
+-   eg: Polar orbiting satellites: temporal resolution = 1-16 days
+    -   MODIS sensor: resolution of 1-2 days- daily changes
+    -   OLI: narrow swath width: resolution of 16 days= bi-monthly changes= high spatial resolution
+    -   high spatial resolution = narrower swath = molre time = low temporal resolution
+:::
+
+#### Multilayer Images
+
+::: column-body
+-   Of a **certain area/ one particular area**I on ground
+    -   multiple measurements
+    -   each measurement forms an image (carries specific information)
+    -   STACKING these images = MULTILAYER IMAGE
+-   MULTIPLELAYER image formation: (combination of)
+    -   same
+    -   different sensors
+    -   subsidiary data
+    -   *Combination eg:*
+        -   3 layers = SPOT
+        -   1 layer = ERS (synthetic aperture radar)
+        -   1 layer = digital elevation map
+:::
+
+![](images/Multilayer%20Images.png){fig-align="center"}
+
+#### Multispectral Image
+
+::: column-body
+-   few layers
+-   image from a particular wavelength band
+-   Eg:
+    -   Sensors:
+        -   **SPOT & HRV**
+            -   three wavelength bands
+                -   green (500 - 590 nm)
+                -   red (610 - 680 nm)
+                -   near infrared (790 - 890 nm)
+            -   meaning: each pixel= three intensity value= corr to 3 bands
+        -   **IKONOS**
+            -   4 bands: Blue, Green, Red and Near Infrared
+        -   **LANDSAT**
+            -   7 Bands: blue, green, red, near-IR bands, two SWIR bands, and a thermal IR band
+:::
+
+#### Superspectral Image
+
+::: column-body
+-   more wavelength bands
+-   Sensor:
+    -   **MODIS**
+        -   36 spectral bands: visible, near infrared, short-wave infrared to the thermal infrared
+:::
+
+#### Hyperspectral Image processing
+
+::: column-body
+-   Based on taking a **fraction of the electromagnetic** spectrum\> **breaking it into numerous bands** for theoretical analysis and computations.
+-   Why do it?
+    -   One can detect and identify objects more precisely compared to using only three bands information provided by a RGB camera.
+-   not commercially available, only scientific investigation
+-   **100+ contiguous spectral bands.**
+-   characteristic spectrum of the target pixel is acquired in a hyperspectral image
+-   precise spectral information
+-   enables better characterisation
+-   better identification of targets
+-   Application:
+    -   precision agriculture (crop: health, moisture status and maturity)
+    -   coastal management ( phytoplanktons, pollution, bathymetry changes)
+-   EOI satellite
+-   Sensor:
+    -   CHRIS: ESA'SPRABO satellite
+:::
+
+![Hyperspectral Data Cube. SOURCE: [mathworks](https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html)](images/colorizen.png){alt="Hyperspectral Data Cube. SOURCE: mathworks" fig-align="center" width="455"}
+
+![Hyperspectral Data Cube Processing. SOURCE: [mathworks](https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html)](images/pixelspectra.png){alt="Hyperspectral Data Cube Processing. SOURCE: mathworks" fig-align="center" width="448"}
+
+![Spectral Unmixing. SOURCE: [mathworks](https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html)](images/spectralunmixingn.png){alt="Spectral Unmixing. SOURCE: mathworks" fig-align="center"}
+
+## Application
+
+::: column-body
+1.  The above segments explains considerablity the extent of Remote Sensing application.
+2.  Data Extracted application (just a few):
+    -   forest fires
+    -   pollution
+    -   volcanic eruption
+    -   Flooding
+    -   weather
+    -   crop growth
+    -   carbon sinks
+    -   forest covers
+    -   City Growth
+    -   Ocean floor
+:::
+
+## Reflection
+
+::: column-body
+1.  How to approach the subject initially to understand the concepts?\-\-- overwhelming resources, so stick to three good resources (combination of books or webpage) and don't deviate.
+2.  The entire process is about measuring and understanding reflected and emitted radiation.
+3.  It is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.
+4.  Sensors are on-boarded on a satellite (active and passive)
+5.  Multiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.
+6.  Each band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)
+7.  It is interesting to see how much is observed and accomplished through remote sensing.
+:::

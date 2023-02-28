@@ -67,7 +67,7 @@
     "href": "3_week.html",
     "title": "Remote sensing data",
     "section": "",
-    "text": "Different sensors\nPush Broom vs Whisk Broom\nScan Lines\nRecall Regression\n\n\nGeometric solution\nGeometric correction solution modelling\n\nJensen page 244 describes\nRMSE\n\n\n\n\n\nAtmospheric scattering (as we saw in week 1)\nTopographic attenuation (up next)\nUnnecessary\nNecessary\n\nAtmospheric correction types\n\nDark object subtraction\nPsuedo-invariant Features\nAbsolute(definitive)\n4th\nEmpirical Line Correction (3)\n\n\n\n\nOrthorectification Correction (6)\nRadiometric Calibration\nLandsat ARD- Surface reflectance\nJoining data sets\nImage Enhancement"
+    "text": "Imaging sensor Systems. SOURCE: geo-informatie"
   },
   {
     "objectID": "3_week.html#including-plots",
@@ -166,5 +166,54 @@
     "title": "Remotely Sensing Cities and Environments",
     "section": "Note",
     "text": "Note\nThe learning diary is part of an academic requirement for module CASA0023 designed by Dr. Andrew MacLachlan. The content of this diary follows the outlined approach as designed in the provided lecture material and workshop material."
+  },
+  {
+    "objectID": "3_week.html#image-correction",
+    "href": "3_week.html#image-correction",
+    "title": "Remote sensing data",
+    "section": "Image correction",
+    "text": "Image correction\n\nRaw remotely sensed data- ISSUES\n\nGeometric and radiometric flaws – why?\nCurved shape of the Earth\nImperfectly transparent atmosphere\nDaily and seasonal variations (receiving solar radiation)\nImperfections in scanning instruments\n\nwhy do we need image correction??\n\nto remove distortion= individual picture elements are in their proper plainmetric (x,y)."
+  },
+  {
+    "objectID": "3_week.html#resampling",
+    "href": "3_week.html#resampling",
+    "title": "Remote sensing data",
+    "section": "Resampling",
+    "text": "Resampling\n\n\nextraction of a brightness value from an x, y location\n\n\n\n\n\nRe-sampling types\n\n\n\n\n\n\n\n\n\n\nNearest Neighbour\nBilinear\nCubic\n\n\n\n\n\nBrightness value Assigning:\n\nOUTPUT (x’,y’) <= closed to the specified (x’, y’) coordinate\nOR\nAssigned value OUTPUT pixel= NEAREST input pixel\n\nComputation: Pythagorean theorem\nAdvantage:\n\nDOES NOT alter image pixel value\n\n\n\nAssigning:\n\nOUTPUT pixel values <= two orthogonal directions in the input image\nOR\nFits (plane of four-pixel value) NEAREST to the desired position in the input image => computes => new brightness value (based on the weighted distance)\n\n\nsimilar to Bilinear\n\nweighted value assignment:\n\ncomputing 16 input pixel values\nsurrounding desired x’,y’ location\n+> estimate the output pixel\n\n\n\n\n\n\n\n\n\nNearest-Neighbour. Source: esa\n\n\n\n\n\nBilinear Interpolation. Source: esa"
+  },
+  {
+    "objectID": "1_week.html#application",
+    "href": "1_week.html#application",
+    "title": "An Introduction to Remote Sensing",
+    "section": "Application",
+    "text": "Application\n\n\nThe above segments explains considerablity the extent of Remote Sensing application.\nData Extracted application (just a few):\n\nforest fires\npollution\nvolcanic eruption\nFlooding\nweather\ncrop growth\ncarbon sinks\nforest covers\nCity Growth\nOcean floor"
+  },
+  {
+    "objectID": "1_week.html#reflection",
+    "href": "1_week.html#reflection",
+    "title": "An Introduction to Remote Sensing",
+    "section": "Reflection",
+    "text": "Reflection\n\n\nHow to approach the subject initially to understand the concepts?--- overwhelming resources, so stick to three good resources (combination of books or webpage) and don’t deviate.\nThe entire process is about measuring and understanding reflected and emitted radiation.\nIt is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.\nSensors are on-boarded on a satellite (active and passive)\nMultiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.\nEach band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)\nIt is interesting to see how much is observed and accomplished through remote sensing."
+  },
+  {
+    "objectID": "3_week.html#application",
+    "href": "3_week.html#application",
+    "title": "Remote sensing data",
+    "section": "Application",
+    "text": "Application"
+  },
+  {
+    "objectID": "3_week.html#reflection",
+    "href": "3_week.html#reflection",
+    "title": "Remote sensing data",
+    "section": "Reflection",
+    "text": "Reflection"
+  },
+  {
+    "objectID": "3_week.html#perspective-and-planimetry",
+    "href": "3_week.html#perspective-and-planimetry",
+    "title": "Remote sensing data",
+    "section": "Perspective and Planimetry",
+    "text": "Perspective and Planimetry\n\nPerspective V\n\n\n\nOrthographic and View. SOURCE: mashyo\n\n\n\n\n\n\n\n\n\n\n\nPerspective View\nPlanimetric View\n\n\n\n\nlights rays reflected\npass through one single point at the center\nlooks as through every position on the ground is being viewed from directly above\n\n\nScale\nVaries\neverywhere consistent (if we overlook variation in small- scale maps (map projections)\n\n\nview\nobjects far away = smaller\nobjects close= bigger\nall objects appear to be of the same scale.\n\n\nperception\nmore perspective of depth\ncomparatively no (as easier to compare between two points, as there is no perception of distance)\n\n\n\nmore realistic looking due to depth perception\naccurate measure, details are clear\n\n\nExample\nphoto-realistic renderings or animations\nTopographic maps, Orthoimages, technical drawings and architectural plans etc.\n\n\n\n\n\n\nOrthographic and Perspective View. SOURCE: wikipedia\n\n\n\nTwo corrections"
   }
 ]

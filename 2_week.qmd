@@ -3,7 +3,7 @@ title: "Portfolio tools: Xaringan and Quarto"
 output: html_document
 ---
 
--   Learnt hosting a website publish by quarto in RMarkdown on github! Ha!
+-   Learnt hosting a website published by quarto in RMarkdown on github! Ha!
 -   Learnt Making PPT on Xaringan
 
 🌝➡️ [Sensor](https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html#1)

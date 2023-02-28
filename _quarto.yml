@@ -31,8 +31,13 @@ website:
         text: "Week 4"
       - href: 5_week.qmd
         text: "Week 5"
-      
-      
+      - href: 6_week.qmd
+        text: "Week 6"
+      - href: 7_week.qmd
+        text: "Week 7"
+      - href: 8_week.qmd
+        text: "Week 8"
+        
 format:
   html:
     theme: Litera

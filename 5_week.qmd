@@ -2,3 +2,7 @@
 title: "An introduction to Google Earth Engine"
 output: html_document
 ---
+
+::: column-body
+jnxnx
+:::

@@ -1,0 +1,5 @@
+---
+title: "Temperature"
+output: html_document
+bibliography: references.bib
+---

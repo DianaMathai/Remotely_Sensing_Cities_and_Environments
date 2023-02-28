@@ -141,6 +141,21 @@ div.csl-indent {
   <a href="./5_week.html" class="sidebar-item-text sidebar-link">Week 5</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_week.html" class="sidebar-item-text sidebar-link">Week 6</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_week.html" class="sidebar-item-text sidebar-link">Week 7</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_week.html" class="sidebar-item-text sidebar-link">Week 8</a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -162,7 +177,11 @@ div.csl-indent {
   <li><a href="#active-sensors" id="toc-active-sensors" class="nav-link" data-scroll-target="#active-sensors">Active Sensors</a></li>
   <li><a href="#sar" id="toc-sar" class="nav-link" data-scroll-target="#sar">SAR</a></li>
   <li><a href="#passive-sensors" id="toc-passive-sensors" class="nav-link" data-scroll-target="#passive-sensors">Passive Sensors</a></li>
+  <li><a href="#digital-image" id="toc-digital-image" class="nav-link" data-scroll-target="#digital-image">Digital Image</a></li>
   <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format">Data Format</a></li>
+  <li><a href="#resolutions" id="toc-resolutions" class="nav-link" data-scroll-target="#resolutions">Resolutions</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -224,6 +243,12 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Schematic depicting the solar zenith angle, solar altitude angle and solar azimuth angle. SOURCE: <a href="https://thesolarlabs.com/ros/solar-angles/">thesolarlabs</a> and <span class="citation" data-cites="zhang2021">Zhang et al. (<a href="#ref-zhang2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
 </figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pixelspectra.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Hyperspectral Data Cubes, <em>SOURCE: <a href="https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html">trekview</a></em></figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="remote-sensing-process" class="level1 page-columns page-full">
 <h1>Remote Sensing Process</h1>
@@ -238,9 +263,9 @@ div.csl-indent {
 </div>
 <table class="table">
 <colgroup>
-<col style="width: 5%">
-<col style="width: 34%">
-<col style="width: 58%">
+<col style="width: 11%">
+<col style="width: 32%">
+<col style="width: 55%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -497,7 +522,14 @@ div.csl-indent {
 <section id="spectral-reflectance-properties" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="spectral-reflectance-properties">Spectral Reflectance Properties</h3>
 <p>So how do we see these characteristics of earth surface features or materials??</p>
-<p>Spectral Reflectance Properties!! By analysing spectral reflectance patterns or spectral signatures. - Signatures can be visualised in spectral reflectance curves - curves= function of wavelengths - Eg: image below for water, soil and vegetation</p>
+<p><strong>Spectral Reflectance Properties!!</strong> By analysing spectral reflectance patterns or spectral signatures.</p>
+<ul>
+<li><p>Signatures can be visualised in spectral reflectance curves</p></li>
+<li><p>Curves= function of wavelengths</p>
+<ul>
+<li>Eg: image below for water, soil and vegetation</li>
+</ul></li>
+</ul>
 </section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -507,7 +539,7 @@ div.csl-indent {
 </div>
 <section id="emw-interaction" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="emw-interaction">EMW Interaction</h3>
-<p>In above sections we have looked into what is EMW and few applications. this segment we shall look into how it interacts when it travels.</p>
+<p>In above sections we have looked into what is EMW and few applications. This segment we shall look into how it interacts when it travels.</p>
 </section>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -880,7 +912,7 @@ div.csl-indent {
 </section>
 <section id="sensors" class="level2 column-body">
 <h2 class="anchored" data-anchor-id="sensors">Sensors</h2>
-<p>Remote sensor</p>
+<p><strong>Remote sensor</strong></p>
 <ul>
 <li>Device that detects EM energy</li>
 <li>Quantifies + records EM energy IN analogue or digital way</li>
@@ -1138,7 +1170,7 @@ div.csl-indent {
 <table class="table">
 <colgroup>
 <col style="width: 24%">
-<col style="width: 46%">
+<col style="width: 45%">
 <col style="width: 29%">
 </colgroup>
 <thead>
@@ -1216,13 +1248,177 @@ div.csl-indent {
 <li>SweepSAR: <a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/sweepsar/">nisar</a></li>
 </ul>
 </div>
-<section id="passive-sensors" class="level3">
+<section id="passive-sensors" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="passive-sensors">Passive Sensors</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Passive.png" class="img-fluid figure-img" alt="Passive sensors" width="697"></p>
 </figure>
 </div>
+<div class="column-body">
+<p>Example: LANDSAT 8</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/landsat.png" class="img-fluid figure-img" width="379"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1307352883.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Landsat 8 Bands. SOURCE: <a href="https://gisrsstudy.com/remote-sensing-bands/">gisrsstudy</a></figcaption><p></p>
+</figure>
+</div>
+<div class="column-body">
+<p>So now we have an idea on how sensors work. But how do <strong>SENSORS STORE INFORMATION</strong>???</p>
+<ul>
+<li>Data received is translated =&gt; Digital Image (can be displayed on digital screen)</li>
+<li>What is this <strong>digital image???</strong></li>
+</ul>
+</div>
+<section id="noise" class="level4">
+<h4 class="anchored" data-anchor-id="noise">NOISE</h4>
+<p><em>in remote sensing</em></p>
+<ul>
+<li>REMOTE SENSING&gt; Frequency band - any disturbance</li>
+<li>DATA QUALITY&gt; - Transmission Signal - Any irregular, sporadic, or random oscillation</li>
+<li>TELECOMMUNICATIONS&gt; communication - interfering random or repetitive events</li>
+</ul>
+</section>
+</section>
+<section id="digital-image" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="digital-image">Digital Image</h3>
+<p>2 dimensional array of pixels</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pixel1.PNG" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Pixel. SOURCE: <a href="https://crisp.nus.edu.sg/~research/tutorial/image.htm">crisp</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pixel.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Digital format of an image. SOURCE: <a href="https://natural-resources.canada.ca/maps-tools-publications/satellite-imagery-air-photos/remote-sensing-tutorials/introduction/characteristics-images/14641">natural-resources</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1869244815.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">An example of a remote sensing image showing pixels and digital numbers; the arrow shows the progression in the level of detail of information which can be extracted from the images. Source: <span class="citation" data-cites="phiri2017">Phiri and Morgenroth (<a href="#ref-phiri2017" role="doc-biblioref">2017</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<section id="bands" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="bands">Bands</h4>
+<div class="column-body">
+<ul>
+<li>bands is a set of data file values</li>
+<li>FOR?? a specific portion of the Electromagnetic spectrum (reflected light or emitted heat).</li>
+<li>Bands; red, green, blue, near-infrared, thermal infrared (we covered it above)</li>
+<li>bands&gt; GIS &gt; bands= layers - Additional layers can be created and added to the image file.”</li>
+</ul>
+<p>Multispectral image:</p>
+<ul>
+<li>Each band of a multispectral image &gt;</li>
+<li>Displayed:
+<ul>
+<li><strong>One band</strong> at a time as a grey scale image OR</li>
+<li>Combination of <strong>three bands</strong> at a time as a <strong>color composite image</strong></li>
+</ul></li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/bands.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="pixel" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="pixel">PIXEL</h4>
+<div class="column-body">
+<ul>
+<li>The tiny Squares 🟥🟧- look at the image above (Just think of your phone’s Camera image)</li>
+<li>Unit of image = pixel (Picture Elements)</li>
+<li>Represent the relative reflected light energy recorded for that part of the image</li>
+<li>Each pixel= square area on an image</li>
+<li>Square area of an image= measure of the sensor’s ability</li>
+<li>Ability of what??
+<ul>
+<li>To see objects of different sizes</li>
+<li>Each pixel has <em>intensity value</em> and <em>Location address</em></li>
+<li>Intensity value - represented as? <strong>Digital Number</strong></li>
+<li>Location address - <strong>row and column numbers</strong></li>
+<li>So how does the computer that receives it know which part of the image should be dark and light?
+<ul>
+<li>Binary Numbers!!</li>
+<li>0s and 1s= on-off switch _(cos computers like it that way!! we don’t want it to be fussy- i’ts an inclusive approach)_</li>
+<li>How does this happen??
+<ul>
+<li>converting decimal system =&gt; Binary System</li>
+<li>00=0</li>
+<li>01=1</li>
+<li>10=2</li>
+<li>11=3</li>
+</ul></li>
+</ul></li>
+<li>OKay so assigning is done…but now is 00 the darkest or 11??? (see the image below- <img src="images/pixelsblacnwhite.png" class="img-fluid" alt="Binary= Dark and Light pixels" data-fig-align="center">
+<ul>
+<li>00 = Darkest = black=⚫</li>
+<li>11= brightest = white = 💡</li>
+</ul></li>
+<li>The issue: as the image above it would create image with High CONTRAST…..SO?</li>
+<li><strong>Sapcecraft</strong> uses a string 8-<strong>bit</strong> data (there can be
+<ul>
+<li><strong>8 bit</strong>= 8 binary numbers= 00000000</li>
+<li>Think of it as creating a gradient or adding more white color to your black gradually until u make your black white…get it? or adding more and more milk into your coffee, untill u dont taste coffee.</li>
+<li>Range in binary: <strong>00000000</strong> to <strong>11111111</strong></li>
+<li>in decimal system; <strong>0 to 255</strong></li>
+<li>so in spacecraft which is the darkest?? its the Same, just more numbers.
+<ul>
+<li><strong>00000000</strong> = darkest ⚫</li>
+<li><strong>11111111</strong> = brightest 💡</li>
+</ul></li>
+</ul></li>
+<li>SO? what next???
+<ul>
+<li>This entire set is sent back from spacecraft….</li>
+<li>binary numbers (btw 0-255)</li>
+</ul></li>
+</ul></li>
+<li>Eg: Landsat 7 🛰️
+<ul>
+<li>Sensor〰️ ✴️ : Enhanced Thematic Mapper (ETM+)</li>
+<li>Bands: 8 band whiskbroom scanning radiometer</li>
+<li>Maximum Resolution: 15 meters</li>
+<li>Pixel (Each):
+<ul>
+<li>area: area 15 m x 15 m</li>
+<li>pixel1 + pixel2 + pixel3…..n = Area</li>
+<li>Example: false image&gt; count number of green pixels= vegetation area
+<ul>
+<li>⬆️Resolution = ⬆️ Pixel Resolution</li>
+</ul></li>
+</ul></li>
+<li>Sensor= <strong>⬆️Resolution</strong> = detect <strong>SMALL objects</strong> 👁️ <img src="images/Pixelarea.png" class="img-fluid" width="535" alt="Pixel resolution"></li>
+</ul></li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/landsat7.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Landsat 7 Bands, wavelength and Resolution. SOURCE: <a href="https://gisrsstudy.com/remote-sensing-bands/">gisrsstudy</a></figcaption><p></p>
+</figure>
+</div>
+<p>Summary of this section, below image is just indicative</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pixelstory.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Digital Image formation</figcaption><p></p>
+</figure>
+</div>
+<div class="column-body">
+<p>SO next question, <em>what format is it stored in??</em></p>
+</div>
+</section>
 </section>
 <section id="data-format" class="level3">
 <h3 class="anchored" data-anchor-id="data-format">Data Format</h3>
@@ -1238,44 +1434,104 @@ div.csl-indent {
 </figure>
 </div>
 <p>other sources: <a href="https://gisgeography.com/gis-formats/">gisgeography.</a>, <a href="https://www.e-education.psu.edu/geog480/node/458">e-education.psu</a>, <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp6/cp6-4.htm">sar.kangwon</a></p>
-<section id="resolutions" class="level4">
-<h4 class="anchored" data-anchor-id="resolutions">4 Resolutions</h4>
+</section>
+<section id="resolutions" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="resolutions">Resolutions</h3>
+<p>By now let us just accept that every word in remote sensing branches out and even has aerial roots like a banyan tree. So just accept it, its a long journey.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1865369233.png" class="img-fluid figure-img" width="405"></p>
+<p></p><figcaption class="figure-caption">Definition of the spatial resolution of a passive sensor system. SOURCE: <a href="http://www.geo-informatie.nl/courses/gima_rs/Day%202/GIMA%20ch3%20Optical%20Remote%20Sensing.pdf">geo-informatie</a></figcaption><p></p>
+</figure>
+</div>
+<div class="column-body">
+<ul>
+<li>Measure of sensor ability to distinguish between signals</li>
+<li>Information in RS= dependent on Resolution</li>
+<li>role: how data from one sensor can be used</li>
+<li>helps understand what type of data is required for a given study</li>
+<li><strong>4 types</strong> of <strong>resolution</strong> for data set</li>
+</ul>
+</div>
+<p><strong>4 RESOLUTIONS</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/resolution.png" class="img-fluid figure-img" width="594"></p>
 <p></p><figcaption class="figure-caption">Resolution <em>SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=There%20are%20four%20types%20of,spatial%2C%20spectral%2C%20and%20temporal.">earthdata</a></em></figcaption><p></p>
 </figure>
 </div>
-<section id="spatial-resolution" class="level5">
-<h5 class="anchored" data-anchor-id="spatial-resolution">Spatial Resolution</h5>
 <table class="table">
 <colgroup>
-<col style="width: 31%">
-<col style="width: 34%">
-<col style="width: 32%">
+<col style="width: 24%">
+<col style="width: 18%">
+<col style="width: 28%">
+<col style="width: 27%">
 </colgroup>
 <thead>
 <tr class="header">
+<th>Spatial Resolution</th>
+<th style="text-align: left;">Spectral Resolution</th>
+<th style="text-align: left;">Radiometric Resolution</th>
+<th>Temporal Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Size</strong> of the <strong>smallest object</strong> that can be detected in an image</td>
+<td style="text-align: left;">Number of <strong>bands + wavelength</strong> width of each band</td>
+<td style="text-align: left;">sensitivity of a remote sensor to <strong>variations</strong> in the <strong>reflectance levels</strong></td>
+<td><strong>how often</strong> a remote sensing platform can <strong>provide coverage</strong> of an area</td>
+</tr>
+</tbody>
+</table>
+<section id="spatial-resolution" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="spatial-resolution">Spatial Resolution</h4>
+<div class="column-body">
+<p><strong>size of the smallest object that can be detected in an image</strong></p>
+<ul>
+<li>size of smallest object</li>
+<li>unit of image= pixel</li>
+<li>1 m spatial resolution= each pixel image~reprsents an area of 1 sqm (1x1)</li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Fig.%204.4.%20Pixel%20resolution.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Resolution. SOURCE: <a href="http://ecoursesonline.iasri.res.in/mod/page/view.php?id=124941">ecoursesonline</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Screenshot%202023-02-26%20003205.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Spatial Resolution. SOURCE: <a href="https://crisp.nus.edu.sg/~research/tutorial/image.htm">crisp</a></figcaption><p></p>
+</figure>
+</div>
+<section id="spatial-resolution-1" class="level5">
+<h5 class="anchored" data-anchor-id="spatial-resolution-1">Spatial Resolution</h5>
+<table class="table">
+<caption>Source: <a href="https://eos.com/blog/spatial-resolution/">eos</a></caption>
+<thead>
+<tr class="header">
 <th>High Resolution Use</th>
-<th style="text-align: left;">Medium Resolution Use</th>
-<th style="text-align: left;">Low Resolution Use</th>
+<th>Medium Resolution Use</th>
+<th>Low Resolution Use</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Extreme precision</td>
-<td style="text-align: left;">Not extreme precision</td>
-<td style="text-align: left;">Lack of precision</td>
+<td>Not extreme precision</td>
+<td>Lack of precision</td>
 </tr>
 <tr class="even">
 <td><ul>
 <li>1-5 meters per pixel</li>
 <li>less than 1 meter per pixel</li>
 </ul></td>
-<td style="text-align: left;"><ul>
+<td><ul>
 <li>5-30 meters per pixel</li>
 </ul></td>
-<td style="text-align: left;"><ul>
+<td><ul>
 <li>30-250 meters per pixel</li>
 </ul></td>
 </tr>
@@ -1290,7 +1546,7 @@ div.csl-indent {
 <li>detection and mitigation of local anomalies;</li>
 <li>3D city modeling</li>
 </ul></td>
-<td style="text-align: left;"><ul>
+<td><ul>
 <li>crop health and growth monitoring;</li>
 <li>moisture and nutrient content monitoring;</li>
 <li>vegetation density monitoring;</li>
@@ -1300,7 +1556,7 @@ div.csl-indent {
 <li>monitoring water bodies;</li>
 <li>urban expansion analysis.</li>
 </ul></td>
-<td style="text-align: left;"><ul>
+<td><ul>
 <li>crop growth modeling;</li>
 <li>predicting yields;</li>
 <li>trend mapping;</li>
@@ -1310,18 +1566,238 @@ div.csl-indent {
 </tr>
 </tbody>
 </table>
-<p>Source: <a href="https://eos.com/blog/spatial-resolution/">eos</a></p>
-<p>Example:</p>
+</section>
+</section>
+<section id="spectral-resolution" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="spectral-resolution">Spectral Resolution</h4>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/landsat.png" class="img-fluid figure-img" width="379"></p>
+<p><img src="images/image-1028248859.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Specification of LISS-III and LISS-IV sensors of IRS-P6. SOURCE: <a href="http://ecoursesonline.iasri.res.in/mod/page/view.php?id=124941">ecoursesonline</a></figcaption><p></p>
 </figure>
+</div>
+<div class="column-body">
+<p><strong>Number of bands + wavelength width of each band</strong></p>
+<ul>
+<li>BAND= narrow portion of the electromagnetic spectrum</li>
+<li>short wavelength width= HIGHER resolution</li>
+<li><strong><em>Multi-spectral imagery</em></strong></li>
+<li><em>measure</em>: several wavelength bands (example: visible green or NIR)</li>
+<li>Multi-spectral sensors: Landsat, Quickbird and Spot satellites</li>
+<li><em><strong>Hyperspectral imagery</strong>:</em></li>
+<li><em>measures</em>: energy in narrower and more numerous bands</li>
+<li>more sensitive to variations in energy wavelengths = greater potential</li>
+<li>Eg: used to check crop stress</li>
+</ul>
+</div>
+</section>
+<section id="radiometric-resolution" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="radiometric-resolution">Radiometric Resolution</h4>
+<div class="column-body">
+<p><strong>Amount of information in each pixel!!</strong></p>
+<ul>
+<li><em><strong>sensitivity</strong> of a remote sensor to variations in the <strong>reflectance levels</strong></em></li>
+<li>Information form? BIT= energy recorded</li>
+<li>⬆️Higher radiometric resolution = ⬆️more sensitive = ⬆️more precise picture <em>(a specific portion of the electromagnetic spectrum)=</em></li>
+<li>Sensitive how? - detecting small differences in reflectance values</li>
+<li>small differences how? - ⬆️ more values stored= ⬆️ detecting btw slightest differnce of energy</li>
+<li>How is the information recorded/ stored?
+<ul>
+<li>in the bit for an exponet of 2</li>
+<li>eg: 8 bit = 2^8 resolution = 256 potential digital values (refer example above)</li>
+<li>Application: water quality: distinguish btw subtle difference in ocen color</li>
+</ul></li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/radiometric_resolution.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Advances in remote sensing technology have significantly improved satellite imagery. Among the advances are improvements in radiometric resolution, or how sensitive an instrument is to small differences in electromagnetic energy. Sensors with high radiometric resolution can distinguish greater detail and variation in light. Credit: NASA Earth Observatory images by Joshua Stevens, using Landsat data from the U.S. Geological Survey. SOURCE: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing">earthdata</a></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="temporal-resolution" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="temporal-resolution">Temporal Resolution</h4>
+<div class="column-body">
+<p><strong>Satellite to complete an orbit and revisit the same observation area</strong></p>
+<ul>
+<li><em><strong>how often</strong> a remote sensing platform can <strong>provide coverage of an area</strong></em></li>
+<li>Geo-stationary satellites = provide continuous sensing</li>
+<li>eg cameras mounted on Airplanes <strong>=</strong> provide data for applications requiring more frequent sensing</li>
+<li>Remote sensors located: fields or attached to agricultural equipment &gt;&gt; most frequent temporal resolution</li>
+<li>normal orbiting satellites = provide data each time they pass over an area</li>
+<li>Issues: cloud cover</li>
+<li>eg: Polar orbiting satellites: temporal resolution = 1-16 days
+<ul>
+<li>MODIS sensor: resolution of 1-2 days- daily changes</li>
+<li>OLI: narrow swath width: resolution of 16 days= bi-monthly changes= high spatial resolution</li>
+<li>high spatial resolution = narrower swath = molre time = low temporal resolution</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="multilayer-images" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="multilayer-images">Multilayer Images</h4>
+<div class="column-body">
+<ul>
+<li>Of a <strong>certain area/ one particular area</strong>I on ground
+<ul>
+<li>multiple measurements</li>
+<li>each measurement forms an image (carries specific information)</li>
+<li>STACKING these images = MULTILAYER IMAGE</li>
+</ul></li>
+<li>MULTIPLELAYER image formation: (combination of)
+<ul>
+<li>same</li>
+<li>different sensors</li>
+<li>subsidiary data</li>
+<li><em>Combination eg:</em>
+<ul>
+<li>3 layers = SPOT</li>
+<li>1 layer = ERS (synthetic aperture radar)</li>
+<li>1 layer = digital elevation map</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Multilayer%20Images.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="multispectral-image" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="multispectral-image">Multispectral Image</h4>
+<div class="column-body">
+<ul>
+<li>few layers</li>
+<li>image from a particular wavelength band</li>
+<li>Eg:
+<ul>
+<li>Sensors:
+<ul>
+<li><strong>SPOT &amp; HRV</strong>
+<ul>
+<li>three wavelength bands
+<ul>
+<li>green (500 - 590 nm)</li>
+<li>red (610 - 680 nm)</li>
+<li>near infrared (790 - 890 nm)</li>
+</ul></li>
+<li>meaning: each pixel= three intensity value= corr to 3 bands</li>
+</ul></li>
+<li><strong>IKONOS</strong>
+<ul>
+<li>4 bands: Blue, Green, Red and Near Infrared</li>
+</ul></li>
+<li><strong>LANDSAT</strong>
+<ul>
+<li>7 Bands: blue, green, red, near-IR bands, two SWIR bands, and a thermal IR band</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="superspectral-image" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="superspectral-image">Superspectral Image</h4>
+<div class="column-body">
+<ul>
+<li>more wavelength bands</li>
+<li>Sensor:
+<ul>
+<li><strong>MODIS</strong>
+<ul>
+<li>36 spectral bands: visible, near infrared, short-wave infrared to the thermal infrared</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="hyperspectral-image-processing" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="hyperspectral-image-processing">Hyperspectral Image processing</h4>
+<div class="column-body">
+<ul>
+<li>Based on taking a <strong>fraction of the electromagnetic</strong> spectrum&gt; <strong>breaking it into numerous bands</strong> for theoretical analysis and computations.</li>
+<li>Why do it?
+<ul>
+<li>One can detect and identify objects more precisely compared to using only three bands information provided by a RGB camera.</li>
+</ul></li>
+<li>not commercially available, only scientific investigation</li>
+<li><strong>100+ contiguous spectral bands.</strong></li>
+<li>characteristic spectrum of the target pixel is acquired in a hyperspectral image</li>
+<li>precise spectral information</li>
+<li>enables better characterisation</li>
+<li>better identification of targets</li>
+<li>Application:
+<ul>
+<li>precision agriculture (crop: health, moisture status and maturity)</li>
+<li>coastal management ( phytoplanktons, pollution, bathymetry changes)</li>
+</ul></li>
+<li>EOI satellite</li>
+<li>Sensor:
+<ul>
+<li>CHRIS: ESA’SPRABO satellite</li>
+</ul></li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/colorizen.png" class="img-fluid figure-img" alt="Hyperspectral Data Cube. SOURCE: mathworks" width="455"></p>
+<p></p><figcaption class="figure-caption">Hyperspectral Data Cube. SOURCE: <a href="https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html">mathworks</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pixelspectra.png" class="img-fluid figure-img" alt="Hyperspectral Data Cube Processing. SOURCE: mathworks" width="448"></p>
+<p></p><figcaption class="figure-caption">Hyperspectral Data Cube Processing. SOURCE: <a href="https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html">mathworks</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/spectralunmixingn.png" class="img-fluid figure-img" alt="Spectral Unmixing. SOURCE: mathworks"></p>
+<p></p><figcaption class="figure-caption">Spectral Unmixing. SOURCE: <a href="https://www.mathworks.com/help/images/getting-started-with-hyperspectral-image-analysis.html">mathworks</a></figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="application" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
+<div class="column-body">
+<ol type="1">
+<li>The above segments explains considerablity the extent of Remote Sensing application.</li>
+<li>Data Extracted application (just a few):
+<ul>
+<li>forest fires</li>
+<li>pollution</li>
+<li>volcanic eruption</li>
+<li>Flooding</li>
+<li>weather</li>
+<li>crop growth</li>
+<li>carbon sinks</li>
+<li>forest covers</li>
+<li>City Growth</li>
+<li>Ocean floor</li>
+</ul></li>
+</ol>
+</div>
+</section>
+<section id="reflection" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<div class="column-body">
+<ol type="1">
+<li>How to approach the subject initially to understand the concepts?--- overwhelming resources, so stick to three good resources (combination of books or webpage) and don’t deviate.</li>
+<li>The entire process is about measuring and understanding reflected and emitted radiation.</li>
+<li>It is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.</li>
+<li>Sensors are on-boarded on a satellite (active and passive)</li>
+<li>Multiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.</li>
+<li>Each band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)</li>
+<li>It is interesting to see how much is observed and accomplished through remote sensing.</li>
+</ol>
 </div>
 
 
 
-</section>
-</section>
 </section>
 </section>
 
@@ -1331,6 +1807,9 @@ Lechner, Alex, Giles Foody, and Doreen Boyd. 2020. <span>“Applications in Remo
 </div>
 <div id="ref-obaid2020b" class="csl-entry" role="doc-biblioentry">
 Obaid, Fadhil, and Ali Al-Rahim. 2020. <span>“Imaging of 2D Seismic Data Using Time Migration of Ajeel Oilfield, Central of Iraq.”</span> PhD thesis. <a href="https://doi.org/10.13140/RG.2.2.21505.28003">https://doi.org/10.13140/RG.2.2.21505.28003</a>.
+</div>
+<div id="ref-phiri2017" class="csl-entry" role="doc-biblioentry">
+Phiri, Darius, and Justin Morgenroth. 2017. <span>“Remote Sensing Review Developments in Landsat Land Cover Classification Methods: A Review.”</span> <em>Remote Sensing</em> 9 (September). <a href="https://doi.org/10.3390/rs9090967">https://doi.org/10.3390/rs9090967</a>.
 </div>
 <div id="ref-tempfli2009" class="csl-entry" role="doc-biblioentry">
 Tempfli, Klaus, G. C. Huurneman, Wim Bakker, L. L. F. Janssen, W. F. Feringa, Ambro Gieske, K. A. Grabmaier, et al. 2009a. <span>“Principles of Remote Sensing : An Introductory Textbook.”</span> In, 56–85.

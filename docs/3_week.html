@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -122,6 +141,21 @@ ul.task-list li input[type="checkbox"] {
   <a href="./5_week.html" class="sidebar-item-text sidebar-link">Week 5</a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_week.html" class="sidebar-item-text sidebar-link">Week 6</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./7_week.html" class="sidebar-item-text sidebar-link">Week 7</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./8_week.html" class="sidebar-item-text sidebar-link">Week 8</a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -131,17 +165,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#landsat-9" id="toc-landsat-9" class="nav-link active" data-scroll-target="#landsat-9">Landsat 9</a>
+  <li><a href="#principle-imaging-sensor-systems" id="toc-principle-imaging-sensor-systems" class="nav-link active" data-scroll-target="#principle-imaging-sensor-systems">Principle Imaging Sensor Systems</a></li>
+  <li><a href="#scanning-modes" id="toc-scanning-modes" class="nav-link" data-scroll-target="#scanning-modes">Scanning modes</a></li>
+  <li><a href="#scan-lines" id="toc-scan-lines" class="nav-link" data-scroll-target="#scan-lines">Scan Lines</a></li>
+  <li><a href="#perspective-and-planimetry" id="toc-perspective-and-planimetry" class="nav-link" data-scroll-target="#perspective-and-planimetry">Perspective and Planimetry</a>
   <ul class="collapse">
+  <li><a href="#perspective-v" id="toc-perspective-v" class="nav-link" data-scroll-target="#perspective-v">Perspective V</a></li>
+  </ul></li>
+  <li><a href="#image-correction" id="toc-image-correction" class="nav-link" data-scroll-target="#image-correction">Image correction</a></li>
+  <li><a href="#radimetric-correction" id="toc-radimetric-correction" class="nav-link" data-scroll-target="#radimetric-correction">Radimetric Correction</a></li>
   <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction">Geometric Correction</a></li>
   <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction">Atmospheric Correction</a></li>
-  <li><a href="#topographic-correction" id="toc-topographic-correction" class="nav-link" data-scroll-target="#topographic-correction">Topographic Correction</a></li>
-  </ul></li>
+  <li><a href="#resampling" id="toc-resampling" class="nav-link" data-scroll-target="#resampling">3. Resampling</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -159,51 +201,410 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="landsat-9" class="level2">
-<h2 class="anchored" data-anchor-id="landsat-9">Landsat 9</h2>
-<p>Different sensors</p>
-<p>Push Broom vs Whisk Broom</p>
-<p>Scan Lines</p>
-<p>Recall Regression</p>
-<section id="geometric-correction" class="level3">
-<h3 class="anchored" data-anchor-id="geometric-correction">Geometric Correction</h3>
-<p>Geometric solution</p>
-<p>Geometric correction solution modelling</p>
+<section id="principle-imaging-sensor-systems" class="level3">
+<h3 class="anchored" data-anchor-id="principle-imaging-sensor-systems">Principle Imaging Sensor Systems</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Image%20recording.png" class="img-fluid figure-img" width="357"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07digitalremotesensingpartb12.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Imaging sensor Systems. SOURCE: <a href="http://www.geo-informatie.nl/courses/grs20306/lectures/07digitalremotesensingpartb/07digitalremotesensingpartb12.htm">geo-informatie</a></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="scanning-modes" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="scanning-modes">Scanning modes</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Scanningtypes.png" class="img-fluid figure-img" width="450"></p>
+<p></p><figcaption class="figure-caption">Types of Scanning Modes</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Track-scanning-systems-for-acquiring-remote-sensing.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Cross-Track and Along Track Scanner. SOURCE: <a href="https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html">onestopgis</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Factors-affecting-signal-strength-of-an-image.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Circular and side scanning systems. SOURCE: <a href="https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html">onestopgis</a></figcaption><p></p>
+</figure>
+</div>
+<div class="column-body">
+<ol type="1">
+<li>Cross- Track Scanning System - Passive system</li>
+<li>Along- Track Scanning System - Passive system</li>
+<li>Circular Scanning System - Passive system</li>
+<li>Side Scanning System</li>
+</ol>
+</div>
+<section id="cross--track-scanning-system---passive-system" class="level5 column-body">
+<h5 class="anchored" data-anchor-id="cross--track-scanning-system---passive-system">1. Cross- Track Scanning System - Passive system</h5>
 <ul>
-<li>Jensen page 244 describes</li>
-<li>RMSE</li>
+<li>Widely used</li>
+<li>faceted mirror- horizontal axis of rotation-aligned parallel with flight direction</li>
+<li>sweeping= parallel scan lines oriented normal (perpendicular) to filght direction.</li>
+<li>High Scanner speed is</li>
 </ul>
 </section>
-<section id="atmospheric-correction" class="level3">
+<section id="along--track-scanning-system---passive-system" class="level5 column-body">
+<h5 class="anchored" data-anchor-id="along--track-scanning-system---passive-system">2. Along- Track Scanning System - Passive system</h5>
+<ul>
+<li>Along track scanning/ push-broom scanners= movement of the ground resolution cells</li>
+<li>has individual detector- insead of mirrior-
+<ul>
+<li>to increase dwell time for each ground resolution</li>
+<li>hence elemination of scanning mirrior</li>
+<li>introduction of individual detector for each ground resolution cell (across the swath)</li>
+<li>placement of detectors- linear array (focal plane of the image)</li>
+</ul></li>
+<li>orientation of long axis of linear array- Normal to light path</li>
+<li>IFOV of detector- sweeps terrain prallel with the flight track</li>
+<li>Increased dwell time
+<ul>
+<li>ditectors: smaller IFOC (finer SPATIAL resolution) and narrow spectral bandwidth (higher SPECTRAL resolution)</li>
+</ul></li>
+</ul>
+</section>
+<section id="circular-scanning-system---passive-system" class="level5 column-body">
+<h5 class="anchored" data-anchor-id="circular-scanning-system---passive-system">3. Circular Scanning System - Passive system</h5>
+<ul>
+<li>mounting of scan monitor and mirror= vertical axis of rotation</li>
+<li>path of sweeping- circular</li>
+<li>only forward portion of sweep is recorded</li>
+<li>processing and display systems designed for linear scan data</li>
+<li>circular scan data</li>
+<li>extensively reformatted (prior processing)</li>
+<li>short dwell time (compared to cross- track scanners)</li>
+<li>Application:
+<ul>
+<li>reconnaissance purpose (heli and low flying aircraft)</li>
+</ul></li>
+</ul>
+</section>
+<section id="side-scanning-system" class="level5 column-body">
+<h5 class="anchored" data-anchor-id="side-scanning-system">4. Side Scanning System</h5>
+<ul>
+<li>Active system</li>
+<li>Eg: sonar (SOund NAvigation and Ranging)</li>
+<li>Application:
+<ul>
+<li>Map seafloors</li>
+<li>Habitat of marine animals</li>
+<li>Detecting imaging objects in sea floors</li>
+<li>Transducer array sent and recieved</li>
+<li>Mounted on ship’s hull</li>
+</ul></li>
+<li>Benefits: less expensive</li>
+<li>Issues: cannot measure: Bathymetry (depth)</li>
+<li>solution: use it in tandem single-bean and multibean sonar</li>
+</ul>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Multi-spectral-and-Hyper-spectral-Data-Collection.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">remote sensing system used for multi-spectral and Hyper- Spectral Data collection. SOURCE: <a href="https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html">onestopgis</a></figcaption><p></p>
+</figure>
+</div>
+<section id="factors-affecting-signal-strength" class="level4 page-columns page-full">
+<h4 class="anchored" data-anchor-id="factors-affecting-signal-strength">Factors affecting Signal Strength</h4>
+<div class="column-body">
+<ul>
+<li>Energy Flux</li>
+<li>altitude</li>
+<li>Spectral Bandwidth of the detector</li>
+<li>instantaneous field of view</li>
+<li>Dwell time</li>
+</ul>
+</div>
+</section>
+</section>
+<section id="scan-lines" class="level3 column-body">
+<h3 class="anchored" data-anchor-id="scan-lines">Scan Lines</h3>
+<p>“A remote-sensing tool with a line of many fixed sensors that record reflected radiation from the terrain along a satellite’s direction of movement, creating scan-line strips that are contiguous or that overlap slightly, thereby producing an image” <a href="https://support.esri.com/en-us/gis-dictionary/along-track-scanner#:~:text=%5Bremote%20sensing%5D%20A%20remote%2D,slightly%2C%20thereby%20producing%20an%20image.">esri</a></p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/The-chain-of-satellite-data-acquisition-The-scanning-device-records-data-pixel-by_W640.jpg" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The chain of satellite data acquisition. The scanning device records data, pixel by pixel, along a scan line. Assembling the scan lines gives an image. The radiation is recorded in grey levels. SOURCE: <span class="citation" data-cites="adamo2020">Adamo et al. (<a href="#ref-adamo2020" role="doc-biblioref">2020</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<section id="perspective-and-planimetry" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="perspective-and-planimetry">Perspective and Planimetry</h2>
+<section id="perspective-v" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="perspective-v">Perspective V</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/3d-projections.png.webp" class="img-fluid figure-img" width="392"></p>
+<p></p><figcaption class="figure-caption">Orthographic and View. <em>SOURCE: <a href="https://mashyo.com/3d-views/">mashyo</a></em></figcaption><p></p>
+</figure>
+</div>
+<table class="table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 28%">
+<col style="width: 57%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Perspective View</th>
+<th style="text-align: left;">Planimetric View</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">lights rays reflected</td>
+<td style="text-align: left;">pass through one single point at the center</td>
+<td style="text-align: left;">looks as through every position on the ground is being viewed from directly above</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Scale</td>
+<td style="text-align: left;">Varies</td>
+<td style="text-align: left;">everywhere consistent (if we overlook variation in small- scale maps (map projections)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">view</td>
+<td style="text-align: left;"><p>objects far away = smaller</p>
+<p>objects close= bigger</p></td>
+<td style="text-align: left;">all objects appear to be of the same scale.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">perception</td>
+<td style="text-align: left;">more perspective of depth</td>
+<td style="text-align: left;">comparatively no (as easier to compare between two points, as there is no perception of distance)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">more realistic looking due to depth perception</td>
+<td style="text-align: left;">accurate measure, details are clear</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Example</td>
+<td style="text-align: left;">photo-realistic renderings or animations</td>
+<td style="text-align: left;">Topographic maps, Orthoimages, technical drawings and architectural plans etc.</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/1024px-OrthoPerspective.svg.png" class="img-fluid figure-img" width="491"></p>
+<p></p><figcaption class="figure-caption">Orthographic and Perspective View. <em>SOURCE: <a href="https://en.wikipedia.org/wiki/Orthophoto#/media/File:OrthoPerspective.svg">wikipedia</a></em></figcaption><p></p>
+</figure>
+</div>
+<div class="column-body">
+<p>Two corrections</p>
+</div>
+</section>
+</section>
+<section id="image-correction" class="level2 column-body">
+<h2 class="anchored" data-anchor-id="image-correction">Image correction</h2>
+<ul>
+<li>Raw remotely sensed data- ISSUES
+<ul>
+<li>Geometric and radiometric flaws – why?</li>
+<li>Curved shape of the Earth</li>
+<li>Imperfectly transparent atmosphere</li>
+<li>Daily and seasonal variations (receiving solar radiation)</li>
+<li>Imperfections in scanning instruments</li>
+</ul></li>
+<li>why do we need image correction??
+<ul>
+<li>to remove distortion= individual picture elements are in their proper plainmetric (x,y).</li>
+<li></li>
+</ul></li>
+</ul>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/distortion.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Distortion and Correction</figcaption><p></p>
+</figure>
+</div>
+<section id="radimetric-correction" class="level3 column-body">
+<h3 class="anchored" data-anchor-id="radimetric-correction">Radimetric Correction</h3>
+</section>
+<section id="geometric-correction" class="level3 column-body">
+<h3 class="anchored" data-anchor-id="geometric-correction">Geometric Correction</h3>
+<ul>
+<li>PROCESS:
+<ul>
+<li>correcting geometric distortion</li>
+<li>assigning properties of a map to an image</li>
+</ul></li>
+</ul>
+<p>Source:</p>
+<ul>
+<li>Relief displacement
+<ul>
+<li>less factor: satellite remote sensing (due to altitude)</li>
+<li>high factor: aerial imagin</li>
+</ul></li>
+<li>earth curvature
+<ul>
+<li>curvature</li>
+<li>eastward spinning</li>
+</ul></li>
+<li>ORBIT:
+<ul>
+<li>ORBIT of earth:West to East</li>
+<li>ORBIT of satellite: pole to pole (IKONOS, Landsat, and the NOAA)</li>
+<li>Cylindrical projection: S shape waves</li>
+</ul></li>
+<li>Each scan row begins at a position slightly west of the row that preceded it</li>
+<li>first pixel in each row appears to be aligned with the other initial pixels</li>
+<li></li>
+</ul>
+<p>Geometric correction solution modelling 2 solution: - Jensen page 244 describes - RMSE</p>
+</section>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/geometric.png" class="img-fluid figure-img" width="778"></p>
+<p></p><figcaption class="figure-caption">Geometric Correction</figcaption><p></p>
+</figure>
+</div>
+<section id="atmospheric-correction" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="atmospheric-correction">Atmospheric Correction</h3>
 <ul>
+<li>Need:
+<ul>
+<li>To remove the scattering and absorption effects from the atmosphere</li>
+<li>why?- to obtain surface reflectance characterstics</li>
+</ul></li>
+</ul>
+<ol type="1">
 <li>Atmospheric scattering (as we saw in week 1)</li>
 <li>Topographic attenuation (up next)</li>
 <li>Unnecessary</li>
 <li>Necessary</li>
-</ul>
-<p>Atmospheric correction types</p>
+</ol>
+</section>
+<section id="atmospheric-correction-types" class="level4 column-body">
+<h4 class="anchored" data-anchor-id="atmospheric-correction-types">1. Atmospheric correction types</h4>
 <ul>
 <li>Dark object subtraction</li>
 <li>Psuedo-invariant Features</li>
 <li>Absolute(definitive)</li>
-<li>4th</li>
-<li>Empirical Line Correction (3)</li>
+<li>4th - Empirical Line Correction (3)</li>
 </ul>
 </section>
-<section id="topographic-correction" class="level3">
-<h3 class="anchored" data-anchor-id="topographic-correction">Topographic Correction</h3>
-<p>Orthorectification Correction (6)</p>
-<p>Radiometric Calibration</p>
-<p>Landsat ARD- Surface reflectance</p>
-<p>Joining data sets</p>
-<p>Image Enhancement</p>
+<section id="topographic-correction" class="level4 column-body">
+<h4 class="anchored" data-anchor-id="topographic-correction">2. Topographic Correction</h4>
+<ul>
+<li>Orthorectification Correction (6)</li>
+<li>Radiometric Calibration</li>
+<li>Landsat ARD- Surface reflectance</li>
+<li>Joining data sets</li>
+<li>Image Enhancement</li>
+</ul>
+</section>
+<section id="unnecessary" class="level4 column-body">
+<h4 class="anchored" data-anchor-id="unnecessary">3. Unnecessary</h4>
+<ul>
+<li>Ortho</li>
+</ul>
+</section>
+<section id="necessary" class="level4 column-body">
+<h4 class="anchored" data-anchor-id="necessary">4. Necessary</h4>
+<ul>
+<li>Orthorect</li>
+</ul>
+</section>
+<section id="resampling" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="resampling">3. Resampling</h3>
+<div class="column-body">
+<ul>
+<li>extraction of a brightness value from an x, y location</li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/resampling_.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Re-sampling types</figcaption><p></p>
+</figure>
+</div>
+<table class="table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 58%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Nearest Neighbour</th>
+<th style="text-align: left;">Bilinear</th>
+<th style="text-align: left;">Cubic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><ul>
+<li>Brightness value Assigning:
+<ul>
+<li>OUTPUT (x’,y’) &lt;= closed to the specified (x’, y’) coordinate</li>
+<li>OR</li>
+<li>Assigned value OUTPUT pixel= NEAREST input pixel</li>
+</ul></li>
+<li>Computation: Pythagorean theorem</li>
+<li>Advantage:
+<ul>
+<li>DOES NOT alter image pixel value</li>
+</ul></li>
+</ul></td>
+<td style="text-align: left;"><ul>
+<li><p>Assigning:</p>
+<ul>
+<li><p>OUTPUT pixel values &lt;= two orthogonal directions in the input image</p></li>
+<li><p>OR</p></li>
+<li><p>Fits (plane of four-pixel value) NEAREST to the desired position in the input image =&gt; computes =&gt; new brightness value (based on the weighted distance)</p></li>
+</ul></li>
+</ul></td>
+<td style="text-align: left;"><p>similar to Bilinear</p>
+<ul>
+<li><p>weighted value assignment:</p>
+<ul>
+<li><p>computing 16 input pixel values</p></li>
+<li><p>surrounding desired x’,y’ location</p></li>
+<li><p>+&gt; estimate the output pixel</p></li>
+</ul></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/image-2019968424.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1493748426.png" class="img-fluid figure-img" alt="Nearest-Neighbour. Source: esa"></p>
+<p></p><figcaption class="figure-caption">Nearest-Neighbour. Source: <a href="https://lps16.esa.int/posterfiles/paper1213/%5bRD3%5d_Philpot_615_04_GeomCorrect_rev01.pdf">esa</a></figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1975374788.png" class="img-fluid figure-img" alt="Bilinear Interpolation. Source: esa"></p>
+<p></p><figcaption class="figure-caption">Bilinear Interpolation. Source: <a href="https://lps16.esa.int/posterfiles/paper1213/%5bRD3%5d_Philpot_615_04_GeomCorrect_rev01.pdf">esa</a></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="application" class="level2">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
+</section>
+<section id="reflection" class="level2">
+
+
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Reflection</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-adamo2020" class="csl-entry" role="doc-biblioentry">
+Adamo, Nasrat, Nadhir Al-Ansari, Sabah Ali, Jan Laue, and Sven Knutsson. 2020. <span>“Dams Safety: Review of Satellite Remote Sensing Applications to Dams and Reservoirs.”</span> <em>Journal of Earth Sciences and Geotechnical Engineering</em> 11 (September): 347–438. <a href="https://doi.org/10.47260/jesge/1119">https://doi.org/10.47260/jesge/1119</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

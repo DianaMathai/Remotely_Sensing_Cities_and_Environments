@@ -1,50 +1,255 @@
 ---
 title: "Remote sensing data"
 output: html_document
+bibliography: references.bib
 ---
 
-## Landsat 9
+### Principle Imaging Sensor Systems
 
-Different sensors
+![](images/Image%20recording.png){fig-align="center" width="357"}
 
-Push Broom vs Whisk Broom
+![Imaging sensor Systems. SOURCE: [geo-informatie](http://www.geo-informatie.nl/courses/grs20306/lectures/07digitalremotesensingpartb/07digitalremotesensingpartb12.htm)](images/07digitalremotesensingpartb12.png){fig-align="center"}
 
-Scan Lines
+### Scanning modes
 
-Recall Regression
+![Types of Scanning Modes](images/Scanningtypes.png){fig-align="center" width="450"}
 
+![Cross-Track and Along Track Scanner. SOURCE: [onestopgis](https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html)](images/Track-scanning-systems-for-acquiring-remote-sensing.png){fig-align="center"}
+
+![Circular and side scanning systems. SOURCE: [onestopgis](https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html)](images/Factors-affecting-signal-strength-of-an-image.png){fig-align="center"}
+
+::: column-body
+1.  Cross- Track Scanning System - Passive system
+2.  Along- Track Scanning System - Passive system
+3.  Circular Scanning System - Passive system
+4.  Side Scanning System
+:::
+
+::: column-body
+##### 1. Cross- Track Scanning System - Passive system
+
+-   Widely used
+-   faceted mirror- horizontal axis of rotation-aligned parallel with flight direction
+-   sweeping= parallel scan lines oriented normal (perpendicular) to filght direction.
+-   High Scanner speed is
+:::
+
+::: column-body
+##### 2. Along- Track Scanning System - Passive system
+
+-   Along track scanning/ push-broom scanners= movement of the ground resolution cells
+-   has individual detector- insead of mirrior-
+    -   to increase dwell time for each ground resolution
+    -   hence elemination of scanning mirrior
+    -   introduction of individual detector for each ground resolution cell (across the swath)
+    -   placement of detectors- linear array (focal plane of the image)
+-   orientation of long axis of linear array- Normal to light path
+-   IFOV of detector- sweeps terrain prallel with the flight track
+-   Increased dwell time
+    -   ditectors: smaller IFOC (finer SPATIAL resolution) and narrow spectral bandwidth (higher SPECTRAL resolution)
+:::
+
+::: column-body
+##### 3. Circular Scanning System - Passive system
+
+-   mounting of scan monitor and mirror= vertical axis of rotation
+-   path of sweeping- circular
+-   only forward portion of sweep is recorded
+-   processing and display systems designed for linear scan data
+-   circular scan data
+-   extensively reformatted (prior processing)
+-   short dwell time (compared to cross- track scanners)
+-   Application:
+    -   reconnaissance purpose (heli and low flying aircraft)
+:::
+
+::: column-body
+##### 4. Side Scanning System
+
+-   Active system
+-   Eg: sonar (SOund NAvigation and Ranging)
+-   Application:
+    -   Map seafloors
+    -   Habitat of marine animals
+    -   Detecting imaging objects in sea floors
+    -   Transducer array sent and recieved
+    -   Mounted on ship's hull
+-   Benefits: less expensive
+-   Issues: cannot measure: Bathymetry (depth)
+-   solution: use it in tandem single-bean and multibean sonar
+:::
+
+![remote sensing system used for multi-spectral and Hyper- Spectral Data collection. SOURCE: [onestopgis](https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html)](images/Multi-spectral-and-Hyper-spectral-Data-Collection.png)
+
+#### Factors affecting Signal Strength
+
+::: column-body
+-   Energy Flux
+-   altitude
+-   Spectral Bandwidth of the detector
+-   instantaneous field of view
+-   Dwell time
+:::
+
+::: column-body
+### Scan Lines
+
+"A remote-sensing tool with a line of many fixed sensors that record reflected radiation from the terrain along a satellite's direction of movement, creating scan-line strips that are contiguous or that overlap slightly, thereby producing an image" [esri](https://support.esri.com/en-us/gis-dictionary/along-track-scanner#:~:text=%5Bremote%20sensing%5D%20A%20remote%2D,slightly%2C%20thereby%20producing%20an%20image.)
+:::
+
+![The chain of satellite data acquisition. The scanning device records data, pixel by pixel, along a scan line. Assembling the scan lines gives an image. The radiation is recorded in grey levels. SOURCE: @adamo2020](images/The-chain-of-satellite-data-acquisition-The-scanning-device-records-data-pixel-by_W640.jpg){fig-align="center"}
+
+## Perspective and Planimetry
+
+### Perspective V
+
+![Orthographic and View. *SOURCE: [mashyo](https://mashyo.com/3d-views/)*](images/3d-projections.png.webp){fig-align="center" width="392"}
+
++-----------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------+
+|                       | Perspective View                               | Planimetric View                                                                                  |
++:======================+:===============================================+:==================================================================================================+
+| lights rays reflected | pass through one single point at the center    | looks as through every position on the ground is being viewed from directly above                 |
++-----------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------+
+| Scale                 | Varies                                         | everywhere consistent (if we overlook variation in small- scale maps (map projections)            |
++-----------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------+
+| view                  | objects far away = smaller                     | all objects appear to be of the same scale.                                                       |
+|                       |                                                |                                                                                                   |
+|                       | objects close= bigger                          |                                                                                                   |
++-----------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------+
+| perception            | more perspective of depth                      | comparatively no (as easier to compare between two points, as there is no perception of distance) |
++-----------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------+
+|                       | more realistic looking due to depth perception | accurate measure, details are clear                                                               |
++-----------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------+
+| Example               | photo-realistic renderings or animations       | Topographic maps, Orthoimages, technical drawings and architectural plans etc.                    |
++-----------------------+------------------------------------------------+---------------------------------------------------------------------------------------------------+
+
+![Orthographic and Perspective View. *SOURCE: [wikipedia](https://en.wikipedia.org/wiki/Orthophoto#/media/File:OrthoPerspective.svg)*](images/1024px-OrthoPerspective.svg.png){fig-align="center" width="491"}
+
+::: column-body
+Two corrections
+:::
+
+::: column-body
+## Image correction
+
+-   Raw remotely sensed data- ISSUES
+    -   Geometric and radiometric flaws -- why?
+    -   Curved shape of the Earth
+    -   Imperfectly transparent atmosphere
+    -   Daily and seasonal variations (receiving solar radiation)
+    -   Imperfections in scanning instruments
+-   why do we need image correction??
+    -   to remove distortion= individual picture elements are in their proper plainmetric (x,y).
+    -   
+:::
+
+![Distortion and Correction](images/distortion.png){fig-align="center"}
+
+::: column-body
+### Radimetric Correction
+:::
+
+::: column-body
 ### Geometric Correction
 
-Geometric solution
+-   PROCESS:
+    -   correcting geometric distortion
+    -   assigning properties of a map to an image
 
-Geometric correction solution modelling
+Source:
 
--   Jensen page 244 describes
--   RMSE
+-   Relief displacement
+    -   less factor: satellite remote sensing (due to altitude)
+    -   high factor: aerial imagin
+-   earth curvature
+    -   curvature
+    -   eastward spinning
+-   ORBIT:
+    -   ORBIT of earth:West to East
+    -   ORBIT of satellite: pole to pole (IKONOS, Landsat, and the NOAA)
+    -   Cylindrical projection: S shape waves
+-   Each scan row begins at a position slightly west of the row that preceded it
+-   first pixel in each row appears to be aligned with the other initial pixels
+-   
 
-### Atmospheric Correction 
+Geometric correction solution modelling 2 solution: - Jensen page 244 describes - RMSE
+:::
 
--   Atmospheric scattering (as we saw in week 1)
--   Topographic attenuation (up next)
--   Unnecessary
--   Necessary
+![Geometric Correction](images/geometric.png){fig-align="center" width="778"}
 
-Atmospheric correction types
+
+::: column-body
+### Atmospheric Correction
+
+-   Need:
+    -   To remove the scattering and absorption effects from the atmosphere
+    -   why?- to obtain surface reflectance characterstics
+
+1.  Atmospheric scattering (as we saw in week 1)
+2.  Topographic attenuation (up next)
+3.  Unnecessary
+4.  Necessary
+:::
+
+::: column-body
+#### 1. Atmospheric correction types
 
 -   Dark object subtraction
 -   Psuedo-invariant Features
 -   Absolute(definitive)
--   4th
--   Empirical Line Correction (3)
+-   4th - Empirical Line Correction (3)
+:::
 
-### Topographic Correction
+::: column-body
+#### 2. Topographic Correction
 
-Orthorectification Correction (6)
+-   Orthorectification Correction (6)
+-   Radiometric Calibration
+-   Landsat ARD- Surface reflectance
+-   Joining data sets
+-   Image Enhancement
+:::
 
-Radiometric Calibration
+::: column-body
+#### 3. Unnecessary
 
-Landsat ARD- Surface reflectance
+-   Ortho
+:::
 
-Joining data sets
+::: column-body
+#### 4. Necessary
 
-Image Enhancement
+-   Orthorect
+:::
+
+### 3. Resampling
+
+::: column-body
+-   extraction of a brightness value from an x, y location
+:::
+
+![Re-sampling types](images/resampling_.png){fig-align="center"}
+
++------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+| Nearest Neighbour                                                      | Bilinear                                                                                                                                                           | Cubic                                      |
++:=======================================================================+:===================================================================================================================================================================+:===========================================+
+| -   Brightness value Assigning:                                        | -   Assigning:                                                                                                                                                     | similar to Bilinear                        |
+|     -   OUTPUT (x',y') \<= closed to the specified (x', y') coordinate |                                                                                                                                                                    |                                            |
+|     -   OR                                                             |     -   OUTPUT pixel values \<= two orthogonal directions in the input image                                                                                       | -   weighted value assignment:             |
+|     -   Assigned value OUTPUT pixel= NEAREST input pixel               |                                                                                                                                                                    |                                            |
+| -   Computation: Pythagorean theorem                                   |     -   OR                                                                                                                                                         |     -   computing 16 input pixel values    |
+| -   Advantage:                                                         |                                                                                                                                                                    |                                            |
+|     -   DOES NOT alter image pixel value                               |     -   Fits (plane of four-pixel value) NEAREST to the desired position in the input image =\> computes =\> new brightness value (based on the weighted distance) |     -   surrounding desired x',y' location |
+|                                                                        |                                                                                                                                                                    |                                            |
+|                                                                        |                                                                                                                                                                    |     -   +\> estimate the output pixel      |
++------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------+
+
+![](images/image-2019968424.png)
+
+![Nearest-Neighbour. Source: [esa](https://lps16.esa.int/posterfiles/paper1213/%5bRD3%5d_Philpot_615_04_GeomCorrect_rev01.pdf)](images/image-1493748426.png){alt="Nearest-Neighbour. Source: esa" fig-align="center"}
+
+![Bilinear Interpolation. Source: [esa](https://lps16.esa.int/posterfiles/paper1213/%5bRD3%5d_Philpot_615_04_GeomCorrect_rev01.pdf)](images/image-1975374788.png){alt="Bilinear Interpolation. Source: esa"}
+
+## Application
+
+## Reflection
