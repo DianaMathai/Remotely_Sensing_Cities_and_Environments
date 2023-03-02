@@ -93,9 +93,9 @@
   {
     "objectID": "5_week.html",
     "href": "5_week.html",
-    "title": "5_week",
+    "title": "An introduction to Google Earth Engine",
     "section": "",
-    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nWhen you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+    "text": "Prior- longer pre-processing time.\nwhy Google satellite feature in good maps don’t have clouds? `- Imagine u took picture of one place or location every day, some days cloudy (clouds move too), other not. You stack them up,choose the pixel and go through it vertically and choose the best pixel. Best pixel=median pixel (one that is not too bright nor too dark)= cloud free image."
   },
   {
     "objectID": "5_week.html#including-plots",
@@ -186,14 +186,14 @@
     "href": "1_week.html#application",
     "title": "An Introduction to Remote Sensing",
     "section": "Application",
-    "text": "Application\n\n\nThe above segments explains considerablity the extent of Remote Sensing application.\nData Extracted application (just a few):\n\nforest fires\npollution\nvolcanic eruption\nFlooding\nweather\ncrop growth\ncarbon sinks\nforest covers\nCity Growth\nOcean floor"
+    "text": "Application\n\n\nThe above segments explains considerably the extent of Remote Sensing application.\nData Extracted application (just a few):\n\nforest fires\npollution\nvolcanic eruption\nFlooding\nweather\ncrop growth\ncarbon sinks\nforest covers\nCity Growth\nOcean floor"
   },
   {
     "objectID": "1_week.html#reflection",
     "href": "1_week.html#reflection",
     "title": "An Introduction to Remote Sensing",
     "section": "Reflection",
-    "text": "Reflection\n\n\nHow to approach the subject initially to understand the concepts?--- overwhelming resources, so stick to three good resources (combination of books or webpage) and don’t deviate.\nThe entire process is about measuring and understanding reflected and emitted radiation.\nIt is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.\nSensors are on-boarded on a satellite (active and passive)\nMultiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.\nEach band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)\nIt is interesting to see how much is observed and accomplished through remote sensing."
+    "text": "Reflection\n\n\nHow to approach the subject initially to understand the concepts?--- overwhelming resources, so stick to three good resources (combination of books or webpage) and don’t deviate.\nThe entire process is about measuring and understanding reflected and emitted radiation.\nIt is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.\nSensors are on-boarded on a satellite (active and passive)\nMultiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.\nEach band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)\nIt is interesting to see how much is observed and accomplished through remote sensing.\nIts is essential to understand which scale data is required and for what use/ size of target that is to be resolved, based on which the specific satellite data is to be accuired. Eg. If I need to find data to count the number of cars parked in a parking lot, I wont use Landsat imagery as it is (30mx30m). Solution: Maxar or planet.com (3mx3m)\nwhat ever needs to be detected through remote sensing need to be twice the size of your pixel.\nCadence: Landset-16days (40 year time period), sentinel 2-10days(equator) and 2-3 (mid latitude) (10mx10m) pixel == its amazing, so many questions can be resolved in short duration of time."
   },
   {
     "objectID": "3_week.html#application",
@@ -215,5 +215,33 @@
     "title": "Remote sensing data",
     "section": "Perspective and Planimetry",
     "text": "Perspective and Planimetry\n\nPerspective V\n\n\n\nOrthographic and View. SOURCE: mashyo\n\n\n\n\n\n\n\n\n\n\n\nPerspective View\nPlanimetric View\n\n\n\n\nlights rays reflected\npass through one single point at the center\nlooks as through every position on the ground is being viewed from directly above\n\n\nScale\nVaries\neverywhere consistent (if we overlook variation in small- scale maps (map projections)\n\n\nview\nobjects far away = smaller\nobjects close= bigger\nall objects appear to be of the same scale.\n\n\nperception\nmore perspective of depth\ncomparatively no (as easier to compare between two points, as there is no perception of distance)\n\n\n\nmore realistic looking due to depth perception\naccurate measure, details are clear\n\n\nExample\nphoto-realistic renderings or animations\nTopographic maps, Orthoimages, technical drawings and architectural plans etc.\n\n\n\n\n\n\nOrthographic and Perspective View. SOURCE: wikipedia\n\n\n\nTwo corrections"
+  },
+  {
+    "objectID": "5_week.html#google-earth-engine-piratical",
+    "href": "5_week.html#google-earth-engine-piratical",
+    "title": "An introduction to Google Earth Engine",
+    "section": "Google Earth Engine Piratical",
+    "text": "Google Earth Engine Piratical\n\n\nPoint= ee.Geometry.Point ; latlong\nTo convert into Import record> place the cursor on the code, there will be no pop-up message\nLoading data from Landsat.\n\nsearch>landsat>Landsat 9 OLI-2/TIRS-2>Surface Reflectance> USGS Landsat 9 Level 2, Collection 2, Tier 1\n\nDownloading shp file from gadm\n\ndownload file from https://gadm.org/download_country.html > data> country> India> shapefile> download- dont unzip\n\nDo not load multiple layers, just extract the required layers and load them (.shp, .dbf, and .shx files)\nLoad the layers> click>view assets> features> select the required file\n\n\n\nProblems\nCould not find Delhi layer to filter so chose chhattisgarh\n\n\n\nclick on the “map” to inspect\nfunction .toUint16() as.glcmTexture won’t work with 32 bit data.\nPCA (read Andy’s notes for details)\nDont forget to move the point initiziation in the beginning \ncheck max and minimum pixel to avoid the below error, increase the limit- 20e9 \nError of the band"
+  },
+  {
+    "objectID": "5_week.html#application",
+    "href": "5_week.html#application",
+    "title": "An introduction to Google Earth Engine",
+    "section": "Application",
+    "text": "Application\n\nPratical:"
+  },
+  {
+    "objectID": "5_week.html#reflection",
+    "href": "5_week.html#reflection",
+    "title": "An introduction to Google Earth Engine",
+    "section": "Reflection",
+    "text": "Reflection"
+  },
+  {
+    "objectID": "6_week.html",
+    "href": "6_week.html",
+    "title": "Classification I",
+    "section": "",
+    "text": "Land cover mapping using Random forest. SOURCE: bikeshbade"
   }
 ]

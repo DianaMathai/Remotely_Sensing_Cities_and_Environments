@@ -4,7 +4,7 @@ output: html_document
 bibliography: references.bib
 ---
 
-:::{.column-body}
+::: column-body
 ⭐ *Search for one metropolitan policy challenge (any city in the World) that could be solved by incorporating remotely sensed data.*
 :::
 
@@ -44,9 +44,10 @@ bibliography: references.bib
 | *SOURCE: [lowcarbonlivingcrc](http://www.lowcarbonlivingcrc.com.au/sites/all/files/publications_file_attachments/rp2024_guide_to_urban_cooling_strategies_2017_web.pdf)* |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
-:::{.column-body}
+::: column-body
 *why implement it??*
 :::
+
 -   A low cost solution in low rise low income houses @kolokotroni2018
 -   Disadvantages & Advantages: @ashtari2021, @macintyre2019, [unequalscenes](https://unequalscenes.com/), [preventionweb](https://www.preventionweb.net/news/india-keeping-it-cool-models-city-cool-roof-programs)
 
@@ -68,25 +69,25 @@ bibliography: references.bib
 | Heat island: *SOURCE: [publichealthnotes](https://www.publichealthnotes.com/urban-heat-island-effects-mitigation-measures/)* |
 +------------------------------------------------------------------------------------------------------------------------------+
 
-:::{.column-body}
+::: column-body
 ⭐ *Identify and evaluate a remotely sensed data set that could be used to assist with contributing to the policy goal*
 :::
 
-:::{.column-body}
+::: column-body
 *Impact:* Health, Nature, economy, Infra, service provision Relation between Land Surface Temperature Data and Land Use Data
 :::
 
-+-----------------------------------------------------------------------+
-| *Milestone*                                                           |
-+:======================================================================+
-| ![](images/paste-C1977A89.png){width="327"}                           |
-|                                                                       |
-| ![](images/paste-9732D730.png){width="235"}                           |
-+-----------------------------------------------------------------------+
-
++---------------------------------------------+
+| *Milestone*                                 |
++:============================================+
+| ![](images/paste-C1977A89.png){width="327"} |
+|                                             |
+| ![](images/paste-9732D730.png){width="235"} |
++---------------------------------------------+
 
 ## Process
-:::{.column-body}
+
+::: column-body
 1.  Maps:
     -   Hyderabad City Area: ward map (Spatial Boundaries)
     -   Building
@@ -96,15 +97,14 @@ bibliography: references.bib
 5.  Remote sensing data:
     -   USGS earth explorer website
     -   Land use and land cover: Landsat+TIRS (Thermal Infrared Sensor)/OLI -- not much clarity on TIRS
-6.  Measure:
-    Land surface temperature (LST): infer
+6.  Measure: Land surface temperature (LST): infer
     -   Physiological Equivalent Temperature (PET)
     -   Limitations: does not fully capture the set of micrometeorological conditions that factor into human thermal comfort or heat stress.
     -   Used: LST presents data at higher spatial resolutions, thereby enabling comparisons among different neighbourhoods
     -   Day time and night time LST
 :::
 
-:::{.column-body}
+::: column-body
 *Step:*
 
 1.  Pre-process (geometric, atmospheric and topographic corrections)
@@ -125,8 +125,7 @@ bibliography: references.bib
     -   LST & NDBI
 :::
 
-
-:::{.column-body}
+::: column-body
 *may be Inclusion of Social Aspect?*
 
 1.  Emergency department visit: patient, inpatient/ outpatient in hospitals
@@ -148,11 +147,10 @@ bibliography: references.bib
 6.  to determine the appropriate model.
     -   Lagrange Multiplier (LM) test
 7.  Checking for heteroscedasticity
-8.  Breusch-Pagan tests\> upon revealing significant heteroscedasticity, corrections were applied
-Refer: @litardo2020a
+8.  Breusch-Pagan tests\> upon revealing significant heteroscedasticity, corrections were applied Refer: @litardo2020a
 :::
 
-:::{.column-body}
+::: column-body
 ⭐ *Demonstrate how this links to global agendas / goals*
 :::
 
@@ -187,11 +185,11 @@ Refer: @litardo2020a
 |             | [SDG 13](https://datatopics.worldbank.org/sdgatlas/goal-13-climate-action/): Take urgent action to combat climate change and its impacts                                      |                                                                                        |                                                                                                          |
 +-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
-:::{.column-body}
+::: column-body
 ⭐ *Explain how it advances current local, national or global approaches*
 :::
 
-:::{.column-body}
+::: column-body
 -   Emphasis on monitoring and impact evaluation- it would be **evidence based**, hence required measure can be taken.
     -   RS would help facilitate it
     -   Challenges:
@@ -214,11 +212,10 @@ Refer: @litardo2020a
 | @wellmann2020                          | @litardo2020                           | @casali2022                            | @martinez2023                          |
 +----------------------------------------+----------------------------------------+----------------------------------------+----------------------------------------+
 
-:::{.column-body}
+::: column-body
 Other:
 
 -   @ravanelli2018a
 -   @litardo2020
 -   @achievin2022
 :::
-

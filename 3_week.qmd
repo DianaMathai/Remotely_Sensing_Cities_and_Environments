@@ -177,7 +177,6 @@ Geometric correction solution modelling 2 solution: - Jensen page 244 describes 
 
 ![Geometric Correction](images/geometric.png){fig-align="center" width="778"}
 
-
 ::: column-body
 ### Atmospheric Correction
 

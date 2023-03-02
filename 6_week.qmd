@@ -3,3 +3,5 @@ title: "Classification I"
 output: html_document
 bibliography: references.bib
 ---
+
+![Land cover mapping using Random forest. SOURCE: [bikeshbade](https://bikeshbade.com.np/tutorials/Detail/?title=Supervised%20Classification%20in%20GEE&code=20)](images/rf.jpg){fig-align="center"}

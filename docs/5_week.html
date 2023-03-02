@@ -142,10 +142,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#google-earth-engine-piratical" id="toc-google-earth-engine-piratical" class="nav-link active" data-scroll-target="#google-earth-engine-piratical">Google Earth Engine Piratical</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -163,8 +171,231 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="column-body">
+<ul>
+<li>Prior- longer pre-processing time.</li>
+<li>why Google satellite feature in good maps don’t have clouds? `- Imagine u took picture of one place or location every day, some days cloudy (clouds move too), other not. You stack them up,choose the pixel and go through it vertically and choose the best pixel. Best pixel=median pixel (one that is not too bright nor too dark)= cloud free image.</li>
+</ul>
+</div>
+<div class="column-body">
+<ul>
+<li>script</li>
+<li>where u can open codes</li>
+<li>get link</li>
+<li>to generate link, share it, the person u shared it with can open it and help u troubleshoot it</li>
+<li>Java script involves a lot of declaring variables, so learn how to declare “var” for gee on script box</li>
+<li>end with (;)</li>
+<li>/* or // instead of # to remove code/ comment out</li>
+<li>when you stretch images, keep it in smaller value to not make it appear graded out. Eg: Map.addLayer(srtm, {min: 0, max: 3000}, ‘srtm’); - black and white data set</li>
+<li>0s and 1s</li>
+<li>layers widget= toggel layers on and off.</li>
+<li>toggle loss&gt; off= to view elevation data</li>
+<li>toggle loss&gt; on= Black and white data= white (since this layer is for forest data)= there was some forest cover lost at those pixels</li>
+</ul>
+</div>
+<p><img src="images/image-1753920189.png" class="img-fluid"></p>
+<div class="column-bodY">
+<ul>
+<li>Making layers transparent so that u can see through it</li>
+<li>Why?</li>
+<li>cos in your stacked data layer, you would wanna look a other layers in the context of your layer on top.</li>
+<li><strong>Masking</strong>:
+<ul>
+<li>takes a binary image (1s and 0s)</li>
+<li>where ever there is <strong>0</strong> it makes the <strong>target image INVISIBLE</strong></li>
+</ul></li>
+<li>So in the code above we are adding a layer <em>loss</em> but updating it with an update mask based on itself <em>updateMask(loss)</em>
+<ul>
+<li>Result: the 0s in the data set= black pixels= INVISIBLE</li>
+</ul></li>
+<li>remove- loss (from the widget)</li>
+</ul>
+</div>
+<p><img src="images/image-883671221.png" class="img-fluid" width="546"></p>
+<section id="computations-with-images" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="computations-with-images">Computations with images</h5>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-558678522.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Slope function application</figcaption><p></p>
+</figure>
+</div>
+<div class="column-body">
+<ul>
+<li>in the above image we use slope function on our srtm data= slope data set displayed on ge</li>
+<li><em>Note</em> (best practice is to create a <strong>variable</strong> to <em>create a visualization</em>)</li>
+</ul>
+<p><img src="images/image-174618687.png" class="img-fluid"></p>
+</div>
+</section>
+<section id="spatial-reduction" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="spatial-reduction">Spatial Reduction</h5>
+<div class="column-body">
+<ul>
+<li>Spatial reduction= zonal stats (GIS).</li>
+<li>whats does it do?
+<ul>
+<li>Takes an area of an image and you characterize the pixel value in some way. How??</li>
+<li>summing</li>
+<li>Avg</li>
+<li>Result: reduce an image to some variable that describes it in someway.</li>
+</ul></li>
+<li>focus on the layer scale<br>
+</li>
+</ul>
+</div>
+</section>
+<section id="load-and-filter-an-image" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="load-and-filter-an-image">Load and filter an image</h5>
+<div class="column-body">
+<ul>
+<li>Stretching:</li>
+<li>we know RGB value is btw 0-255 (remember the 8 bit)
+<ul>
+<li>reflectance value: can be negative or can have very varied range</li>
+</ul></li>
+<li>what happens in stretch?</li>
+<li>we take the actual range of values- layers widget&gt; settings&gt;custom&gt; stretch 100%</li>
+<li>what does it do?</li>
+<li>it looks at the lowest value and the highest value</li>
+<li>lowest and highest value= normalize (0-255)</li>
+<li>output= image</li>
+</ul>
+</div>
+<p><img src="images/image-281876599.png" class="img-fluid" width="571"></p>
+</section>
+<section id="play-with-image-bands" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="play-with-image-bands">Play with image bands</h5>
+<div class="column-body">
+<ul>
+<li>create new vizualization var and select bands</li>
+<li>for true color vizualization we use red (B4 band), green (B3) and blue bands (B2)</li>
+<li>B5’(Near infrared), ‘B4’, ‘B3’= False color infrared</li>
+</ul>
+</div>
+</section>
+<section id="reducing-image-collection" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="reducing-image-collection">Reducing image collection</h5>
+<div class="column-body">
+<ul>
+<li>ee.Algorithms.Landsat.simpleComposite gives a good outout image removing all the clouds.</li>
+</ul>
+</div>
+</section>
+<section id="compute-ndvi" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="compute-ndvi">Compute NDVI</h5>
+<div class="column-body">
+<p><img src="images/image-913015119.png" class="img-fluid"></p>
+<ul>
+<li>always remember you have to tell in code which is ur infrared band and red band.</li>
+<li>why?- as band numbers differ</li>
+<li>darker green= healthy vegetation</li>
+</ul>
+</div>
+</section>
+<section id="chart-ndvi-over-time" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="chart-ndvi-over-time">Chart NDVI over time</h5>
+<div class="column-body">
+<ul>
+<li>looking at cycle of change</li>
+</ul>
+</div>
+</section>
+<section id="export-imagery" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="export-imagery">Export Imagery</h5>
+<div class="column-body">
+<ul>
+<li>look under “task”</li>
+<li>exporting data format- geotiff</li>
+<li>run the code and you would get the image in ur google drive RGB, PNG and Geo tiff</li>
+</ul>
+</div>
+</section>
+<section id="sentinel-dam-inundation" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="sentinel-dam-inundation">Sentinel Dam Inundation</h5>
+<div class="column-body">
+<ul>
+<li>get median for the desired bands&gt; add the layers to the map= median composite</li>
+<li>we are trying to Classify</li>
+<li>our data sets: has many bands<br>
+</li>
+<li>but we can visualize only 3 bands</li>
+<li>But i can use the information from all the bands for my image classification</li>
+<li>remember the spectral curve?
+<ul>
+<li>trying to discriminate the target base on the diversions of those spectral curves</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="google-earth-engine-catalogue" class="level5 page-columns page-full">
+<h5 class="anchored" data-anchor-id="google-earth-engine-catalogue">Google Earth Engine Catalogue</h5>
+<div class="column-body">
+<ul>
+<li>Data sets available</li>
+<li>can be searched through Tags</li>
+<li>T21 the brightness temp</li>
+<li>every data set- sample script to guide</li>
+</ul>
+</div>
+<div class="column-body">
+<p><strong>Reference Material</strong></p>
+<ul>
+<li><a href="https://arcg.is/0DmS590">arcg.is</a>: Introduction to Complete Beginners</li>
+<li><a href="https://signup.earthengine.google.com">earthengine</a>: Sample script book</li>
+<li><a href="https://youtu.be/oAElakLgCdA">youtube</a>: Video with piratical</li>
+<li><a href="https://developers.google.com/earth-engine/datasets">Earth Engine data Catalog</a>: search for data sets here</li>
+<li><a href="https://developers.google.com/earth-engine/tutorials/edu">developers.google</a>: GEE Guide</li>
+</ul>
+</div>
+</section>
+<section id="google-earth-engine-piratical" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="google-earth-engine-piratical">Google Earth Engine Piratical</h2>
+<div class="column-body">
+<ul>
+<li>Point= <a href="https://developers.google.com/earth-engine/apidocs/ee-geometry-point-coordinates">ee.Geometry.Point</a> ; <a href="https://www.latlong.net/place/chhattisgarh-india-16504.html">latlong</a></li>
+<li>To convert into Import record&gt; place the cursor on the code, there will be no pop-up message</li>
+<li>Loading data from Landsat.
+<ul>
+<li>search&gt;landsat&gt;Landsat 9 OLI-2/TIRS-2&gt;Surface Reflectance&gt; USGS Landsat 9 Level 2, Collection 2, Tier 1</li>
+</ul></li>
+<li>Downloading shp file from gadm
+<ul>
+<li>download file from https://gadm.org/download_country.html &gt; data&gt; country&gt; India&gt; shapefile&gt; download- dont unzip</li>
+</ul></li>
+<li>Do not load multiple layers, just extract the required layers and load them (.shp, .dbf, and .shx files)</li>
+<li>Load the layers&gt; click&gt;view assets&gt; features&gt; select the required file</li>
+</ul>
+<p><img src="images/image-1575475659.png" class="img-fluid" width="334"></p>
+<ul>
+<li>Problems</li>
+<li>Could not find Delhi layer to filter so chose chhattisgarh</li>
+</ul>
+<p><img src="images/image-1771088567.png" class="img-fluid"></p>
+<ul>
+<li><p>click on the “map” to inspect</p></li>
+<li><p>function .toUint16() as.glcmTexture won’t work with 32 bit data.</p></li>
+<li><p>PCA (read Andy’s notes for details)</p></li>
+<li><p>Dont forget to move the point initiziation in the beginning <img src="images/image-720891459.png" class="img-fluid"></p></li>
+<li><p>check max and minimum pixel to avoid the below error, increase the limit- 20e9 <img src="images/image-929178878.png" class="img-fluid" width="774"></p></li>
+<li><p>Error of the band <img src="images/image-661185664.png" class="img-fluid" width="391"></p></li>
+</ul>
+</div>
+</section>
+<section id="application" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
+<div class="column-body">
+<p>Pratical:</p>
+</div>
+</section>
+<section id="reflection" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<div class="column-body">
+
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
