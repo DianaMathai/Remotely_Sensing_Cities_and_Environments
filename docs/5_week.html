@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -63,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -172,16 +171,73 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="column-body">
+<p>This week we were introduced to Google Earth Engine.</p>
+<p><strong><em>Google Earth Engine: Trying to organize World’s information and making it accessible.</em></strong></p>
+<p>Data Catalog + scalable compute (Google data centers and Flexible APIs) = global scale analysis + Visualization <a href="https://developers.google.com/earth-engine/">developers.google.com</a></p>
+<p><em>What is Google Earth Engine?</em></p>
 <ul>
-<li>Prior- longer pre-processing time.</li>
-<li>why Google satellite feature in good maps don’t have clouds? `- Imagine u took picture of one place or location every day, some days cloudy (clouds move too), other not. You stack them up,choose the pixel and go through it vertically and choose the best pixel. Best pixel=median pixel (one that is not too bright nor too dark)= cloud free image.</li>
+<li>Platform used for scientific analysis</li>
+<li>Vizualisation of Geospatial datasets</li>
+</ul>
+<p><em>Used by?</em></p>
+<ul>
+<li>User Background: academic, non-profit, business and government users</li>
+</ul>
+<p><em>what does Google Earth Engine do?</em></p>
+<ul>
+<li>Hosts satellite imagery</li>
+<li>A place where data mining can be conducted</li>
+<li>Stores it in a archive (as public data)</li>
+<li>Ingests images in a daily basis</li>
+<li>Makes data available in a global scale</li>
+<li>Provides tools for data analysis (large data sets)</li>
+<li>Tools for analysis</li>
+<li>APIs etc</li>
+<li>analyse what?-
+<ul>
+<li>Forest and water coverage</li>
+<li>Land use change</li>
+<li>Assess the health of agri field</li>
+</ul></li>
+</ul>
+<p><em>How is it different from Google earth?</em></p>
+<ul>
+<li>It can analyse</li>
+<li>Data on Google earth is only partly available on GEE</li>
+</ul>
+<p><em>what does it include?</em></p>
+<ul>
+<li>Historical earth images- 40 years span</li>
+</ul>
+<p><em>GEE compared to the Landsat and Sentinel data in Google Cloud?</em></p>
+<ul>
+<li>Collaboration
+<ul>
+<li>Landsat -&gt; present on Google Cloud Storage</li>
+<li>Sentinel-2 -&gt; present on Google Cloud Storage</li>
+</ul></li>
+<li>GEE Code Editor and API</li>
+<li>Direct access :Earth Engine data catalog</li>
+<li>Indirect access: Landsat and Sentinel-2</li>
+<li>Easier to access</li>
+<li>Note: Google Earth Engine Code Editor and API - USE Earth Engine data catalog</li>
 </ul>
 </div>
 <div class="column-body">
 <ul>
-<li>script</li>
-<li>where u can open codes</li>
-<li>get link</li>
+<li>Prior- longer pre-processing time.</li>
+<li>why Google satellite feature in good maps don’t have clouds? `</li>
+<li>Imagine u took picture of one place or location every day, some days cloudy (clouds move too), other not. You stack them up,choose the pixel and go through it vertically and choose the best pixel. Best pixel=median pixel (one that is not too bright nor too dark)= cloud free image.</li>
+</ul>
+</div>
+<div class="column-body">
+<p><em>Application:</em> I’m curious on how GEE works, so we shall try to work on the basics in the following segment.</p>
+</div>
+<div class="column-body">
+<ul>
+<li>Script</li>
+<li>Where u can open codes</li>
+<li>Get link</li>
 <li>to generate link, share it, the person u shared it with can open it and help u troubleshoot it</li>
 <li>Java script involves a lot of declaring variables, so learn how to declare “var” for gee on script box</li>
 <li>end with (;)</li>
@@ -194,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 <p><img src="images/image-1753920189.png" class="img-fluid"></p>
-<div class="column-bodY">
+<div class="column-body">
 <ul>
 <li>Making layers transparent so that u can see through it</li>
 <li>Why?</li>
@@ -228,9 +284,8 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images/image-174618687.png" class="img-fluid"></p>
 </div>
 </section>
-<section id="spatial-reduction" class="level5 page-columns page-full">
+<section id="spatial-reduction" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="spatial-reduction">Spatial Reduction</h5>
-<div class="column-body">
 <ul>
 <li>Spatial reduction= zonal stats (GIS).</li>
 <li>whats does it do?
@@ -243,7 +298,6 @@ ul.task-list li input[type="checkbox"] {
 <li>focus on the layer scale<br>
 </li>
 </ul>
-</div>
 </section>
 <section id="load-and-filter-an-image" class="level5 page-columns page-full">
 <h5 class="anchored" data-anchor-id="load-and-filter-an-image">Load and filter an image</h5>
@@ -378,14 +432,15 @@ ul.task-list li input[type="checkbox"] {
 <li><p>PCA (read Andy’s notes for details)</p></li>
 <li><p>Dont forget to move the point initiziation in the beginning <img src="images/image-720891459.png" class="img-fluid"></p></li>
 <li><p>check max and minimum pixel to avoid the below error, increase the limit- 20e9 <img src="images/image-929178878.png" class="img-fluid" width="774"></p></li>
-<li><p>Error of the band <img src="images/image-661185664.png" class="img-fluid" width="391"></p></li>
+<li><p>Error of the band</p>
+<p><img src="images/image-661185664.png" class="img-fluid" width="391"></p></li>
 </ul>
 </div>
 </section>
 <section id="application" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
 <div class="column-body">
-<p>Pratical:</p>
+
 </div>
 </section>
 <section id="reflection" class="level2 page-columns page-full">

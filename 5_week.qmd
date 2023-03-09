@@ -5,56 +5,123 @@ bibliography: references.bib
 ---
 
 ::: column-body
-- Prior- longer pre-processing time.
-- why Google satellite feature in good maps don't have clouds?
-`- Imagine u took picture of one place or location every day, some days cloudy (clouds move too), other not. You stack them up,choose the pixel and go through it vertically and choose the best pixel. Best pixel=median pixel (one that is not too bright nor too dark)= cloud free image.
+This week we were introduced to Google Earth Engine.
+
+## Google Earth Engine?
+
+*Google Earth Engine: Trying to organize World's information and making it accessible.*
+
+Data Catalog + scalable compute (Google data centers and Flexible APIs) = global scale analysis + Visualization [developers.google.com](https://developers.google.com/earth-engine/)
+
+*What is Google Earth Engine?*
+
+-   Platform used for scientific analysis
+-   Vizualisation of Geospatial datasets
+
+*Used by?*
+
+-   User Background: academic, non-profit, business and government users
+
+*what does Google Earth Engine do?*
+
+-   Hosts satellite imagery
+-   A place where data mining can be conducted
+-   Stores it in a archive (as public data)
+-   Ingests images in a daily basis
+-   Makes data available in a global scale
+-   Provides tools for data analysis (large data sets)
+-   Tools for analysis
+-   APIs etc
+-   analyse what?
+    -   Forest and water coverage
+    -   Land use change
+    -   Assess the health of agri field
+
+*How is it different from Google earth?*
+
+-   It can analyse
+-   Data on Google earth is only partly available on GEE
+
+*what does it include?*
+
+-   Historical earth images- 40 years span
+
+*GEE compared to the Landsat and Sentinel data in Google Cloud?*
+
+-   Collaboration
+    -   Landsat -\> present on Google Cloud Storage
+    -   Sentinel-2 -\> present on Google Cloud Storage
+-   GEE Code Editor and API
+-   Direct access :Earth Engine data catalog
+-   Indirect access: Landsat and Sentinel-2
+-   Easier to access
+-   Note: Google Earth Engine Code Editor and API - USE Earth Engine data catalog
 :::
 
 ::: column-body
--   script
--   where u can open codes
--   get link
--   to generate link, share it, the person u shared it with can open it and help u troubleshoot it
+-   Prior- longer pre-processing time.
+-   why Google satellite feature in good maps don't have clouds? \`
+-   Imagine u took picture of one place or location every day, some days cloudy (clouds move too), other not. You stack them up,choose the pixel and go through it vertically and choose the best pixel. Best pixel=median pixel (one that is not too bright nor too dark)= cloud free image.
+
+*Limitations?* [Application of Google Earth Engine](https://encyclopedia.pub/entry/14783)
+
+-   runs calculations as scripts -\> not convenient forn complex analysis/ process
+-   Visualization capability of GEE
+-   limited modelling
+-   lacks complex datasets ( SAR and high-resolution geospatial data sets).
+-   lacks ability to perform optimization
+:::
+
+::: column-body
+*Application:* I'm curious on how GEE works, so we shall try to work on the basics in the following segment.
+:::
+
+::: column-body
+Learning from : [Google Earth Engine 101](https://youtu.be/oAElakLgCdA)
+
+-   Script - Where u can open codes or write codes
+-   Get link - to generate link, share it, the person u shared it with can open it and help u troubleshoot it
 -   Java script involves a lot of declaring variables, so learn how to declare "var" for gee on script box
 -   end with (;)
 -   /\* or // instead of \# to remove code/ comment out
--   when you stretch images, keep it in smaller value to not make it appear graded out. Eg: Map.addLayer(srtm, {min: 0, max: 3000}, 'srtm'); - black and white data set
--   0s and 1s
--   layers widget= toggel layers on and off.
--   toggle loss\> off= to view elevation data
--   toggle loss\> on= Black and white data= white (since this layer is for forest data)= there was some forest cover lost at those pixels
+-   when you stretch images, keep it in smaller value to not make it appear graded out.
+    -   Eg: Map.addLayer(srtm, {min: 0, max: 3000}, 'srtm');
+    -   black and white data set
+    -   0s and 1s
+-   Layers widget (lower right) = toggel layers on and off.
+-   toggle loss\> off = to view elevation data
+-   toggle loss\> on = Black and white data= white (since this layer is for forest data)= there was some forest cover lost at those pixels
 :::
 
-![](images/image-1753920189.png)
+![](images/image-1753920189.png){fig-align="center" width="500"}
 
-::: column-bodY
+::: column-body
 -   Making layers transparent so that u can see through it
--   Why?
--   cos in your stacked data layer, you would wanna look a other layers in the context of your layer on top.
+-   Why? because in your stacked data layer, you would wanna look a other layers in the context of your layer on top.
 -   **Masking**:
-    -   takes a binary image (1s and 0s)
-    -   where ever there is **0** it makes the **target image INVISIBLE**
+    -   Takes a binary image (1s and 0s)
+    -   Whereever there is **0** it turns the **target image INVISIBLE**
 -   So in the code above we are adding a layer *loss* but updating it with an update mask based on itself *updateMask(loss)*
     -   Result: the 0s in the data set= black pixels= INVISIBLE
--   remove- loss (from the widget)
+-   remove - loss (from the widget)
 :::
 
-![](images/image-883671221.png){width="546"}
+![](images/image-883671221.png){fig-align="center" width="546"}
 
+::: column-body
 ##### Computations with images
 
 ![Slope function application](images/image-558678522.png){fig-align="center"}
 
-::: column-body
--   in the above image we use slope function on our srtm data= slope data set displayed on ge
+-   In the above image we use slope function on our srtm data = slope data set displayed on GE
 -   *Note* (best practice is to create a **variable** to *create a visualization*)
 
 ![](images/image-174618687.png)
 :::
 
+::: column-body
 ##### Spatial Reduction
 
-::: column-body
 -   Spatial reduction= zonal stats (GIS).
 -   whats does it do?
     -   Takes an area of an image and you characterize the pixel value in some way. How??
@@ -64,9 +131,9 @@ bibliography: references.bib
 -   focus on the layer scale\
 :::
 
+::: column-body
 ##### Load and filter an image
 
-::: column-body
 -   Stretching:
 -   we know RGB value is btw 0-255 (remember the 8 bit)
     -   reflectance value: can be negative or can have very varied range
@@ -80,23 +147,23 @@ bibliography: references.bib
 
 ![](images/image-281876599.png){width="571"}
 
+::: column-body
 ##### Play with image bands
 
-::: column-body
 -   create new vizualization var and select bands
 -   for true color vizualization we use red (B4 band), green (B3) and blue bands (B2)
 -   B5'(Near infrared), 'B4', 'B3'= False color infrared
 :::
 
+::: column-body
 ##### Reducing image collection
 
-::: column-body
 -   ee.Algorithms.Landsat.simpleComposite gives a good outout image removing all the clouds.
 :::
 
+::: column-body
 ##### Compute NDVI
 
-::: column-body
 ![](images/image-913015119.png)
 
 -   always remember you have to tell in code which is ur infrared band and red band.
@@ -104,23 +171,23 @@ bibliography: references.bib
 -   darker green= healthy vegetation
 :::
 
+::: column-body
 ##### Chart NDVI over time
 
-::: column-body
 -   looking at cycle of change
 :::
 
+::: column-body
 ##### Export Imagery
 
-::: column-body
 -   look under "task"
 -   exporting data format- geotiff
 -   run the code and you would get the image in ur google drive RGB, PNG and Geo tiff
 :::
 
+::: column-body
 ##### Sentinel Dam Inundation
 
-::: column-body
 -   get median for the desired bands\> add the layers to the map= median composite
 -   we are trying to Classify
 -   our data sets: has many bands\
@@ -130,9 +197,9 @@ bibliography: references.bib
     -   trying to discriminate the target base on the diversions of those spectral curves
 :::
 
+::: column-body
 ##### Google Earth Engine Catalogue
 
-::: column-body
 -   Data sets available
 -   can be searched through Tags
 -   T21 the brightness temp
@@ -144,49 +211,154 @@ bibliography: references.bib
 
 -   [arcg.is](https://arcg.is/0DmS590): Introduction to Complete Beginners
 -   [earthengine](https://signup.earthengine.google.com): Sample script book
--   [youtube](https://youtu.be/oAElakLgCdA): Video with piratical
+-   [youtube](https://youtu.be/oAElakLgCdA): Video with pratical
 -   [Earth Engine data Catalog](https://developers.google.com/earth-engine/datasets): search for data sets here
 -   [developers.google](https://developers.google.com/earth-engine/tutorials/edu): GEE Guide
 :::
 
-## Google Earth Engine Piratical
-
 ::: column-body
--   Point= [ee.Geometry.Point](https://developers.google.com/earth-engine/apidocs/ee-geometry-point-coordinates) ; [latlong](https://www.latlong.net/place/chhattisgarh-india-16504.html)
--   To convert into Import record\> place the cursor on the code, there will be no pop-up message
+### Google Earth Engine Practical
+
+In this segment we shall work on the designed practical and register few important steps, challenges and the respective solution.
+
+-   Point = [ee.Geometry.Point](https://developers.google.com/earth-engine/apidocs/ee-geometry-point-coordinates) ; [latlong](https://www.latlong.net/place/chhattisgarh-india-16504.html)
+
+-   To convert into Import record \> place the cursor on the code, there will be no pop-up message
+
 -   Loading data from Landsat.
-    -   search\>landsat\>Landsat 9 OLI-2/TIRS-2\>Surface Reflectance\> USGS Landsat 9 Level 2, Collection 2, Tier 1
+
+    -   search \> landsat \> Landsat 9 OLI-2/TIRS-2 \> Surface Reflectance \> USGS Landsat 9 Level 2, Collection 2, Tier 1
+
 -   Downloading shp file from gadm
+
     -   download file from https://gadm.org/download_country.html \> data\> country\> India\> shapefile\> download- dont unzip
--   Do not load multiple layers, just extract the required layers and load them (.shp, .dbf, and .shx files)
--   Load the layers\> click\>view assets\> features\> select the required file
 
-![](images/image-1575475659.png){width="334"}
+-   Loading gadm layers in GEE
 
--   Problems
--   Could not find Delhi layer to filter so chose chhattisgarh
+    *Issue1:*
 
-![](images/image-1771088567.png)
+    ![](images/image-1575475659.png){fig-align="center" width="334"}
 
--   click on the "map" to inspect
--   function .toUint16() as.glcmTexture won't work with 32 bit data.
+    *Solution:*
+
+    ![](images/image-854239908.png){width="481"}
+
+    -   Do not load multiple layers on GEE, just extract the required layers and load them (.shp, .dbf, and .shx files)
+
+    -   How? Load the layers\> click\>view assets\> features\> select the required file
+
+-   Identifying the specific spatial point from the gadm layers to insert the specific code in the script
+
+    -   *Issue 2:* Could not find Delhi layer to filter so chose chhattisgarh
+
+        ![](images/image-1771088567.png){fig-align="center"}
+
+    -   *Solution:* Open the file from gadm in QGIS, and get the code for Delhi from the attribute table
+
+-   Click on the "map" to inspect
+
+-   Function .toUint16() as.glcmTexture won't work with 32 bit data.
+
 -   PCA (read Andy's notes for details)
--   Dont forget to move the point initiziation in the beginning
-![](images/image-720891459.png)
 
--   check max and minimum pixel to avoid the below error, increase the limit- 20e9
-![](images/image-929178878.png){width="774"}
--   Error of the band
-![](images/image-661185664.png){width="391"}
+    ![](images/image-720891459.png)
+
+-   Check max and minimum pixel to avoid the below error - *(Too many pixels in the region ....)*
+
+    -   *Issue 3:*
+
+        ![](images/image-929178878.png){width="774"}
+
+    -   *Solution:* increase the limit maxPixels = 20e9v\
+
+-   Band
+
+    -   *Issue 4:*
+
+![](images/image-661185664.png){fig-align="center" width="391"}
+
+-   Solution:
 :::
 
 ## Application
 
 ::: column-body
-Pratical:
+-   web based interactive environment
+-   Strong cloud computing power
+
+Paper: @fadli2019
+
+-   Issue: deforestation \> green house emission
+-   Location: Indonesia
+-   Forest cover: 91 million hectares (3rd largest in the world)
+-   tree-cover loss average : 1.38 Mn Ha/ year
+-   rate of forest loss: 0.31 Mn Ha/ year (2000- 2005)
+-   Why GEE was used?
+    -   Cloud based
+    -   easy to process- huge geospatial datasets
+    -   uses high-performance computing resources
+-   for?
+    -   to analyse forest cover status and changes- to check GEE's effectiveness to monitor large area
+    -   Observation duration: 2000-2016
+-   Dataset
+    -   global forest change by Hansen
+    -   Multi-year Landsat imageries -\> to identify forest cover (2000)
+    -   Multi temporal Satellite images-\> forest cover loss year
+    -   resolution: 30m
+    -   forest cover gain pixels
+-   Analysis:
+    -   temporal variation -\>forest cover loss (2001-2016)- time series
+-   Steps:
+    -   GEE- forest cover - 2000
+
+    -   select: Indonesia
+
+    -   calculate forest cover fraction
+
+    -   forest loss areas
+
+    -   discuss estimated values-\> forest cover changes
+
+    -   Extract specific forest cover region- loss and gain
+
+    -   Result:
+
+        -   Total forest cover area: 338,000 km2 (2000)
+
+        -   more than 5m high tree= defined as vegetation
+
+        -   Trees are expressed as '2000 Percent Tree Cover' percentage per output plot cell
+
+        -   forest cover loss= change from forest -\> non forest
+
+        -   forest cover gain= change from non-forest -\> forest
+
+        -   The Year of Forest Loss is the total separation of 'Forest Loss' with an annual time scale
+
+        -   median of a series of observations of the quality of the planting season that passed in the assessment
+
+        -   tree cover (2000)= % of tree cover ( 0-100-pixel range)
+
+        -   monitoring satellite-based land cover changes= by landsat data- from Hansen Forest search- in the code editor \> selected (red, green and blue images)
+
+        ![Custom visualization of Hansen (2000-2017) forest change data](images/image-287467817.png){width="411"}
+
+        ![Changes in forest loss areas in each year from 2000 to 2016 on Indonesia](images/image-621750777.png){width="410"}
+
+        -   green= tree cover in 2000 (in %) - higher value than red, blue
+        -   red= loss
+        -   blue= gain
+        -   Highest loss= 2011 (reason- development) and 2015
+        -   Satellite monitoring benefits- land changes ( by human intervention)
 :::
 
 ## Reflection
 
 ::: column-body
+GEE
+
+-   Helps analyse high spatial resolution data
+-   Free and easy to access
+-   Consolidated environment, large catalogue of data
+-   Can be useful to analyse or monitor changes at a large scale
 :::

@@ -1,9 +1,108 @@
 ---
 title: "Portfolio tools: Xaringan and Quarto"
 output: html_document
+bibliography: references.bib
 ---
 
--   Learnt hosting a website published by quarto in RMarkdown on github! Ha!
--   Learnt Making PPT on Xaringan
+::: column-body
+This week learning Diary focuses on using Quarto to make a web-based learning Diary and a web based presentation using Xaringan asa medium.
 
-🌝➡️ [Sensor](https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html#1)
+-   This webpage is a representation of a published website using quarto in RMarkdown on github.
+:::
+
+### Process of hosting on Github
+
+::: column-body
+**Making A GitHub Repo**
+
+1\. Make a GitHub repository
+
+2\. open terminal\> navigate to the intended folder for the repo
+
+-   cd (insertfolder path)
+
+3\. In Terminal type:
+
+-   git status \>\>*output: fatal not a git repository......*
+
+-   git clone (repo link)
+
+![Copy GitHub repo link \^](images/gi5.png){width="594"}
+
+-   A folder with the name of your online GitHub repo would be created in your local intended folder
+-   check git status again
+    -   git status \>\>*output: on branch main....you branch is upto date.......*
+
+**Quarto and Xaringan**
+
+-   For hosting a website published by quarto in RMarkdown on github and a web based presentation on Xaringan, indicated below are the resource references.
+
+*Resources referred:*
+
+-   [andrewmaclachlan.github](https://andrewmaclachlan.github.io/CASA0023/2_portfolio.html) (Flow of instructions \_refer to instructions under (1) Quarto + Git and GitHub and (2) Xaringan + Git and GitHub)
+-   [cran.r](https://cran.r-project.org/web/packages/xaringanExtra/xaringanExtra.pdf)
+-   @xaringan
+-   @ph.d
+-   @makings
+-   @learning
+-   @helpme:
+-   @buildpr
+-   @grolemund
+
+**Hosting Quarto on GitHub**
+
+Below is an indicative representation of the process
+
+1.  Go to the intended GitHub repository on GitHub
+
+2.  Click on settings
+
+    ![](images/git1png.png){width="381"}
+
+3.  Click on pages (left under Code and automation)
+
+![](images/git2.png){fig-align="center" width="185"}
+
+4.  Click on main, then on docs and save
+
+![](images/Git1.png){fig-align="center" width="329"}
+
+5.  would create a weblink above (would take a minute or two to generate)
+
+![](images/git4.png){fig-align="center" width="333"}
+:::
+
+::: column-body
+A small slide presentation(maximum 9 slide) and hosted on GitHub - Xaringan OUTPUT - SENSOR 🌝➡️ [Sensor](https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html#1)
+:::
+
+## Application:
+
+-   Making a publicly available document, that can grow with community contribution (only for GitHub users).
+-   Easily accessible to users with internet and basic web accessibility knowledge.
+-   Reproducible
+-   Requires moderate to high proficiency of the medium
+-   Interesting of individuals who love writing code, representing code, its output (maps, graphs, tables etc) and enjoy CSS- as this all outputs in a self contained web slide
+
+## Reflection:
+
+-   Benefits:
+    -   Reproducible
+    -   encourages collaboration and displays benefits of open source
+    -   Enables users to use the medium to put things over internet.
+    -   Dose not require in-depth knowledge of web-development to build a desired output.
+    -   Resource to build one are easily accessible on web
+-   Drawbacks:
+    -   Requires internet accessibility
+
+    -   Requires proficiency of the medium
+
+    -   Not inclusive: as it targets a certain user type, cannot be used as a medium to engage contribution from learned diverse group with varying computer proficiency levels (would require capacity building).
+
+Error:
+
+![](images/image-1586851961.png){width="457"}
+
+-   tools\> global\>change: \[64-bit\] C:\\Program Files\\R\\R-4.2.2 to R-4.2.1
+
+![](images/image-549386430.png){width="524"}

@@ -20,11 +20,29 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -63,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -89,7 +107,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -142,10 +160,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#process-of-hosting-on-github" id="toc-process-of-hosting-on-github" class="nav-link active" data-scroll-target="#process-of-hosting-on-github">Process of hosting on Github</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application:</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection:</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -163,15 +189,148 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="column-body">
+<p>This week learning Diary focuses on using Quarto to make a web-based learning Diary and a web based presentation using Xaringan asa medium.</p>
 <ul>
-<li>Learnt hosting a website published by quarto in RMarkdown on github! Ha!</li>
-<li>Learnt Making PPT on Xaringan</li>
+<li>This webpage is a representation of a published website using quarto in RMarkdown on github.</li>
 </ul>
-<p>🌝➡️ <a href="https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html#1">Sensor</a></p>
+</div>
+<section id="process-of-hosting-on-github" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="process-of-hosting-on-github">Process of hosting on Github</h3>
+<div class="column-body">
+<p><strong>Making A GitHub Repo</strong></p>
+<p>1. Make a GitHub repository</p>
+<p>2. open terminal&gt; navigate to the intended folder for the repo</p>
+<ul>
+<li>cd (insertfolder path)</li>
+</ul>
+<p>3. In Terminal type:</p>
+<ul>
+<li><p>git status &gt;&gt;<em>output: fatal not a git repository……</em></p></li>
+<li><p>git clone (repo link)</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/gi5.png" class="img-fluid figure-img" width="594"></p>
+<p></p><figcaption class="figure-caption">Copy GitHub repo link ^</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>A folder with the name of your online GitHub repo would be created in your local intended folder</li>
+<li>check git status again
+<ul>
+<li>git status &gt;&gt;<em>output: on branch main….you branch is upto date…….</em></li>
+</ul></li>
+</ul>
+<p><strong>Quarto and Xaringan</strong></p>
+<ul>
+<li>For hosting a website published by quarto in RMarkdown on github and a web based presentation on Xaringan, indicated below are the resource references.</li>
+</ul>
+<p><em>Resources referred:</em></p>
+<ul>
+<li><a href="https://andrewmaclachlan.github.io/CASA0023/2_portfolio.html">andrewmaclachlan.github</a> (Flow of instructions _refer to instructions under (1) Quarto + Git and GitHub and (2) Xaringan + Git and GitHub)</li>
+<li><a href="https://cran.r-project.org/web/packages/xaringanExtra/xaringanExtra.pdf">cran.r</a></li>
+<li><span class="citation" data-cites="xaringan"><span>“Xaringan CSS Theme Generator”</span> (<a href="#ref-xaringan" role="doc-biblioref">n.d.</a>)</span></li>
+<li><span class="citation" data-cites="ph.d">Ph.D (<a href="#ref-ph.d" role="doc-biblioref">n.d.</a>)</span></li>
+<li><span class="citation" data-cites="makings"><span>“Making Slides with r Markdown”</span> (<a href="#ref-makings" role="doc-biblioref">n.d.</a>)</span></li>
+<li><span class="citation" data-cites="learning"><span>“Learning Xaringan Presentations”</span> (<a href="#ref-learning" role="doc-biblioref">n.d.</a>)</span></li>
+<li><span class="citation" data-cites="helpme">(<a href="#ref-helpme" role="doc-biblioref"><strong>helpme?</strong></a>)</span>:</li>
+<li><span class="citation" data-cites="buildpr"><span>“Build Presentations in r”</span> (<a href="#ref-buildpr" role="doc-biblioref">n.d.</a>)</span></li>
+<li><span class="citation" data-cites="grolemund">Grolemund (<a href="#ref-grolemund" role="doc-biblioref">n.d.</a>)</span></li>
+</ul>
+<p><strong>Hosting Quarto on GitHub</strong></p>
+<p>Below is an indicative representation of the process</p>
+<ol type="1">
+<li><p>Go to the intended GitHub repository on GitHub</p></li>
+<li><p>Click on settings</p>
+<p><img src="images/git1png.png" class="img-fluid" width="381"></p></li>
+<li><p>Click on pages (left under Code and automation)</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/git2.png" class="img-fluid figure-img" width="185"></p>
+</figure>
+</div>
+<ol start="4" type="1">
+<li>Click on main, then on docs and save</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Git1.png" class="img-fluid figure-img" width="329"></p>
+</figure>
+</div>
+<ol start="5" type="1">
+<li>would create a weblink above (would take a minute or two to generate)</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/git4.png" class="img-fluid figure-img" width="333"></p>
+</figure>
+</div>
+</div>
+<div class="column-body">
+<p>A small slide presentation(maximum 9 slide) and hosted on GitHub - Xaringan OUTPUT - SENSOR 🌝➡️ <a href="https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html#1">Sensor</a></p>
+</div>
+</section>
+<section id="application" class="level2">
+<h2 class="anchored" data-anchor-id="application">Application:</h2>
+<ul>
+<li>Making a publicly available document, that can grow with community contribution (only for GitHub users).</li>
+<li>Easily accessible to users with internet and basic web accessibility knowledge.</li>
+<li>Reproducible</li>
+<li>Requires moderate to high proficiency of the medium</li>
+<li>Interesting of individuals who love writing code, representing code, its output (maps, graphs, tables etc) and enjoy CSS- as this all outputs in a self contained web slide</li>
+</ul>
+</section>
+<section id="reflection" class="level2">
+<h2 class="anchored" data-anchor-id="reflection">Reflection:</h2>
+<ul>
+<li>Benefits:
+<ul>
+<li>Reproducible</li>
+<li>encourages collaboration and displays benefits of open source</li>
+<li>Enables users to use the medium to put things over internet.</li>
+<li>Dose not require in-depth knowledge of web-development to build a desired output.</li>
+<li>Resource to build one are easily accessible on web</li>
+</ul></li>
+<li>Drawbacks:
+<ul>
+<li><p>Requires internet accessibility</p></li>
+<li><p>Requires proficiency of the medium</p></li>
+<li><p>Not inclusive: as it targets a certain user type, cannot be used as a medium to engage contribution from learned diverse group with varying computer proficiency levels (would require capacity building).</p></li>
+</ul></li>
+</ul>
+<p>Error:</p>
+<p><img src="images/image-1586851961.png" class="img-fluid" width="457"></p>
+<ul>
+<li>tools&gt; global&gt;change: [64-bit] C:\Program Files\R\R-4.2.2 to R-4.2.1</li>
+</ul>
+<p><img src="images/image-549386430.png" class="img-fluid" width="524"></p>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-buildpr" class="csl-entry" role="doc-biblioentry">
+<span>“Build Presentations in r.”</span> n.d. <a href="https://www.kirenz.com/slides/xaringan-demo-slides.html#17">https://www.kirenz.com/slides/xaringan-demo-slides.html#17</a>.
+</div>
+<div id="ref-grolemund" class="csl-entry" role="doc-biblioentry">
+Grolemund, Yihui Xie, J. J. Allaire, Garrett. n.d. <em>7.4 Build and Preview Slides | r Markdown: The Definitive Guide</em>. <a href="https://bookdown.org/yihui/rmarkdown/xaringan-preview.html">https://bookdown.org/yihui/rmarkdown/xaringan-preview.html</a>.
+</div>
+<div id="ref-learning" class="csl-entry" role="doc-biblioentry">
+<span>“Learning Xaringan Presentations.”</span> n.d. <a href="https://irene.vrbik.ok.ubc.ca/slides/NHSRxaringan.html?panelset1=tab-12#23">https://irene.vrbik.ok.ubc.ca/slides/NHSRxaringan.html?panelset1=tab-12#23</a>.
+</div>
+<div id="ref-makings" class="csl-entry" role="doc-biblioentry">
+<span>“Making Slides with r Markdown.”</span> n.d. <a href="https://arm.rbind.io/slides/xaringan.html#94">https://arm.rbind.io/slides/xaringan.html#94</a>.
+</div>
+<div id="ref-ph.d" class="csl-entry" role="doc-biblioentry">
+Ph.D, Silvia Canelón. n.d. <span>“Sharing Your Work with Xaringan <span></span> Day 1.”</span> <a href="https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-01-basics.html#1">https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-01-basics.html#1</a>.
+</div>
+<div id="ref-xaringan" class="csl-entry" role="doc-biblioentry">
+<span>“Xaringan CSS Theme Generator.”</span> n.d. <a href="https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html">https://pkg.garrickadenbuie.com/xaringanthemer/articles/xaringanthemer.html</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

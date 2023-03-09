@@ -3,14 +3,14 @@ title: "Remotely Sensing Cities and Environments"
 
 format: 
   html: 
-    self-contained: true #creating a single file which has everything in it
+    self-contained: false #creating a single file which has everything in it
     table-of-contents: true
     theme: Litera
 knitr: 
   opts_chunk: 
     warning: false
     messages: false
-image: about.png
+    image: about.png;
 about: 
   template: jolla
   image-shape: round
@@ -26,5 +26,5 @@ Welcome, to my Learning Diary! It comprises of summary, application and reflecti
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\--
 
 ::: callout-note
-The learning diary is part of an academic requirement for module [CASA0023](https://github.com/andrewmaclachlan/CASA0023-bookdown) designed by [Dr. Andrew MacLachlan.](https://github.com/andrewmaclachlan) The content of this diary follows the outlined approach as designed in the provided [lecture material](https://andrewmaclachlan.github.io/CASA0023/00-course_info.html) and [workshop material](https://andrewmaclachlan.github.io/CASA0023/).
+The learning diary is part of an academic requirement for module [CASA0023](https://github.com/andrewmaclachlan/CASA0023-bookdown) designed by [Dr Andrew MacLachlan.](https://github.com/andrewmaclachlan) The content of this diary follows the outlined approach as designed in the provided [lecture material](https://andrewmaclachlan.github.io/CASA0023/00-course_info.html) and [workshop material](https://andrewmaclachlan.github.io/CASA0023/).
 :::

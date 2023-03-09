@@ -1,22 +1,46 @@
 ---
-title: "Remote sensing data"
+title: "Corrections"
 output: html_document
 bibliography: references.bib
 ---
 
+::: column-body
+We now understand the role of EMW its interaction, transmission, reflection, reception which that leads to data storage in bits (sensor (one or multiple) on a satellite\>sensor (active/passive)\>target area\> sensor\> recorded in pixel forming band\> multiple band with various information\> final digital image. (Refer Week 1)
+
+We already know of types of sensors and what they do (Week 1), this week we learnt on how they do it and the challenges of producing the desired output.
+
+The challenge here is the corrections that need to be done to the input received.
+:::
+
 ### Principle Imaging Sensor Systems
+
+::: column-body
+Indicated below is the two primary ways of image recording.
 
 ![](images/Image%20recording.png){fig-align="center" width="357"}
 
+1.  Analogue
+
+![Analogue Camera. SOURCE: [freepik.com](https://www.freepik.com/premium-photo/film-camera-with-film-reel-white-backgroundx9_32140064.htm)](images/film-camera-with-film-reel-white-backgroundx9_711966-59.png){width="288"}
+
+2.  Digital
+
+![TerraLuma pushbroom system: Image (top left) and drawing of the sensor payload (top right) and device interaction flow chart (bottom; CAD design and flow chart: Richard Ballard, TerraLuma group). Source: [mdpi](https://www.mdpi.com/2072-4292/10/7/1091)](images/remotesensing-10-01091-g003.png){fig-align="center" width="331"}
+
 ![Imaging sensor Systems. SOURCE: [geo-informatie](http://www.geo-informatie.nl/courses/grs20306/lectures/07digitalremotesensingpartb/07digitalremotesensingpartb12.htm)](images/07digitalremotesensingpartb12.png){fig-align="center"}
+:::
 
 ### Scanning modes
+
+::: column-body
+In this section we see how the Digital recording is carried out- by scanning!!, indicated below are the various scanning modes.
 
 ![Types of Scanning Modes](images/Scanningtypes.png){fig-align="center" width="450"}
 
 ![Cross-Track and Along Track Scanner. SOURCE: [onestopgis](https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html)](images/Track-scanning-systems-for-acquiring-remote-sensing.png){fig-align="center"}
 
 ![Circular and side scanning systems. SOURCE: [onestopgis](https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html)](images/Factors-affecting-signal-strength-of-an-image.png){fig-align="center"}
+:::
 
 ::: column-body
 1.  Cross- Track Scanning System - Passive system
@@ -64,7 +88,7 @@ bibliography: references.bib
 :::
 
 ::: column-body
-##### 4. Side Scanning System
+##### 4. Side Scanning System- Active System
 
 -   Active system
 -   Eg: sonar (SOund NAvigation and Ranging)
@@ -84,6 +108,8 @@ bibliography: references.bib
 #### Factors affecting Signal Strength
 
 ::: column-body
+The scanning is done to receive back a signal to create a pixel\>band with information. But! the signal we receive back can have varied strength due to various factors that affect it, indicated below are the same:
+
 -   Energy Flux
 -   altitude
 -   Spectral Bandwidth of the detector
@@ -99,9 +125,11 @@ bibliography: references.bib
 
 ![The chain of satellite data acquisition. The scanning device records data, pixel by pixel, along a scan line. Assembling the scan lines gives an image. The radiation is recorded in grey levels. SOURCE: @adamo2020](images/The-chain-of-satellite-data-acquisition-The-scanning-device-records-data-pixel-by_W640.jpg){fig-align="center"}
 
-## Perspective and Planimetry
+## View: Perspective and Planimetry
 
-### Perspective V
+::: column-body
+Now we understand how the scanning is performed by a Sensor (above sections), we further need to understand about perspective. How the object can be viewed so as to better understand corrections.
+:::
 
 ![Orthographic and View. *SOURCE: [mashyo](https://mashyo.com/3d-views/)*](images/3d-projections.png.webp){fig-align="center" width="392"}
 
@@ -126,11 +154,7 @@ bibliography: references.bib
 ![Orthographic and Perspective View. *SOURCE: [wikipedia](https://en.wikipedia.org/wiki/Orthophoto#/media/File:OrthoPerspective.svg)*](images/1024px-OrthoPerspective.svg.png){fig-align="center" width="491"}
 
 ::: column-body
-Two corrections
-:::
-
-::: column-body
-## Image correction
+## Image correction!
 
 -   Raw remotely sensed data- ISSUES
     -   Geometric and radiometric flaws -- why?
@@ -140,28 +164,39 @@ Two corrections
     -   Imperfections in scanning instruments
 -   why do we need image correction??
     -   to remove distortion= individual picture elements are in their proper plainmetric (x,y).
-    -   
 :::
 
 ![Distortion and Correction](images/distortion.png){fig-align="center"}
 
 ::: column-body
-### Radimetric Correction
+### Radiometric Correction
+
+-   Precisely estimate the reflectively of an environment
+-   Meaning: improve the brightness value/ reduce inconsistencies in image brightness (not spatial or locational aspects)
+-   Errors= **Noise**
+-   How?
+    -   compensating for the distortions (antenna system , positioning errors etc.)
+    -   eg: [ncl.ac.uk](https://www.ncl.ac.uk/tcmweb/bilko/module7/lesson3.pdf); [l3harrisgeospatial](https://www.l3harrisgeospatial.com/docs/radiometriccalibration.html)
+-   Correction procedures [storymaps](https://storymaps.arcgis.com/stories/9fe04283db7048adb93c642c3d07dfc4)
+    -   Radiative Transfer Code Model: Clear atmospheric conditions, creating scattering models. requires data retrieved from ground. accuracy= High
+    -   Image-based: Information source= image, accuracy= low
+    -   Regression: analyses each band, estimation of brightness in each image
 :::
 
 ::: column-body
 ### Geometric Correction
 
--   PROCESS:
-    -   correcting geometric distortion
-    -   assigning properties of a map to an image
+PROCESS:
+
+-   Correcting geometric distortion
+-   Assigning properties of a map to an image
 
 Source:
 
 -   Relief displacement
     -   less factor: satellite remote sensing (due to altitude)
     -   high factor: aerial imagin
--   earth curvature
+-   Earth curvature
     -   curvature
     -   eastward spinning
 -   ORBIT:
@@ -169,8 +204,7 @@ Source:
     -   ORBIT of satellite: pole to pole (IKONOS, Landsat, and the NOAA)
     -   Cylindrical projection: S shape waves
 -   Each scan row begins at a position slightly west of the row that preceded it
--   first pixel in each row appears to be aligned with the other initial pixels
--   
+-   First pixel in each row appears to be aligned with the other initial pixels
 
 Geometric correction solution modelling 2 solution: - Jensen page 244 describes - RMSE
 :::
@@ -182,7 +216,7 @@ Geometric correction solution modelling 2 solution: - Jensen page 244 describes 
 
 -   Need:
     -   To remove the scattering and absorption effects from the atmosphere
-    -   why?- to obtain surface reflectance characterstics
+    -   Why?- to obtain surface reflectance characteristics
 
 1.  Atmospheric scattering (as we saw in week 1)
 2.  Topographic attenuation (up next)
@@ -191,7 +225,9 @@ Geometric correction solution modelling 2 solution: - Jensen page 244 describes 
 :::
 
 ::: column-body
-#### 1. Atmospheric correction types
+#### 1. Atmospheric scattering
+
+Types:
 
 -   Dark object subtraction
 -   Psuedo-invariant Features
@@ -221,10 +257,10 @@ Geometric correction solution modelling 2 solution: - Jensen page 244 describes 
 -   Orthorect
 :::
 
-### 3. Resampling
+### Resampling
 
 ::: column-body
--   extraction of a brightness value from an x, y location
+-   Extraction of a brightness value from an x, y location
 :::
 
 ![Re-sampling types](images/resampling_.png){fig-align="center"}
@@ -250,5 +286,7 @@ Geometric correction solution modelling 2 solution: - Jensen page 244 describes 
 ![Bilinear Interpolation. Source: [esa](https://lps16.esa.int/posterfiles/paper1213/%5bRD3%5d_Philpot_615_04_GeomCorrect_rev01.pdf)](images/image-1975374788.png){alt="Bilinear Interpolation. Source: esa"}
 
 ## Application
+
+Radiometric correction application:
 
 ## Reflection

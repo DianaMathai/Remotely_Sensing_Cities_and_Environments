@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 - Remote sensing data</title>
+<title>CASA0023 - Corrections</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -43,7 +43,6 @@ div.csl-indent {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -82,7 +81,7 @@ div.csl-indent {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,7 +97,7 @@ div.csl-indent {
     </nav>
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Remote sensing data</h1>
+      <h1 class="quarto-secondary-nav-title">Corrections</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -108,7 +107,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -168,15 +167,12 @@ div.csl-indent {
   <li><a href="#principle-imaging-sensor-systems" id="toc-principle-imaging-sensor-systems" class="nav-link active" data-scroll-target="#principle-imaging-sensor-systems">Principle Imaging Sensor Systems</a></li>
   <li><a href="#scanning-modes" id="toc-scanning-modes" class="nav-link" data-scroll-target="#scanning-modes">Scanning modes</a></li>
   <li><a href="#scan-lines" id="toc-scan-lines" class="nav-link" data-scroll-target="#scan-lines">Scan Lines</a></li>
-  <li><a href="#perspective-and-planimetry" id="toc-perspective-and-planimetry" class="nav-link" data-scroll-target="#perspective-and-planimetry">Perspective and Planimetry</a>
-  <ul class="collapse">
-  <li><a href="#perspective-v" id="toc-perspective-v" class="nav-link" data-scroll-target="#perspective-v">Perspective V</a></li>
-  </ul></li>
-  <li><a href="#image-correction" id="toc-image-correction" class="nav-link" data-scroll-target="#image-correction">Image correction</a></li>
-  <li><a href="#radimetric-correction" id="toc-radimetric-correction" class="nav-link" data-scroll-target="#radimetric-correction">Radimetric Correction</a></li>
+  <li><a href="#view-perspective-and-planimetry" id="toc-view-perspective-and-planimetry" class="nav-link" data-scroll-target="#view-perspective-and-planimetry">View: Perspective and Planimetry</a></li>
+  <li><a href="#image-correction" id="toc-image-correction" class="nav-link" data-scroll-target="#image-correction">Image correction!</a></li>
+  <li><a href="#radiometric-correction" id="toc-radiometric-correction" class="nav-link" data-scroll-target="#radiometric-correction">Radiometric Correction</a></li>
   <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction">Geometric Correction</a></li>
   <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction">Atmospheric Correction</a></li>
-  <li><a href="#resampling" id="toc-resampling" class="nav-link" data-scroll-target="#resampling">3. Resampling</a></li>
+  <li><a href="#resampling" id="toc-resampling" class="nav-link" data-scroll-target="#resampling">Resampling</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
@@ -187,7 +183,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Remote sensing data</h1>
+<h1 class="title d-none d-lg-block">Corrections</h1>
 </div>
 
 
@@ -201,11 +197,36 @@ div.csl-indent {
 
 </header>
 
-<section id="principle-imaging-sensor-systems" class="level3">
+<div class="column-body">
+<p>We now understand the role of EMW its interaction, transmission, reflection, reception which that leads to data storage in bits (sensor (one or multiple) on a satellite&gt;sensor (active/passive)&gt;target area&gt; sensor&gt; recorded in pixel forming band&gt; multiple band with various information&gt; final digital image. (Refer Week 1)</p>
+<p>We already know of types of sensors and what they do (Week 1), this week we learnt on how they do it and the challenges of producing the desired output.</p>
+<p>The challenge here is the corrections that need to be done to the input received.</p>
+</div>
+<section id="principle-imaging-sensor-systems" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="principle-imaging-sensor-systems">Principle Imaging Sensor Systems</h3>
+<div class="column-body">
+<p>Indicated below is the two primary ways of image recording.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Image%20recording.png" class="img-fluid figure-img" width="357"></p>
+</figure>
+</div>
+<ol type="1">
+<li>Analogue</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/film-camera-with-film-reel-white-backgroundx9_711966-59.png" class="img-fluid figure-img" width="288"></p>
+<p></p><figcaption class="figure-caption">Analogue Camera. SOURCE: <a href="https://www.freepik.com/premium-photo/film-camera-with-film-reel-white-backgroundx9_32140064.htm">freepik.com</a></figcaption><p></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>Digital</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/remotesensing-10-01091-g003.png" class="img-fluid figure-img" width="331"></p>
+<p></p><figcaption class="figure-caption">TerraLuma pushbroom system: Image (top left) and drawing of the sensor payload (top right) and device interaction flow chart (bottom; CAD design and flow chart: Richard Ballard, TerraLuma group). Source: <a href="https://www.mdpi.com/2072-4292/10/7/1091">mdpi</a></figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
@@ -214,9 +235,12 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Imaging sensor Systems. SOURCE: <a href="http://www.geo-informatie.nl/courses/grs20306/lectures/07digitalremotesensingpartb/07digitalremotesensingpartb12.htm">geo-informatie</a></figcaption><p></p>
 </figure>
 </div>
+</div>
 </section>
 <section id="scanning-modes" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="scanning-modes">Scanning modes</h3>
+<div class="column-body">
+<p>In this section we see how the Digital recording is carried out- by scanning!!, indicated below are the various scanning modes.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Scanningtypes.png" class="img-fluid figure-img" width="450"></p>
@@ -234,6 +258,7 @@ div.csl-indent {
 <p><img src="images/Factors-affecting-signal-strength-of-an-image.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Circular and side scanning systems. SOURCE: <a href="https://www.onestopgis.com/Aerial-Photography/Digital-Imaging/Sensors/1-Remote-Sensing-Systems.html">onestopgis</a></figcaption><p></p>
 </figure>
+</div>
 </div>
 <div class="column-body">
 <ol type="1">
@@ -287,8 +312,8 @@ div.csl-indent {
 </ul></li>
 </ul>
 </section>
-<section id="side-scanning-system" class="level5 column-body">
-<h5 class="anchored" data-anchor-id="side-scanning-system">4. Side Scanning System</h5>
+<section id="side-scanning-system--active-system" class="level5 column-body">
+<h5 class="anchored" data-anchor-id="side-scanning-system--active-system">4. Side Scanning System- Active System</h5>
 <ul>
 <li>Active system</li>
 <li>Eg: sonar (SOund NAvigation and Ranging)</li>
@@ -314,6 +339,7 @@ div.csl-indent {
 <section id="factors-affecting-signal-strength" class="level4 page-columns page-full">
 <h4 class="anchored" data-anchor-id="factors-affecting-signal-strength">Factors affecting Signal Strength</h4>
 <div class="column-body">
+<p>The scanning is done to receive back a signal to create a pixel&gt;band with information. But! the signal we receive back can have varied strength due to various factors that affect it, indicated below are the same:</p>
 <ul>
 <li>Energy Flux</li>
 <li>altitude</li>
@@ -334,10 +360,11 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">The chain of satellite data acquisition. The scanning device records data, pixel by pixel, along a scan line. Assembling the scan lines gives an image. The radiation is recorded in grey levels. SOURCE: <span class="citation" data-cites="adamo2020">Adamo et al. (<a href="#ref-adamo2020" role="doc-biblioref">2020</a>)</span></figcaption><p></p>
 </figure>
 </div>
-<section id="perspective-and-planimetry" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="perspective-and-planimetry">Perspective and Planimetry</h2>
-<section id="perspective-v" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="perspective-v">Perspective V</h3>
+<section id="view-perspective-and-planimetry" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="view-perspective-and-planimetry">View: Perspective and Planimetry</h2>
+<div class="column-body">
+<p>Now we understand how the scanning is performed by a Sensor (above sections), we further need to understand about perspective. How the object can be viewed so as to better understand corrections.</p>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/3d-projections.png.webp" class="img-fluid figure-img" width="392"></p>
@@ -397,13 +424,9 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Orthographic and Perspective View. <em>SOURCE: <a href="https://en.wikipedia.org/wiki/Orthophoto#/media/File:OrthoPerspective.svg">wikipedia</a></em></figcaption><p></p>
 </figure>
 </div>
-<div class="column-body">
-<p>Two corrections</p>
-</div>
-</section>
 </section>
 <section id="image-correction" class="level2 column-body">
-<h2 class="anchored" data-anchor-id="image-correction">Image correction</h2>
+<h2 class="anchored" data-anchor-id="image-correction">Image correction!</h2>
 <ul>
 <li>Raw remotely sensed data- ISSUES
 <ul>
@@ -416,7 +439,6 @@ div.csl-indent {
 <li>why do we need image correction??
 <ul>
 <li>to remove distortion= individual picture elements are in their proper plainmetric (x,y).</li>
-<li></li>
 </ul></li>
 </ul>
 </section>
@@ -426,17 +448,31 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Distortion and Correction</figcaption><p></p>
 </figure>
 </div>
-<section id="radimetric-correction" class="level3 column-body">
-<h3 class="anchored" data-anchor-id="radimetric-correction">Radimetric Correction</h3>
+<section id="radiometric-correction" class="level3 column-body">
+<h3 class="anchored" data-anchor-id="radiometric-correction">Radiometric Correction</h3>
+<ul>
+<li>Precisely estimate the reflectively of an environment</li>
+<li>Meaning: improve the brightness value/ reduce inconsistencies in image brightness (not spatial or locational aspects)</li>
+<li>Errors= <strong>Noise</strong></li>
+<li>How?
+<ul>
+<li>compensating for the distortions (antenna system , positioning errors etc.)</li>
+<li>eg: <a href="https://www.ncl.ac.uk/tcmweb/bilko/module7/lesson3.pdf">ncl.ac.uk</a>; <a href="https://www.l3harrisgeospatial.com/docs/radiometriccalibration.html">l3harrisgeospatial</a></li>
+</ul></li>
+<li>Correction procedures <a href="https://storymaps.arcgis.com/stories/9fe04283db7048adb93c642c3d07dfc4">storymaps</a>
+<ul>
+<li>Radiative Transfer Code Model: Clear atmospheric conditions, creating scattering models. requires data retrieved from ground. accuracy= High</li>
+<li>Image-based: Information source= image, accuracy= low</li>
+<li>Regression: analyses each band, estimation of brightness in each image</li>
+</ul></li>
+</ul>
 </section>
 <section id="geometric-correction" class="level3 column-body">
 <h3 class="anchored" data-anchor-id="geometric-correction">Geometric Correction</h3>
+<p>PROCESS:</p>
 <ul>
-<li>PROCESS:
-<ul>
-<li>correcting geometric distortion</li>
-<li>assigning properties of a map to an image</li>
-</ul></li>
+<li>Correcting geometric distortion</li>
+<li>Assigning properties of a map to an image</li>
 </ul>
 <p>Source:</p>
 <ul>
@@ -445,7 +481,7 @@ div.csl-indent {
 <li>less factor: satellite remote sensing (due to altitude)</li>
 <li>high factor: aerial imagin</li>
 </ul></li>
-<li>earth curvature
+<li>Earth curvature
 <ul>
 <li>curvature</li>
 <li>eastward spinning</li>
@@ -457,8 +493,7 @@ div.csl-indent {
 <li>Cylindrical projection: S shape waves</li>
 </ul></li>
 <li>Each scan row begins at a position slightly west of the row that preceded it</li>
-<li>first pixel in each row appears to be aligned with the other initial pixels</li>
-<li></li>
+<li>First pixel in each row appears to be aligned with the other initial pixels</li>
 </ul>
 <p>Geometric correction solution modelling 2 solution: - Jensen page 244 describes - RMSE</p>
 </section>
@@ -474,7 +509,7 @@ div.csl-indent {
 <li>Need:
 <ul>
 <li>To remove the scattering and absorption effects from the atmosphere</li>
-<li>why?- to obtain surface reflectance characterstics</li>
+<li>Why?- to obtain surface reflectance characteristics</li>
 </ul></li>
 </ul>
 <ol type="1">
@@ -484,8 +519,9 @@ div.csl-indent {
 <li>Necessary</li>
 </ol>
 </section>
-<section id="atmospheric-correction-types" class="level4 column-body">
-<h4 class="anchored" data-anchor-id="atmospheric-correction-types">1. Atmospheric correction types</h4>
+<section id="atmospheric-scattering" class="level4 column-body">
+<h4 class="anchored" data-anchor-id="atmospheric-scattering">1. Atmospheric scattering</h4>
+<p>Types:</p>
 <ul>
 <li>Dark object subtraction</li>
 <li>Psuedo-invariant Features</li>
@@ -516,10 +552,10 @@ div.csl-indent {
 </ul>
 </section>
 <section id="resampling" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="resampling">3. Resampling</h3>
+<h3 class="anchored" data-anchor-id="resampling">Resampling</h3>
 <div class="column-body">
 <ul>
-<li>extraction of a brightness value from an x, y location</li>
+<li>Extraction of a brightness value from an x, y location</li>
 </ul>
 </div>
 <div class="quarto-figure quarto-figure-center">
@@ -592,6 +628,7 @@ div.csl-indent {
 </section>
 <section id="application" class="level2">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
+<p>Radiometric correction application:</p>
 </section>
 <section id="reflection" class="level2">
 

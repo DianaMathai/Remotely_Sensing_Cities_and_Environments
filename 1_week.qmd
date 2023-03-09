@@ -38,6 +38,8 @@ Below indicated are the images that schematically depict few terms.
 
 ![*Remote Sensing process, SOURCE:* [Fundamentals of Remote Sensing](https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/earthsciences/pdf/resource/tutor/fundam/pdf/fundamentals_e.pdf)](images/RSprocess.png){fig-align="center" width="683"}
 
+The following table explains the process represented in the above image.
+
 +------+----------------------------------------+--------------------------------------------------------------------+
 | Code | Interaction                            | Process                                                            |
 +:====:+:=======================================+:===================================================================+
@@ -123,9 +125,12 @@ Below indicated are the images that schematically depict few terms.
 ![Visible light in Electromagnetic Spectrum. SOURCE: [QGEO](https://theqgeo.com/principles-of-remote-sensing/#12_Interaction_with_the_target_III)](images/paste-6B9CE6AC.png){fig-align="center"}
 
 ::: column-body
--   **Wonder How BIG are these waves ??** Image below indicates EMW Radio waves upto Gamma waves.
-    -   Radio waves= very long (size of a building to the size of a coin)
-    -   gamma-rays= very smaller (atomic nuclei)
+-   **Wonder How BIG are these waves ??**
+
+    Image below indicates EMW Radio upto Gamma.
+
+    -   Radio waves = very long (size of a building to the size of a coin)
+    -   gamma-rays = very smaller (atomic nuclei)
 :::
 
 ![Scale of the Electromagnetic Spectrum. SOURCE: [NASA Science](https://www.nasa.gov/directorates/heo/scan/communications/outreach/funfacts/txt_radiowaves.html)](images/spectrum_radio_waves_graphic_web_0.png){fig-align="center"}
@@ -681,7 +686,7 @@ Summary of this section, below image is just indicative
 ![Digital Image formation](images/pixelstory.png)
 
 ::: column-body
-SO next question, *what format is it stored in??*
+**SO next question, *what format is it stored in??***
 :::
 
 ### Data Format
@@ -880,16 +885,16 @@ By now let us just accept that every word in remote sensing branches out and eve
 ## Application
 
 ::: column-body
-1.  The above segments explains considerably the extent of Remote Sensing application.
+1.  The above segments explain the extent of the Remote Sensing application.
 2.  Data Extracted application (just a few):
-    -   forest fires
-    -   pollution
-    -   volcanic eruption
+    -   Forest fires
+    -   Pollution
+    -   Volcanic eruption
     -   Flooding
-    -   weather
-    -   crop growth
-    -   carbon sinks
-    -   forest covers
+    -   Weather
+    -   Crop growth
+    -   Carbon sinks
+    -   Forest covers
     -   City Growth
     -   Ocean floor
 :::
@@ -899,12 +904,22 @@ By now let us just accept that every word in remote sensing branches out and eve
 ::: column-body
 1.  How to approach the subject initially to understand the concepts?\-\-- overwhelming resources, so stick to three good resources (combination of books or webpage) and don't deviate.
 2.  The entire process is about measuring and understanding reflected and emitted radiation.
-3.  It is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.
+3.  It is essential to understand how EM waves and frequency work. It is like EMW has a life of its everything it interacts with has some effect.
 4.  Sensors are on-boarded on a satellite (active and passive)
 5.  Multiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.
 6.  Each band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)
 7.  It is interesting to see how much is observed and accomplished through remote sensing.
-8.  Its is essential to understand which scale data is required and for what use/ size of target that is to be resolved, based on which the specific satellite data is to be accuired. Eg. If I need to find data to count the number of cars parked in a parking lot, I wont use Landsat imagery as it is (30mx30m). Solution: Maxar or planet.com (3mx3m)
-9.  what ever needs to be detected through remote sensing need to be twice the size of your pixel.
-10. Cadence: Landset-16days (40 year time period), sentinel 2-10days(equator) and 2-3 (mid latitude) (10mx10m) pixel == its amazing, so many questions can be resolved in short duration of time.
+8.  It is essential to understand which scale data is required and for what use/ size of the target is to be resolved, based on which the specific satellite data is to be acquired. Eg. If I need to find data to count the number of cars parked in a parking lot, I won't use Landsat imagery as it is (30mx30m). Solution: Maxar or planet.com (3mx3m)
+9.  Whatever is to be detected through remote sensing needs to be twice the size of your pixel.
+10. Cadence: Landset-16days (40-year time period), sentinel 2-10 days (equator) and 2-3 (mid-latitude) (10mx10m) pixel == it is amazing so many questions can be resolved in a short duration of time.
+11. How to approach the subject initially to understand the concepts?\-\-- overwhelming resources, so stick to three good resources (combination of books or webpage) and don't deviate.
+12. The entire process is about measuring and understanding reflected and emitted radiation.
+13. It is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.
+14. Sensors are on-boarded on a satellite (active and passive)
+15. Multiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.
+16. Each band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)
+17. It is interesting to see how much is observed and accomplished through remote sensing.
+18. Its is essential to understand which scale data is required and for what use/ size of target that is to be resolved, based on which the specific satellite data is to be accuired. Eg. If I need to find data to count the number of cars parked in a parking lot, I wont use Landsat imagery as it is (30mx30m). Solution: Maxar or planet.com (3mx3m)
+19. what ever needs to be detected through remote sensing need to be twice the size of your pixel.
+20. Cadence: Landset-16days (40 year time period), sentinel 2-10days(equator) and 2-3 (mid latitude) (10mx10m) pixel == its amazing, so many questions can be resolved in short duration of time.
 :::

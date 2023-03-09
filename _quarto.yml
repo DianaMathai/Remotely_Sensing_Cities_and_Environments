@@ -1,9 +1,9 @@
 project:
   type: website
   output-dir: docs
-
+  
 website:
-  title: "CASA0023"
+  title: 'CASA0023'
   navbar: 
     collapse: true
     search: true
@@ -11,16 +11,16 @@ website:
     
   sidebar:
     title: "Learning Diary"
-    style: floating
+    pinned: true
+    alignment: center
+    style: docked
+    #style: floating
     background: white
     margin-right: 5px
     margin-left: 0px
-    
     contents:
-      
       - href: index.qmd
         text: "Learning Content"
-      #- about.qmd
       - href: 1_week.qmd
         text: "Week 1"
       - href: 2_week.qmd
@@ -37,7 +37,7 @@ website:
         text: "Week 7"
       - href: 8_week.qmd
         text: "Week 8"
-        
+
 format:
   html:
     theme: Litera
@@ -52,8 +52,10 @@ format:
       body-width: 20000px
       sidebar-width: 200px
       margin-width: 200px
-    #code-fold: true
-    #code-tools: true
+    #code-fold:true
+    #code-tools:true
 editor: visual
 
+execute:
+  freeze: auto
 

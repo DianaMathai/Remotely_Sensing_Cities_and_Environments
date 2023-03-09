@@ -5,6 +5,14 @@ bibliography: references.bib
 ---
 
 ::: column-body
+In this week's learning we focused on how can remote sensing help in bridging the gap between a policy and execution of the policy.
+
+So for this segment the inspiration of choosing Urban Heat Island was based on @maclachlan2021, [nrdc.org](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2016.pdf) and the heat wave impact in India, 2015 [theguardian](https://www.theguardian.com/world/2015/may/25/india-heatwave-deaths-heatstroke-temperatures#:~:text=More%20than%20500%20people%20are,Sunday%2C%20according%20to%20local%20media.).
+
+To Observe: Based on [nrdc](https://www.nrdc.org/sites/default/files/ahmedabad-heat-action-plan-2016.pdf) example of Ahmadabad (Western State), India are other parts in India approaching the policy in similar manner?
+:::
+
+::: column-body
 ⭐ *Search for one metropolitan policy challenge (any city in the World) that could be solved by incorporating remotely sensed data.*
 :::
 
@@ -30,6 +38,10 @@ bibliography: references.bib
 
 ## Before we begin.....
 
+::: column-body
+In this segment, we shall understand a few basic concepts to have an understanding of the issue addressed by the policy.
+:::
+
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Roof Cooling Material proposed**                                                                                                                                       |
 +:=========================================================================================================================================================================+
@@ -45,11 +57,11 @@ bibliography: references.bib
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ::: column-body
-*why implement it??*
-:::
+***Why implement it??***
 
 -   A low cost solution in low rise low income houses @kolokotroni2018
 -   Disadvantages & Advantages: @ashtari2021, @macintyre2019, [unequalscenes](https://unequalscenes.com/), [preventionweb](https://www.preventionweb.net/news/india-keeping-it-cool-models-city-cool-roof-programs)
+:::
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | ***Heat Wave***                                                                                                                                                                                                                                                                                                  |
@@ -69,21 +81,35 @@ bibliography: references.bib
 | Heat island: *SOURCE: [publichealthnotes](https://www.publichealthnotes.com/urban-heat-island-effects-mitigation-measures/)* |
 +------------------------------------------------------------------------------------------------------------------------------+
 
+## Observation
+
+::: column-body
+-   Policy emphasizes on execution of the methods in a fixed timeline
+-   Lacks clarity on how it would be delivered
+-   Lacks clarity on step by step process of monitoring and recording the observed progress
+-   Emphasizes on role and responsibility of various stakeholders (org)
+-   Based on professional experience I assume it would be tendered as a PPP project or can also be approached by a Suo-Motu proposal.
+
+***Question:*** How do we structure the monitoring aspect for this policy??? - **Remote Sensing!**
+:::
+
 ::: column-body
 ⭐ *Identify and evaluate a remotely sensed data set that could be used to assist with contributing to the policy goal*
 :::
 
 ::: column-body
-*Impact:* Health, Nature, economy, Infra, service provision Relation between Land Surface Temperature Data and Land Use Data
+To satisfy the above criteria, we look into the impact, the envisaged milestone, data requirement and the process (under steps, with and without social aspect).
+
+*Impact:* Health, Nature, economy, Infra, service provision Relation between Land Surface Temperature Data and Land Use Data.
 :::
 
-+---------------------------------------------+
-| *Milestone*                                 |
-+:============================================+
-| ![](images/paste-C1977A89.png){width="327"} |
-|                                             |
-| ![](images/paste-9732D730.png){width="235"} |
-+---------------------------------------------+
++--------------------------------------------------------------------+
+| *Milestone*                                                        |
++:===================================================================+
+| ![](images/paste-C1977A89.png){width="395"}                        |
+|                                                                    |
+| ![](images/paste-9732D730.png){width="235"}                        |
++--------------------------------------------------------------------+
 
 ## Process
 
@@ -105,7 +131,7 @@ bibliography: references.bib
 :::
 
 ::: column-body
-*Step:*
+*Steps:*
 
 1.  Pre-process (geometric, atmospheric and topographic corrections)
 2.  Masking and sub- setting
@@ -126,7 +152,7 @@ bibliography: references.bib
 :::
 
 ::: column-body
-*may be Inclusion of Social Aspect?*
+*May be Inclusion of Social Aspect?*
 
 1.  Emergency department visit: patient, inpatient/ outpatient in hospitals
 2.  Diagnoses -heat related
@@ -154,36 +180,40 @@ bibliography: references.bib
 ⭐ *Demonstrate how this links to global agendas / goals*
 :::
 
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| State Level | Telangana State Heatwave Action Plan -- 2021                                                                                                                                  | *Issues Identified:* Severe heat wave affected the State of Telangana in May 2015      | 1.  Telangana State Development Planning Society (TSDPS)                                                 |
-|             |                                                                                                                                                                               |                                                                                        | 2.  Revenue Disaster Management Department                                                               |
-|             |                                                                                                                                                                               |                                                                                        | 3.  UNICEF (working together since 2017)                                                                 |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-|             | District Disaster Management Plans (DDMP)                                                                                                                                     | *Issues Identified:* heatwaves, various vulnerabilities (sector wise in each district) | 1.  Revenue Disaster Management Department                                                               |
-|             |                                                                                                                                                                               |                                                                                        | 2.  UNICEF                                                                                               |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-|             | UNICEF Guidance for Risk Informed Programming                                                                                                                                 | Prepared Child Risk and Impact Analysis (CRIA)                                         | UNICEF                                                                                                   |
-|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
-|             |                                                                                                                                                                               | -   Identify various risks                                                             |                                                                                                          |
-|             |                                                                                                                                                                               | -   Impact of natural hazards                                                          |                                                                                                          |
-|             |                                                                                                                                                                               | -   Impact group: children and women, various social sectors                           |                                                                                                          |
-|             |                                                                                                                                                                               | -   Output: to provide critical services                                               |                                                                                                          |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| National    | [National Guidelines](https://nidm.gov.in/PDF/pubs/NDMA/27.pdf) for Preparation of action Plan- Prevention and management of heat wave- 2019                                  | Issue: Heat wave                                                                       | Central Government (National Disaster Management Authority Ministry of Home Affairs Government of India) |
-|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
-|             |                                                                                                                                                                               | -   Early Warning and Communication                                                    |                                                                                                          |
-|             |                                                                                                                                                                               | -   Dealing with heat related illness, mitigation and preparedness                     |                                                                                                          |
-|             |                                                                                                                                                                               | -   Roles and responsibilities and implementation plan.                                |                                                                                                          |
-|             |                                                                                                                                                                               | -   Emphasis on evidence based policy                                                  |                                                                                                          |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-| Global      | Beating the Heat: A Sustainable Cooling [Handbook](https://www.unep.org/news-and-stories/press-release/un-issues-new-guidance-address-warming-cities) for Cities- 2021        | UN Environment programme (UNEP)                                                        | UNEP                                                                                                     |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
-|             | SDG 11 & 13 (out of 17 SDGS)                                                                                                                                                  |                                                                                        | UN                                                                                                       |
-|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
-|             | [SDG 11](https://datatopics.worldbank.org/sdgatlas/goal-11-sustainable-cities-and-communities/): Make Cities And Human Settlements Inclusive, Safe, Resilient And Sustainable |                                                                                        |                                                                                                          |
-|             |                                                                                                                                                                               |                                                                                        |                                                                                                          |
-|             | [SDG 13](https://datatopics.worldbank.org/sdgatlas/goal-13-climate-action/): Take urgent action to combat climate change and its impacts                                      |                                                                                        |                                                                                                          |
-+-------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+::: column-body
+To satisfy the above requirement, indicated are the links (Provincial, Federal and Global Levels)
+:::
+
++--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| State Level/ Provincial Level  | Telangana State Heatwave Action Plan -- 2021                                                                                                                                  | *Issues Identified:* Severe heat wave affected the State of Telangana in May 2015      | 1.  Telangana State Development Planning Society (TSDPS)                                                 |
+|                                |                                                                                                                                                                               |                                                                                        | 2.  Revenue Disaster Management Department                                                               |
+|                                |                                                                                                                                                                               |                                                                                        | 3.  UNICEF (working together since 2017)                                                                 |
++--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+|                                | District Disaster Management Plans (DDMP)                                                                                                                                     | *Issues Identified:* Heatwaves, various vulnerabilities (sector wise in each district) | 1.  Revenue Disaster Management Department                                                               |
+|                                |                                                                                                                                                                               |                                                                                        | 2.  UNICEF                                                                                               |
++--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+|                                | UNICEF Guidance for Risk Informed Programming                                                                                                                                 | Prepared Child Risk and Impact Analysis (CRIA)                                         | UNICEF                                                                                                   |
+|                                |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Identify various risks                                                             |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Impact of natural hazards                                                          |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Impact group: children and women, various social sectors                           |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Output: to provide critical services                                               |                                                                                                          |
++--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| National Level/ Federal Level  | [National Guidelines](https://nidm.gov.in/PDF/pubs/NDMA/27.pdf) for Preparation of action Plan- Prevention and management of heat wave- 2019                                  | Issue: Heat wave                                                                       | Central Government (National Disaster Management Authority Ministry of Home Affairs Government of India) |
+|                                |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Early Warning and Communication                                                    |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Dealing with heat related illness, mitigation and preparedness                     |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Roles and responsibilities and implementation plan.                                |                                                                                                          |
+|                                |                                                                                                                                                                               | -   Emphasis on evidence based policy                                                  |                                                                                                          |
++--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Global Level                   | Beating the Heat: A Sustainable Cooling [Handbook](https://www.unep.org/news-and-stories/press-release/un-issues-new-guidance-address-warming-cities) for Cities- 2021        | UN Environment programme (UNEP)                                                        | UNEP                                                                                                     |
++--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+|                                | SDG 11 & 13 (out of 17 SDGS)                                                                                                                                                  |                                                                                        | UN                                                                                                       |
+|                                |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|                                | [SDG 11](https://datatopics.worldbank.org/sdgatlas/goal-11-sustainable-cities-and-communities/): Make Cities And Human Settlements Inclusive, Safe, Resilient And Sustainable |                                                                                        |                                                                                                          |
+|                                |                                                                                                                                                                               |                                                                                        |                                                                                                          |
+|                                | [SDG 13](https://datatopics.worldbank.org/sdgatlas/goal-13-climate-action/): Take urgent action to combat climate change and its impacts                                      |                                                                                        |                                                                                                          |
++--------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 ::: column-body
 ⭐ *Explain how it advances current local, national or global approaches*
@@ -193,8 +223,8 @@ bibliography: references.bib
 -   Emphasis on monitoring and impact evaluation- it would be **evidence based**, hence required measure can be taken.
     -   RS would help facilitate it
     -   Challenges:
-        -   the roof top would be a very small scale to execute or monitor
-        -   though this approach is cost effective, its not a sustainable long term solution. (may be try searching for alternative solutions)
+        -   The roof top would be a very small scale to execute or monitor
+        -   Though this approach is cost effective, its not a sustainable long term solution. (may be try searching for alternative solutions)
     -   Solution:
         -   Read: [umep](https://umep-docs.readthedocs.io/projects/tutorial/en/latest/Tutorials/IntroductionToSolweig.html;) plug it in as an alternate solution
         -   Compare before and after

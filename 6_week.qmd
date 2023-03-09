@@ -4,4 +4,69 @@ output: html_document
 bibliography: references.bib
 ---
 
-![Land cover mapping using Random forest. SOURCE: [bikeshbade](https://bikeshbade.com.np/tutorials/Detail/?title=Supervised%20Classification%20in%20GEE&code=20)](images/rf.jpg){fig-align="center"}
+::: column-body
+This week we worked on Classifications. We shall focus on Different sensors; Test, Train and Validation of datasets; regression tree followed by few observations from the designed practical.
+:::
+
+## Different sensors
+
+![A possible nested architecture for remote sensing of UGSs. SOURCE: @shahtahmassebi2021](images/image-1598825921.png){fig-align="center" width="518"}
+
+## Test, Train, Validate
+
+![](images/image-539172647.png){fig-align="center" width="273"}
+
+![Test, Train and Validation. SOURCE: [mlu-explain](https://mlu-explain.github.io/train-test-validation/)](images/Testtrain.png){fig-align="center"}
+
+::: column-body
+Below indicated Understanding Based on [mlu-explain](https://mlu-explain.github.io/train-test-validation/)
+
+**Goal:**
+
+-   Train the data to determine cat or dog
+
+**Data set**
+
+-   types: 2 types of animals
+-   features: weight and fluffiness
+
+**Using?**
+
+-   supervised machine learning
+
+**How?**
+
+-   split data into three
+    -   training set
+    -   Testing set
+    -   Validation set
+-   How should the train it?
+-   Use an appropriate model
+:::
+
+![Process. SOURCE: [v7labs](https://www.v7labs.com/blog/train-validation-test-set#:~:text=Training%20data%20is%20the%20set,after%20completing%20the%20training%20phase.)](images/image-470206658.png){fig-align="center" width="417"}
+
++------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+| Test                                                             | Train                                                                                                                        | Validation                                                                                                     |
++==================================================================+==============================================================================================================================+================================================================================================================+
+| -   Dataset used to test the model after completing the training | -   To train the mode                                                                                                        | chooses: best hyper-parameters + best model for the task - LR and neural networks                              |
+| -   result: unbiased final model                                 | -   Learn underlying relationships                                                                                           |                                                                                                                |
+| -   accurate and percise                                         | -   Should be a representative of the population                                                                             | -   Separate fom the training set                                                                              |
+|                                                                  | -   Chooses best parameters                                                                                                  | -   helps tune model's hyper parameters                                                                        |
+|                                                                  | -   Unbiased                                                                                                                 | -   helps us understand if training of data is moving in the correct direction or not                          |
+|                                                                  | -   avoid- overfitting                                                                                                       | -   how does this work?                                                                                        |
+|                                                                  | -   Same set of training data is fed into the neural network arch (repeatedly) -\> model learns the features of the data set |     -   training data set-\> trained on the model + simultaneously Validation set-\> performs model evaluation |
+|                                                                  | -   Diversified set of inputs- why?- to train the model of all the scenarios-\> predicting unseen data samples               | -   Why is dataset split to validation set?                                                                    |
+|                                                                  |                                                                                                                              |     -   To prevent model over fitting                                                                          |
++------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
+
+Helpful Videos: 📹
+
+-   [Validation data: How it works and why you need it - Machine Learning Basics Explained](https://www.youtube.com/watch?v=NPWlj9G1Si8)
+-   [Train, Test, & Validation Sets explained](https://www.youtube.com/watch?v=Zi-0rlM4RDs)
+
+## Regression tree
+
+## Application
+
+## Reflection
