@@ -76,7 +76,7 @@ Below is an indicative representation of the process
 A small slide presentation(maximum 9 slide) and hosted on GitHub - Xaringan OUTPUT - SENSOR 🌝➡️ [Sensor](https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html#1)
 :::
 
-## Application:
+## Application
 
 -   Making a publicly available document, that can grow with community contribution (only for GitHub users).
 -   Easily accessible to users with internet and basic web accessibility knowledge.
@@ -84,25 +84,14 @@ A small slide presentation(maximum 9 slide) and hosted on GitHub - Xaringan OUTP
 -   Requires moderate to high proficiency of the medium
 -   Interesting of individuals who love writing code, representing code, its output (maps, graphs, tables etc) and enjoy CSS- as this all outputs in a self contained web slide
 
-## Reflection:
+## Reflection
 
 -   Benefits:
     -   Reproducible
-    -   encourages collaboration and displays benefits of open source
+    -   Encourages collaboration and displays benefits of open source
     -   Enables users to use the medium to put things over internet.
     -   Dose not require in-depth knowledge of web-development to build a desired output.
     -   Resource to build one are easily accessible on web
 -   Drawbacks:
-    -   Requires internet accessibility
-
     -   Requires proficiency of the medium
-
     -   Not inclusive: as it targets a certain user type, cannot be used as a medium to engage contribution from learned diverse group with varying computer proficiency levels (would require capacity building).
-
-Error:
-
-![](images/image-1586851961.png){width="457"}
-
--   tools\> global\>change: \[64-bit\] C:\\Program Files\\R\\R-4.2.2 to R-4.2.1
-
-![](images/image-549386430.png){width="524"}

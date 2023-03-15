@@ -165,6 +165,10 @@ div.csl-indent {
    
   <ul>
   <li><a href="#different-sensors" id="toc-different-sensors" class="nav-link active" data-scroll-target="#different-sensors">Different sensors</a></li>
+  <li><a href="#test-train-validate" id="toc-test-train-validate" class="nav-link" data-scroll-target="#test-train-validate">Test, Train, Validate</a></li>
+  <li><a href="#regression-tree" id="toc-regression-tree" class="nav-link" data-scroll-target="#regression-tree">Regression tree</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -187,7 +191,10 @@ div.csl-indent {
 
 </header>
 
-<section id="different-sensors" class="level2 page-columns page-full">
+<div class="column-body">
+<p>This week we worked on Classifications. We shall focus on Different sensors; Test, Train and Validation of datasets; regression tree followed by few observations from the designed practical.</p>
+</div>
+<section id="different-sensors" class="level2">
 <h2 class="anchored" data-anchor-id="different-sensors">Different sensors</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -195,19 +202,22 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">A possible nested architecture for remote sensing of UGSs. SOURCE: <span class="citation" data-cites="shahtahmassebi2021">Shahtahmassebi et al. (<a href="#ref-shahtahmassebi2021" role="doc-biblioref">2021</a>)</span></figcaption><p></p>
 </figure>
 </div>
-<div class="column-body">
-
+</section>
+<section id="test-train-validate" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="test-train-validate">Test, Train, Validate</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-539172647.png" class="img-fluid figure-img" width="273"></p>
+</figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/image-1387902085.png" class="img-fluid figure-img"></p>
+<p><img src="images/Testtrain.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Test, Train and Validation. SOURCE: <a href="https://mlu-explain.github.io/train-test-validation/">mlu-explain</a></figcaption><p></p>
 </figure>
 </div>
-<ul>
-<li>Understanding Based on <a href="https://mlu-explain.github.io/train-test-validation/">mlu-explain</a></li>
-</ul>
 <div class="column-body">
+<p>Below indicated Understanding Based on <a href="https://mlu-explain.github.io/train-test-validation/">mlu-explain</a></p>
 <p><strong>Goal:</strong></p>
 <ul>
 <li>Train the data to determine cat or dog</li>
@@ -233,11 +243,17 @@ div.csl-indent {
 <li>Use an appropriate model</li>
 </ul>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-470206658.png" class="img-fluid figure-img" width="417"></p>
+<p></p><figcaption class="figure-caption">Process. SOURCE: <a href="https://www.v7labs.com/blog/train-validation-test-set#:~:text=Training%20data%20is%20the%20set,after%20completing%20the%20training%20phase.">v7labs</a></figcaption><p></p>
+</figure>
+</div>
 <table class="table">
 <colgroup>
-<col style="width: 63%">
-<col style="width: 17%">
-<col style="width: 17%">
+<col style="width: 21%">
+<col style="width: 41%">
+<col style="width: 36%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -249,34 +265,240 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td><ul>
-<li>To train the model</li>
+<li>Dataset used to test the model after completing the training</li>
+<li>result: unbiased final model</li>
+<li>accurate and percise</li>
+</ul></td>
+<td><ul>
+<li>To train the mode</li>
 <li>Learn underlying relationships</li>
 <li>Should be a representative of the population</li>
-<li>unbiased</li>
+<li>Chooses best parameters</li>
+<li>Unbiased</li>
+<li>avoid- overfitting</li>
+<li>Same set of training data is fed into the neural network arch (repeatedly) -&gt; model learns the features of the data set</li>
+<li>Diversified set of inputs- why?- to train the model of all the scenarios-&gt; predicting unseen data samples</li>
 </ul></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
+<td><p>chooses: best hyper-parameters + best model for the task - LR and neural networks</p>
+<ul>
+<li>Separate fom the training set</li>
+<li>helps tune model’s hyper parameters</li>
+<li>helps us understand if training of data is moving in the correct direction or not</li>
+<li>how does this work?
+<ul>
+<li>training data set-&gt; trained on the model + simultaneously Validation set-&gt; performs model evaluation</li>
+</ul></li>
+<li>Why is dataset split to validation set?
+<ul>
+<li>To prevent model over fitting</li>
+</ul></li>
+</ul></td>
 </tr>
 </tbody>
 </table>
+<p>Helpful Videos: 📹</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=NPWlj9G1Si8">Validation data: How it works and why you need it - Machine Learning Basics Explained</a></li>
+<li><a href="https://www.youtube.com/watch?v=Zi-0rlM4RDs">Train, Test, &amp; Validation Sets explained</a></li>
+</ul>
+</section>
+<section id="regression-tree" class="level2">
+<h2 class="anchored" data-anchor-id="regression-tree">Regression tree</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/regressiontree.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Decision Tree - Classification. SOURCE:</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/tree.png" class="img-fluid figure-img" width="566"></p>
+<p></p><figcaption class="figure-caption">Building Regression Tree. SOURCE: <a href="https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d">medium.datadriveninvestor</a></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="application" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
+<div class="column-body">
+<p><span class="citation" data-cites="friedl1997">Friedl and Brodley (<a href="#ref-friedl1997" role="doc-biblioref">1997</a>)</span></p>
+<p>Concern: - parametric supervised classification algorithms - unsupervised classification algorithms</p>
+<p><span class="citation" data-cites="sharma2013">Sharma, Ghosh, and Joshi (<a href="#ref-sharma2013" role="doc-biblioref">2013</a>)</span></p>
+<ul>
+<li><p>Geographical Location: Surat, Gujarat (India)</p></li>
+<li><p>Area: 386.28 km2</p></li>
+<li><p>Data source:</p></li>
+<li><p>Classification technique: 3 classification methods</p>
+<ol type="1">
+<li><p>ISODATA (Iterative Self-Organizing Data Analysis) Clustering,</p></li>
+<li><p>MLC</p></li>
+<li><p>DTC (to map out 6 classes based on classification scheme)</p></li>
+</ol></li>
+<li><p>Classification scheme:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1781657294.png" class="img-fluid figure-img" width="379"></p>
+<p></p><figcaption class="figure-caption">Classification scheme</figcaption><p></p>
+</figure>
+</div></li>
+<li><p><em>ISODATA</em></p>
+<ul>
+<li>Satellite data clustering (using ISODATA)</li>
+<li>50 classes (6 iterations)</li>
+<li>0.95 convergence threshold</li>
+<li>clusters &gt;&gt; 1 of the 6 land use categories identified (above image)&gt;&gt; merged &gt;&gt; unsupervised classification</li>
+</ul></li>
+<li><p><em>Supervised classification using MLC</em></p>
+<ul>
+<li>Calculating the probability of a pixel belonging to the 6 classification</li>
+<li><strong>How?</strong> maximum probability &gt;&gt; pixel assignment &gt;&gt; respective class</li>
+</ul></li>
+</ul>
+<ol start="3" type="1">
+<li><em>Decision tree</em></li>
+</ol>
+<ul>
+<li>Classification= WEKA (open source data mining software)</li>
+<li>Image conversion= ASCII format &gt;&gt;</li>
+<li>DT classification</li>
+<li>Decision rule set
+<ul>
+<li>Generation: training sets in WEKA J48 classifier (used for training the Landsat TM data set)</li>
+</ul></li>
+<li>Output rule sets + trial classification results&gt;&gt; examined</li>
+<li>Why? confidence levels and accuracies.</li>
+<li>Based on these results &gt;&gt; modification of training sites (if necessary)</li>
+<li>Uptill?
+<ul>
+<li>Reliable training sets are obtained</li>
+<li>Good classification accuracies</li>
+<li>Accuracies how? (based on Kappa statistics and overall accuracy)</li>
+</ul></li>
+<li>Rule set = highest accuracy &gt;&gt; classify entire dataset in WEKA (using J48 classifier)</li>
+<li>signature dataset (training) &gt;&gt; CONSISTING OF 644 training pixels &gt;&gt; Classification of images &gt;&gt; 6 land use classes
+<ul>
+<li>Deep water = 8%,</li>
+<li>Shallow water = 9%</li>
+<li>Sparse = 11% and</li>
+<li>Dense built-up = 11%</li>
+<li>Agriculture = 19%</li>
+<li>Rest = 42% fallow land</li>
+</ul></li>
+<li>4 crucial factors for <em>Classification performance</em></li>
+<li>Class separability</li>
+<li>Training sample size</li>
+<li>Dimensional</li>
+<li>Classifier type</li>
+<li>Class separability using Transform Divergence (TD) test &gt;&gt;&gt; result= 0 to 2000= good separability (good= greater than 1900; fair= 1700 and 1900; Poor= below 1700; )</li>
+<li>Distributed throughout the study area = satellite data + fine resolution Google Earth images</li>
+<li>Statistically valid sampling = commission, omission &amp; accuracy (overall using LULC information)</li>
+<li>Cover type information = classified map</li>
+</ul>
+<p><strong>RESULTS</strong></p>
+<p><img src="images/image-475019501.png" class="img-fluid" width="313"></p>
+<ul>
+<li>Good separation among classes</li>
+<li>BUT ---
+<ul>
+<li>Major overlap</li>
+<li>Shallow water &amp; fallow class</li>
+<li>Some overlap</li>
+<li>Sparse &amp; dense built-up classes</li>
+</ul></li>
+</ul>
+<p><strong><em>Decision tree</em></strong></p>
+<p><img src="images/image-962698653.png" class="img-fluid" width="511"></p>
+<p>.</p>
+<p><img src="images/image-1625191819.png" class="img-fluid" width="465"></p>
+<p><strong>Evaluation of training sets</strong></p>
+<p><img src="images/image-1534077956.png" class="img-fluid" width="246"></p>
+<p><strong>Classification results</strong></p>
+<p><img src="images/image-1989408921.png" class="img-fluid" width="468"></p>
+<p><img src="images/image-1754338698.png" class="img-fluid" width="466"></p>
+<p>Accuracy Assessment:</p>
+<ul>
+<li>Confusion matrix &gt;&gt; overlaying reference locations on classified map</li>
+<li>DTC = 90% (overall accuracy)</li>
+<li>Kappa = 0.88</li>
+<li>Supervised classification= 76.67% (overall accuracy)</li>
+<li>Kappa = 0.7186</li>
+<li>ISODATA (Overall accuracy for classification) = 50 clusters = eight classes = 50.83% (overall accuracy)</li>
+<li>Kappa = 0.4134</li>
+<li>ISODATA (Classification accuracy)
+<ul>
+<li>2.33% <em>(PA for shallow water)</em> to 100% <em>(PA for deep water and UA for fallow)</em></li>
+<li>MLC accuracy= 61.1% <em>(PA for dense built-up)</em> to 96.8% <em>(UA for shallow water).</em></li>
+</ul></li>
+<li>DTC exhibit highest accuracy range
+<ul>
+<li>75% (UA for agriculture) to 100% <em>(UA for shallow water)</em></li>
+</ul></li>
+</ul>
+<p><strong>Conclusion</strong></p>
+<ul>
+<li>Strength of DTC = flexibility and simplicity</li>
+<li>for?
+<ul>
+<li>Partitioning dataset</li>
+<li>Employs differentiation among the linear feature</li>
+<li>defining boundaries between classes</li>
+</ul></li>
+<li>Open source data mining software
+<ul>
+<li>use = attributes of a pixel &gt;&gt; construct a decision tree</li>
+</ul></li>
+<li>WEKA Limitation
+<ul>
+<li>handling large datasets = methodology implementation implemented = smaller area</li>
+<li>spatial resolution= not sufficient (analysisng finer details)</li>
+</ul></li>
+<li>Study= lacking ground data collection</li>
+</ul>
+</div>
+</section>
+<section id="reflection" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<div class="column-body">
+<ul>
+<li>Advantage in pre-process= comparatively less effort in data preparation</li>
+<li>Data: no normalization, no scaling, no effect of missing data on DT</li>
+<li>BUT: small change in data set would lead to a larger change in DT structure, as its is time consuming to train the model this small change can make the process tedious</li>
+<li>Should be comparatively easy to explain to stakeholders</li>
+<li>It would help fill the gap of cost of acquiring and collecting data, especially in countries that are not more economically developed/ emergent nations.
+<ul>
+<li><span class="citation" data-cites="holloway2019">Holloway et al. (<a href="#ref-holloway2019" role="doc-biblioref">2019</a>)</span></li>
+<li>Key barriers to monitor SDG’s
+<ul>
+<li>Cost of acquiring and collecting data</li>
+<li>Lack of infrastructure</li>
+<li>Required skills within countries and Organization</li>
+<li>Satellite Imagery= addresses the issue of cost of data acquisition</li>
+<li>Method contributing towards= SDG 15 (forest management), SDG 6 and SDG 2</li>
+<li>Missing and observed data across all images in the study: Output=
+<ul>
+<li>Random Forest Method= more accurate</li>
+<li>Inverse distance weighted interpolation for predicting Foliage Projective Cover (FPC)= Lesser compared to RFM</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
 
 
 
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-friedl1997" class="csl-entry" role="doc-biblioentry">
+Friedl, M. A., and C. E. Brodley. 1997. <span>“Decision Tree Classification of Land Cover from Remotely Sensed Data.”</span> <em>Remote Sensing of Environment</em> 61 (3): 399–409. https://doi.org/<a href="https://doi.org/10.1016/S0034-4257(97)00049-7">https://doi.org/10.1016/S0034-4257(97)00049-7</a>.
+</div>
+<div id="ref-holloway2019" class="csl-entry" role="doc-biblioentry">
+Holloway, Jacinta, Kate J. Helmstedt, Kerrie Mengersen, and Michael Schmidt. 2019. <span>“A Decision Tree Approach for Spatially Interpolating Missing Land Cover Data and Classifying Satellite Images.”</span> <em>Remote Sensing</em> 11 (15). <a href="https://doi.org/10.3390/rs11151796">https://doi.org/10.3390/rs11151796</a>.
+</div>
 <div id="ref-shahtahmassebi2021" class="csl-entry" role="doc-biblioentry">
 Shahtahmassebi, Amir Reza, Chenlu Li, Yifan Fan, Yani Wu, Yue lin, Muye Gan, Ke Wang, Arunima Malik, and George Alan Blackburn. 2021. <span>“Remote Sensing of Urban Green Spaces: A Review.”</span> <em>Urban Forestry &amp; Urban Greening</em> 57: 126946. https://doi.org/<a href="https://doi.org/10.1016/j.ufug.2020.126946">https://doi.org/10.1016/j.ufug.2020.126946</a>.
+</div>
+<div id="ref-sharma2013" class="csl-entry" role="doc-biblioentry">
+Sharma, Richa, Aniruddha Ghosh, and P Joshi. 2013. <span>“Decision Tree Approach for Classification of Remotely Sensed Satellite Data Using Open Source Support.”</span> <em>Journal of Earth System Science</em> 122 (October): 1237–47. <a href="https://doi.org/10.1007/s12040-013-0339-2">https://doi.org/10.1007/s12040-013-0339-2</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

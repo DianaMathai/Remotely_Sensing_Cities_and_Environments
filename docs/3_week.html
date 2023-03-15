@@ -205,7 +205,7 @@ div.csl-indent {
 <section id="principle-imaging-sensor-systems" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="principle-imaging-sensor-systems">Principle Imaging Sensor Systems</h3>
 <div class="column-body">
-<p>Indicated below is the two primary ways of image recording.</p>
+<p>Indicated below are primary ways of image recording.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/Image%20recording.png" class="img-fluid figure-img" width="357"></p>
@@ -595,18 +595,18 @@ div.csl-indent {
 <td style="text-align: left;"><ul>
 <li><p>Assigning:</p>
 <ul>
-<li><p>OUTPUT pixel values &lt;= two orthogonal directions in the input image</p></li>
-<li><p>OR</p></li>
-<li><p>Fits (plane of four-pixel value) NEAREST to the desired position in the input image =&gt; computes =&gt; new brightness value (based on the weighted distance)</p></li>
+<li>OUTPUT pixel values &lt;= two orthogonal directions in the input image</li>
+<li>OR</li>
+<li>Fits (plane of four-pixel value) NEAREST to the desired position in the input image =&gt; computes =&gt; new brightness value (based on the weighted distance)</li>
 </ul></li>
 </ul></td>
 <td style="text-align: left;"><p>similar to Bilinear</p>
 <ul>
 <li><p>weighted value assignment:</p>
 <ul>
-<li><p>computing 16 input pixel values</p></li>
-<li><p>surrounding desired x’,y’ location</p></li>
-<li><p>+&gt; estimate the output pixel</p></li>
+<li>computing 16 input pixel values</li>
+<li>surrounding desired x’,y’ location</li>
+<li>+&gt; estimate the output pixel</li>
 </ul></li>
 </ul></td>
 </tr>
@@ -626,20 +626,123 @@ div.csl-indent {
 </figure>
 </div>
 </section>
-<section id="application" class="level2">
+<section id="application" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
-<p>Radiometric correction application:</p>
+<div class="column-body">
+<p><span class="citation" data-cites="yan2012Radiometric">(<a href="#ref-yan2012Radiometric" role="doc-biblioref"><strong>yan2012Radiometric?</strong></a>)</span></p>
+<ul>
+<li><p>LiDAR system (maximize the benefit of LiDAR data). How? requires geometric calibration (GC) and radiometric correction (RC) <img src="images/image-746277220.png" class="img-fluid" alt="Experimental workflow for the geometric calibration and radiometric correction of LiDAR data and land cover classification" width="317"></p></li>
+<li><p>Study area: British Columbia Institute of Technology (BCIT) , Burnaby, British Columbia, Canada</p></li>
+<li><p>Feasibility of the proposed GC and RC methods: LiDAR dataset</p></li>
+<li><p>Date: July 17, 2009 at local time 14:55</p></li>
+<li><p>Temp: 29.8 °C</p></li>
+<li><p>Vertical visibility = 48.3 km</p></li>
+<li><p>The pressure = 101.81 kPa</p></li>
+<li><p>Source: National Climate Data and Information Archive from Environment Canada</p></li>
+<li><p>Sensor: Leica ALS50</p>
+<ul>
+<li>Average flying height= 600 m</li>
+<li>Point density= 4–5 points per meter square</li>
+</ul></li>
+<li><p>Why choose the study area?- variety in land cover</p></li>
+<li><p>Subset:</p>
+<ul>
+<li>Subset of a single LiDAR strip &gt;&gt; clipped</li>
+<li>Dimension = 500 m × 400 m (experimental testing)</li>
+<li>Direction of the flight survey = west-&gt; east</li>
+<li>points= 1 Mn</li>
+<li>calibration: geometrically calibrated using the quasi</li>
+<li>rigorous method</li>
+</ul></li>
+<li><p>Four Datasets: used for land cover classification and comparative analysis</p>
+<ul>
+<li>Original intensity data</li>
+<li>GC intensity data</li>
+<li>RC intensity data</li>
+<li>GC and RC intensity data</li>
+</ul></li>
+<li><p>Intensity data image classification= Gaussian maximum likelihood classification (MLC) technique</p></li>
+<li><p>calculation= kappa statistics + overall accuracy</p></li>
+<li><p>three classification scenarios</p></li>
+<li><p>4 data sets</p>
+<p><img src="images/image-814032790.png" class="img-fluid" width="381"></p></li>
+</ul>
+<p><img src="images/image-1552736374.png" class="img-fluid" width="356"></p>
+<ul>
+<li>Requirement of method:
+<ul>
+<li>Time</li>
+<li>Tagged point cloud</li>
+<li>Trajectory position data</li>
+</ul></li>
+<li>Results and Discussion</li>
+<li>Radiometric correction (when system raw measurements are not available)</li>
+<li>Geometric system calibration= improve scan mirrors angles and ranges.</li>
+<li>Considerations of correction:
+<ul>
+<li>System parameters</li>
+<li>Topographic effect</li>
+<li>Atmospheric attenuation</li>
+</ul></li>
+<li>Post training:
+<ul>
+<li>The separabilities
+<ul>
+<li><p>Training areas (land cover classes intensity values)= higher ( compared to the original intensity data)</p></li>
+<li><p>result= expected accuracy improvement (land cover classification)</p>
+<p><img src="images/image-1855403524.png" class="img-fluid" width="366"></p></li>
+</ul></li>
+</ul></li>
+<li>Classification results &gt;&gt; assessed and compared &gt;&gt; different scenarios of 3- to 5-feature classes
+<ul>
+<li>Original intensity data =31% to 61% (classification accuracy range)</li>
+<li>GC intensity data = 0.1% to 1.6% (classification accuracy improvement in intensity)</li>
+<li>RC intensity data= 8.0% to 11.6% (classification accuracy improvement in intensity)</li>
+<li>GC and RC intensity data= 43% to 70% (classification accuracy range) ; 9.4% to 12.8% (classification accuracy improvement in intensity)</li>
+<li>GC and RC should be implemented for LiDAR (improves accuracy)</li>
+</ul></li>
+</ul>
+</div>
 </section>
-<section id="reflection" class="level2">
-
+<section id="reflection" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<div class="column-body">
+<ul>
+<li>Geometric and radiometric corrections are most common in remote sensing.</li>
+<li>Occurs in data acquisition process, resulting in reducing the quality of the data (remotely sensed)</li>
+<li>It is essential to correct radiometric distortions to obtain a real reflectance</li>
+<li>Calibrated image result is different from un-calibrated= correction is required</li>
+<li>Radiometric comparability importance=
+<ul>
+<li>Surface features(over a timeperiod)</li>
+<li>Comparision of data (eg: lab to field)</li>
+</ul></li>
+<li>Radiometric= geo-referencing an image &gt;&gt; comparison of one image pixel to another which is geo-spatially matching (can be from a different sensor, but compatable resolution)</li>
+<li>If different accusation dates of 2 image= change observed in calulate radiometric difference.</li>
+<li>Sun spot= “The solar radiation will be reflected diffusely onto the ground surface, which results in lighter areas in an image” <a href="http://sar.kangwon.ac.kr/etc/rs_note/rsnote/cp9/cp9-1.htm#:~:text=In%20the%20case%20of%20electro,be%20used%20for%20radiometric%20correction.&amp;text=The%20solar%20radiation%20will%20be,is%20called%20a%20sun%20spot.">sar.kangwon</a></li>
+<li><span class="citation" data-cites="paolini2006">Paolini et al. (<a href="#ref-paolini2006" role="doc-biblioref">2006</a>)</span>; <span class="citation" data-cites="small2007">Small et al. (<a href="#ref-small2007" role="doc-biblioref">2007</a>)</span></li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-850521088.png" class="img-fluid figure-img" width="493"></p>
+<p></p><figcaption class="figure-caption">The flow of geometric correction. Source: <a href="http://www.dspmuranchi.ac.in/pdf/Blog/Pre-Processing%20&amp;%20Correction%20of%20Digital%20Image.pdf">dspmuranchi</a></figcaption><p></p>
+</figure>
+</div>
 
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Reflection</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
 <div id="ref-adamo2020" class="csl-entry" role="doc-biblioentry">
 Adamo, Nasrat, Nadhir Al-Ansari, Sabah Ali, Jan Laue, and Sven Knutsson. 2020. <span>“Dams Safety: Review of Satellite Remote Sensing Applications to Dams and Reservoirs.”</span> <em>Journal of Earth Sciences and Geotechnical Engineering</em> 11 (September): 347–438. <a href="https://doi.org/10.47260/jesge/1119">https://doi.org/10.47260/jesge/1119</a>.
+</div>
+<div id="ref-paolini2006" class="csl-entry" role="doc-biblioentry">
+Paolini, Leonardo, Francisco Grings, José A. Sobrino, Juan C. Jiménez Muñoz, and Haydee Karszenbaum. 2006. <span>“Radiometric Correction Effects in Landsat Multi<span>-</span>Date/Multi<span>-</span>Sensor Change Detection Studies.”</span> <em>International Journal of Remote Sensing</em> 27 (4): 685–704. <a href="https://doi.org/10.1080/01431160500183057">https://doi.org/10.1080/01431160500183057</a>.
+</div>
+<div id="ref-small2007" class="csl-entry" role="doc-biblioentry">
+Small, David, Adrian Schubert, Betlem Rosich, and Erich Meier. 2007. <span>“Geometric and Radiometric Correction of ESA SAR Products.”</span> In, 1–6. <a href="https://doi.org/10.5167/uzh-77977">https://doi.org/10.5167/uzh-77977</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

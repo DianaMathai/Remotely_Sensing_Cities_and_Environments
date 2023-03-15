@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -141,10 +160,17 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#application" id="toc-application" class="nav-link active" data-scroll-target="#application">Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -162,10 +188,177 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<div class="column-body">
+<p>This week was a continuation to week 6 focusing on classification and accuracy.</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pre%20classified%20data.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Pre-classified data. Source: <a href="https://andrewmaclachlan.github.io/CASA0023-lecture-7/?panelset1=data2#6">andrewmaclachlan</a></figcaption><p></p>
+</figure>
+</div>
+<div class="column-body">
+<ul>
+<li><a href="http://www.globallandcover.com/home_en.html?type=data">globallandcover</a></li>
+<li><a href="https://climate.esa.int/en/projects/land-cover/data/">climate.esa.int</a></li>
+<li><a href="https://www.dynamicworld.app/explore/">dynamicworld</a></li>
+<li><a href="https://modis.gsfc.nasa.gov/data/dataprod/mod12.php">modis</a></li>
+<li><a href="https://sites.research.google/open-buildings/">sites.research.google</a></li>
+</ul>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cv3.png" class="img-fluid figure-img" width="723"></p>
+<p></p><figcaption class="figure-caption">Cross validation Iterators. Source: <a href="https://scikit-learn.org/stable/modules/cross_validation.html">scikit-learn</a></figcaption><p></p>
+</figure>
+</div>
+<p>other readings:</p>
+<ul>
+<li><a href="https://geohackweek.github.io/GoogleEarthEngine/05-classify-imagery/">geohackweek</a></li>
+<li><a href="https://openaccess.thecvf.com/content_cvpr_2017/papers/Achanta_Superpixels_and_Polygons_CVPR_2017_paper.pdf">thecvf</a></li>
+<li><a href="https://geemap.org/notebooks/32_supervised_classification/">geemap</a></li>
+<li><a href="https://r.geocompx.org/spatial-cv.html">r.geocompx</a></li>
+</ul>
+<section id="application" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="application">Application</h2>
+<div class="column-body">
+<p>Paper Review: <span class="citation" data-cites="milà2022">Milà et al. (<a href="#ref-milà2022" role="doc-biblioref">2022</a>)</span></p>
+<ul>
+<li><p>Proposed Variation LOO (Leave- one- out) CV= Nearest Neighbour Diatnace Matching (NNDM) LOO CV.</p></li>
+<li><p>Test and training data &gt; below &gt; nearest neighbour distance distribution function &gt; CV process &gt; matched to the nearest neighbour distance distribution function (btw prediction and traing point)</p></li>
+<li><p>why?- cases where spatial auto-correlation is present (distances shorter than the autocorrelation range)</p></li>
+<li><p>Characterise the distribution&gt; nearest neighbour &gt; target x and sampling x (found during predictions)</p></li>
+<li><p>Empirical multiplier= nearest neighbour distance distribution function</p>
+<ul>
+<li>Expresses the proportion of prediction points</li>
+<li>Sampling point at a distance equal or lower than-</li>
+</ul></li>
+<li><p>No edge correction or stationarity assumptions</p></li>
+<li><p>Simulation 1: <em>Random Fields</em></p>
+<ul>
+<li>Input parameter: landscape autocorrelation range</li>
+<li>Landscape autocorrelation range: 1, 10, 20, 30 and 40 units</li>
+<li>Each value= 100 Iterations of the simulation</li>
+<li>Each simulation iteration
+<ul>
+<li>Two-dimensional grid = 300 × 100</li>
+<li>Sampling area = [0,100] × [0,100]</li>
+</ul></li>
+<li>Two distinct prediction areas</li>
+<li>Geographical interpolation = [0,100] × [0,100]– coincided (sampling area)</li>
+<li>Extrapolation [200,300] × [0,100]</li>
+<li>Simulation of independent covariate fields= 20
+<ul>
+<li>Two-dimensional stationary</li>
+<li>Isotropic Gaussian random fields</li>
+<li>Constant mean = 0</li>
+</ul></li>
+</ul></li>
+<li><p>Simulation 2: <em>Virtual Species</em></p>
+<ul>
+<li>LOO CV in simulation 2 = generally agreed (simulation 1 findings)</li>
+<li>LOO CV = overestimated the true RMSE
+<ul>
+<li>Good error estimates</li>
+<li>Underestimated = RMSEs for clustered samples</li>
+</ul></li>
+<li>bLOO CV
+<ul>
+<li>Radius equal</li>
+<li>Outcome autocorrelation range= larger differences than bLOO CV with radius (= residual range difference). - Difference
+<ul>
+<li>Weak cluster samples (outcome range) = 0.07</li>
+<li>Residual range = 0.04</li>
+<li>Residual range shorter than outcomes range</li>
+<li>Both bLOO= overestimated true RMSEs</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>Differences for NNDM LOO CV</p>
+<ul>
+<li>By?</li>
+<li>outcome or residual autocorrelation range
+<ul>
+<li>Similar: each other and to LOO CV</li>
+</ul></li>
+</ul></li>
+<li><p>Weak clustered sampling</p>
+<ul>
+<li>Reasonable estimates of the error (both)</li>
+<li>Smaller variability (than bLOO counterparts)</li>
+</ul></li>
+<li><p>Strong clustered sampling</p></li>
+<li><p>Slightly larger differences</p></li>
+<li><p>MAE and R2 = similar</p></li>
+<li><p>Discussion:</p>
+<ul>
+<li>Accounts for geographical prediction space</li>
+<li>How?- matching nearest neighbour distances btw test and training points.</li>
+<li>LOO CV-&gt; distribution of nearest neighbour distances during predictions
+<ul>
+<li>Target and sampling points</li>
+</ul></li>
+</ul></li>
+<li><p>LOO CV returned unbiased map accuracy estimates</p>
+<ul>
+<li>Estimating geographical interpolation accuracy with random samples</li>
+<li>Landscapes with very short autocorrelation range</li>
+<li>Independent of sampling pattern and predicted area</li>
+</ul></li>
+<li><p>If training points (very clustered), long autocorrelation range= NNDM LOO CV</p>
+<ul>
+<li>NNDM LOO CV =&gt; remove a large fraction of training data during CV</li>
+<li>Result= unstable model</li>
+</ul></li>
+<li><p>bLOO, NNDM LOO can only correct instances</p>
+<ul>
+<li>Presence= map accuracy is over estimates</li>
+<li>How?- removing points</li>
+</ul></li>
+<li><p>Estimation of autocorrelation range= important (NNDM LOO CV)</p></li>
+<li><p>NNDM LOO CV= nearest neighbour distance distribution function (all ranges below threshold)</p>
+<ul>
+<li>NNDM algorithm= matches the CV to predicted nearest neighbour distance (short distance)
+<ul>
+<li>LOO CV= Start&gt; shortest distance (findings from LOO CV) &gt; remove a training point during CV (yes/ no)</li>
+</ul></li>
+<li>NNDM LOO CV
+<ul>
+<li>Map accuracy= good</li>
+<li>Distance= ignored</li>
+<li>Actual loaction= ignored (sampling and prediction points)</li>
+<li>Lacks accounting for anisotropy</li>
+</ul></li>
+</ul></li>
+<li><p>Benefiting stakeholders: predictive mapping community</p></li>
+</ul>
+</div>
+</section>
+<section id="reflection" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
+<div class="column-body">
+<ul>
+<li>LOO= less biased compared to single test set
+<ul>
+<li>No overestimation</li>
+<li>Time consuming</li>
+<li>Computationally expensive</li>
+<li>Better when u have a small dataset</li>
+<li>Output: accurate estimation of model performance</li>
+</ul></li>
+<li>LOOCV use= regression + classification</li>
+</ul>
+</div>
 
 
 
-</main> <!-- /main -->
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-milà2022" class="csl-entry" role="doc-biblioentry">
+Milà, Carles, Jorge Mateu, Edzer Pebesma, and Hanna Meyer. 2022. <span>“Nearest Neighbour Distance Matching Leave-One-Out Cross-Validation for Map Validation.”</span> <em>Methods in Ecology and Evolution</em> 13 (6): 1304–16. https://doi.org/<a href="https://doi.org/10.1111/2041-210X.13851">https://doi.org/10.1111/2041-210X.13851</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

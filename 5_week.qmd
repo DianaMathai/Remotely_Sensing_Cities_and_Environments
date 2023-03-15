@@ -244,7 +244,6 @@ In this segment we shall work on the designed practical and register few importa
     ![](images/image-854239908.png){width="481"}
 
     -   Do not load multiple layers on GEE, just extract the required layers and load them (.shp, .dbf, and .shx files)
-
     -   How? Load the layers\> click\>view assets\> features\> select the required file
 
 -   Identifying the specific spatial point from the gadm layers to insert the specific code in the script
@@ -277,27 +276,24 @@ In this segment we shall work on the designed practical and register few importa
 
 ![](images/image-661185664.png){fig-align="center" width="391"}
 
--   Solution:
+-   Solution: change clip to glcm
 :::
 
 ## Application
 
 ::: column-body
--   web based interactive environment
--   Strong cloud computing power
-
 Paper: @fadli2019
 
--   Issue: deforestation \> green house emission
--   Location: Indonesia
--   Forest cover: 91 million hectares (3rd largest in the world)
--   tree-cover loss average : 1.38 Mn Ha/ year
--   rate of forest loss: 0.31 Mn Ha/ year (2000- 2005)
+-   *Issue:* deforestation \> green house emission
+-   *Location:* Indonesia
+-   *Forest cover:* 91 million hectares (3rd largest in the world)
+-   *Tree-cover loss average:* 1.38 Mn Ha/ year
+-   *Rate of forest loss:* 0.31 Mn Ha/ year (2000- 2005)
 -   Why GEE was used?
     -   Cloud based
     -   easy to process- huge geospatial datasets
     -   uses high-performance computing resources
--   for?
+-   For?
     -   to analyse forest cover status and changes- to check GEE's effectiveness to monitor large area
     -   Observation duration: 2000-2016
 -   Dataset
@@ -324,22 +320,14 @@ Paper: @fadli2019
     -   Result:
 
         -   Total forest cover area: 338,000 km2 (2000)
-
-        -   more than 5m high tree= defined as vegetation
-
+        -   More than 5m high tree= defined as vegetation
         -   Trees are expressed as '2000 Percent Tree Cover' percentage per output plot cell
-
-        -   forest cover loss= change from forest -\> non forest
-
-        -   forest cover gain= change from non-forest -\> forest
-
+        -   Forest cover loss= change from forest -\> non forest
+        -   Forest cover gain= change from non-forest -\> forest
         -   The Year of Forest Loss is the total separation of 'Forest Loss' with an annual time scale
-
-        -   median of a series of observations of the quality of the planting season that passed in the assessment
-
-        -   tree cover (2000)= % of tree cover ( 0-100-pixel range)
-
-        -   monitoring satellite-based land cover changes= by landsat data- from Hansen Forest search- in the code editor \> selected (red, green and blue images)
+        -   Median of a series of observations of the quality of the planting season that passed in the assessment
+        -   Tree cover (2000)= % of tree cover ( 0-100-pixel range)
+        -   Monitoring satellite-based land cover changes= by landsat data- from Hansen Forest search- in the code editor \> selected (red, green and blue images)
 
         ![Custom visualization of Hansen (2000-2017) forest change data](images/image-287467817.png){width="411"}
 
@@ -361,4 +349,6 @@ GEE
 -   Free and easy to access
 -   Consolidated environment, large catalogue of data
 -   Can be useful to analyse or monitor changes at a large scale
+-   Web based interactive environment
+-   Strong cloud computing power
 :::

@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -145,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#google-earth-engine-piratical" id="toc-google-earth-engine-piratical" class="nav-link active" data-scroll-target="#google-earth-engine-piratical">Google Earth Engine Piratical</a></li>
+  <li><a href="#google-earth-engine-practical" id="toc-google-earth-engine-practical" class="nav-link active" data-scroll-target="#google-earth-engine-practical">Google Earth Engine Practical</a></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application">Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection">Reflection</a></li>
   </ul>
@@ -172,7 +191,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="column-body">
 <p>This week we were introduced to Google Earth Engine.</p>
-<p><strong><em>Google Earth Engine: Trying to organize World’s information and making it accessible.</em></strong></p>
+<section id="google-earth-engine" class="level2">
+<h2 class="anchored" data-anchor-id="google-earth-engine">Google Earth Engine?</h2>
+<p><em>Google Earth Engine: Trying to organize World’s information and making it accessible.</em></p>
 <p>Data Catalog + scalable compute (Google data centers and Flexible APIs) = global scale analysis + Visualization <a href="https://developers.google.com/earth-engine/">developers.google.com</a></p>
 <p><em>What is Google Earth Engine?</em></p>
 <ul>
@@ -193,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Provides tools for data analysis (large data sets)</li>
 <li>Tools for analysis</li>
 <li>APIs etc</li>
-<li>analyse what?-
+<li>analyse what?
 <ul>
 <li>Forest and water coverage</li>
 <li>Land use change</li>
@@ -222,6 +243,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Easier to access</li>
 <li>Note: Google Earth Engine Code Editor and API - USE Earth Engine data catalog</li>
 </ul>
+</section>
 </div>
 <div class="column-body">
 <ul>
@@ -229,46 +251,64 @@ ul.task-list li input[type="checkbox"] {
 <li>why Google satellite feature in good maps don’t have clouds? `</li>
 <li>Imagine u took picture of one place or location every day, some days cloudy (clouds move too), other not. You stack them up,choose the pixel and go through it vertically and choose the best pixel. Best pixel=median pixel (one that is not too bright nor too dark)= cloud free image.</li>
 </ul>
+<p><em>Limitations?</em> <a href="https://encyclopedia.pub/entry/14783">Application of Google Earth Engine</a></p>
+<ul>
+<li>runs calculations as scripts -&gt; not convenient forn complex analysis/ process</li>
+<li>Visualization capability of GEE</li>
+<li>limited modelling</li>
+<li>lacks complex datasets ( SAR and high-resolution geospatial data sets).</li>
+<li>lacks ability to perform optimization</li>
+</ul>
 </div>
 <div class="column-body">
 <p><em>Application:</em> I’m curious on how GEE works, so we shall try to work on the basics in the following segment.</p>
 </div>
 <div class="column-body">
+<p>Learning from : <a href="https://youtu.be/oAElakLgCdA">Google Earth Engine 101</a></p>
 <ul>
-<li>Script</li>
-<li>Where u can open codes</li>
-<li>Get link</li>
-<li>to generate link, share it, the person u shared it with can open it and help u troubleshoot it</li>
+<li>Script - Where u can open codes or write codes</li>
+<li>Get link - to generate link, share it, the person u shared it with can open it and help u troubleshoot it</li>
 <li>Java script involves a lot of declaring variables, so learn how to declare “var” for gee on script box</li>
 <li>end with (;)</li>
 <li>/* or // instead of # to remove code/ comment out</li>
-<li>when you stretch images, keep it in smaller value to not make it appear graded out. Eg: Map.addLayer(srtm, {min: 0, max: 3000}, ‘srtm’); - black and white data set</li>
+<li>when you stretch images, keep it in smaller value to not make it appear graded out.
+<ul>
+<li>Eg: Map.addLayer(srtm, {min: 0, max: 3000}, ‘srtm’);</li>
+<li>black and white data set</li>
 <li>0s and 1s</li>
-<li>layers widget= toggel layers on and off.</li>
-<li>toggle loss&gt; off= to view elevation data</li>
-<li>toggle loss&gt; on= Black and white data= white (since this layer is for forest data)= there was some forest cover lost at those pixels</li>
+</ul></li>
+<li>Layers widget (lower right) = toggel layers on and off.</li>
+<li>toggle loss&gt; off = to view elevation data</li>
+<li>toggle loss&gt; on = Black and white data= white (since this layer is for forest data)= there was some forest cover lost at those pixels</li>
 </ul>
 </div>
-<p><img src="images/image-1753920189.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1753920189.png" class="img-fluid figure-img" width="500"></p>
+</figure>
+</div>
 <div class="column-body">
 <ul>
 <li>Making layers transparent so that u can see through it</li>
-<li>Why?</li>
-<li>cos in your stacked data layer, you would wanna look a other layers in the context of your layer on top.</li>
+<li>Why? because in your stacked data layer, you would wanna look a other layers in the context of your layer on top.</li>
 <li><strong>Masking</strong>:
 <ul>
-<li>takes a binary image (1s and 0s)</li>
-<li>where ever there is <strong>0</strong> it makes the <strong>target image INVISIBLE</strong></li>
+<li>Takes a binary image (1s and 0s)</li>
+<li>Whereever there is <strong>0</strong> it turns the <strong>target image INVISIBLE</strong></li>
 </ul></li>
 <li>So in the code above we are adding a layer <em>loss</em> but updating it with an update mask based on itself <em>updateMask(loss)</em>
 <ul>
 <li>Result: the 0s in the data set= black pixels= INVISIBLE</li>
 </ul></li>
-<li>remove- loss (from the widget)</li>
+<li>remove - loss (from the widget)</li>
 </ul>
 </div>
-<p><img src="images/image-883671221.png" class="img-fluid" width="546"></p>
-<section id="computations-with-images" class="level5 page-columns page-full">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-883671221.png" class="img-fluid figure-img" width="546"></p>
+</figure>
+</div>
+<section id="computations-with-images" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="computations-with-images">Computations with images</h5>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -276,13 +316,11 @@ ul.task-list li input[type="checkbox"] {
 <p></p><figcaption class="figure-caption">Slope function application</figcaption><p></p>
 </figure>
 </div>
-<div class="column-body">
 <ul>
-<li>in the above image we use slope function on our srtm data= slope data set displayed on ge</li>
+<li>In the above image we use slope function on our srtm data = slope data set displayed on GE</li>
 <li><em>Note</em> (best practice is to create a <strong>variable</strong> to <em>create a visualization</em>)</li>
 </ul>
 <p><img src="images/image-174618687.png" class="img-fluid"></p>
-</div>
 </section>
 <section id="spatial-reduction" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="spatial-reduction">Spatial Reduction</h5>
@@ -299,9 +337,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
 </ul>
 </section>
-<section id="load-and-filter-an-image" class="level5 page-columns page-full">
+<section id="load-and-filter-an-image" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="load-and-filter-an-image">Load and filter an image</h5>
-<div class="column-body">
 <ul>
 <li>Stretching:</li>
 <li>we know RGB value is btw 0-255 (remember the 8 bit)
@@ -315,59 +352,47 @@ ul.task-list li input[type="checkbox"] {
 <li>lowest and highest value= normalize (0-255)</li>
 <li>output= image</li>
 </ul>
-</div>
-<p><img src="images/image-281876599.png" class="img-fluid" width="571"></p>
 </section>
-<section id="play-with-image-bands" class="level5 page-columns page-full">
+<p><img src="images/image-281876599.png" class="img-fluid" width="571"></p>
+<section id="play-with-image-bands" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="play-with-image-bands">Play with image bands</h5>
-<div class="column-body">
 <ul>
 <li>create new vizualization var and select bands</li>
 <li>for true color vizualization we use red (B4 band), green (B3) and blue bands (B2)</li>
 <li>B5’(Near infrared), ‘B4’, ‘B3’= False color infrared</li>
 </ul>
-</div>
 </section>
-<section id="reducing-image-collection" class="level5 page-columns page-full">
+<section id="reducing-image-collection" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="reducing-image-collection">Reducing image collection</h5>
-<div class="column-body">
 <ul>
 <li>ee.Algorithms.Landsat.simpleComposite gives a good outout image removing all the clouds.</li>
 </ul>
-</div>
 </section>
-<section id="compute-ndvi" class="level5 page-columns page-full">
+<section id="compute-ndvi" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="compute-ndvi">Compute NDVI</h5>
-<div class="column-body">
 <p><img src="images/image-913015119.png" class="img-fluid"></p>
 <ul>
 <li>always remember you have to tell in code which is ur infrared band and red band.</li>
 <li>why?- as band numbers differ</li>
 <li>darker green= healthy vegetation</li>
 </ul>
-</div>
 </section>
-<section id="chart-ndvi-over-time" class="level5 page-columns page-full">
+<section id="chart-ndvi-over-time" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="chart-ndvi-over-time">Chart NDVI over time</h5>
-<div class="column-body">
 <ul>
 <li>looking at cycle of change</li>
 </ul>
-</div>
 </section>
-<section id="export-imagery" class="level5 page-columns page-full">
+<section id="export-imagery" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="export-imagery">Export Imagery</h5>
-<div class="column-body">
 <ul>
 <li>look under “task”</li>
 <li>exporting data format- geotiff</li>
 <li>run the code and you would get the image in ur google drive RGB, PNG and Geo tiff</li>
 </ul>
-</div>
 </section>
-<section id="sentinel-dam-inundation" class="level5 page-columns page-full">
+<section id="sentinel-dam-inundation" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="sentinel-dam-inundation">Sentinel Dam Inundation</h5>
-<div class="column-body">
 <ul>
 <li>get median for the desired bands&gt; add the layers to the map= median composite</li>
 <li>we are trying to Classify</li>
@@ -380,79 +405,189 @@ ul.task-list li input[type="checkbox"] {
 <li>trying to discriminate the target base on the diversions of those spectral curves</li>
 </ul></li>
 </ul>
-</div>
 </section>
-<section id="google-earth-engine-catalogue" class="level5 page-columns page-full">
+<section id="google-earth-engine-catalogue" class="level5 column-body">
 <h5 class="anchored" data-anchor-id="google-earth-engine-catalogue">Google Earth Engine Catalogue</h5>
-<div class="column-body">
 <ul>
 <li>Data sets available</li>
 <li>can be searched through Tags</li>
 <li>T21 the brightness temp</li>
 <li>every data set- sample script to guide</li>
 </ul>
-</div>
+</section>
 <div class="column-body">
 <p><strong>Reference Material</strong></p>
 <ul>
 <li><a href="https://arcg.is/0DmS590">arcg.is</a>: Introduction to Complete Beginners</li>
 <li><a href="https://signup.earthengine.google.com">earthengine</a>: Sample script book</li>
-<li><a href="https://youtu.be/oAElakLgCdA">youtube</a>: Video with piratical</li>
+<li><a href="https://youtu.be/oAElakLgCdA">youtube</a>: Video with pratical</li>
 <li><a href="https://developers.google.com/earth-engine/datasets">Earth Engine data Catalog</a>: search for data sets here</li>
 <li><a href="https://developers.google.com/earth-engine/tutorials/edu">developers.google</a>: GEE Guide</li>
 </ul>
 </div>
-</section>
-<section id="google-earth-engine-piratical" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="google-earth-engine-piratical">Google Earth Engine Piratical</h2>
-<div class="column-body">
+<section id="google-earth-engine-practical" class="level3 column-body">
+<h3 class="anchored" data-anchor-id="google-earth-engine-practical">Google Earth Engine Practical</h3>
+<p>In this segment we shall work on the designed practical and register few important steps, challenges and the respective solution.</p>
 <ul>
-<li>Point= <a href="https://developers.google.com/earth-engine/apidocs/ee-geometry-point-coordinates">ee.Geometry.Point</a> ; <a href="https://www.latlong.net/place/chhattisgarh-india-16504.html">latlong</a></li>
-<li>To convert into Import record&gt; place the cursor on the code, there will be no pop-up message</li>
-<li>Loading data from Landsat.
+<li><p>Point = <a href="https://developers.google.com/earth-engine/apidocs/ee-geometry-point-coordinates">ee.Geometry.Point</a> ; <a href="https://www.latlong.net/place/chhattisgarh-india-16504.html">latlong</a></p></li>
+<li><p>To convert into Import record &gt; place the cursor on the code, there will be no pop-up message</p></li>
+<li><p>Loading data from Landsat.</p>
 <ul>
-<li>search&gt;landsat&gt;Landsat 9 OLI-2/TIRS-2&gt;Surface Reflectance&gt; USGS Landsat 9 Level 2, Collection 2, Tier 1</li>
+<li>search &gt; landsat &gt; Landsat 9 OLI-2/TIRS-2 &gt; Surface Reflectance &gt; USGS Landsat 9 Level 2, Collection 2, Tier 1</li>
 </ul></li>
-<li>Downloading shp file from gadm
+<li><p>Downloading shp file from gadm</p>
 <ul>
 <li>download file from https://gadm.org/download_country.html &gt; data&gt; country&gt; India&gt; shapefile&gt; download- dont unzip</li>
 </ul></li>
-<li>Do not load multiple layers, just extract the required layers and load them (.shp, .dbf, and .shx files)</li>
-<li>Load the layers&gt; click&gt;view assets&gt; features&gt; select the required file</li>
-</ul>
-<p><img src="images/image-1575475659.png" class="img-fluid" width="334"></p>
-<ul>
-<li>Problems</li>
-<li>Could not find Delhi layer to filter so chose chhattisgarh</li>
-</ul>
-<p><img src="images/image-1771088567.png" class="img-fluid"></p>
-<ul>
-<li><p>click on the “map” to inspect</p></li>
-<li><p>function .toUint16() as.glcmTexture won’t work with 32 bit data.</p></li>
-<li><p>PCA (read Andy’s notes for details)</p></li>
-<li><p>Dont forget to move the point initiziation in the beginning <img src="images/image-720891459.png" class="img-fluid"></p></li>
-<li><p>check max and minimum pixel to avoid the below error, increase the limit- 20e9 <img src="images/image-929178878.png" class="img-fluid" width="774"></p></li>
-<li><p>Error of the band</p>
-<p><img src="images/image-661185664.png" class="img-fluid" width="391"></p></li>
-</ul>
+<li><p>Loading gadm layers in GEE</p>
+<p><em>Issue1:</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1575475659.png" class="img-fluid figure-img" width="334"></p>
+</figure>
 </div>
+<p><em>Solution:</em></p>
+<p><img src="images/image-854239908.png" class="img-fluid" width="481"></p>
+<ul>
+<li>Do not load multiple layers on GEE, just extract the required layers and load them (.shp, .dbf, and .shx files)</li>
+<li>How? Load the layers&gt; click&gt;view assets&gt; features&gt; select the required file</li>
+</ul></li>
+<li><p>Identifying the specific spatial point from the gadm layers to insert the specific code in the script</p>
+<ul>
+<li><p><em>Issue 2:</em> Could not find Delhi layer to filter so chose chhattisgarh</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-1771088567.png" class="img-fluid figure-img"></p>
+</figure>
+</div></li>
+<li><p><em>Solution:</em> Open the file from gadm in QGIS, and get the code for Delhi from the attribute table</p></li>
+</ul></li>
+<li><p>Click on the “map” to inspect</p></li>
+<li><p>Function .toUint16() as.glcmTexture won’t work with 32 bit data.</p></li>
+<li><p>PCA (read Andy’s notes for details)</p>
+<p><img src="images/image-720891459.png" class="img-fluid"></p></li>
+<li><p>Check max and minimum pixel to avoid the below error - <em>(Too many pixels in the region ….)</em></p>
+<ul>
+<li><p><em>Issue 3:</em></p>
+<p><img src="images/image-929178878.png" class="img-fluid" width="774"></p></li>
+<li><p><em>Solution:</em> increase the limit maxPixels = 20e9v<br>
+</p></li>
+</ul></li>
+<li><p>Band</p>
+<ul>
+<li><em>Issue 4:</em></li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-661185664.png" class="img-fluid figure-img" width="391"></p>
+</figure>
+</div>
+<ul>
+<li>Solution: change clip to glcm</li>
+</ul>
 </section>
 <section id="application" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="application">Application</h2>
 <div class="column-body">
-
+<ul>
+<li>Web based interactive environment</li>
+<li>Strong cloud computing power</li>
+</ul>
+<p>Paper: <span class="citation" data-cites="fadli2019">Fadli et al. (<a href="#ref-fadli2019" role="doc-biblioref">2019</a>)</span></p>
+<ul>
+<li><em>Issue:</em> deforestation &gt; green house emission</li>
+<li><em>Location:</em> Indonesia</li>
+<li><em>Forest cover:</em> 91 million hectares (3rd largest in the world)</li>
+<li><em>Tree-cover loss average:</em> 1.38 Mn Ha/ year</li>
+<li><em>Rate of forest loss:</em> 0.31 Mn Ha/ year (2000- 2005)</li>
+<li>Why GEE was used?
+<ul>
+<li>Cloud based</li>
+<li>easy to process- huge geospatial datasets</li>
+<li>uses high-performance computing resources</li>
+</ul></li>
+<li>For?
+<ul>
+<li>to analyse forest cover status and changes- to check GEE’s effectiveness to monitor large area</li>
+<li>Observation duration: 2000-2016</li>
+</ul></li>
+<li>Dataset
+<ul>
+<li>global forest change by Hansen</li>
+<li>Multi-year Landsat imageries -&gt; to identify forest cover (2000)</li>
+<li>Multi temporal Satellite images-&gt; forest cover loss year</li>
+<li>resolution: 30m</li>
+<li>forest cover gain pixels</li>
+</ul></li>
+<li>Analysis:
+<ul>
+<li>temporal variation -&gt;forest cover loss (2001-2016)- time series</li>
+</ul></li>
+<li>Steps:
+<ul>
+<li><p>GEE- forest cover - 2000</p></li>
+<li><p>select: Indonesia</p></li>
+<li><p>calculate forest cover fraction</p></li>
+<li><p>forest loss areas</p></li>
+<li><p>discuss estimated values-&gt; forest cover changes</p></li>
+<li><p>Extract specific forest cover region- loss and gain</p></li>
+<li><p>Result:</p>
+<ul>
+<li>Total forest cover area: 338,000 km2 (2000)</li>
+<li>More than 5m high tree= defined as vegetation</li>
+<li>Trees are expressed as ‘2000 Percent Tree Cover’ percentage per output plot cell</li>
+<li>Forest cover loss= change from forest -&gt; non forest</li>
+<li>Forest cover gain= change from non-forest -&gt; forest</li>
+<li>The Year of Forest Loss is the total separation of ‘Forest Loss’ with an annual time scale</li>
+<li>Median of a series of observations of the quality of the planting season that passed in the assessment</li>
+<li>Tree cover (2000)= % of tree cover ( 0-100-pixel range)</li>
+<li>Monitoring satellite-based land cover changes= by landsat data- from Hansen Forest search- in the code editor &gt; selected (red, green and blue images)</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-287467817.png" class="img-fluid figure-img" width="411"></p>
+<p></p><figcaption class="figure-caption">Custom visualization of Hansen (2000-2017) forest change data</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/image-621750777.png" class="img-fluid figure-img" width="410"></p>
+<p></p><figcaption class="figure-caption">Changes in forest loss areas in each year from 2000 to 2016 on Indonesia</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>green= tree cover in 2000 (in %) - higher value than red, blue</li>
+<li>red= loss</li>
+<li>blue= gain</li>
+<li>Highest loss= 2011 (reason- development) and 2015</li>
+<li>Satellite monitoring benefits- land changes ( by human intervention)</li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
 </section>
 <section id="reflection" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="reflection">Reflection</h2>
 <div class="column-body">
-
+<p>GEE</p>
+<ul>
+<li>Helps analyse high spatial resolution data</li>
+<li>Free and easy to access</li>
+<li>Consolidated environment, large catalogue of data</li>
+<li>Can be useful to analyse or monitor changes at a large scale</li>
+</ul>
 </div>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-fadli2019" class="csl-entry" role="doc-biblioentry">
+Fadli, A. H., A. Kosugo, K. Ichii, and R. Ramli. 2019. <span>“Satellite-Based Monitoring of Forest Cover Change in Indonesia Using Google Earth Engine from 2000 to 2016.”</span> <em>Journal of Physics: Conference Series</em> 1317 (1): 012046. <a href="https://doi.org/10.1088/1742-6596/1317/1/012046">https://doi.org/10.1088/1742-6596/1317/1/012046</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

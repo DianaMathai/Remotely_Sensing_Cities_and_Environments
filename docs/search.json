@@ -1,0 +1,254 @@
+[
+  {
+    "objectID": "1_week.html",
+    "href": "1_week.html",
+    "title": "An Introduction to Remote Sensing",
+    "section": "",
+    "text": "This chapter is an attempt to comprehend Remote Sensing. To reach a basic understanding so that it becomes a bit easier to understand future lectures and reading supporting material. As a visual learner, I have opted for a visual representation of many concepts or processes, as it works for me (kindly feel welcome to search for the theory).\nSo lets understand few basic…\nHow does this work?\nWhat are these bands?\nIs this word a satellite or a sensor?"
+  },
+  {
+    "objectID": "1_week.html#electromagnetic-waves-emw",
+    "href": "1_week.html#electromagnetic-waves-emw",
+    "title": "An Introduction to Remote Sensing",
+    "section": "Electromagnetic Waves (EMW)",
+    "text": "Electromagnetic Waves (EMW)\n\nComposition of oscillating electric and magnetic fields. (Maxwell’s equation)\nEM radiation transmission: can transmit in vacuum\n\nfrequency, time period and wavelength= dependent on the producing source\nvelocity= dependent on medium in which it is travelling\nhigh frequency of propagation= increase in accuracy\n\nlight🌞 = visible part = colors (corresponding to different wavelength of light) eg: rainbow🌈\nSound 🔊= invisible waves\n\ntravels through molecules present in air (molecules bumping into each other)"
+  },
+  {
+    "objectID": "1_week.html#i-see-colour",
+    "href": "1_week.html#i-see-colour",
+    "title": "An Introduction to Remote Sensing",
+    "section": "I see COLOUR? 👀",
+    "text": "I see COLOUR? 👀"
+  },
+  {
+    "objectID": "1_week.html#sensors",
+    "href": "1_week.html#sensors",
+    "title": "An Introduction to Remote Sensing",
+    "section": "Sensors",
+    "text": "Sensors\nRemote sensor\n\nDevice that detects EM energy\nQuantifies + records EM energy IN analogue or digital way"
+  },
+  {
+    "objectID": "1_week.html#application",
+    "href": "1_week.html#application",
+    "title": "An Introduction to Remote Sensing",
+    "section": "Application",
+    "text": "Application\n\n\nThe above segments explain the extent of the Remote Sensing application.\nData Extracted application (just a few):\n\nForest fires\nPollution\nVolcanic eruption\nFlooding\nWeather\nCrop growth\nCarbon sinks\nForest covers\nCity Growth\nOcean floor"
+  },
+  {
+    "objectID": "1_week.html#reflection",
+    "href": "1_week.html#reflection",
+    "title": "An Introduction to Remote Sensing",
+    "section": "Reflection",
+    "text": "Reflection\n\n\nHow to approach the subject initially to understand the concepts?--- overwhelming resources, so stick to three good resources (combination of books or webpage) and don’t deviate.\nThe entire process is about measuring and understanding reflected and emitted radiation.\nIt is essential to understand how EM waves and frequency work. It is like EMW has a life of its everything it interacts with has some effect.\nSensors are on-boarded on a satellite (active and passive)\nMultiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.\nEach band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)\nIt is interesting to see how much is observed and accomplished through remote sensing.\nIt is essential to understand which scale data is required and for what use/ size of the target is to be resolved, based on which the specific satellite data is to be acquired. Eg. If I need to find data to count the number of cars parked in a parking lot, I won’t use Landsat imagery as it is (30mx30m). Solution: Maxar or planet.com (3mx3m)\nWhatever is to be detected through remote sensing needs to be twice the size of your pixel.\nCadence: Landset-16days (40-year time period), sentinel 2-10 days (equator) and 2-3 (mid-latitude) (10mx10m) pixel == it is amazing so many questions can be resolved in a short duration of time.\nHow to approach the subject initially to understand the concepts?--- overwhelming resources, so stick to three good resources (combination of books or webpage) and don’t deviate.\nThe entire process is about measuring and understanding reflected and emitted radiation.\nIt is essential to understand how EM waves and frequency work. It is like EMW has a life of its own everything it interacts with has some effect.\nSensors are on-boarded on a satellite (active and passive)\nMultiple pixels make a band, where information is stored in a bit. The higher the bit meaning more information leading to better detection of features.\nEach band has a set of information Multiple bands with different information are stacked on each other to form an image. (can be a combination of various satellites)\nIt is interesting to see how much is observed and accomplished through remote sensing.\nIts is essential to understand which scale data is required and for what use/ size of target that is to be resolved, based on which the specific satellite data is to be accuired. Eg. If I need to find data to count the number of cars parked in a parking lot, I wont use Landsat imagery as it is (30mx30m). Solution: Maxar or planet.com (3mx3m)\nwhat ever needs to be detected through remote sensing need to be twice the size of your pixel.\nCadence: Landset-16days (40 year time period), sentinel 2-10days(equator) and 2-3 (mid latitude) (10mx10m) pixel == its amazing, so many questions can be resolved in short duration of time."
+  },
+  {
+    "objectID": "2_week.html",
+    "href": "2_week.html",
+    "title": "Portfolio tools: Xaringan and Quarto",
+    "section": "",
+    "text": "This week learning Diary focuses on using Quarto to make a web-based learning Diary and a web based presentation using Xaringan asa medium.\n\nThis webpage is a representation of a published website using quarto in RMarkdown on github."
+  },
+  {
+    "objectID": "2_week.html#application",
+    "href": "2_week.html#application",
+    "title": "Portfolio tools: Xaringan and Quarto",
+    "section": "Application",
+    "text": "Application\n\nMaking a publicly available document, that can grow with community contribution (only for GitHub users).\nEasily accessible to users with internet and basic web accessibility knowledge.\nReproducible\nRequires moderate to high proficiency of the medium\nInteresting of individuals who love writing code, representing code, its output (maps, graphs, tables etc) and enjoy CSS- as this all outputs in a self contained web slide"
+  },
+  {
+    "objectID": "2_week.html#reflection",
+    "href": "2_week.html#reflection",
+    "title": "Portfolio tools: Xaringan and Quarto",
+    "section": "Reflection",
+    "text": "Reflection\n\nBenefits:\n\nReproducible\nEncourages collaboration and displays benefits of open source\nEnables users to use the medium to put things over internet.\nDose not require in-depth knowledge of web-development to build a desired output.\nResource to build one are easily accessible on web\n\nDrawbacks:\n\nRequires proficiency of the medium\nNot inclusive: as it targets a certain user type, cannot be used as a medium to engage contribution from learned diverse group with varying computer proficiency levels (would require capacity building)."
+  },
+  {
+    "objectID": "3_week.html",
+    "href": "3_week.html",
+    "title": "Corrections",
+    "section": "",
+    "text": "We now understand the role of EMW its interaction, transmission, reflection, reception which that leads to data storage in bits (sensor (one or multiple) on a satellite>sensor (active/passive)>target area> sensor> recorded in pixel forming band> multiple band with various information> final digital image. (Refer Week 1)\nWe already know of types of sensors and what they do (Week 1), this week we learnt on how they do it and the challenges of producing the desired output.\nThe challenge here is the corrections that need to be done to the input received."
+  },
+  {
+    "objectID": "3_week.html#view-perspective-and-planimetry",
+    "href": "3_week.html#view-perspective-and-planimetry",
+    "title": "Corrections",
+    "section": "View: Perspective and Planimetry",
+    "text": "View: Perspective and Planimetry\n\nNow we understand how the scanning is performed by a Sensor (above sections), we further need to understand about perspective. How the object can be viewed so as to better understand corrections.\n\n\n\n\nOrthographic and View. SOURCE: mashyo\n\n\n\n\n\n\n\n\n\n\n\nPerspective View\nPlanimetric View\n\n\n\n\nlights rays reflected\npass through one single point at the center\nlooks as through every position on the ground is being viewed from directly above\n\n\nScale\nVaries\neverywhere consistent (if we overlook variation in small- scale maps (map projections)\n\n\nview\nobjects far away = smaller\nobjects close= bigger\nall objects appear to be of the same scale.\n\n\nperception\nmore perspective of depth\ncomparatively no (as easier to compare between two points, as there is no perception of distance)\n\n\n\nmore realistic looking due to depth perception\naccurate measure, details are clear\n\n\nExample\nphoto-realistic renderings or animations\nTopographic maps, Orthoimages, technical drawings and architectural plans etc.\n\n\n\n\n\n\nOrthographic and Perspective View. SOURCE: wikipedia"
+  },
+  {
+    "objectID": "3_week.html#image-correction",
+    "href": "3_week.html#image-correction",
+    "title": "Corrections",
+    "section": "Image correction!",
+    "text": "Image correction!\n\nRaw remotely sensed data- ISSUES\n\nGeometric and radiometric flaws – why?\nCurved shape of the Earth\nImperfectly transparent atmosphere\nDaily and seasonal variations (receiving solar radiation)\nImperfections in scanning instruments\n\nwhy do we need image correction??\n\nto remove distortion= individual picture elements are in their proper plainmetric (x,y)."
+  },
+  {
+    "objectID": "3_week.html#application",
+    "href": "3_week.html#application",
+    "title": "Corrections",
+    "section": "Application",
+    "text": "Application\n\n(yan2012Radiometric?)\n\nLiDAR system (maximize the benefit of LiDAR data). How? requires geometric calibration (GC) and radiometric correction (RC) \nStudy area: British Columbia Institute of Technology (BCIT) , Burnaby, British Columbia, Canada\nFeasibility of the proposed GC and RC methods: LiDAR dataset\nDate: July 17, 2009 at local time 14:55\nTemp: 29.8 °C\nVertical visibility = 48.3 km\nThe pressure = 101.81 kPa\nSource: National Climate Data and Information Archive from Environment Canada\nSensor: Leica ALS50\n\nAverage flying height= 600 m\nPoint density= 4–5 points per meter square\n\nWhy choose the study area?- variety in land cover\nSubset:\n\nSubset of a single LiDAR strip >> clipped\nDimension = 500 m × 400 m (experimental testing)\nDirection of the flight survey = west-> east\npoints= 1 Mn\ncalibration: geometrically calibrated using the quasi\nrigorous method\n\nFour Datasets: used for land cover classification and comparative analysis\n\nOriginal intensity data\nGC intensity data\nRC intensity data\nGC and RC intensity data\n\nIntensity data image classification= Gaussian maximum likelihood classification (MLC) technique\ncalculation= kappa statistics + overall accuracy\nthree classification scenarios\n4 data sets\n\n\n\n\nRequirement of method:\n\nTime\nTagged point cloud\nTrajectory position data\n\nResults and Discussion\nRadiometric correction (when system raw measurements are not available)\nGeometric system calibration= improve scan mirrors angles and ranges.\nConsiderations of correction:\n\nSystem parameters\nTopographic effect\nAtmospheric attenuation\n\nPost training:\n\nThe separabilities\n\nTraining areas (land cover classes intensity values)= higher ( compared to the original intensity data)\nresult= expected accuracy improvement (land cover classification)\n\n\n\nClassification results >> assessed and compared >> different scenarios of 3- to 5-feature classes\n\nOriginal intensity data =31% to 61% (classification accuracy range)\nGC intensity data = 0.1% to 1.6% (classification accuracy improvement in intensity)\nRC intensity data= 8.0% to 11.6% (classification accuracy improvement in intensity)\nGC and RC intensity data= 43% to 70% (classification accuracy range) ; 9.4% to 12.8% (classification accuracy improvement in intensity)\nGC and RC should be implemented for LiDAR (improves accuracy)"
+  },
+  {
+    "objectID": "3_week.html#reflection",
+    "href": "3_week.html#reflection",
+    "title": "Corrections",
+    "section": "Reflection",
+    "text": "Reflection\n\n\nGeometric and radiometric corrections are most common in remote sensing.\nOccurs in data acquisition process, resulting in reducing the quality of the data (remotely sensed)\nIt is essential to correct radiometric distortions to obtain a real reflectance\nCalibrated image result is different from un-calibrated= correction is required\nRadiometric comparability importance=\n\nSurface features(over a timeperiod)\nComparision of data (eg: lab to field)\n\nRadiometric= geo-referencing an image >> comparison of one image pixel to another which is geo-spatially matching (can be from a different sensor, but compatable resolution)\nIf different accusation dates of 2 image= change observed in calulate radiometric difference.\nSun spot= “The solar radiation will be reflected diffusely onto the ground surface, which results in lighter areas in an image” sar.kangwon\nPaolini et al. (2006); Small et al. (2007)\n\n\n\n\n\nThe flow of geometric correction. Source: dspmuranchi"
+  },
+  {
+    "objectID": "4_week.html",
+    "href": "4_week.html",
+    "title": "Policy applications",
+    "section": "",
+    "text": "In this week’s learning we focused on how can remote sensing help in bridging the gap between a policy and execution of the policy.\nSo for this segment the inspiration of choosing Urban Heat Island was based on MacLachlan et al. (2021), nrdc.org and the heat wave impact in India, 2015 theguardian.\nTo Observe: Based on nrdc example of Ahmadabad (Western State), India are other parts in India approaching the policy in similar manner?"
+  },
+  {
+    "objectID": "4_week.html#overview",
+    "href": "4_week.html#overview",
+    "title": "Policy applications",
+    "section": "Overview",
+    "text": "Overview\n\n\n\nGeographical Location\nCountry: India; State: Telangana; Capital: Hyderabad\n\n\n\n\nSOURCE: britannica\n\n\nIssue\nReduce the urban heat island effect\n\n\nPolicy\nTelangana Cool Roof Policy(Draft) part of Telangana State Heatwave Action Plan – 2021\n\n\nImplementation period\n10 years\n\n\nTarget year\n2031\n\n\nRS data\nImpact evaluation of heatwave response activities"
+  },
+  {
+    "objectID": "4_week.html#before-we-begin..",
+    "href": "4_week.html#before-we-begin..",
+    "title": "Policy applications",
+    "section": "Before we begin…..",
+    "text": "Before we begin…..\n\nIn this segment, we shall understand a few basic concepts to have an understanding of the issue addressed by the policy.\n\n\n\n\nRoof Cooling Material proposed\n\n\n\n\n\n\nSOURCE: Telangana Cool Roof Policy\n\n\n\nSOURCE: lowcarbonlivingcrc\n\n\n\n\nWhy implement it??\n\nA low cost solution in low rise low income houses Kolokotroni et al. (2018)\nDisadvantages & Advantages: Ashtari et al. (2021), Macintyre and Heaviside (2019), unequalscenes, preventionweb\n\n\n\n\n\nHeat Wave\n\n\n\n\nHeat wave is considered if maximum temperature of a station reaches at least 40 degree celsius or more for Plains and at least 30 degree celsius or more for Hilly regions. IMD, NDMA\nHeat wave guidance: IMD,2022\nHeat island India: climate.nasa\n\n\n\n\n\n\nHeat Island\n\n\n\n\n\nHeat island: SOURCE: publichealthnotes"
+  },
+  {
+    "objectID": "4_week.html#observation",
+    "href": "4_week.html#observation",
+    "title": "Policy applications",
+    "section": "Observation",
+    "text": "Observation\n\n\nPolicy emphasizes on execution of the methods in a fixed timeline\nLacks clarity on how it would be delivered\nLacks clarity on step by step process of monitoring and recording the observed progress\nEmphasizes on role and responsibility of various stakeholders (org)\nBased on professional experience I assume it would be tendered as a PPP project or can also be approached by a Suo-Motu proposal.\n\nQuestion: How do we structure the monitoring aspect for this policy??? - Remote Sensing!\n\n\n⭐ Identify and evaluate a remotely sensed data set that could be used to assist with contributing to the policy goal\n\n\nTo satisfy the above criteria, we look into the impact, the envisaged milestone, data requirement and the process (under steps, with and without social aspect).\nImpact: Health, Nature, economy, Infra, service provision Relation between Land Surface Temperature Data and Land Use Data.\n\n\n\n\n\n\n\nMilestone"
+  },
+  {
+    "objectID": "4_week.html#process",
+    "href": "4_week.html#process",
+    "title": "Policy applications",
+    "section": "Process",
+    "text": "Process\n\n\nMaps:\n\nHyderabad City Area: ward map (Spatial Boundaries)\nBuilding\n\nTemperature data: Meteorological stations\nPopulation: Census Data\nTime period: align it with project mile-stones above\nRemote sensing data:\n\nUSGS earth explorer website\nLand use and land cover: Landsat+TIRS (Thermal Infrared Sensor)/OLI – not much clarity on TIRS\n\nMeasure: Land surface temperature (LST): infer\n\nPhysiological Equivalent Temperature (PET)\nLimitations: does not fully capture the set of micrometeorological conditions that factor into human thermal comfort or heat stress.\nUsed: LST presents data at higher spatial resolutions, thereby enabling comparisons among different neighbourhoods\nDay time and night time LST\n\n\n\n\nSteps:\n\nPre-process (geometric, atmospheric and topographic corrections)\nMasking and sub- setting\nClassification: BuA (Emphasis on it because we need to access impact of cool roofing- but BuA has different types of Physical Infra- roads, buildings, rail etc), Vegetation, Openspace, Waterbodies, Agri)—Classification Accuracy??\nNDVI (Normalized Difference Vegetation Index)\n\n(-1 to +1) 0<=barren land/ BuA, +1<=vegetation/forest cover\n\nNDBI (Normalized Difference Built-up Index)\n\nLandsat SWIR (Short wave infrared) characteristically higher reflectance compared to the near-infrared region\n(-1 to 1)- built up area detection range\n\nLST calculation- (refer this paper:(Halder, Bandyopadhyay and Banik, 2021)\nThe Urban Thermal Field Variance Index (UTFVI)\n\nUrban heat island (UHI) along with Urban Thermal Field Variance Index (UTFVI) phenomena)\n\nLand use and Land cover\n\nUrbanization effects and vegetation (may be a decade? To build existing scenario/ base line, how build-up area increased etc, to understand the cause better)\n\nCorrelation analysis with\n\nLST & NDVI\nLST & NDBI\n\n\n\n\nMay be Inclusion of Social Aspect?\n\nEmergency department visit: patient, inpatient/ outpatient in hospitals\nDiagnoses -heat related\nLST and heat-related ED visits?\n\nGeographically: Ward,\nTests: t-tests and boxplot\n\nTo determine whether these relationships hold after adjusting for social vulnerability controls and spatial dependency?\n\nOrdinary least squares (OLS) models\nspatial models on LST\nheat-related ED visits\noutcome variable: Distribution\noutcome variable: transformation (Sq root transformation)\nexamined spatial autocorrelation in the residuals.\n\nResult:\n\nMoran’s I was non-significant> outcome spatial autocorrelation was absent> OLS was done\nMoran’s I was significant> spatial autoregressive model (SAR) as OLS would yield biased\n\nSAR, spatial dependence is addressed either as a spatially lagged dependent variable (spatial lag model) or in the error structure (spatial error model)\n\n\nto determine the appropriate model.\n\nLagrange Multiplier (LM) test\n\nChecking for heteroscedasticity\nBreusch-Pagan tests> upon revealing significant heteroscedasticity, corrections were applied Refer: Litardo et al. (2020a)\n\n\n\n⭐ Demonstrate how this links to global agendas / goals\n\n\nTo satisfy the above requirement, indicated are the links (Provincial, Federal and Global Levels)\n\n\n\n\nState Level/ Provincial Level\nTelangana State Heatwave Action Plan – 2021\nIssues Identified: Severe heat wave affected the State of Telangana in May 2015\n\nTelangana State Development Planning Society (TSDPS)\nRevenue Disaster Management Department\nUNICEF (working together since 2017)\n\n\n\n\nDistrict Disaster Management Plans (DDMP)\nIssues Identified: Heatwaves, various vulnerabilities (sector wise in each district)\n\nRevenue Disaster Management Department\nUNICEF\n\n\n\n\nUNICEF Guidance for Risk Informed Programming\nPrepared Child Risk and Impact Analysis (CRIA)\n\nIdentify various risks\nImpact of natural hazards\nImpact group: children and women, various social sectors\nOutput: to provide critical services\n\nUNICEF\n\n\nNational Level/ Federal Level\nNational Guidelines for Preparation of action Plan- Prevention and management of heat wave- 2019\nIssue: Heat wave\n\nEarly Warning and Communication\nDealing with heat related illness, mitigation and preparedness\nRoles and responsibilities and implementation plan.\nEmphasis on evidence based policy\n\nCentral Government (National Disaster Management Authority Ministry of Home Affairs Government of India)\n\n\nGlobal Level\nBeating the Heat: A Sustainable Cooling Handbook for Cities- 2021\nUN Environment programme (UNEP)\nUNEP\n\n\n\nSDG 11 & 13 (out of 17 SDGS)\nSDG 11: Make Cities And Human Settlements Inclusive, Safe, Resilient And Sustainable\nSDG 13: Take urgent action to combat climate change and its impacts\n\nUN\n\n\n\n\n⭐ Explain how it advances current local, national or global approaches\n\n\n\nEmphasis on monitoring and impact evaluation- it would be evidence based, hence required measure can be taken.\n\nRS would help facilitate it\nChallenges:\n\nThe roof top would be a very small scale to execute or monitor\nThough this approach is cost effective, its not a sustainable long term solution. (may be try searching for alternative solutions)\n\nSolution:\n\nRead: umep plug it in as an alternate solution\nCompare before and after\nChoose a longer timeframe so that the impact is visible, then relate it to spatial aspects and impact – (refer prat 3, to understand the execution better)\n\nDemography and Economy\nVegetation and Economy\nHealth and vegetation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLiterature review\n\n\n\n\n\n\n\n\nWellmann et al. (2020)\n\nLitardo et al. (2020b)\n\nCasali, Aydin, and Comes (2022)\n\nMartinez and Labib (2023)\n\n\n\n\nOther:\n\nRavanelli et al. (2018)\nLitardo et al. (2020b)\n“Achieving Sustainable Development Goals Through the Study of Urban Heat Island Changes and Its Effective Factors Using Spatio-Temporal Techniques: The Case Study (Tehran City)” (2022)"
+  },
+  {
+    "objectID": "5_week.html",
+    "href": "5_week.html",
+    "title": "An introduction to Google Earth Engine",
+    "section": "",
+    "text": "This week we were introduced to Google Earth Engine.\n\n\nGoogle Earth Engine: Trying to organize World’s information and making it accessible.\nData Catalog + scalable compute (Google data centers and Flexible APIs) = global scale analysis + Visualization developers.google.com\nWhat is Google Earth Engine?\n\nPlatform used for scientific analysis\nVizualisation of Geospatial datasets\n\nUsed by?\n\nUser Background: academic, non-profit, business and government users\n\nwhat does Google Earth Engine do?\n\nHosts satellite imagery\nA place where data mining can be conducted\nStores it in a archive (as public data)\nIngests images in a daily basis\nMakes data available in a global scale\nProvides tools for data analysis (large data sets)\nTools for analysis\nAPIs etc\nanalyse what?\n\nForest and water coverage\nLand use change\nAssess the health of agri field\n\n\nHow is it different from Google earth?\n\nIt can analyse\nData on Google earth is only partly available on GEE\n\nwhat does it include?\n\nHistorical earth images- 40 years span\n\nGEE compared to the Landsat and Sentinel data in Google Cloud?\n\nCollaboration\n\nLandsat -> present on Google Cloud Storage\nSentinel-2 -> present on Google Cloud Storage\n\nGEE Code Editor and API\nDirect access :Earth Engine data catalog\nIndirect access: Landsat and Sentinel-2\nEasier to access\nNote: Google Earth Engine Code Editor and API - USE Earth Engine data catalog"
+  },
+  {
+    "objectID": "5_week.html#application",
+    "href": "5_week.html#application",
+    "title": "An introduction to Google Earth Engine",
+    "section": "Application",
+    "text": "Application\n\n\nWeb based interactive environment\nStrong cloud computing power\n\nPaper: Fadli et al. (2019)\n\nIssue: deforestation > green house emission\nLocation: Indonesia\nForest cover: 91 million hectares (3rd largest in the world)\nTree-cover loss average: 1.38 Mn Ha/ year\nRate of forest loss: 0.31 Mn Ha/ year (2000- 2005)\nWhy GEE was used?\n\nCloud based\neasy to process- huge geospatial datasets\nuses high-performance computing resources\n\nFor?\n\nto analyse forest cover status and changes- to check GEE’s effectiveness to monitor large area\nObservation duration: 2000-2016\n\nDataset\n\nglobal forest change by Hansen\nMulti-year Landsat imageries -> to identify forest cover (2000)\nMulti temporal Satellite images-> forest cover loss year\nresolution: 30m\nforest cover gain pixels\n\nAnalysis:\n\ntemporal variation ->forest cover loss (2001-2016)- time series\n\nSteps:\n\nGEE- forest cover - 2000\nselect: Indonesia\ncalculate forest cover fraction\nforest loss areas\ndiscuss estimated values-> forest cover changes\nExtract specific forest cover region- loss and gain\nResult:\n\nTotal forest cover area: 338,000 km2 (2000)\nMore than 5m high tree= defined as vegetation\nTrees are expressed as ‘2000 Percent Tree Cover’ percentage per output plot cell\nForest cover loss= change from forest -> non forest\nForest cover gain= change from non-forest -> forest\nThe Year of Forest Loss is the total separation of ‘Forest Loss’ with an annual time scale\nMedian of a series of observations of the quality of the planting season that passed in the assessment\nTree cover (2000)= % of tree cover ( 0-100-pixel range)\nMonitoring satellite-based land cover changes= by landsat data- from Hansen Forest search- in the code editor > selected (red, green and blue images)\n\n\n\n\nCustom visualization of Hansen (2000-2017) forest change data\n\n\n\n\n\nChanges in forest loss areas in each year from 2000 to 2016 on Indonesia\n\n\n\ngreen= tree cover in 2000 (in %) - higher value than red, blue\nred= loss\nblue= gain\nHighest loss= 2011 (reason- development) and 2015\nSatellite monitoring benefits- land changes ( by human intervention)"
+  },
+  {
+    "objectID": "5_week.html#reflection",
+    "href": "5_week.html#reflection",
+    "title": "An introduction to Google Earth Engine",
+    "section": "Reflection",
+    "text": "Reflection\n\nGEE\n\nHelps analyse high spatial resolution data\nFree and easy to access\nConsolidated environment, large catalogue of data\nCan be useful to analyse or monitor changes at a large scale"
+  },
+  {
+    "objectID": "6_week.html",
+    "href": "6_week.html",
+    "title": "Classification I",
+    "section": "",
+    "text": "This week we worked on Classifications. We shall focus on Different sensors; Test, Train and Validation of datasets; regression tree followed by few observations from the designed practical."
+  },
+  {
+    "objectID": "6_week.html#different-sensors",
+    "href": "6_week.html#different-sensors",
+    "title": "Classification I",
+    "section": "Different sensors",
+    "text": "Different sensors\n\n\n\nA possible nested architecture for remote sensing of UGSs. SOURCE: Shahtahmassebi et al. (2021)"
+  },
+  {
+    "objectID": "6_week.html#test-train-validate",
+    "href": "6_week.html#test-train-validate",
+    "title": "Classification I",
+    "section": "Test, Train, Validate",
+    "text": "Test, Train, Validate\n\n\n\n\n\n\n\n\nTest, Train and Validation. SOURCE: mlu-explain\n\n\n\nBelow indicated Understanding Based on mlu-explain\nGoal:\n\nTrain the data to determine cat or dog\n\nData set\n\ntypes: 2 types of animals\nfeatures: weight and fluffiness\n\nUsing?\n\nsupervised machine learning\n\nHow?\n\nsplit data into three\n\ntraining set\nTesting set\nValidation set\n\nHow should the train it?\nUse an appropriate model\n\n\n\n\n\nProcess. SOURCE: v7labs\n\n\n\n\n\n\n\n\n\n\nTest\nTrain\nValidation\n\n\n\n\n\nDataset used to test the model after completing the training\nresult: unbiased final model\naccurate and percise\n\n\nTo train the mode\nLearn underlying relationships\nShould be a representative of the population\nChooses best parameters\nUnbiased\navoid- overfitting\nSame set of training data is fed into the neural network arch (repeatedly) -> model learns the features of the data set\nDiversified set of inputs- why?- to train the model of all the scenarios-> predicting unseen data samples\n\nchooses: best hyper-parameters + best model for the task - LR and neural networks\n\nSeparate fom the training set\nhelps tune model’s hyper parameters\nhelps us understand if training of data is moving in the correct direction or not\nhow does this work?\n\ntraining data set-> trained on the model + simultaneously Validation set-> performs model evaluation\n\nWhy is dataset split to validation set?\n\nTo prevent model over fitting\n\n\n\n\n\nHelpful Videos: 📹\n\nValidation data: How it works and why you need it - Machine Learning Basics Explained\nTrain, Test, & Validation Sets explained"
+  },
+  {
+    "objectID": "6_week.html#regression-tree",
+    "href": "6_week.html#regression-tree",
+    "title": "Classification I",
+    "section": "Regression tree",
+    "text": "Regression tree\n\n\n\nDecision Tree - Classification. SOURCE:\n\n\n\n\n\nBuilding Regression Tree. SOURCE: medium.datadriveninvestor"
+  },
+  {
+    "objectID": "6_week.html#application",
+    "href": "6_week.html#application",
+    "title": "Classification I",
+    "section": "Application",
+    "text": "Application\n\nFriedl and Brodley (1997)\nConcern: - parametric supervised classification algorithms - unsupervised classification algorithms\nSharma, Ghosh, and Joshi (2013)\n\nGeographical Location: Surat, Gujarat (India)\nArea: 386.28 km2\nData source:\nClassification technique: 3 classification methods\n\nISODATA (Iterative Self-Organizing Data Analysis) Clustering,\nMLC\nDTC (to map out 6 classes based on classification scheme)\n\nClassification scheme:\n\n\n\nClassification scheme\n\n\nISODATA\n\nSatellite data clustering (using ISODATA)\n50 classes (6 iterations)\n0.95 convergence threshold\nclusters >> 1 of the 6 land use categories identified (above image)>> merged >> unsupervised classification\n\nSupervised classification using MLC\n\nCalculating the probability of a pixel belonging to the 6 classification\nHow? maximum probability >> pixel assignment >> respective class\n\n\n\nDecision tree\n\n\nClassification= WEKA (open source data mining software)\nImage conversion= ASCII format >>\nDT classification\nDecision rule set\n\nGeneration: training sets in WEKA J48 classifier (used for training the Landsat TM data set)\n\nOutput rule sets + trial classification results>> examined\nWhy? confidence levels and accuracies.\nBased on these results >> modification of training sites (if necessary)\nUptill?\n\nReliable training sets are obtained\nGood classification accuracies\nAccuracies how? (based on Kappa statistics and overall accuracy)\n\nRule set = highest accuracy >> classify entire dataset in WEKA (using J48 classifier)\nsignature dataset (training) >> CONSISTING OF 644 training pixels >> Classification of images >> 6 land use classes\n\nDeep water = 8%,\nShallow water = 9%\nSparse = 11% and\nDense built-up = 11%\nAgriculture = 19%\nRest = 42% fallow land\n\n4 crucial factors for Classification performance\nClass separability\nTraining sample size\nDimensional\nClassifier type\nClass separability using Transform Divergence (TD) test >>> result= 0 to 2000= good separability (good= greater than 1900; fair= 1700 and 1900; Poor= below 1700; )\nDistributed throughout the study area = satellite data + fine resolution Google Earth images\nStatistically valid sampling = commission, omission & accuracy (overall using LULC information)\nCover type information = classified map\n\nRESULTS\n\n\nGood separation among classes\nBUT ---\n\nMajor overlap\nShallow water & fallow class\nSome overlap\nSparse & dense built-up classes\n\n\nDecision tree\n\n.\n\nEvaluation of training sets\n\nClassification results\n\n\nAccuracy Assessment:\n\nConfusion matrix >> overlaying reference locations on classified map\nDTC = 90% (overall accuracy)\nKappa = 0.88\nSupervised classification= 76.67% (overall accuracy)\nKappa = 0.7186\nISODATA (Overall accuracy for classification) = 50 clusters = eight classes = 50.83% (overall accuracy)\nKappa = 0.4134\nISODATA (Classification accuracy)\n\n2.33% (PA for shallow water) to 100% (PA for deep water and UA for fallow)\nMLC accuracy= 61.1% (PA for dense built-up) to 96.8% (UA for shallow water).\n\nDTC exhibit highest accuracy range\n\n75% (UA for agriculture) to 100% (UA for shallow water)\n\n\nConclusion\n\nStrength of DTC = flexibility and simplicity\nfor?\n\nPartitioning dataset\nEmploys differentiation among the linear feature\ndefining boundaries between classes\n\nOpen source data mining software\n\nuse = attributes of a pixel >> construct a decision tree\n\nWEKA Limitation\n\nhandling large datasets = methodology implementation implemented = smaller area\nspatial resolution= not sufficient (analysisng finer details)\n\nStudy= lacking ground data collection"
+  },
+  {
+    "objectID": "6_week.html#reflection",
+    "href": "6_week.html#reflection",
+    "title": "Classification I",
+    "section": "Reflection",
+    "text": "Reflection\n\n\nAdvantage in pre-process= comparatively less effort in data preparation\nData: no normalization, no scaling, no effect of missing data on DT\nBUT: small change in data set would lead to a larger change in DT structure, as its is time consuming to train the model this small change can make the process tedious\nShould be comparatively easy to explain to stakeholders\nIt would help fill the gap of cost of acquiring and collecting data, especially in countries that are not more economically developed/ emergent nations.\n\nHolloway et al. (2019)\nKey barriers to monitor SDG’s\n\nCost of acquiring and collecting data\nLack of infrastructure\nRequired skills within countries and Organization\nSatellite Imagery= addresses the issue of cost of data acquisition\nMethod contributing towards= SDG 15 (forest management), SDG 6 and SDG 2\nMissing and observed data across all images in the study: Output=\n\nRandom Forest Method= more accurate\nInverse distance weighted interpolation for predicting Foliage Projective Cover (FPC)= Lesser compared to RFM"
+  },
+  {
+    "objectID": "7_week.html",
+    "href": "7_week.html",
+    "title": "Classification II",
+    "section": "",
+    "text": "This week was a continuation to week 6 focusing on classification and accuracy.\nother readings:"
+  },
+  {
+    "objectID": "7_week.html#application",
+    "href": "7_week.html#application",
+    "title": "Classification II",
+    "section": "Application",
+    "text": "Application\n\nPaper Review: Milà et al. (2022)\n\nProposed Variation LOO (Leave- one- out) CV= Nearest Neighbour Diatnace Matching (NNDM) LOO CV.\nTest and training data > below > nearest neighbour distance distribution function > CV process > matched to the nearest neighbour distance distribution function (btw prediction and traing point)\nwhy?- cases where spatial auto-correlation is present (distances shorter than the autocorrelation range)\nCharacterise the distribution> nearest neighbour > target x and sampling x (found during predictions)\nEmpirical multiplier= nearest neighbour distance distribution function\n\nExpresses the proportion of prediction points\nSampling point at a distance equal or lower than-\n\nNo edge correction or stationarity assumptions\nSimulation 1: Random Fields\n\nInput parameter: landscape autocorrelation range\nLandscape autocorrelation range: 1, 10, 20, 30 and 40 units\nEach value= 100 Iterations of the simulation\nEach simulation iteration\n\nTwo-dimensional grid = 300 × 100\nSampling area = [0,100] × [0,100]\n\nTwo distinct prediction areas\nGeographical interpolation = [0,100] × [0,100]– coincided (sampling area)\nExtrapolation [200,300] × [0,100]\nSimulation of independent covariate fields= 20\n\nTwo-dimensional stationary\nIsotropic Gaussian random fields\nConstant mean = 0\n\n\nSimulation 2: Virtual Species\n\nLOO CV in simulation 2 = generally agreed (simulation 1 findings)\nLOO CV = overestimated the true RMSE\n\nGood error estimates\nUnderestimated = RMSEs for clustered samples\n\nbLOO CV\n\nRadius equal\nOutcome autocorrelation range= larger differences than bLOO CV with radius (= residual range difference). - Difference\n\nWeak cluster samples (outcome range) = 0.07\nResidual range = 0.04\nResidual range shorter than outcomes range\nBoth bLOO= overestimated true RMSEs\n\n\n\nDifferences for NNDM LOO CV\n\nBy?\noutcome or residual autocorrelation range\n\nSimilar: each other and to LOO CV\n\n\nWeak clustered sampling\n\nReasonable estimates of the error (both)\nSmaller variability (than bLOO counterparts)\n\nStrong clustered sampling\nSlightly larger differences\nMAE and R2 = similar\nDiscussion:\n\nAccounts for geographical prediction space\nHow?- matching nearest neighbour distances btw test and training points.\nLOO CV-> distribution of nearest neighbour distances during predictions\n\nTarget and sampling points\n\n\nLOO CV returned unbiased map accuracy estimates\n\nEstimating geographical interpolation accuracy with random samples\nLandscapes with very short autocorrelation range\nIndependent of sampling pattern and predicted area\n\nIf training points (very clustered), long autocorrelation range= NNDM LOO CV\n\nNNDM LOO CV => remove a large fraction of training data during CV\nResult= unstable model\n\nbLOO, NNDM LOO can only correct instances\n\nPresence= map accuracy is over estimates\nHow?- removing points\n\nEstimation of autocorrelation range= important (NNDM LOO CV)\nNNDM LOO CV= nearest neighbour distance distribution function (all ranges below threshold)\n\nNNDM algorithm= matches the CV to predicted nearest neighbour distance (short distance)\n\nLOO CV= Start> shortest distance (findings from LOO CV) > remove a training point during CV (yes/ no)\n\nNNDM LOO CV\n\nMap accuracy= good\nDistance= ignored\nActual loaction= ignored (sampling and prediction points)\nLacks accounting for anisotropy\n\n\nBenefiting stakeholders: predictive mapping community"
+  },
+  {
+    "objectID": "7_week.html#reflection",
+    "href": "7_week.html#reflection",
+    "title": "Classification II",
+    "section": "Reflection",
+    "text": "Reflection\n\n\nLOO= less biased compared to single test set\n\nNo overestimation\nTime consuming\nComputationally expensive\nBetter when u have a small dataset\nOutput: accurate estimation of model performance\n\nLOOCV use= regression + classification"
+  },
+  {
+    "objectID": "8_week.html",
+    "href": "8_week.html",
+    "title": "Temperature",
+    "section": "",
+    "text": "This week we focused on how a global challenge/ issue “Urban Heat Island” (Refer to Week 4 to know about Urban Heat Island) can be approached at a local or national level using specific approaches.\nIn this segment, we intend to focus on the document “Beating the Heat: A Sustainable Cooling Handbook for Cities | NDC Action Project” (n.d.a) and understand the envisaged interventions that can be addressed by remote sensing.\nBarriers to Sustainable Urban Cooling ::: column-body - Lack of awareness - Lack of supportive policies and regulations - Financial Barriers - First-cost bias - Split incentives - Limited Institutional Capacities - Complexity of the solution set :::"
+  },
+  {
+    "objectID": "8_week.html#application",
+    "href": "8_week.html#application",
+    "title": "Temperature",
+    "section": "Application",
+    "text": "Application\n\nCommunity - centric Interventions: to advance heat equity in cities = outcome > safety during high-heat > community engagement in mitigation (long term) > HOW? “Beating the Heat: A Sustainable Cooling Handbook for Cities | NDC Action Project” (n.d.a)\n\nEnsure\nEducate\nEnable\n\nKey categories of innitative:\n\nPublic cooling Infrastructure\nCommunity cooling centres\n\nAppropriate siting\nTargeted for specific populations\nCost considerations for access\nTimely and tailored communication\nProviding essential amenities\n\nPublic water features\n\nHydration stations and drinking fountains\nRecreational water features\n\nPublic transit stops – bus and train stations\n\nAppropriate design\nSiting\nReducing wait times\n\n\nNature-based solutions and cooling surfaces (addressing Heat Inequity)\n\nUrban greening programmes in vulnerable neighbourhoods\n\nPlanting and maintaining trees\nReaching target communities\n\nCool roof programmes targeting low-income communities and informal settlements\n\nPilot projects on low-Income housing\nDedicated funding\nPartnerships\nEducating and engaging the community\n\nAction Plans and warning systems for heat events:\n\nAnnouncing early\nTransparency\nUnderstanding the public\nBuild capacity and leverage partnerships\n\nHeat-health alerts and warning systems\nWellness check programmes\n\nBuddy systems\nHome visits\nDaily phone calls\n\nHeat-health hotlines (available during periods of heat)\nData collection programmes\n\n\n\n\n\nSpecific development controls for Urban Heat, Western Sydney, Australia. Source: Litardo et al. (2020)\n\n\n\nHeat-health alerts and warning systems\nFor example, over 100 cities and districts in India have set up heat alert systems with the support and guidance of the Indian Meteorological Department (IMD) and the National Disaster Management Authority. The IMD also provides over 350 cities with seasonal and daily temperature forecasts, which are a critical trigger for prompting early heat-warning communication by city officials (NRDC 2019).\nRemote sensing can be introduced to achieve : “Data collection programmes” entailing Monitoring the impact\n\nHeat events on health and well-being\nEvaluate the effectiveness of heat action plans\nGuide future allocation of resources and heat response"
+  },
+  {
+    "objectID": "8_week.html#reflection",
+    "href": "8_week.html#reflection",
+    "title": "Temperature",
+    "section": "Reflection",
+    "text": "Reflection\n\n\n“leading by example” segments are predominantly showcased a More Economically Developed Country, further laying roadmap for further betterment.\nThe Hand book for Emergent Nations:\n\nAddresses Emergent Nations barriers, especially suggesting various funding sources, funding models, especially emphasizing on Private sector role.\nSuggests low cost interventions, focusing and mitigation measures - community/ human-centric\n\nEconomic development- important- to create mitigating infrastructure, adaptive interventions- Urban Scale (Step 1) and Building scale (Step 2 & 3)\nRemote sensing/ GIS as a tool- free access of data- can help monitor these interventions.\n\nEmergent Nations: funding can be secured ."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Remotely Sensing Cities and Environments",
+    "section": "",
+    "text": "------------------------\n\n\n\n\n\n\nNote\n\n\n\nThe learning diary is part of an academic requirement for module CASA0023 designed by Dr Andrew MacLachlan. The content of this diary follows the outlined approach as designed in the provided lecture material and workshop material."
+  }
+]
