@@ -73,7 +73,7 @@ Below is an indicative representation of the process
 :::
 
 ::: column-body
-A small slide presentation(maximum 9 slide) and hosted on GitHub - Xaringan OUTPUT - SENSOR 🌝➡️ [Sensor](https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html#1)
+A small slide presentation(maximum 9 slide) and hosted on GitHub - Xaringan OUTPUT - SENSOR 🌝➡️ [Sensor](https://dianamathai.github.io/Sensor-in-Xaringan-/newSensor.html?panelset=application#1)
 :::
 
 ## Application
