@@ -1,3 +1,2 @@
 # Remotely_Sensing_Cities_and_Environments
-Learning Diary
 https://dianamathai.github.io/Remotely_Sensing_Cities_and_Environments/
