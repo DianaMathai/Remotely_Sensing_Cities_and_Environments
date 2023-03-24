@@ -37,6 +37,9 @@ website:
         text: "Week 7"
       - href: 8_week.qmd
         text: "Week 8"
+      - href: Reflection.qmd
+        tect: "Reflection"
+      
 
 format:
   html:

@@ -274,18 +274,28 @@ For example, over 100 cities and districts in India have set up heat alert syste
 Remote sensing can be introduced to achieve : "Data collection programmes" entailing Monitoring the impact
 
 -   Heat events on health and well-being
+
 -   Evaluate the effectiveness of heat action plans
+
 -   Guide future allocation of resources and heat response
+
+[Urban Heat Island Interpretive Dance](https://grand-tuck-757.notion.site/Urban-Heat-Island-Interpretive-Dance-5a97bd9ac958489188ab689db54e59a8) ..... SENTINEL 🖐️-2
 :::
 
 ## Reflection
 
 ::: column-body
--   "leading by example" segments are predominantly showcased a More Economically Developed Country, further laying roadmap for further betterment.
--   The Hand book for Emergent Nations:
-    -   Addresses Emergent Nations barriers, especially suggesting various funding sources, funding models, especially emphasizing on Private sector role.
-    -   Suggests low cost interventions, focusing and mitigation measures - community/ human-centric
--   Economic development- important- to create mitigating infrastructure, adaptive interventions- Urban Scale (Step 1) and Building scale (Step 2 & 3)
--   Remote sensing/ GIS as a tool- free access of data- can help monitor these interventions.
-    -   Emergent Nations: funding can be secured .\
+-   "leading by example" segments are predominantly showcased in a More Economically Developed Country, further laying the roadmap for further betterment.
+
+-   The Handbook for Emergent Nations:
+
+    -   Addresses Emergent Nation barriers, especially suggesting various funding sources, and funding models, emphasizing on Private sector role.
+
+    -   Suggests low-cost interventions, focusing and mitigation measures - community/ human-centric
+
+-   Economic development- is important- to create mitigating infrastructure, and adaptive interventions- Urban Scale (Step 1) and Building scale (Steps 2 & 3)
+
+-   Remote sensing/ GIS as a tool-free access data- can help monitor these interventions.
+
+    -   Emergent Nations: funding can be secured.
 :::

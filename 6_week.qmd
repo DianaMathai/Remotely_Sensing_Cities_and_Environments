@@ -204,9 +204,9 @@ Accuracy Assessment:
 ## Reflection
 
 ::: column-body
--   Advantage in pre-process= comparatively less effort in data preparation
+-  The advantage in pre-process= comparatively less effort in data preparation
 -   Data: no normalization, no scaling, no effect of missing data on DT
--   BUT: small change in data set would lead to a larger change in DT structure, as its is time consuming to train the model this small change can make the process tedious
+-   BUT:  a small change in the data set would lead to a larger change in DT structure, as it is time consuming to train the model this small change can make the process tedious
 -   Should be comparatively easy to explain to stakeholders
 -   It would help fill the gap of cost of acquiring and collecting data, especially in countries that are not more economically developed/ emergent nations.
     -   @holloway2019

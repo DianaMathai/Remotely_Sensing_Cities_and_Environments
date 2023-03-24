@@ -349,6 +349,6 @@ GEE
 -   Free and easy to access
 -   Consolidated environment, large catalogue of data
 -   Can be useful to analyse or monitor changes at a large scale
--   Web based interactive environment
+-   Web- based interactive environment
 -   Strong cloud computing power
 :::

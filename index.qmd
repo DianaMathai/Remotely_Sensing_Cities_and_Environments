@@ -28,3 +28,31 @@ Welcome, to my Learning Diary! It comprises of summary, application and reflecti
 ::: callout-note
 The learning diary is part of an academic requirement for module [CASA0023](https://github.com/andrewmaclachlan/CASA0023-bookdown) designed by [Dr Andrew MacLachlan.](https://github.com/andrewmaclachlan) The content of this diary follows the outlined approach as designed in the provided [lecture material](https://andrewmaclachlan.github.io/CASA0023/00-course_info.html) and [workshop material](https://andrewmaclachlan.github.io/CASA0023/).
 :::
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
+
+Me**?**
+
+Diana Mathai
+
+Professional Education: Master of Planning in Urban Planning and Bachelor of Technology in Civil Engineering
+
+.
+
+.
+
+.
+
+.
+
+and an enthusiastic novice to Remotely Sensing

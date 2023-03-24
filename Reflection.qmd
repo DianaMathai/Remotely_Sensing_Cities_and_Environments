@@ -1,0 +1,15 @@
+---
+title: "Reflection"
+output: html_document
+bibliography: references.bib
+---
+
+::: column-body
+I had a practice-oriented learning of the module, and I learnt how to build a substantially robust technical implementable proposal. [Polishe (Group Work)](https://listianingrumr.github.io/polishe/#1)
+
+I enjoyed learning Remote sensing from the perspective of professional world application (Identifying gap and the plug-in of remote sensing into it).
+
+The module made me push my boundaries in terms of learning and application of different mediums, and data sources (Quarto hosting on git, Xaringan, GEE, QGIS, R Studio, EOdashboard website, Copernicus Open Access Hub, SNAP, sentinels, earthexplorer etc.). I was encouraged to reflect on the application of Remote Sensing in addressing real-world problems to attain the envisioned output of the policy.
+:::
+
+Its a wrap!

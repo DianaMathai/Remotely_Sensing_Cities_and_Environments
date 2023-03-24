@@ -135,11 +135,11 @@ Paper Review: @milà2022
 ## Reflection
 
 ::: column-body
--   LOO= less biased compared to single test set
+-   LOO= less biased compared to a single test set
     -   No overestimation
-    -   Time consuming
+    -   Time-consuming
     -   Computationally expensive
-    -   Better when u have a small dataset
+    -   Better when you have a small dataset
     -   Output: accurate estimation of model performance
 -   LOOCV use= regression + classification
 :::
